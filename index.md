@@ -1,6 +1,3 @@
-# milesdwilliams15.github.io
-A Site Where the World Can See My Projects
-
 ### Welcome!
 Data analysis and visualization are cornerstones of quantitative political science research. On this site, you'll find a veritable portfolio of my various projects and analyses, as well as details about the nuts and bolts of my research and techniques used to analyze original datasets and create professional looking visualizations.
 
