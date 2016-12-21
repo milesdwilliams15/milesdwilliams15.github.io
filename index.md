@@ -26,6 +26,9 @@ Though my passion for quantitative methods was initially kindled my first semest
 
 [Machine Learning for Text Analysis with R](https://milesdwilliams15.github.io/Machine-Learning-for-Text-Analysis/)
 
+### Resume/CV
+[My Resume.pdf](https://github.com/milesdwilliams15/milesdwilliams15.github.io/files/667387/My.Resume.pdf)
+
 ### For More of My Work Check Out My Personal Blog and Plotly Account
 [The Political Scientist](http://thepoliticalscientist1.blogspot.com/)
 
