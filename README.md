@@ -21,6 +21,8 @@ I've used each research project as an opportunity to expand my skills.
 Though my passion for quantitative methods was initially kindled my first semester as a graduate student in political science, much of what I've learned is self-taught. My desire to continually imporve and learn has proved a valuable asset that has always pushed me to greater heights. Hopefully this site (while a work in progress) will adequately display my persistent drive for improvement and exploration.
 
 ### Recent Articles
+[Is Trump an Angry Tweeter?](https://milesdwilliams15.github.io/Is-Trump-an-Angry-Tweeter-/)
+
 [Social Media and Partisanship](https://milesdwilliams15.github.io/Social-Media-and-Partisanship/)
 
 [Monte Carlo Simulations](https://milesdwilliams15.github.io/Monte-Carlo-Simulations/)
