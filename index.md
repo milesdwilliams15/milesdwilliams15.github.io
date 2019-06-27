@@ -2,15 +2,14 @@
 My name is Miles D. Williams. I am a political science Ph.D. student at the University of Illinois at Urbana-Champaign. This site is a working summary of my latest research and analysis. My interests encompass a wide variety of subfields and research questions, and my toolbox of methods is always expanding. See the below for summaries of recent projects. To see all of my projects, check out my [GitHub repository](https://github.com/milesdwilliams15). Below you will also find a copy of my CV.
 
 ### Recent Projects
-[Social Media and Partisanship](https://milesdwilliams15.github.io/Social-Media-and-Partisanship/)
+[Targeting Civil War](https://github.com/milesdwilliams15/Foreign-Aid-and-Civil-War)
 
-[Monte Carlo Simulations](https://milesdwilliams15.github.io/Monte-Carlo-Simulations/)
-
-[Making Better Graphics for Structural Topic Model Objects with R](https://milesdwilliams15.github.io/Better-Graphics-for-the-stm-Package-in-R/)
-
-[How to Model the Gravitational Pull of Bilateral Foreign Aid on Bilateral Immigration](https://milesdwilliams15.github.io/The-Effect-of-Bilateral-Foreign-Aid-on-Bilateral-International-Migrant-Inflows/)
+[After Paris, Busan! Progress on Bilateral Aid Fragmentation Afterall?](https://github.com/milesdwilliams15/Coordination-of-Aid-Flows-and-Aid-Fragmentation)
 
 [Machine Learning for Text Analysis with R](https://milesdwilliams15.github.io/Machine-Learning-for-Text-Analysis/)
+
+### Recent Publications
+[Gender in the Pulpit: The Differences in Speaking Style for Men and Women](http://ryanburge.net/wp-content/uploads/2019/06/JCR_Burge_Williams.pdf) (2019). With [Ryan Burge](http://ryanburge.net/)
 
 ### Resume/CV
 [My Resume.pdf](https://github.com/milesdwilliams15/milesdwilliams15.github.io/files/667387/My.Resume.pdf)
@@ -27,4 +26,4 @@ DEPARTMENT OF POLITICAL SCIENCE
 
 Urbana, IL 61801
 
-*email*:milesdw2@illinois.edu
+*email*: milesdw2@illinois.edu
