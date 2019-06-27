@@ -12,7 +12,7 @@ My name is Miles D. Williams. I am a political science Ph.D. student at the Univ
 [Gender in the Pulpit: The Differences in Speaking Style for Men and Women](http://ryanburge.net/wp-content/uploads/2019/06/JCR_Burge_Williams.pdf) (2019). With [Ryan Burge](http://ryanburge.net/)
 
 ### Resume/CV
-[My Resume.pdf](https://github.com/milesdwilliams15/milesdwilliams15.github.io/files/667387/My.Resume.pdf)
+[My CV](https://apps.atlas.illinois.edu/CvStorage/documents/users/milesdw2)
 
 ### Other Fun Stuff
 I occassionally post on my personal blog, [The Political Scientist](https://thepoliticalscientist1.blogspot.com/)
