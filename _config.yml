@@ -1,8 +1,7 @@
-title: Personal Site of Miles D. Williams
-description: Political Science and Data Science Nerd
+title: Miles D. Williams
 google_analytics: 
 show_downloads: true
-theme: jekyll-theme-architect
+theme: jekyll-theme-minimal
 
 gems:
   - jekyll-mentions
