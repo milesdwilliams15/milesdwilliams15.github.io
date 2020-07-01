@@ -29,5 +29,7 @@ I am a Ph.D. student in political science at the [University of Illinois at Urba
 
 [Fragmented Aid and Recipient Corruption: Diversity of Aid Partners and Corrupt Recipient Motives](https://github.com/milesdwilliams15/Fragmented-Aid-and-Recipient-Corruption/blob/master/Corruption_and_Foreign_Aid_Final_Paper.pdf)
 
+[Leveraging the "Black Box": Random Forest Adjustment for Causal Inference](https://github.com/milesdwilliams15/Leveraging-the-Black-Box/blob/master/draft1.pdf)
+
 ### Other Writings
 I occassionally have contributed to [Religion in Public](https://religioninpublic.blog/)
