@@ -3,10 +3,9 @@ I am a Ph.D. student in political science at the [University of Illinois at Urba
 
 ### Research Interests
 
-  - International Political Economy
-  - Foreign Aid
-  - Causal Inference
-  - Computational Methods
+  - International Relations
+  - Political Economy
+  - Political Methodology
   - Game Theory
 
 ### Recent Publications
@@ -16,6 +15,8 @@ I am a Ph.D. student in political science at the [University of Illinois at Urba
 
 ### Working Papers
 [Targeting Civil War: Foreign Aid and the Opportunity Cost of Intra-State Violence](https://github.com/milesdwilliams15/Foreign-Aid-and-Civil-War/blob/master/manuscript_draft.pdf)
+
+[Stopping Spillovers or Seizing Strategic Advantage: Industrialized Country Interactions in Allocating Resources to the Developing World](https://github.com/milesdwilliams15/Stopping-Spillovers-or-Seizing-Strategic-Advantage/blob/master/final_draft.pdf)
 
 [Xinhua Coverage of Chinese Foreign Aid Allocations](https://github.com/milesdwilliams15/Xinhwuan-News-Coverage-and-Chinese-Aid-Allocation/blob/master/draft1.pdf)
 
