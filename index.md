@@ -15,7 +15,7 @@ I am a Ph.D. student in political science at the [University of Illinois at Urba
 [Is Social Media a Digital Pulpit? How Evangelical Leaders Use Twitter to Encourage the Faithful and Publicize Their Work](https://brill.com/view/journals/rmdc/8/3/article-p309_309.xml) (2019). With [Ryan Burge](http://ryanburge.net/)
 
 ### Working Papers
-[Targeting Civil War: Foreign Aid and the Opportunity Cost of Instra-State Violence](https://github.com/milesdwilliams15/Foreign-Aid-and-Civil-War/blob/master/manuscript_draft.pdf)
+[Targeting Civil War: Foreign Aid and the Opportunity Cost of Intra-State Violence](https://github.com/milesdwilliams15/Foreign-Aid-and-Civil-War/blob/master/manuscript_draft.pdf)
 
 [Xinhua Coverage of Chinese Foreign Aid Allocations](https://github.com/milesdwilliams15/Xinhwuan-News-Coverage-and-Chinese-Aid-Allocation/blob/master/draft1.pdf)
 
@@ -26,4 +26,10 @@ I am a Ph.D. student in political science at the [University of Illinois at Urba
 [Leveraging the "Black Box": Random Forest Adjustment for Causal Inference](https://github.com/milesdwilliams15/Leveraging-the-Black-Box/blob/master/draft1.pdf)
 
 ### Other Writings
-I occassionally have contributed to [Religion in Public](https://religioninpublic.blog/)
+I occasionally have contributed to [Religion in Public](https://religioninpublic.blog/)
+
+### Software
+In conjunction with my project on [random forest adjustment](https://github.com/milesdwilliams15/Leveraging-the-Black-Box/blob/master/draft1.pdf), I've developed an R package called "RFA" that provides easy-to-use tools for implementing the method. The latest version can be found [here](https://github.com/milesdwilliams15/RFA).
+
+I further am developing an R package with tools necessary to estimate a "Strategic Autoregressive Model," useful for estimating free-riding or competitive behavior among a set of actors. The method is based on the work of Martin Steinwand---his paper describing the method in *Political Analysis* can be found [here](https://www.cambridge.org/core/journals/political-analysis/article/estimating-freeriding-behavior-the-stratam-model/0CBD6176E53848732CEC2C151A491212). The "SARM" package that I have developed estimates a modified version of the model proposed by Steinwand. The latest version of the package and additional details can be found [here](https://github.com/milesdwilliams15/SARM).
+
