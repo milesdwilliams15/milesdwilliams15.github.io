@@ -2,6 +2,6 @@ title: Miles D. Williams
 description: Ph.D. Student, University of Illinois at Urbana-Champaign
 google_analytics: 
 show_downloads: false
-theme: jekyll-theme-minimal
+theme: jekyll-theme-minima
 gems:
   - jekyll-mentions
