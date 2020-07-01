@@ -1,6 +1,6 @@
 title: Miles D. Williams
 description: Ph.D. Student, University of Illinois at Urbana-Champaign
-email: milesdw2@illinois.edu
+email: <a href="{{ site.data.social-media.email.href }}{{ site.data.social-media.email.id }}" title="Email me">Send me an email!</a>
 google_analytics: 
 show_downloads: false
 theme: jekyll-theme-minimal
