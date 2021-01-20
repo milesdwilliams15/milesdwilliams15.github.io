@@ -1,10 +1,11 @@
 ### Welcome!
-I am a Ph.D. student in political science at the [University of Illinois at Urbana-Champaign](https://pol.illinois.edu/), and I also serve as a methods specialist for the [Office of Evaluation Sciences](https://oes.gsa.gov/), housed in the U.S. General Services Administration in Washington, D.C. My primary research agenda focuses on rivalry and collective action problems that arise among industrialized countries in the allocation of foreign aid. I further have several secondary research projects that include the study of differential foreign aid responses by wealthy countries in the context of ongoing civil wars in developing countries, the outward-facing media strategy of emerging or non-traditional foreign aid donors like China, links between aid recipient governance and aid fragmentation, and international migration as both determinant and consequence of international aid. I also have an interest in causal inference in the context of observational data. For one project, I study the potential application of popular "black box" machine learners, like random forest regression, to the estimation average treatment effects. I additionally have contributed to text-as-data projects that rely on original data sources.
+I am a Ph.D. candidate in political science at the [University of Illinois at Urbana-Champaign](https://pol.illinois.edu/). I also serve as a methods specialist for the [Office of Evaluation Sciences](https://oes.gsa.gov/), housed in the U.S. General Services Administration in Washington, D.C. My primary research agenda focuses on strategic foreign policymaking among countries in the context of foreign aid. I further have several secondary research projects that include the study of foreign aid to countries experiencing civil war, Chinese media coverage of foreign aid recipients, links between aid recipient governance and aid fragmentation, international migration as both determinant and consequence of international aid policy, and the role of religion in politics. I also have an interest in causal inference, computational methods, and game theory.
 
 ### Research Interests
 
   - International Relations
   - Political Economy
+  - Foreign Policy
   - Political Methodology
   - Game Theory
 
