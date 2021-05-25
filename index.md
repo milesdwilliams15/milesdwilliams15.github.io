@@ -40,7 +40,7 @@ I am a Ph.D. candidate studying International Relations in the Political Science
 I occasionally have contributed to [Religion in Public](https://religioninpublic.blog/)
 
 #### Software
-In conjunction with my project on [random forest adjustment](https://github.com/milesdwilliams15/Leveraging-the-Black-Box/blob/master/draft1.pdf), I've developed an R package called "RFA" that provides easy-to-use tools for implementing the method. The latest version can be found [here](https://github.com/milesdwilliams15/RFA).
+In conjunction with my project on [random forest adjustment](https://rpubs.com/milesdwilliams15/rfa-vignette), I've developed an R package called "RFA" that provides easy-to-use tools for implementing the method. The latest development version can be found [here](https://github.com/milesdwilliams15/RFA).
 
 I further am developing an R package with tools necessary to estimate a "Strategic Autoregressive Model," useful for estimating free-riding or competitive behavior among a set of actors. The method is based on the work of Martin Steinwand---his paper describing the method in *Political Analysis* can be found [here](https://www.cambridge.org/core/journals/political-analysis/article/estimating-freeriding-behavior-the-stratam-model/0CBD6176E53848732CEC2C151A491212). The "SARM" package that I have developed estimates a modified version of the model proposed by Steinwand. The latest version of the package and additional details can be found [here](https://github.com/milesdwilliams15/SARM).
 
