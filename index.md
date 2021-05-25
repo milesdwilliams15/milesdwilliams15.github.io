@@ -1,13 +1,13 @@
 ### Welcome!
-I am a Ph.D. candidate studying International Relations in the Political Science Department at the [University of Illinois at Urbana-Champaign](https://pol.illinois.edu/). I currently serve as a methods specialist for the [Office of Evaluation Sciences](https://oes.gsa.gov/team/miles-williams/), housed in the U.S. General Services Administration in Washington, D.C. My dissertation explores the theoretical and empirical consequences of foreign policy externalities in leading countries' foreign aid allocations. My broader research interests include the study of foreign aid to countries experiencing civil war, Chinese media coverage of foreign aid recipients, links between aid recipient governance and aid fragmentation, international migration as both determinant and consequence of international aid policy, and the role of religion in politics. I also have an interest in causal inference, computational methods, and game theory.
+I am a Ph.D. candidate studying International Relations in the Political Science Department at the [University of Illinois at Urbana-Champaign](https://pol.illinois.edu/). I also currently serve as a methods specialist for the [Office of Evaluation Sciences](https://oes.gsa.gov/team/miles-williams/), housed in the U.S. General Services Administration in Washington, D.C. My dissertation explores how bilateral foreign aid allocation---a tool in service of wide-ranging foreign policy interests---reflects a mutual best response among leading countries as they pursue their foreign policy interests vis-a-vis each other. My broader research includes understanding the consequences of ongoing civil war as a determinant of aid allocation, how China (an increasingly consequential foreign aid donor) frames its foreign aid program to domestic and foreign audiences, links between aid recipient governance and aid fragmentation, international migration as both determinant and consequence of international aid policy, and the role of religion in politics. I also have an interest in causal inference, computational methods, and game theory.
 
 ### Interests
 
   - International Relations
   - International Political Economy
   - Foreign Aid
-  - Political Methodology
-  - Analytical Politics
+  - Computational Methods
+  - Game Theory
   - Religion in Politics
 
 ### Research
