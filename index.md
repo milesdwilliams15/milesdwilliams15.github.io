@@ -33,7 +33,7 @@ I am a Ph.D. candidate studying International Relations in the Political Science
 
 "Leveraging the Black Box: Regression Adjustment via Random Forests."
 
-"Aid Fragmentation: Are We Measuring the Right Things?"
+"Strategic Multilateralism: International Development Cooperation and the World Bank"
 
 
 #### Contributions to Technical Guidance
