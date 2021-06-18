@@ -1,4 +1,4 @@
 # milesdwilliams15.github.io
-Miles D. Williams
+Miles Williams
 
 This repository hosts my professional website.
