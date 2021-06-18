@@ -1,9 +1,9 @@
-# Welcome!
+## Welcome!
 I am a Ph.D. candidate studying International Relations in the Political Science Department at the [University of Illinois at Urbana-Champaign](https://pol.illinois.edu/). I also currently serve as a methods specialist for the [U.S. Office of Evaluation Sciences](https://oes.gsa.gov/team/miles-williams/). My primary research agenda centers on the political economy of foreign aid. In my dissertation, I study how the foreign policy goals countries pursue through their foreign aid allocations explain their strategic responses to each other as they allocate economic assistance to developing countries. To address these issues, I rely on various tools, from formal theory, to machine learning as well as classical econometric techniques. 
 
 In addition to my dissertation, I maintain a number of substantive and methodologically oriented research agendas. For the former, my research lies at the intersection of foreign policy, foreign aid, and multilateral development institutions. I also have applied text-as-data methods to study political communications by religious elites in collaboration with Ryan Burge (Eastern Illinois University). With respect to methods, my research emphasizes innovative applications of machine learning for covariate adjustment in observational data and extensions of model-based approaches to testing the empirical implications of theoretical models. 
 
-# Interests
+## Interests
 
   - International Relations
   - International Political Economy
@@ -12,7 +12,7 @@ In addition to my dissertation, I maintain a number of substantive and methodolo
   - Game Theory
   - Religion in Politics
 
-# Research
+## Research
 
 ### Journal Articles
 [Gender in the Pulpit: The Differences in Speaking Style for Men and Women](http://ryanburge.net/wp-content/uploads/2019/06/JCR_Burge_Williams.pdf) (2019). With [Ryan Burge](http://ryanburge.net/)
@@ -53,7 +53,7 @@ I occasionally have contributed to [Religion in Public](https://religioninpublic
   - [`SARM`](https://github.com/milesdwilliams15/SARM) - For estimating a modified version of the Strategic Autoregressive Model developed by [Steinwand (2011)](https://www.cambridge.org/core/journals/political-analysis/article/estimating-freeriding-behavior-the-stratam-model/0CBD6176E53848732CEC2C151A491212).
   - `oesr` (available soon, with Ryan T. Moore) - For visualizing the results from randomized controlled trials using the Office of Evluation Sciences' [recommended style guide](https://oes.gsa.gov/assets/files/reporting-statistical-results.pdf).
 
-# Teaching
+## Teaching
 
  - Intro to International Relations (2021), Independent Instructor.
  - Intro to Political Science (2017), Teaching Assistant for Konstantinos Kourtikakis.
