@@ -1,5 +1,5 @@
 ## Welcome!
-I am a Ph.D. candidate studying International Relations in the Political Science Department at the [University of Illinois at Urbana-Champaign](https://pol.illinois.edu/). I also currently serve as a methods specialist for the [U.S. Office of Evaluation Sciences](https://oes.gsa.gov/team/miles-williams/). My primary research agenda centers on the political economy of foreign aid. In my dissertation, I study how the foreign policy goals countries pursue through their foreign aid allocations explain their strategic responses to each other as they allocate economic assistance to developing countries. To address these issues, I rely on various tools, from formal theory, to machine learning as well as classical econometric techniques. 
+Welcome to my academic website. I am a Ph.D. candidate studying International Relations in the Department of Political Science at the [University of Illinois at Urbana-Champaign](https://pol.illinois.edu/). I also serve as a methods specialist for the [U.S. Office of Evaluation Sciences](https://oes.gsa.gov/team/miles-williams/). My primary research agenda centers on the political economy of foreign aid. In my dissertation, I study how the foreign policy interests industrialized countries promote through their foreign aid allocations explain their strategic responses to each other as they target economic assistance to developing countries. To address this issue, I rely on various tools, from formal theory, to machine learning as well as classical econometric techniques. 
 
 In addition to my dissertation, I maintain a number of substantive and methodologically oriented research agendas. For the former, my research lies at the intersection of foreign policy, foreign aid, and multilateral development institutions. I also have applied text-as-data methods to study political communications by religious elites in collaboration with Ryan Burge (Eastern Illinois University). With respect to methods, my research emphasizes innovative applications of machine learning for covariate adjustment in observational data and extensions of model-based approaches to testing the empirical implications of theoretical models. 
 
@@ -14,6 +14,17 @@ In addition to my dissertation, I maintain a number of substantive and methodolo
 
 ## Research
 
+### Working Papers
+[Targeting Civil War: Intra-state Conflict and the Opportunity-cost of Foreign Aid](https://drive.google.com/file/d/1VvXKWfRHNoniKIT_C5DphOv-fZqRrnGi/view?usp=sharing). Submitted for review.
+
+### Works in Progress
+
+"Leveraging the Black Box: Regression Adjustment via Random Forests."
+
+"Strategic Multilateralism: International Development Cooperation and the World Bank."
+
+"Xinhua Coverage of Chinese Foreign Aid Allocations." With Lucie Lu
+
 ### Journal Articles
 [Gender in the Pulpit: The Differences in Speaking Style for Men and Women](http://ryanburge.net/wp-content/uploads/2019/06/JCR_Burge_Williams.pdf) (2019). With [Ryan Burge](http://ryanburge.net/)
 
@@ -25,23 +36,9 @@ In addition to my dissertation, I maintain a number of substantive and methodolo
 
 ["Illinois 10th Congressional District: Re-rematch in Chicago Suburbs."](https://link.springer.com/chapter/10.1007/978-3-319-58094-4_9) with Jeffrey Ashley. 2018. In *The Roads to Congress 2016*. Eds. Sean D. Foreman and Marcia L. Godwin. 
 
-### Working Papers
-[Targeting Civil War: Intra-state Conflict and the Opportunity-cost of Foreign Aid](https://drive.google.com/file/d/1VvXKWfRHNoniKIT_C5DphOv-fZqRrnGi/view?usp=sharing). Under review.
-
-[Xinhua Coverage of Chinese Foreign Aid Allocations](https://github.com/milesdwilliams15/Xinhwuan-News-Coverage-and-Chinese-Aid-Allocation/blob/master/draft1.pdf). with Lucie Lu.
-
-
-### Works in Progress
-
-"Leveraging the Black Box: Regression Adjustment via Random Forests."
-
-"Strategic Multilateralism: International Development Cooperation and the World Bank"
-
-
 ### Contributions to Technical Guidance
 
-["Reporting Statistical Results in Text and in Graphs"](https://oes.gsa.gov/assets/files/reporting-statistical-results.pdf) with Ryan T. Moore and Russ Burnett.
-
+["Reporting Statistical Results in Text and in Graphs"](https://oes.gsa.gov/assets/files/reporting-statistical-results.pdf). with Ryan T. Moore and Russ Burnett.
 
 ### Blogging
 I occasionally have contributed to [Religion in Public](https://religioninpublic.blog/)
