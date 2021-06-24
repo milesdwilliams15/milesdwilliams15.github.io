@@ -15,9 +15,11 @@ In addition to my dissertation, I maintain a number of substantive and methodolo
 ## Research
 
 ### Working Papers
-[Targeting Civil War: Intra-state Conflict and the Opportunity-cost of Foreign Aid](https://drive.google.com/file/d/1VvXKWfRHNoniKIT_C5DphOv-fZqRrnGi/view?usp=sharing). Submitted for review.
+"Targeting Civil War: Intra-state Conflict and the Opportunity-cost of Foreign Aid." Submitted for review (will make a copy available upon request).
 
 ### Works in Progress
+
+"Competition and Deference in the Political Economy of Foreign Aid: How Donor Interests and Recipient Need Shape Strategic Reactions in Aid Allocation."
 
 "Leveraging the Black Box: Regression Adjustment via Random Forests."
 
