@@ -14,8 +14,8 @@ In addition to my dissertation, I maintain a number of substantive and methodolo
     <li>Game Theory</li>
     <li>Religion in Politics</li>
 </details>
-  
-  <details><summary>Research</summary>
+
+<details><summary>Research</summary>
 
 ### Working Papers
 "Targeting Civil War: Intra-state Conflict and the Opportunity-cost of Foreign Aid." Submitted for review (will make a copy available upon request).
@@ -47,9 +47,10 @@ In addition to my dissertation, I maintain a number of substantive and methodolo
 
 ### Blogging
 I occasionally have contributed to [Religion in Public](https://religioninpublic.blog/)
-  </details>
 
-  <details><summary>R Packages</summary>
+</details>
+
+<details><summary>R Packages</summary>
     
 [`RFA`](https://github.com/milesdwilliams15/RFA) - Implements [random forest adjustment](https://rpubs.com/milesdwilliams15/rfa-vignette) (RFA). RFA is a method for partialing out the influence of confoudning covariates via random forests.
 
@@ -59,9 +60,9 @@ I occasionally have contributed to [Religion in Public](https://religioninpublic
   
 `oesr` (available soon, with Ryan T. Moore) - For visualizing the results from randomized controlled trials using the Office of Evluation Sciences' [recommended style guide](https://oes.gsa.gov/assets/files/reporting-statistical-results.pdf).
 
-  </details>
+</details>
 
-  <details><summary>Teaching</summary>
+<details><summary>Teaching</summary>
 
  - Intro to International Relations (2021), Independent Instructor.
  - Intro to Political Science (2017), Teaching Assistant for Konstantinos Kourtikakis.
@@ -70,4 +71,4 @@ I occasionally have contributed to [Religion in Public](https://religioninpublic
    - Integrals (2020)
    - Linear Regression (2021)
 
-  </details>
+</details>
