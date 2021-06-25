@@ -1,20 +1,21 @@
-* TOC
-{:toc}
 ## Welcome!
 Welcome to my academic website. I am a Ph.D. candidate studying International Relations in the Department of Political Science at the [University of Illinois at Urbana-Champaign](https://pol.illinois.edu/). I also serve as a methods specialist for the [U.S. Office of Evaluation Sciences](https://oes.gsa.gov/team/miles-williams/). My primary research agenda centers on the political economy of foreign aid. In my dissertation, I study how the foreign policy interests industrialized countries promote through their foreign aid allocations explain their strategic responses to each other as they target economic assistance to developing countries. To address this issue, I rely on various tools, from formal theory, to machine learning as well as classical econometric techniques. 
 
 In addition to my dissertation, I maintain a number of substantive and methodologically oriented research agendas. For the former, my research lies at the intersection of foreign policy, foreign aid, and multilateral development institutions. I also have applied text-as-data methods to study political communications by religious elites in collaboration with Ryan Burge (Eastern Illinois University). With respect to methods, my research emphasizes innovative applications of machine learning for covariate adjustment in observational data and extensions of model-based approaches to testing the empirical implications of theoretical models. 
 
-## Interests
+## Learn more about my...
 
-  - International Relations
-  - International Political Economy
-  - Foreign Aid
-  - Computational Methods
-  - Game Theory
-  - Religion in Politics
-
-## Research
+<details>
+  <summary> Interests </summary>
+  <ul><li>International Relations</li>
+    <li>International Political Economy</li>
+    <li>Foreign Aid</li>
+    <li>Computational Methods</li>
+    <li>Game Theory</li>
+    <li>Religion in Politics</li>
+</details>
+  
+  <details><summary>Research</summary>
 
 ### Working Papers
 "Targeting Civil War: Intra-state Conflict and the Opportunity-cost of Foreign Aid." Submitted for review (will make a copy available upon request).
@@ -46,15 +47,21 @@ In addition to my dissertation, I maintain a number of substantive and methodolo
 
 ### Blogging
 I occasionally have contributed to [Religion in Public](https://religioninpublic.blog/)
+  </details>
 
-### R Packages
+  <details><summary>R Packages</summary>
+    
+[`RFA`](https://github.com/milesdwilliams15/RFA) - Implements [random forest adjustment](https://rpubs.com/milesdwilliams15/rfa-vignette) (RFA). RFA is a method for partialing out the influence of confoudning covariates via random forests.
 
-  - [`RFA`](https://github.com/milesdwilliams15/RFA) - Implements [random forest adjustment](https://rpubs.com/milesdwilliams15/rfa-vignette) (RFA). RFA is a method for partialing out the influence of confoudning covariates via random forests.
-  - [`seerrr`](https://github.com/milesdwilliams15/seerrr) - Tools that simplify the process of doing computational power analysis.
-  - [`SARM`](https://github.com/milesdwilliams15/SARM) - For estimating a modified version of the Strategic Autoregressive Model developed by [Steinwand (2011)](https://www.cambridge.org/core/journals/political-analysis/article/estimating-freeriding-behavior-the-stratam-model/0CBD6176E53848732CEC2C151A491212).
-  - `oesr` (available soon, with Ryan T. Moore) - For visualizing the results from randomized controlled trials using the Office of Evluation Sciences' [recommended style guide](https://oes.gsa.gov/assets/files/reporting-statistical-results.pdf).
+[`seerrr`](https://github.com/milesdwilliams15/seerrr) - Tools that simplify the process of doing computational power analysis.
+  
+[`SARM`](https://github.com/milesdwilliams15/SARM) - For estimating a modified version of the Strategic Autoregressive Model developed by [Steinwand (2011)](https://www.cambridge.org/core/journals/political-analysis/article/estimating-freeriding-behavior-the-stratam-model/0CBD6176E53848732CEC2C151A491212).
+  
+`oesr` (available soon, with Ryan T. Moore) - For visualizing the results from randomized controlled trials using the Office of Evluation Sciences' [recommended style guide](https://oes.gsa.gov/assets/files/reporting-statistical-results.pdf).
 
-## Teaching
+  </details>
+
+  <details><summary>Teaching</summary>
 
  - Intro to International Relations (2021), Independent Instructor.
  - Intro to Political Science (2017), Teaching Assistant for Konstantinos Kourtikakis.
@@ -62,3 +69,5 @@ I occasionally have contributed to [Religion in Public](https://religioninpublic
    - Probability in R (2018-2020)
    - Integrals (2020)
    - Linear Regression (2021)
+
+  </details>
