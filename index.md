@@ -13,6 +13,7 @@ In addition to my dissertation, I maintain a number of substantive and methodolo
     <li>Computational Methods</li>
     <li>Game Theory</li>
     <li>Religion in Politics</li>
+
 </details>
 
 <details><summary>Research</summary>
