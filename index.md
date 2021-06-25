@@ -12,7 +12,7 @@ In addition to my dissertation, I maintain a number of substantive and methodolo
     <li>Foreign Aid</li>
     <li>Computational Methods</li>
     <li>Game Theory</li>
-    <li>Religion in Politics</li>
+    <li>Religion in Politics</li></ul>
 
 </details>
 
