@@ -7,7 +7,7 @@ In addition to my dissertation, I maintain a number of substantive and methodolo
 
 <p>
 <details>
-  <summary> Interests </summary><br/>
+  <summary>Interests </summary><br/>
   <ul><li>International Relations</li>
     <li>International Political Economy</li>
     <li>Foreign Aid</li>
