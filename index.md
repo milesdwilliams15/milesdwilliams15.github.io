@@ -6,7 +6,7 @@ In addition to my dissertation, I maintain a number of substantive and methodolo
 ### Learn more about my...
 
 <details>
-  <summary>Interests </summary>
+  <summary>Interests</summary>
   <ul><li>International Relations</li>
     <li>International Political Economy</li>
     <li>Foreign Aid</li>
@@ -70,7 +70,7 @@ In addition to my dissertation, I maintain a number of substantive and methodolo
 I occasionally have contributed to <a href="https://religioninpublic.blog/">Religion in Public</a>.
 </p>
   </details>
-  
+  </p>
 </details>
 
 <details><summary>R Packages</summary>
