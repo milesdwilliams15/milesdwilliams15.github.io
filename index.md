@@ -18,13 +18,13 @@ In addition to my dissertation, I maintain a number of substantive and methodolo
 
 <details><summary>Research</summary><br/>
 
-  <details><summary><h3>Working Papers</h3></summary>
+  <details><summary>Working Papers</summary>
 
 <p>
 "Targeting Civil War: Intra-state Conflict and the Opportunity-cost of Foreign Aid." Submitted for review (will make a copy available upon request).
     </p></details>
 
-  <details><summary><h3>Works in Progress</h3></summary>
+  <details><summary>Works in Progress</summary>
 
 <p>
 "Competition and Deference in the Political Economy of Foreign Aid: How Donor Interests and Recipient Need Shape Strategic Reactions in Aid Allocation."
@@ -40,7 +40,7 @@ In addition to my dissertation, I maintain a number of substantive and methodolo
 </p>
   </details>
   
-  <details><summary><h3>Journal Articles</h3></summary>
+  <details><summary>Journal Articles</summary>
 
 <p>
 <a href = "http://ryanburge.net/wp-content/uploads/2019/06/JCR_Burge_Williams.pdf"> "Gender in the Pulpit: The Differences in Speaking Style for Men and Women."</a> (2019). With Ryan Burge
@@ -50,7 +50,7 @@ In addition to my dissertation, I maintain a number of substantive and methodolo
 </p>
   </details>
   
-  <details><summary><h3>Book Chapters</h3></summary>
+  <details><summary>Book Chapters</summary>
 <p>
 <a href= "https://www.academia.edu/44436453/World_Bank">"World Bank."</a> with Matthew Winters. Forthcoming. In <i>Handbook of International Orgnaizations: Theories, Concepts, and Empirical Insights</i>. Eds. Katja Freistein, Julia Leininger, and Silke Weinlich.
 </p>
@@ -59,20 +59,20 @@ In addition to my dissertation, I maintain a number of substantive and methodolo
 </p>
   </details>
   
-  <details><summary><h3>Contributions to Technical Guidance</h3></summary>
+  <details><summary>Contributions to Technical Guidance</summary>
 <p>
 <a href="https://oes.gsa.gov/assets/files/reporting-statistical-results.pdf">"Reporting Statistical Results in Text and in Graphs"</a>. with Ryan T. Moore and Russ Burnett.
 </p>
   </details>
 
-  <details><summary><h3>Blogging</h3></summary>
+  <details><summary>Blogging</summary>
 <p>
 I occasionally have contributed to <a href="https://religioninpublic.blog/">Religion in Public</a>.
 </p>
   </details>
 </details>
 
-<details><summary>R Packages</summary><br/>
+<details><summary>R Packages</summary>
     <p>
   <a href = "https://github.com/milesdwilliams15/RFA">RFA</a> - Implements <a href = "https://rpubs.com/milesdwilliams15/rfa-vignette">random forest adjustment</a> (RFA). RFA is a method for partialing out the influence of confoudning covariates via random forests.
   </p>
