@@ -17,76 +17,69 @@ In addition to my dissertation, I maintain a number of substantive and methodolo
 </details>
 
 <details><summary>Research</summary>
-<p>
   <details><summary>Working Papers</summary>
-
-<p>
-"Targeting Civil War: Intra-state Conflict and the Opportunity-cost of Foreign Aid." Submitted for review (will make a copy available upon request).
-    </p></details>
-
+    <p>
+      "Targeting Civil War: Intra-state Conflict and the Opportunity-cost of Foreign Aid." Submitted for review (will make a copy available upon request).
+    </p>
+  </details>
+  
   <details><summary>Works in Progress</summary>
-
-<p>
-"Competition and Deference in the Political Economy of Foreign Aid: How Donor Interests and Recipient Need Shape Strategic Reactions in Aid Allocation."
-</p>
-<p>
-"Leveraging the Black Box: Regression Adjustment via Random Forests."
-</p>
-<p>
-"Strategic Multilateralism: International Development Cooperation and the World Bank."
-</p>
-<p>
-"Xinhua Coverage of Chinese Foreign Aid Allocations." With Lucie Lu
-</p>
+    <p>
+      "Competition and Deference in the Political Economy of Foreign Aid: How Donor Interests and Recipient Need Shape Strategic Reactions in Aid Allocation."
+    </p>
+    <p>
+      "Leveraging the Black Box: Regression Adjustment via Random Forests."
+    </p>
+    <p>
+      "Strategic Multilateralism: International Development Cooperation and the World Bank."
+    </p>
+    <p>
+      "Xinhua Coverage of Chinese Foreign Aid Allocations." With Lucie Lu
+    </p>
   </details>
   
   <details><summary>Journal Articles</summary>
-
-<p>
-<a href = "http://ryanburge.net/wp-content/uploads/2019/06/JCR_Burge_Williams.pdf"> "Gender in the Pulpit: The Differences in Speaking Style for Men and Women."</a> (2019). With Ryan Burge
-</p>
-<p>
-<a href = "https://brill.com/view/journals/rmdc/8/3/article-p309_309.xml">"Is Social Media a Digital Pulpit? How Evangelical Leaders Use Twitter to Encourage the Faithful and Publicize Their Work"</a> (2019). With Ryan Burge
-</p>
+    <p>
+      <a href = "http://ryanburge.net/wp-content/uploads/2019/06/JCR_Burge_Williams.pdf"> "Gender in the Pulpit: The Differences in Speaking Style for Men and Women."</a> (2019). With Ryan Burge
+    </p>
+    <p>
+      <a href = "https://brill.com/view/journals/rmdc/8/3/article-p309_309.xml">"Is Social Media a Digital Pulpit? How Evangelical Leaders Use Twitter to Encourage the Faithful and Publicize Their Work"</a> (2019). With Ryan Burge
+    </p>
   </details>
   
   <details><summary>Book Chapters</summary>
-<p>
-<a href= "https://www.academia.edu/44436453/World_Bank">"World Bank."</a> with Matthew Winters. Forthcoming. In <i>Handbook of International Orgnaizations: Theories, Concepts, and Empirical Insights</i>. Eds. Katja Freistein, Julia Leininger, and Silke Weinlich.
-</p>
-<p>
-<a href = "https://link.springer.com/chapter/10.1007/978-3-319-58094-4_9">"Illinois 10th Congressional District: Re-rematch in Chicago Suburbs."</a> with Jeffrey Ashley. 2018. In <i>The Roads to Congress 2016</i>. Eds. Sean D. Foreman and Marcia L. Godwin. 
-</p>
+    <p>
+      <a href= "https://www.academia.edu/44436453/World_Bank">"World Bank."</a> with Matthew Winters. Forthcoming. In <i>Handbook of International Orgnaizations: Theories, Concepts, and Empirical Insights</i>. Eds. Katja Freistein, Julia Leininger, and Silke Weinlich.
+    </p>
+    <p>
+      <a href = "https://link.springer.com/chapter/10.1007/978-3-319-58094-4_9">"Illinois 10th Congressional District: Re-rematch in Chicago Suburbs."</a> with Jeffrey Ashley. 2018. In <i>The Roads to Congress 2016</i>. Eds. Sean D. Foreman and Marcia L. Godwin. 
+    </p>
   </details>
   
   <details><summary>Contributions to Technical Guidance</summary>
-<p>
-<a href="https://oes.gsa.gov/assets/files/reporting-statistical-results.pdf">"Reporting Statistical Results in Text and in Graphs"</a>. with Ryan T. Moore and Russ Burnett.
-</p>
+    <p>
+      <a href="https://oes.gsa.gov/assets/files/reporting-statistical-results.pdf">"Reporting Statistical Results in Text and in Graphs"</a>. with Ryan T. Moore and Russ Burnett.
+    </p>
   </details>
 
   <details><summary>Blogging</summary>
-<p>
-I occasionally have contributed to <a href="https://religioninpublic.blog/">Religion in Public</a>.
-</p>
-  </details>
-  </p>
-</details>
-
-<details><summary>R Packages</summary>
     <p>
-  <a href = "https://github.com/milesdwilliams15/RFA">RFA</a> - Implements <a href = "https://rpubs.com/milesdwilliams15/rfa-vignette">random forest adjustment</a> (RFA). RFA is a method for partialing out the influence of confoudning covariates via random forests.
-  </p>
-  
+I occasionally have contributed to <a href="https://religioninpublic.blog/">Religion in Public</a>.
+    </p>
+  </details>
+</details>
+<details><summary>R Packages</summary>
   <p>
-  <a href = "https://github.com/milesdwilliams15/seerrr">seerrr</a> - Tools that simplify the process of doing computational power analysis.
-  </p>
-  
-<p>
-  <a href = "https://github.com/milesdwilliams15/SARM">SARM</a> - For estimating a modified version of the Strategic Autoregressive Model developed by <a href = "https://www.cambridge.org/core/journals/political-analysis/article/estimating-freeriding-behavior-the-stratam-model/0CBD6176E53848732CEC2C151A491212">Steinwand (2011)</a>.
+    <a href = "https://github.com/milesdwilliams15/RFA">RFA</a> - Implements <a href = "https://rpubs.com/milesdwilliams15/rfa-vignette">random forest adjustment</a> (RFA). RFA is a method for partialing out the influence of confoudning covariates via random forests.
   </p>
   <p>
-oesr (available soon, with Ryan T. Moore) - For visualizing the results from randomized controlled trials using the Office of Evluation Sciences' <a href = "https://oes.gsa.gov/assets/files/reporting-statistical-results.pdf">recommended style guide</a>.
+    <a href = "https://github.com/milesdwilliams15/seerrr">seerrr</a> - Tools that simplify the process of doing computational power analysis.
+  </p>
+  <p>
+    <a href = "https://github.com/milesdwilliams15/SARM">SARM</a> - For estimating a modified version of the Strategic Autoregressive Model developed by <a href = "https://www.cambridge.org/core/journals/political-analysis/article/estimating-freeriding-behavior-the-stratam-model/0CBD6176E53848732CEC2C151A491212">Steinwand (2011)</a>.
+  </p>
+  <p>
+    oesr (available soon, with Ryan T. Moore) - For visualizing the results from randomized controlled trials using the Office of Evluation Sciences' <a href = "https://oes.gsa.gov/assets/files/reporting-statistical-results.pdf">recommended style guide</a>.
   </p>
 </details>
   
