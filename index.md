@@ -50,22 +50,22 @@ In addition to my dissertation, I maintain a number of substantive and methodolo
 
 <h3>Book Chapters</h3>
 <p>
-<a href= "https://www.academia.edu/44436453/World_Bank">"World Bank."</a> with Matthew Winters. Forthcoming. In *Handbook of International Orgnaizations: Theories, Concepts, and Empirical Insights*. Eds. Katja Freistein, Julia Leininger, and Silke Weinlich.
+<a href= "https://www.academia.edu/44436453/World_Bank">"World Bank."</a> with Matthew Winters. Forthcoming. In <i>Handbook of International Orgnaizations: Theories, Concepts, and Empirical Insights</i>. Eds. Katja Freistein, Julia Leininger, and Silke Weinlich.
 </p>
-["Illinois 10th Congressional District: Re-rematch in Chicago Suburbs."](https://link.springer.com/chapter/10.1007/978-3-319-58094-4_9) with Jeffrey Ashley. 2018. In *The Roads to Congress 2016*. Eds. Sean D. Foreman and Marcia L. Godwin. 
-
-
+<p>
+<a href = "https://link.springer.com/chapter/10.1007/978-3-319-58094-4_9">"Illinois 10th Congressional District: Re-rematch in Chicago Suburbs."</a> with Jeffrey Ashley. 2018. In <i>The Roads to Congress 2016</i>. Eds. Sean D. Foreman and Marcia L. Godwin. 
+</p>
 
 <h3>Contributions to Technical Guidance</h3>
-
-["Reporting Statistical Results in Text and in Graphs"](https://oes.gsa.gov/assets/files/reporting-statistical-results.pdf). with Ryan T. Moore and Russ Burnett.
-
+<p>
+<a href="https://oes.gsa.gov/assets/files/reporting-statistical-results.pdf">"Reporting Statistical Results in Text and in Graphs"</a>. with Ryan T. Moore and Russ Burnett.
+</p>
 
 
 <h3>Blogging</h3>
-
-I occasionally have contributed to [Religion in Public](https://religioninpublic.blog/)
-
+<p>
+I occasionally have contributed to <a href="https://religioninpublic.blog/">Religion in Public</a>.
+</p>
 </details>
 
 <details><summary>R Packages</summary><br/>
