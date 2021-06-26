@@ -58,7 +58,7 @@ In addition to my dissertation, I maintain a number of substantive and methodolo
     </p>
   </details>
   
-  <details><summary>Contributions to Technical Guidance</summary>
+  <details><summary>Contributions to Technical Guidance</summary><br>
     <p>
       <a href="https://oes.gsa.gov/assets/files/reporting-statistical-results.pdf">"Reporting Statistical Results in Text and in Graphs"</a>. with Ryan T. Moore and Russ Burnett.
     </p>
