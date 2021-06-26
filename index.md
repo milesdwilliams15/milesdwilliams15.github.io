@@ -66,7 +66,7 @@ In addition to my dissertation, I maintain a number of substantive and methodolo
 
   <details><summary>Blogging</summary>
     <p>
-I occasionally have contributed to <a href="https://religioninpublic.blog/">Religion in Public</a>.
+I occasionally have contributed to <a href="https://religioninpublic.blog/">Religion in Public</a>. <a href = "https://religioninpublic.blog/2021/01/21/white-conservative-religious-and-aid-skeptical/">In my latest contribution</a>, I discuss links between anti-immigrant attitudes among religious conservites in the U.S. and support for foreign aid spending.
     </p>
   </details>
 </details>
