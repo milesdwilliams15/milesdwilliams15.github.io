@@ -32,7 +32,7 @@ In addition to my dissertation, I maintain a number of substantive and methodolo
 
 "Xinhua Coverage of Chinese Foreign Aid Allocations." With Lucie Lu
 
-<h3>Journal Articles</h3>
+<h3>Journal Articles</h3><br>
 
 [Gender in the Pulpit: The Differences in Speaking Style for Men and Women](http://ryanburge.net/wp-content/uploads/2019/06/JCR_Burge_Williams.pdf) (2019). With [Ryan Burge](http://ryanburge.net/)
 
