@@ -6,7 +6,7 @@ In addition to my dissertation, I maintain a number of substantive and methodolo
 ### Learn more about my...
 
 <details>
-  <summary>Interests </summary><br/>
+  <summary>Interests </summary>
   <ul><li>International Relations</li>
     <li>International Political Economy</li>
     <li>Foreign Aid</li>
@@ -18,13 +18,13 @@ In addition to my dissertation, I maintain a number of substantive and methodolo
 
 <details><summary>Research</summary><br/>
 
-<h3>Working Papers</h3>
+  <details><summary><h3>Working Papers</h3></summary>
 
 <p>
 "Targeting Civil War: Intra-state Conflict and the Opportunity-cost of Foreign Aid." Submitted for review (will make a copy available upon request).
-</p>
+    </p></details>
 
-<h3>Works in Progress</h3>
+  <details><summary><h3>Works in Progress</h3></summary>
 
 <p>
 "Competition and Deference in the Political Economy of Foreign Aid: How Donor Interests and Recipient Need Shape Strategic Reactions in Aid Allocation."
@@ -38,8 +38,9 @@ In addition to my dissertation, I maintain a number of substantive and methodolo
 <p>
 "Xinhua Coverage of Chinese Foreign Aid Allocations." With Lucie Lu
 </p>
-
-<h3>Journal Articles</h3>
+  </details>
+  
+  <details><summary><h3>Journal Articles</h3></summary>
 
 <p>
 <a href = "http://ryanburge.net/wp-content/uploads/2019/06/JCR_Burge_Williams.pdf"> "Gender in the Pulpit: The Differences in Speaking Style for Men and Women."</a> (2019). With Ryan Burge
@@ -47,40 +48,48 @@ In addition to my dissertation, I maintain a number of substantive and methodolo
 <p>
 <a href = "https://brill.com/view/journals/rmdc/8/3/article-p309_309.xml">"Is Social Media a Digital Pulpit? How Evangelical Leaders Use Twitter to Encourage the Faithful and Publicize Their Work"</a> (2019). With Ryan Burge
 </p>
-
-<h3>Book Chapters</h3>
+  </details>
+  
+  <details><summary><h3>Book Chapters</h3></summary>
 <p>
 <a href= "https://www.academia.edu/44436453/World_Bank">"World Bank."</a> with Matthew Winters. Forthcoming. In <i>Handbook of International Orgnaizations: Theories, Concepts, and Empirical Insights</i>. Eds. Katja Freistein, Julia Leininger, and Silke Weinlich.
 </p>
 <p>
 <a href = "https://link.springer.com/chapter/10.1007/978-3-319-58094-4_9">"Illinois 10th Congressional District: Re-rematch in Chicago Suburbs."</a> with Jeffrey Ashley. 2018. In <i>The Roads to Congress 2016</i>. Eds. Sean D. Foreman and Marcia L. Godwin. 
 </p>
-
-<h3>Contributions to Technical Guidance</h3>
+  </details>
+  
+  <details><summary><h3>Contributions to Technical Guidance</h3></summary>
 <p>
 <a href="https://oes.gsa.gov/assets/files/reporting-statistical-results.pdf">"Reporting Statistical Results in Text and in Graphs"</a>. with Ryan T. Moore and Russ Burnett.
 </p>
+  </details>
 
-
-<h3>Blogging</h3>
+  <details><summary><h3>Blogging</h3></summary>
 <p>
 I occasionally have contributed to <a href="https://religioninpublic.blog/">Religion in Public</a>.
 </p>
+  </details>
 </details>
 
 <details><summary>R Packages</summary><br/>
-    
-[`RFA`](https://github.com/milesdwilliams15/RFA) - Implements [random forest adjustment](https://rpubs.com/milesdwilliams15/rfa-vignette) (RFA). RFA is a method for partialing out the influence of confoudning covariates via random forests.
-
-[`seerrr`](https://github.com/milesdwilliams15/seerrr) - Tools that simplify the process of doing computational power analysis.
+    <p>
+  <a href = "https://github.com/milesdwilliams15/RFA">RFA</a> - Implements <a href = "https://rpubs.com/milesdwilliams15/rfa-vignette">random forest adjustment</a> (RFA). RFA is a method for partialing out the influence of confoudning covariates via random forests.
+  </p>
   
-[`SARM`](https://github.com/milesdwilliams15/SARM) - For estimating a modified version of the Strategic Autoregressive Model developed by [Steinwand (2011)](https://www.cambridge.org/core/journals/political-analysis/article/estimating-freeriding-behavior-the-stratam-model/0CBD6176E53848732CEC2C151A491212).
+  <p>
+  <a href = "https://github.com/milesdwilliams15/seerrr>seerrr"</a> - Tools that simplify the process of doing computational power analysis.
+  </p>
   
-`oesr` (available soon, with Ryan T. Moore) - For visualizing the results from randomized controlled trials using the Office of Evluation Sciences' [recommended style guide](https://oes.gsa.gov/assets/files/reporting-statistical-results.pdf).
+<p>
+  <a href = "https://github.com/milesdwilliams15/SARM">SARM</a> - For estimating a modified version of the Strategic Autoregressive Model developed by <a href = "https://www.cambridge.org/core/journals/political-analysis/article/estimating-freeriding-behavior-the-stratam-model/0CBD6176E53848732CEC2C151A491212">Steinwand (2011)</a>.
+  </p>
+  <p>
+oesr (available soon, with Ryan T. Moore) - For visualizing the results from randomized controlled trials using the Office of Evluation Sciences' <a href = "https://oes.gsa.gov/assets/files/reporting-statistical-results.pdf">recommended style guide</a>.
 
 </details>
 
-<details><summary>Teaching</summary><br/>
+<details><summary>Teaching</summary>
 
  <ul><li>Intro to International Relations (2021), Independent Instructor.</li>
  <li>Intro to Political Science (2017), Teaching Assistant for Konstantinos Kourtikakis.</li>
