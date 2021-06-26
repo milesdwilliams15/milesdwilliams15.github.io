@@ -39,20 +39,19 @@ In addition to my dissertation, I maintain a number of substantive and methodolo
 "Xinhua Coverage of Chinese Foreign Aid Allocations." With Lucie Lu
 </p>
 
-<h3>Journal Articles</h3><br>
+<h3>Journal Articles</h3>
 
 <p>
-<a href = "http://ryanburge.net/wp-content/uploads/2019/06/JCR_Burge_Williams.pdf"> "Gender in the Pulpit: The Differences in Speaking Style for Men and Women."</a> (2019). With [Ryan Burge](http://ryanburge.net/)
+<a href = "http://ryanburge.net/wp-content/uploads/2019/06/JCR_Burge_Williams.pdf"> "Gender in the Pulpit: The Differences in Speaking Style for Men and Women."</a> (2019). With Ryan Burge
+</p>
+<p>
+<a href = "https://brill.com/view/journals/rmdc/8/3/article-p309_309.xml">"Is Social Media a Digital Pulpit? How Evangelical Leaders Use Twitter to Encourage the Faithful and Publicize Their Work"</a> (2019). With Ryan Burge
 </p>
 
-[Is Social Media a Digital Pulpit? How Evangelical Leaders Use Twitter to Encourage the Faithful and Publicize Their Work](https://brill.com/view/journals/rmdc/8/3/article-p309_309.xml) (2019). With [Ryan Burge](http://ryanburge.net/)
-
-
-
 <h3>Book Chapters</h3>
-
-["World Bank."](https://www.academia.edu/44436453/World_Bank) with Matthew Winters. Forthcoming. In *Handbook of International Orgnaizations: Theories, Concepts, and Empirical Insights*. Eds. Katja Freistein, Julia Leininger, and Silke Weinlich.
-
+<p>
+<a href= "https://www.academia.edu/44436453/World_Bank">"World Bank."</a> with Matthew Winters. Forthcoming. In *Handbook of International Orgnaizations: Theories, Concepts, and Empirical Insights*. Eds. Katja Freistein, Julia Leininger, and Silke Weinlich.
+</p>
 ["Illinois 10th Congressional District: Re-rematch in Chicago Suburbs."](https://link.springer.com/chapter/10.1007/978-3-319-58094-4_9) with Jeffrey Ashley. 2018. In *The Roads to Congress 2016*. Eds. Sean D. Foreman and Marcia L. Godwin. 
 
 
