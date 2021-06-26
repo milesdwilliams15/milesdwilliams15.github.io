@@ -70,6 +70,7 @@ In addition to my dissertation, I maintain a number of substantive and methodolo
 I occasionally have contributed to <a href="https://religioninpublic.blog/">Religion in Public</a>.
 </p>
   </details>
+  
 </details>
 
 <details><summary>R Packages</summary>
@@ -86,9 +87,8 @@ I occasionally have contributed to <a href="https://religioninpublic.blog/">Reli
   </p>
   <p>
 oesr (available soon, with Ryan T. Moore) - For visualizing the results from randomized controlled trials using the Office of Evluation Sciences' <a href = "https://oes.gsa.gov/assets/files/reporting-statistical-results.pdf">recommended style guide</a>.
-
+  </p>
 </details>
-<p>
   
 <details><summary>Teaching</summary>
 
