@@ -3,10 +3,11 @@ Welcome to my academic website. I am a Ph.D. candidate studying International Re
 
 In addition to my dissertation, I maintain a number of substantive and methodologically oriented research agendas. For the former, my research lies at the intersection of foreign policy, foreign aid, and multilateral development institutions. I also have applied text-as-data methods to study political communications by religious elites in collaboration with Ryan Burge (Eastern Illinois University). With respect to methods, my research emphasizes innovative applications of machine learning for covariate adjustment in observational data and extensions of model-based approaches to testing the empirical implications of theoretical models. 
 
-## Learn more about my...
+### Learn more about my...
 
+<p>
 <details>
-  <summary> Interests </summary>
+  <summary> Interests </summary><br/>
   <ul><li>International Relations</li>
     <li>International Political Economy</li>
     <li>Foreign Aid</li>
@@ -16,7 +17,7 @@ In addition to my dissertation, I maintain a number of substantive and methodolo
 
 </details>
 
-<details><summary>Research</summary>
+<details><summary>Research</summary><br/>
 
 ### Working Papers
 "Targeting Civil War: Intra-state Conflict and the Opportunity-cost of Foreign Aid." Submitted for review (will make a copy available upon request).
@@ -51,7 +52,7 @@ I occasionally have contributed to [Religion in Public](https://religioninpublic
 
 </details>
 
-<details><summary>R Packages</summary>
+<details><summary>R Packages</summary><br/>
     
 [`RFA`](https://github.com/milesdwilliams15/RFA) - Implements [random forest adjustment](https://rpubs.com/milesdwilliams15/rfa-vignette) (RFA). RFA is a method for partialing out the influence of confoudning covariates via random forests.
 
