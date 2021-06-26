@@ -6,3 +6,6 @@ body {
   font-size: 18px;
   padding: 20px
 }
+details > *:not(summary){
+  margin-left: 2em;
+}
