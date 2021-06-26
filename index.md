@@ -70,7 +70,7 @@ I occasionally have contributed to <a href="https://religioninpublic.blog/">Reli
     </p>
   </details>
 </details>
-<details><summary>R Packages</summary>
+<details><summary>R Packages</summary><br>
   <p>
     <a href = "https://github.com/milesdwilliams15/RFA">RFA</a> - Implements <a href = "https://rpubs.com/milesdwilliams15/rfa-vignette">random forest adjustment</a> (RFA). RFA is a method for partialing out the influence of confoudning covariates via random forests.
   </p>
@@ -85,7 +85,7 @@ I occasionally have contributed to <a href="https://religioninpublic.blog/">Reli
   </p>
 </details>
   
-<details><summary>Teaching</summary>
+<details><summary>Teaching</summary><br>
 
  <ul><li>Intro to International Relations (2021), Independent Instructor.</li>
  <li>Intro to Political Science (2017), Teaching Assistant for Konstantinos Kourtikakis.</li>
