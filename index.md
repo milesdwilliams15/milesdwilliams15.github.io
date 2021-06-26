@@ -16,11 +16,13 @@ In addition to my dissertation, I maintain a number of substantive and methodolo
 
 </details>
 
-<details><summary>Research</summary>
-  <details><summary>Working Papers</summary>
+<details>
+  <summary>Research</summary>
+  <details>
+    <summary>Working Papers</summary>
     <p>
       "Targeting Civil War: Intra-state Conflict and the Opportunity-cost of Foreign Aid." Submitted for review (will make a copy available upon request).
-    </p>
+      </p>
   </details>
   
   <details><summary>Works in Progress</summary>
