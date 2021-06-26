@@ -75,3 +75,4 @@ I occasionally have contributed to [Religion in Public](https://religioninpublic
    - Linear Regression (2021)
 
 </details>
+</p>
