@@ -16,8 +16,8 @@ In addition to my dissertation, I maintain a number of substantive and methodolo
 
 </details>
 
-<details><summary>Research</summary><br/>
-
+<details><summary>Research</summary>
+<p>
   <details><summary>Working Papers</summary>
 
 <p>
@@ -78,7 +78,7 @@ I occasionally have contributed to <a href="https://religioninpublic.blog/">Reli
   </p>
   
   <p>
-  <a href = "https://github.com/milesdwilliams15/seerrr>seerrr"</a> - Tools that simplify the process of doing computational power analysis.
+  <a href = "https://github.com/milesdwilliams15/seerrr">seerrr</a> - Tools that simplify the process of doing computational power analysis.
   </p>
   
 <p>
@@ -88,7 +88,8 @@ I occasionally have contributed to <a href="https://religioninpublic.blog/">Reli
 oesr (available soon, with Ryan T. Moore) - For visualizing the results from randomized controlled trials using the Office of Evluation Sciences' <a href = "https://oes.gsa.gov/assets/files/reporting-statistical-results.pdf">recommended style guide</a>.
 
 </details>
-
+<p>
+  
 <details><summary>Teaching</summary>
 
  <ul><li>Intro to International Relations (2021), Independent Instructor.</li>
