@@ -26,19 +26,24 @@ In addition to my dissertation, I maintain a number of substantive and methodolo
 
 <h3>Works in Progress</h3>
 
+<p>
 "Competition and Deference in the Political Economy of Foreign Aid: How Donor Interests and Recipient Need Shape Strategic Reactions in Aid Allocation."
-
+</p>
+<p>
 "Leveraging the Black Box: Regression Adjustment via Random Forests."
-
+</p>
+<p>
 "Strategic Multilateralism: International Development Cooperation and the World Bank."
-
+</p>
+<p>
 "Xinhua Coverage of Chinese Foreign Aid Allocations." With Lucie Lu
-
-
+</p>
 
 <h3>Journal Articles</h3><br>
 
-[Gender in the Pulpit: The Differences in Speaking Style for Men and Women](http://ryanburge.net/wp-content/uploads/2019/06/JCR_Burge_Williams.pdf) (2019). With [Ryan Burge](http://ryanburge.net/)
+<p>
+<a href = "http://ryanburge.net/wp-content/uploads/2019/06/JCR_Burge_Williams.pdf"> "Gender in the Pulpit: The Differences in Speaking Style for Men and Women."</a> (2019). With [Ryan Burge](http://ryanburge.net/)
+</p>
 
 [Is Social Media a Digital Pulpit? How Evangelical Leaders Use Twitter to Encourage the Faithful and Publicize Their Work](https://brill.com/view/journals/rmdc/8/3/article-p309_309.xml) (2019). With [Ryan Burge](http://ryanburge.net/)
 
