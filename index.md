@@ -3,7 +3,7 @@ Welcome to my academic website. I am a Ph.D. candidate studying International Re
 
 In addition to my dissertation, I maintain a number of substantive and methodologically oriented research agendas. For the former, my research lies at the intersection of foreign policy, foreign aid, and multilateral development institutions. I also have applied text-as-data methods to study political communications by religious elites in collaboration with Ryan Burge (Eastern Illinois University). With respect to methods, my research emphasizes innovative applications of machine learning for covariate adjustment in observational data and extensions of model-based approaches to testing the empirical implications of theoretical models. 
 
-### Learn more about my...
+#### Learn more about my...
 
 <details>
   <summary>Interests</summary>
