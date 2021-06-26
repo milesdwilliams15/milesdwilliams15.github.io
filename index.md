@@ -22,6 +22,8 @@ In addition to my dissertation, I maintain a number of substantive and methodolo
 
 "Targeting Civil War: Intra-state Conflict and the Opportunity-cost of Foreign Aid." Submitted for review (will make a copy available upon request).
 
+---
+
 <h3>Works in Progress</h3>
 
 "Competition and Deference in the Political Economy of Foreign Aid: How Donor Interests and Recipient Need Shape Strategic Reactions in Aid Allocation."
@@ -32,11 +34,15 @@ In addition to my dissertation, I maintain a number of substantive and methodolo
 
 "Xinhua Coverage of Chinese Foreign Aid Allocations." With Lucie Lu
 
+---
+
 <h3>Journal Articles</h3><br>
 
 [Gender in the Pulpit: The Differences in Speaking Style for Men and Women](http://ryanburge.net/wp-content/uploads/2019/06/JCR_Burge_Williams.pdf) (2019). With [Ryan Burge](http://ryanburge.net/)
 
 [Is Social Media a Digital Pulpit? How Evangelical Leaders Use Twitter to Encourage the Faithful and Publicize Their Work](https://brill.com/view/journals/rmdc/8/3/article-p309_309.xml) (2019). With [Ryan Burge](http://ryanburge.net/)
+
+---
 
 <h3>Book Chapters</h3>
 
@@ -44,9 +50,13 @@ In addition to my dissertation, I maintain a number of substantive and methodolo
 
 ["Illinois 10th Congressional District: Re-rematch in Chicago Suburbs."](https://link.springer.com/chapter/10.1007/978-3-319-58094-4_9) with Jeffrey Ashley. 2018. In *The Roads to Congress 2016*. Eds. Sean D. Foreman and Marcia L. Godwin. 
 
+---
+
 <h3>Contributions to Technical Guidance</h3>
 
 ["Reporting Statistical Results in Text and in Graphs"](https://oes.gsa.gov/assets/files/reporting-statistical-results.pdf). with Ryan T. Moore and Russ Burnett.
+
+---
 
 <h3>Blogging</h3>
 
