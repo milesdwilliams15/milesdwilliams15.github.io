@@ -6,7 +6,7 @@ In addition to my dissertation, I maintain a number of substantive and methodolo
 #### Learn more about my...
 
 <details>
-  <summary>Interests</summary>
+  <summary>Interests</summary><br>
   <ul><li>International Relations</li>
     <li>International Political Economy</li>
     <li>Foreign Aid</li>
@@ -17,15 +17,15 @@ In addition to my dissertation, I maintain a number of substantive and methodolo
 </details>
 
 <details>
-  <summary>Research</summary>
+  <summary>Research</summary><br>
   <details>
-    <summary>Working Papers</summary>
+    <summary>Working Papers</summary><br>
     <p>
       "Targeting Civil War: Intra-state Conflict and the Opportunity-cost of Foreign Aid." Submitted for review (will make a copy available upon request).
       </p>
   </details>
   
-  <details><summary>Works in Progress</summary>
+  <details><summary>Works in Progress</summary><br>
     <p>
       "Competition and Deference in the Political Economy of Foreign Aid: How Donor Interests and Recipient Need Shape Strategic Reactions in Aid Allocation."
     </p>
@@ -40,7 +40,7 @@ In addition to my dissertation, I maintain a number of substantive and methodolo
     </p>
   </details>
   
-  <details><summary>Journal Articles</summary>
+  <details><summary>Journal Articles</summary><br>
     <p>
       <a href = "http://ryanburge.net/wp-content/uploads/2019/06/JCR_Burge_Williams.pdf"> "Gender in the Pulpit: The Differences in Speaking Style for Men and Women."</a> (2019). With Ryan Burge
     </p>
@@ -49,7 +49,7 @@ In addition to my dissertation, I maintain a number of substantive and methodolo
     </p>
   </details>
   
-  <details><summary>Book Chapters</summary>
+  <details><summary>Book Chapters</summary><br>
     <p>
       <a href= "https://www.academia.edu/44436453/World_Bank">"World Bank."</a> with Matthew Winters. Forthcoming. In <i>Handbook of International Orgnaizations: Theories, Concepts, and Empirical Insights</i>. Eds. Katja Freistein, Julia Leininger, and Silke Weinlich.
     </p>
@@ -64,9 +64,9 @@ In addition to my dissertation, I maintain a number of substantive and methodolo
     </p>
   </details>
 
-  <details><summary>Blogging</summary>
+  <details><summary>Blogging</summary><br>
     <p>
-I occasionally have contributed to <a href="https://religioninpublic.blog/">Religion in Public</a>. <a href = "https://religioninpublic.blog/2021/01/21/white-conservative-religious-and-aid-skeptical/">In my latest contribution</a>, I discuss links between anti-immigrant attitudes among religious conservites in the U.S. and support for foreign aid spending.
+I occasionally have contributed to <a href="https://religioninpublic.blog/">Religion in Public</a>. <a href = "https://religioninpublic.blog/2021/01/21/white-conservative-religious-and-aid-skeptical/">In my latest contribution</a>, I discuss links between anti-immigrant attitudes among religious conservatives in the U.S. and support for foreign aid spending.
     </p>
   </details>
 </details>
