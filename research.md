@@ -1,6 +1,5 @@
 ---
 title: My Research
-layout: page
 permalink: /research/
 ---
 
