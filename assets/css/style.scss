@@ -56,7 +56,9 @@ pre {
   background-color: #267CB9;
   color: #FFFAFA;
 }
-
+.topnav a.active:hover {
+  background-color: #069;
+}
 .dropdown-content {
   display: none;
   position: absolute;
