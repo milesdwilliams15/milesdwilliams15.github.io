@@ -3,6 +3,16 @@ title: My Teaching
 permalink: /teaching/
 ---
 
+<div class="topnav">
+    <a class = "active" href="https://github.com/milesdwilliams15/job-market-materials/raw/main/cv.pdf"><strong>My CV</strong></a>
+    <!-- <a href="{{ site.github.owner_url }}"><strong>My GitHub</strong></a> -->
+    <a href = "https://milesdwilliams15.github.io/research/"><strong>Research</strong></a>
+    <a href = "https://milesdwilliams15.github.io/software/"><strong>Software</strong></a>
+    <a href = "https://milesdwilliams15.github.io/teaching/"><strong>Teaching</strong></a>
+    <a href = "{{ site.data.social-media.email.href }}{{ site.data.social-media.email.id }}" title="Email me"><strong>Email Me</strong></a>
+</div>  
+<br/>
+
 ## My Teaching
 
 In my teaching, I promote rigor and have high expectations for my students. I am equiped to teach courses in international relations, international and comparative 
