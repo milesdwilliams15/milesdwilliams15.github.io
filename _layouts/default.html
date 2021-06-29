@@ -31,6 +31,8 @@
           <li><a href="https://github.com/milesdwilliams15/job-market-materials/raw/main/cv.pdf"><strong>My CV</strong></a></li>
           <li><a href="{{ site.github.owner_url }}"><strong>My GitHub</strong></a></li>
           <li><a href="{{ site.data.social-media.email.href }}{{ site.data.social-media.email.id }}" title="Email me"><strong>Email Me</strong></a></li>
+        </ul>
+        <ul class="downloads">
           <li><a href = "https://milesdwilliams15.github.io/research/"><strong>Research</strong></a></li>
           <li><a href = "https://milesdwilliams15.github.io/software/"><strong>Software</strong></a></li>
           <li><a href = "https://milesdwilliams15.github.io/teaching/"><strong>Teaching</strong></a></li>
@@ -50,12 +52,6 @@
       {{ content }}
 
       </section>
-      <footer>
-        {% if site.github.is_project_page %}
-        <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
     {% if site.google_analytics %}
