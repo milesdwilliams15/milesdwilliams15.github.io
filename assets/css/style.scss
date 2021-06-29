@@ -40,7 +40,7 @@ pre {
 }
 .topnav a {
   float: left;
-  color: white;
+  color: #FFFAFA;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -53,7 +53,7 @@ pre {
 }
 
 .topnav a.active {
-  background-color: #069;
+  background-color: #267CB9;
   color: #FFFAFA;
 }
 
@@ -76,7 +76,7 @@ pre {
 }
 
 .dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: #069;
 }
 
 .dropdown:hover .dropdown-content {
