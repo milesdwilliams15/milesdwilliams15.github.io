@@ -1,5 +1,5 @@
 
-<div class="tobbar">
+<div class="topnav">
     <a href="https://github.com/milesdwilliams15/job-market-materials/raw/main/cv.pdf"><strong>My CV</strong></a>
     <!-- <a href="{{ site.github.owner_url }}"><strong>My GitHub</strong></a> -->
     <a href = "https://milesdwilliams15.github.io/research/"><strong>Research</strong></a>
