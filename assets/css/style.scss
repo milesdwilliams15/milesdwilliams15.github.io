@@ -19,7 +19,11 @@ pre {
   background: #FFFAFA
 }
 header {
-  background-color: darkorange;
+  background-color: lightgrey;
+  padding: 0px
+}
+.header a {
+  color: white;
 }
 .topnav {
   overflow: hidden;
