@@ -1,11 +1,11 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<div class="navbar">
-    <a class = "fas fa-file" href="https://github.com/milesdwilliams15/job-market-materials/raw/main/cv.pdf"><strong>My CV</strong></a>
+
+<div class="tobbar">
+    <a href="https://github.com/milesdwilliams15/job-market-materials/raw/main/cv.pdf"><strong>My CV</strong></a>
     <!-- <a href="{{ site.github.owner_url }}"><strong>My GitHub</strong></a> -->
     <a href = "https://milesdwilliams15.github.io/research/"><strong>Research</strong></a>
     <a href = "https://milesdwilliams15.github.io/software/"><strong>Software</strong></a>
     <a href = "https://milesdwilliams15.github.io/teaching/"><strong>Teaching</strong></a>
-    <a class = "fa fa-fw fa-envelope" href = "{{ site.data.social-media.email.href }}{{ site.data.social-media.email.id }}" title="Email me"><strong>Contact</strong></a>
+    <a href = "{{ site.data.social-media.email.href }}{{ site.data.social-media.email.id }}" title="Email me"><strong>Contact</strong></a>
 </div>  
 <br/>
 
