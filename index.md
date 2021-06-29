@@ -1,8 +1,4 @@
-<ul class = "downloads">
-  <li><a href = "https://milesdwilliams15.github.io/research/"><strong>Research</strong></a></li>
-  <li><a href = "https://milesdwilliams15.github.io/software/"><strong>Software</strong></a></li>
-  <li><a href = "https://milesdwilliams15.github.io/teaching/"><strong>Teaching</strong></a></li>
-</ul>
+
   
 
 ## Welcome!
