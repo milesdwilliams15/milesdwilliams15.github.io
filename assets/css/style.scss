@@ -18,37 +18,26 @@ a {
 pre {
   background: #FFFAFA
 }
-.sidenav {
-  height: 100%;
-  width: 160px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #267CB9;
-  overflow-x: hidden;
-  padding-top: 20px;
+.topnav {
+  overflow: hidden;
+  background-color: #333;
 }
 
-.sidenav a {
-  padding: 6px 8px 6px 16px;
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
-  font-size: 16px;
-  color: #FFFAFA;
-  display: block;
+  font-size: 17px;
 }
 
-.sidenav a:hover {
-  color: #777;
+.topnav a:hover {
+  background-color: #267CB9;
+  color: black;
 }
 
-.main {
-  margin-left: 160px; /* Same as the width of the sidenav */
-  font-size: 28px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+.topnav a.active {
+  background-color: #777;
+  color: white;
 }
