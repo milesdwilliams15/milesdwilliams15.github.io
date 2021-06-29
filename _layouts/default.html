@@ -27,10 +27,11 @@
         {% endif %}
 
         {% if site.github.is_user_page %}
-        <p class="view"><a href="https://github.com/milesdwilliams15/job-market-materials/raw/main/cv.pdf">Download My CV</a>
-  
-          <br><a class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile </a>
-          <br><a href="{{ site.data.social-media.email.href }}{{ site.data.social-media.email.id }}" title="Email me"> Email Me</a></p>
+        <ul class="downloads">
+          <li><a href="https://github.com/milesdwilliams15/job-market-materials/raw/main/cv.pdf">Download My CV</a></li>
+          <li><a href="{{ site.github.owner_url }}">View My GitHub Profile </a></li>
+          <li><a href="{{ site.data.social-media.email.href }}{{ site.data.social-media.email.id }}" title="Email me"> Email Me</a></li>
+        </ul>
         {% endif %}
 
         {% if site.show_downloads %}
