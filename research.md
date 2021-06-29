@@ -11,8 +11,7 @@ learning for covariate adjustment in observational data and extensions of model-
 
 Below, you'll find a summary of my interests, and of my research...
 
-<details open>
-  <summary>Interests</summary><br>
+### Interests
   <ul><li>International Relations</li>
     <li>International Political Economy</li>
     <li>Foreign Aid</li>
@@ -20,10 +19,7 @@ Below, you'll find a summary of my interests, and of my research...
     <li>Game Theory</li>
     <li>Religion in Politics</li></ul>
 
-</details>
-
-<details>
-  <summary>Research</summary><br>
+### Research
   <details>
     <summary>Working Papers</summary><br>
     <p>
@@ -75,4 +71,3 @@ Below, you'll find a summary of my interests, and of my research...
 I occasionally have contributed to <a href="https://religioninpublic.blog/">Religion in Public</a>. <a href = "https://religioninpublic.blog/2021/01/21/white-conservative-religious-and-aid-skeptical/">In my latest contribution</a>, I discuss links between anti-immigrant attitudes among religious conservatives in the U.S. and support for foreign aid spending.
     </p>
   </details>
-</details>
