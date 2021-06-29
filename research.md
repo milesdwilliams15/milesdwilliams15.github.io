@@ -2,6 +2,7 @@
 title: My Research
 permalink: /research/
 ---
+## My Research
 
 In addition to my dissertation, I maintain a number of substantive and methodologically oriented research agendas. For the former, my research lies at the 
 intersection of foreign policy, foreign aid, and multilateral development institutions. I also have applied text-as-data methods to study political communications 
@@ -10,7 +11,7 @@ learning for covariate adjustment in observational data and extensions of model-
 
 Below, you'll find a summary of my interests, and of my research...
 
-<details>
+<details open>
   <summary>Interests</summary><br>
   <ul><li>International Relations</li>
     <li>International Political Economy</li>
