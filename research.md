@@ -4,16 +4,16 @@ permalink: /research/
 ---
 
 <div class="topnav">
-    <a class="active" href="https://milesdwilliams15.github.io/"><strong>Home</strong>
-    <a href="https://github.com/milesdwilliams15/job-market-materials/raw/main/cv.pdf"><strong>My CV</strong>
-    <a href="{{ site.github.owner_url }}"><strong>My GitHub</strong>
-    <a href = "{{ site.data.social-media.email.href }}{{ site.data.social-media.email.id }}" title="Email me"><strong>Contact</strong>
+    <a class="active" href="https://milesdwilliams15.github.io/"><strong>Home</strong></a>
+    <a href="https://github.com/milesdwilliams15/job-market-materials/raw/main/cv.pdf"><strong>My CV</strong></a>
+    <a href="{{ site.github.owner_url }}"><strong>My GitHub</strong></a>
+    <a href = "{{ site.data.social-media.email.href }}{{ site.data.social-media.email.id }}" title="Email me"><strong>Contact</strong></a>
     <div class="dropdown">
         <button class="dropbtn"><strong>About</strong> <i class="fa fa-caret-down"></i></button>
         <div class="dropdown-content">
-            <a href = "https://milesdwilliams15.github.io/research/"><strong>Research</strong>
-            <a href = "https://milesdwilliams15.github.io/software/"><strong>Software</strong>
-            <a href = "https://milesdwilliams15.github.io/teaching/"><strong>Teaching</strong>
+            <a href = "https://milesdwilliams15.github.io/research/"><strong>Research</strong></a>
+            <a href = "https://milesdwilliams15.github.io/software/"><strong>Software</strong></a>
+            <a href = "https://milesdwilliams15.github.io/teaching/"><strong>Teaching</strong></a>
         </div>
     </div>
 </div>  
