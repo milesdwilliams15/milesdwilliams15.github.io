@@ -37,54 +37,43 @@ Below, you'll find a summary of my interests, and of my research...
     <li>Religion in Politics</li></ul>
 
 ### Research
-  <details>
-    <summary>Working Papers</summary><br>
-    <p>
-      "Targeting Civil War: Intra-state Conflict and the Opportunity-cost of Foreign Aid." Submitted for review (will make a copy available upon request).
-      </p>
-  </details>
   
-  <details><summary>Works in Progress</summary><br>
-    <p>
-      "Competition and Deference in the Political Economy of Foreign Aid: How Donor Interests and Recipient Need Shape Strategic Reactions in Aid Allocation."
-    </p>
-    <p>
-      "Leveraging the Black Box: Regression Adjustment via Random Forests."
-    </p>
-    <p>
-      "Strategic Multilateralism: International Development Cooperation and the World Bank."
-    </p>
-    <p>
-      "Xinhua Coverage of Chinese Foreign Aid Allocations." With Lucie Lu
-    </p>
-  </details>
-  
-  <details><summary>Journal Articles</summary><br>
-    <p>
-      <a href = "http://ryanburge.net/wp-content/uploads/2019/06/JCR_Burge_Williams.pdf"> "Gender in the Pulpit: The Differences in Speaking Style for Men and Women."</a> (2019). With Ryan Burge
-    </p>
-    <p>
-      <a href = "https://brill.com/view/journals/rmdc/8/3/article-p309_309.xml">"Is Social Media a Digital Pulpit? How Evangelical Leaders Use Twitter to Encourage the Faithful and Publicize Their Work"</a> (2019). With Ryan Burge
-    </p>
-  </details>
-  
-  <details><summary>Book Chapters</summary><br>
-    <p>
-      <a href= "https://www.academia.edu/44436453/World_Bank">"World Bank."</a> with Matthew Winters. Forthcoming. In <i>Handbook of International Orgnaizations: Theories, Concepts, and Empirical Insights</i>. Eds. Katja Freistein, Julia Leininger, and Silke Weinlich.
-    </p>
-    <p>
-      <a href = "https://link.springer.com/chapter/10.1007/978-3-319-58094-4_9">"Illinois 10th Congressional District: Re-rematch in Chicago Suburbs."</a> with Jeffrey Ashley. 2018. In <i>The Roads to Congress 2016</i>. Eds. Sean D. Foreman and Marcia L. Godwin. 
-    </p>
-  </details>
-  
-  <details><summary>Contributions to Technical Guidance</summary><br>
-    <p>
-      <a href="https://oes.gsa.gov/assets/files/reporting-statistical-results.pdf">"Reporting Statistical Results in Text and in Graphs"</a>. with Ryan T. Moore and Russ Burnett.
-    </p>
-  </details>
+**Political Economy of Aid**
+    
+"Targeting Civil War: Intra-state Conflict and the Opportunity-cost of Foreign Aid." (Revise and Resubmit) [[pdf]](https://github.com/milesdwilliams15/Foreign-Aid-and-Civil-War/raw/master/aid_and_civil_war_writing_sample.pdf).
+      
+"A Strategic Political Economy of Aid" (Working Paper) [[pdf]](https://github.com/milesdwilliams15/Rivalry-and-Collective-Action-in-International-Development/raw/master/theory_writing_sample.pdf)
+    
+"Competition and Buck-Passing in the Political Economy of Aid" (Working Paper) [[pdf]](https://github.com/milesdwilliams15/Rivalry-and-Collective-Action-in-International-Development/raw/master/empirical_writing_sample.pdf)
+    
+"Strategic Multilateralism: International Development Cooperation and the World Bank." (Work-in-Progress)
+    
+"Xinhua Coverage of Chinese Foreign Aid Allocations." With Lucie Lu (Work-in-Progress)
+    
 
-  <details><summary>Blogging</summary><br>
-    <p>
+**Machine Learning and Text-as-Data**
+    
+"Leveraging the Black Box: Regression Adjustment via Random Forests." (Working Paper) [[pdf]](https://github.com/milesdwilliams15/rfa-paper/raw/main/draft2.pdf)
+
+"Gender in the Pulpit: The Differences in Speaking Style for Men and Women."</a> (2019). With Ryan Burge (Journal Article) [[pdf]](http://ryanburge.net/wp-content/uploads/2019/06/JCR_Burge_Williams.pdf)
+    
+"Is Social Media a Digital Pulpit? How Evangelical Leaders Use Twitter to Encourage the Faithful and Publicize Their Work"</a> (2019). With Ryan Burge (Journal Article) [[journal site]](https://brill.com/view/journals/rmdc/8/3/article-p309_309.xml)
+    
+
+**Book Chapters**
+    
+"World Bank." with Matthew Winters. Forthcoming in the <i>Handbook of International Orgnaizations: Theories, Concepts, and Empirical Insights</i>. Eds. Katja Freistein, Julia Leininger, and Silke Weinlich. [[pdf]](https://www.academia.edu/44436453/World_Bank)
+    
+"Illinois 10th Congressional District: Re-rematch in Chicago Suburbs." with Jeffrey Ashley. 2018. In <i>The Roads to Congress 2016</i>. Eds. Sean D. Foreman and Marcia L. Godwin. [[book site]](https://link.springer.com/chapter/10.1007/978-3-319-58094-4_9)
+    
+
+**Technical**
+  
+"Reporting Statistical Results in Text and in Graphs"</a>. with Ryan T. Moore and Russ Burnett. [[pdf]](https://oes.gsa.gov/assets/files/reporting-statistical-results.pdf)
+    
+
+**Blogging**
+    
 I occasionally have contributed to <a href="https://religioninpublic.blog/">Religion in Public</a>. <a href = "https://religioninpublic.blog/2021/01/21/white-conservative-religious-and-aid-skeptical/">In my latest contribution</a>, I discuss links between anti-immigrant attitudes among religious conservatives in the U.S. and support for foreign aid spending.
-    </p>
-  </details>
+    
+  
