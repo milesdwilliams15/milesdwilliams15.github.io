@@ -4,16 +4,16 @@ permalink: /research/
 ---
 
 <div class="topnav">
-    <a class="active" href="https://milesdwilliams15.github.io/"><strong>Home</strong></a>
-    <a href="https://github.com/milesdwilliams15/job-market-materials/raw/main/cv.pdf"><strong>My CV</strong></a>
-    <a href="{{ site.github.owner_url }}"><strong>My GitHub</strong></a>
-    <a href = "{{ site.data.social-media.email.href }}{{ site.data.social-media.email.id }}" title="Email me"><strong>Contact</strong></a>
+    <a class="active" href="https://milesdwilliams15.github.io/"><strong>Home</strong>
+    <a href="https://github.com/milesdwilliams15/job-market-materials/raw/main/cv.pdf"><strong>My CV</strong>
+    <a href="{{ site.github.owner_url }}"><strong>My GitHub</strong>
+    <a href = "{{ site.data.social-media.email.href }}{{ site.data.social-media.email.id }}" title="Email me"><strong>Contact</strong>
     <div class="dropdown">
         <button class="dropbtn"><strong>About</strong> <i class="fa fa-caret-down"></i></button>
         <div class="dropdown-content">
-            <a href = "https://milesdwilliams15.github.io/research/"><strong>Research</strong></a>
-            <a href = "https://milesdwilliams15.github.io/software/"><strong>Software</strong></a>
-            <a href = "https://milesdwilliams15.github.io/teaching/"><strong>Teaching</strong></a>
+            <a href = "https://milesdwilliams15.github.io/research/"><strong>Research</strong>
+            <a href = "https://milesdwilliams15.github.io/software/"><strong>Software</strong>
+            <a href = "https://milesdwilliams15.github.io/teaching/"><strong>Teaching</strong>
         </div>
     </div>
 </div>  
@@ -55,9 +55,9 @@ Below, you'll find a summary of my interests, and of my research...
     
 "Leveraging the Black Box: Regression Adjustment via Random Forests." (Working Paper) [[pdf]](https://github.com/milesdwilliams15/rfa-paper/raw/main/draft2.pdf)
 
-"Gender in the Pulpit: The Differences in Speaking Style for Men and Women."</a> (2019). With Ryan Burge (Journal Article) [[pdf]](http://ryanburge.net/wp-content/uploads/2019/06/JCR_Burge_Williams.pdf)
+"Gender in the Pulpit: The Differences in Speaking Style for Men and Women." (2019). With Ryan Burge (Journal Article) [[pdf]](http://ryanburge.net/wp-content/uploads/2019/06/JCR_Burge_Williams.pdf)
     
-"Is Social Media a Digital Pulpit? How Evangelical Leaders Use Twitter to Encourage the Faithful and Publicize Their Work"</a> (2019). With Ryan Burge (Journal Article) [[journal site]](https://brill.com/view/journals/rmdc/8/3/article-p309_309.xml)
+"Is Social Media a Digital Pulpit? How Evangelical Leaders Use Twitter to Encourage the Faithful and Publicize Their Work" (2019). With Ryan Burge (Journal Article) [[journal site]](https://brill.com/view/journals/rmdc/8/3/article-p309_309.xml)
     
 
 **Book Chapters**
@@ -69,11 +69,11 @@ Below, you'll find a summary of my interests, and of my research...
 
 **Technical**
   
-"Reporting Statistical Results in Text and in Graphs"</a>. with Ryan T. Moore and Russ Burnett. [[pdf]](https://oes.gsa.gov/assets/files/reporting-statistical-results.pdf)
+"Reporting Statistical Results in Text and in Graphs". with Ryan T. Moore and Russ Burnett. [[pdf]](https://oes.gsa.gov/assets/files/reporting-statistical-results.pdf)
     
 
 **Blogging**
     
-I occasionally have contributed to <a href="https://religioninpublic.blog/">Religion in Public</a>. <a href = "https://religioninpublic.blog/2021/01/21/white-conservative-religious-and-aid-skeptical/">In my latest contribution</a>, I discuss links between anti-immigrant attitudes among religious conservatives in the U.S. and support for foreign aid spending.
+I occasionally have contributed to <a href="https://religioninpublic.blog/">Religion in Public. <a href = "https://religioninpublic.blog/2021/01/21/white-conservative-religious-and-aid-skeptical/">In my latest contribution, I discuss links between anti-immigrant attitudes among religious conservatives in the U.S. and support for foreign aid spending.
     
   
