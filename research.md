@@ -33,7 +33,7 @@ Below, you'll find a summary of my interests, and of my research...
     <li>Political Economy</li>
     <li>Foreign Aid</li>
     <li>Political Methodology</li>
-    <li>Game Theory</li>
+    <li>Game Theory</li></ul>
 
 ### Research
   
