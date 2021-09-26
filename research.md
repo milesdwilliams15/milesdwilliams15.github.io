@@ -30,11 +30,10 @@ Below, you'll find a summary of my interests, and of my research...
 
 ### Interests
   <ul><li>International Relations</li>
-    <li>International Political Economy</li>
+    <li>Political Economy</li>
     <li>Foreign Aid</li>
-    <li>Computational Methods</li>
+    <li>Political Methodology</li>
     <li>Game Theory</li>
-    <li>Religion in Politics</li></ul>
 
 ### Research
   
@@ -46,9 +45,9 @@ Below, you'll find a summary of my interests, and of my research...
     
 "Competition and Buck-Passing in the Political Economy of Aid" (Working Paper) [[pdf]](https://github.com/milesdwilliams15/Rivalry-and-Collective-Action-in-International-Development/raw/master/empirical_writing_sample.pdf)
     
+"Xinhua Coverage of Chinese Foreign Aid Allocations." With Lucie Lu (Work-in-Progress) [[See live updates on GitHub]](https://github.com/milesdwilliams15/chinese_media_and_foreign_aid)
+
 "Strategic Multilateralism: International Development Cooperation and the World Bank." (Work-in-Progress)
-    
-"Xinhua Coverage of Chinese Foreign Aid Allocations." With Lucie Lu (Work-in-Progress)
     
 
 **Machine Learning and Text-as-Data**
@@ -74,6 +73,6 @@ Below, you'll find a summary of my interests, and of my research...
 
 **Blogging**
     
-I occasionally have contributed to <a href="https://religioninpublic.blog/">Religion in Public. <a href = "https://religioninpublic.blog/2021/01/21/white-conservative-religious-and-aid-skeptical/">In my latest contribution, I discuss links between anti-immigrant attitudes among religious conservatives in the U.S. and support for foreign aid spending.
+I occasionally have contributed to [Religion in Public](https://religioninpublic.blog/). [In my latest contribution](https://religioninpublic.blog/2021/01/21/white-conservative-religious-and-aid-skeptical/), I discuss links between anti-immigrant attitudes among religious conservatives in the U.S. and support for foreign aid spending.
     
   
