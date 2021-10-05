@@ -47,7 +47,7 @@ Below, you'll find a summary of my interests, and of my research...
     
 "Xinhua Coverage of Chinese Foreign Aid Allocations." With Lucie Lu (Work-in-Progress) [[See live updates on GitHub]](https://github.com/milesdwilliams15/chinese_media_and_foreign_aid)
 
-"Strategic Multilateralism: International Development Cooperation and the World Bank." [[See live updates on GitHub]](https://github.com/milesdwilliams15/Strategic-Multilateralism)
+"Strategic Multilateralism: International Development Cooperation and the World Bank." (Work-in-Progress)
     
 
 **Machine Learning and Text-as-Data**
