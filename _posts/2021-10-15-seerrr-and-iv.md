@@ -1,6 +1,7 @@
 ---
 title: "Explaining Instrumental Variables with `seerrr`"
 author: "Miles"
+date: 2021-10-15
 excerpt: "How to use tools in the `seerrr` package to demonstrate the problem of endogeneity and the power of IV."
 layout: post
 categories: ["R", "Methods"]
