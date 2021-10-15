@@ -21,7 +21,7 @@ First, let's address *endogeneity*. What is it?
 
 This question is best answered by way of an illustration
 
-![why](C:/Users/Miles/Documents/My Website/milesdwilliams15.github.io/assets/images/a-dag.jpg){:class="img-responsive"}
+![why](/assets/images/a-dag.jpg){:class="img-responsive"}
 
 ```{R}
 library(seerrr) 
