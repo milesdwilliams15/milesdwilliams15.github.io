@@ -1,18 +1,34 @@
 ---
-title: "Explaining Instrumental Variables with `seerrr`"
+title: "Explaining Endogeneity and Instrumental Variables with seerrr"
 author: "Miles"
 date: 2021-10-15
-excerpt: "How to use tools in the `seerrr` package to demonstrate the problem of endogeneity and the power of IV."
 layout: post
 categories: ["R", "Methods"]
+editor_options: 
+  chunk_output_type: inline
+output: 
+  html_document: 
+    df_print: kable
 ---
 
-```r
+Building intuition for what *endogeneity* is and how *instrumental variables* (IV) help us to deal with it is hard. I find that running a simulation helps me to better grasp what the problem is, what it implies, and how IV helps.
+
+To that end, tools in the [`seerrr`](https://github.com/milesdwilliams15/seerrr) package for `R` make devising, implementing, and summarizing such a simulation quite easy. So I'm using this post as an opportunity to do two things: (1) to provide some programmatic intuition for conceptualizing the problem of endogenous variables and (2) to illustrate the convenience of using `seerrr` for this, and by extension, other simulation-based analyses.
+
+## Endogeneity
+
+First, let's address *endogeneity*. What is it? 
+
+This question is best answered by way of an illustration
+
+![why](C:/Users/Miles/Documents/My Website/milesdwilliams15.github.io/assets/images/a-dag.jpg){:class="img-responsive"}
+
+```{R}
 library(seerrr) 
 ```
 
 
-```r
+```{R}
 sim <- simulate(
   N = 1000,
   U = rnorm(N),
@@ -23,7 +39,7 @@ sim <- simulate(
 ```
 
 
-```r
+```{R}
 lm_est <- estimate(
   data = sim, Y ~ X, "X", se_type = "stata"
 )
@@ -34,7 +50,7 @@ iv_est <- estimate(
 ```
 
 
-```r
+```{R}
 bind_rows(
   evaluate(iv_est, truth = 1, what = "bias") %>%
     mutate(estimator = "IV"),
@@ -42,4 +58,5 @@ bind_rows(
     mutate(estimator = "OLS")
 )
 ```
+
 
