@@ -1,13 +1,9 @@
 ---
 title: "Explaining Instrumental Variables with `seerrr`"
 author: "Miles"
-date: "`r Sys.Date()`"
 excerpt: "How to use tools in the `seerrr` package to demonstrate the problem of endogeneity and the power of IV."
 layout: post
-categories:
-  - R
-  - seerrr
-  - Methodology
+categories: ["R", "Methods"]
 ---
 
 ```r
