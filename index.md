@@ -2,6 +2,7 @@
 <div class="topnav">
     <a class="active" href="https://milesdwilliams15.github.io/"><strong>Home</strong></a>
     <a href="https://github.com/milesdwilliams15/job-market-materials/raw/main/cv.pdf"><strong>CV</strong></a>
+    <a href="https://milesdwilliams15.github.io/blog/"><strong>Blog</strong></a>
     <a href="{{ site.github.owner_url }}"><strong>GitHub</strong></a>
     <a href = "{{ site.data.social-media.email.href }}{{ site.data.social-media.email.id }}" title="Email me"><strong>Email</strong></a>
     <div class="dropdown">
