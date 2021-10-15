@@ -1,7 +1,5 @@
 ---
 title: "Explaining Instrumental Variables with `seerrr`"
-output:
-  md_document
 author: "Miles"
 date: "`r Sys.Date()`"
 excerpt: "How to use tools in the `seerrr` package to demonstrate the problem of endogeneity and the power of IV."
