@@ -28,31 +28,31 @@ output:
 </div>  
 <br/>
 
-Building intuition for what *endogeneity* is and how *instrumental variables* (IV) help us to deal with it is hard. I find that running a simulation helps me to better grasp what the problem is, what it implies, and how IV helps.
+Building intuition for what *endogeneity* is and how *instrumental variables* (IV) help us deal with it is hard. I find that running a simulation helps me better grasp what the problem is, what it implies, and how IV helps.
 
-To that end, tools in the [`seerrr`](https://github.com/milesdwilliams15/seerrr) package for `R` make devising, implementing, and summarizing such a simulation quite easy. So I'm using this post as an opportunity to do two things: (1) to provide some programmatic intuition for conceptualizing the problem of endogenous variables and (2) to illustrate the convenience of using `seerrr` for this, and by extension, other simulation-based analyses.
+To that end, tools in the [`seerrr`](https://github.com/milesdwilliams15/seerrr) package for `R` make devising, implementing, and summarizing such a simulation quite easy. So I'm using this post as an opportunity to do two things: (1) to provide some programmatic intuition for conceptualizing the problem of endogenous variables and (2) to put in a shameless plug for the convenience of using `seerrr` for doing this, and by extension, other simulation-based analyses.
 
 
 ## Endogeneity
 
 First, let's address *endogeneity*. What is it? 
 
-This question is best answered by way of an illustration. Enter *a DAG*...
+This question is best answered by way of an illustration. Enter [*the DAG*](https://en.wikipedia.org/wiki/Directed_acyclic_graph)...
 
 ![](/assets/images/a-dag.jpg){:class="img-responsive"}
 
-The above image depicts a causal relationship among four variables, only three of which we can observe and two of which we want to estimate the causal relationship between. 
+The above figure illustrates a causal relationship among four variables, only three of which we can observe and two of which we want to estimate the causal relationship between. 
 
 *Y* is our outcome of interest and *X* our explanatory variable. We would like to be able to identify the causal effect of *X* on *Y*. The problem, however, is that both *X* and *Y* are affected by some unobserved variable *U*. Unless we can account for *U* in our analysis our estimate of the effect of *X* on *Y* will not be accurate.
 
-Enter our *instrumental variable*, *Z*. As the DAG above illustrates, while *Y* and *X* are both affected by *U*, only *X* is affected by *Z*. We can leverage this fact to our advantage. Since *Z* has no effect on *Y*, but only on *X*, and is also independent of unobserved confounding *U*, we can isolate variation in *X* explained by *Z* to identify the causal effect of *X* on *Y*.
+Enter our *instrumental variable*, *Z*. As the DAG above illustrates, while *Y* and *X* are both affected by *U*, only *X* is affected by *Z* and *Z* is independent of *U*. We can leverage this fact to our advantage. By isolating variation in *X* explained by *Z* we can identify the causal effect of *X* on *Y*. *That's pretty cool!*
 
-When we do this, we're estimating what's called a *local average treatment effect* (LATE). This is in lieu of an *average treatment effect* (ATE). The "local" modifier alerts us to the fact that the effect of *X* on *Y* is identified by zeroing in on cases in our data that are best explained by the instrument *Z*.
+Now this approach comes with a necessary trade-off in generalizability. When we take an instrumental variables appraoch we're estimating what's called a *local average treatment effect* (LATE). This is in lieu of an *average treatment effect* (ATE). The "local" modifier alerts us to the fact that the effect of *X* on *Y* is identified by zeroing in on cases in our data that are best explained by the instrument *Z*. This loss of generalizability, while regrettable, comes with the reward that we can identify the causal relationship of interest.
 
 
 ## A Simulation with seerrr
 
-If the above is still too abstract, a simulation in `R` may help to make things more concrete. Programming usually helps me grasp concepts that otherwise go over my head by letting me "tangibly" play with said concept.
+If the above is still too abstract, a simulation in `R` may help to make things more concrete (at least for R-users that are programmatically minded). Programming usually helps me grasp concepts that otherwise go over my head by letting me "tangibly" play with said concepts. Below, I do so using tools from the `seerrr` package.
 
 First, I attach the `seerrr` package by writing:
 
