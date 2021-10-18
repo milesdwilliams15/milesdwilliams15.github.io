@@ -59,6 +59,11 @@ Below, you'll find a summary of my interests, and of my research...
 "Gender in the Pulpit: The Differences in Speaking Style for Men and Women." (2019). With Ryan Burge (Journal Article) [[pdf]](http://ryanburge.net/wp-content/uploads/2019/06/JCR_Burge_Williams.pdf)
     
 "Is Social Media a Digital Pulpit? How Evangelical Leaders Use Twitter to Encourage the Faithful and Publicize Their Work" (2019). With Ryan Burge (Journal Article) [[journal site]](https://brill.com/view/journals/rmdc/8/3/article-p309_309.xml)
+
+
+**Policy Evaluation**
+
+"How Local Discretion Addresses Competing Allocation Goals: The Case of Small Business Relief Funding." with Rebecca Johson, Heather Barry Kappes, Crystal C. Hall, Simone Zhang, and Elizabeth Bell.
     
 
 **Book Chapters**
