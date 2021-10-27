@@ -11,22 +11,7 @@ output:
     df_print: kable
 ---
 
-<div class="topnav">
-    <a class="active" href="https://milesdwilliams15.github.io/"><strong>Home</strong></a>
-    <a href="https://github.com/milesdwilliams15/job-market-materials/raw/main/cv.pdf"><strong>CV</strong></a>
-    <a href="https://milesdwilliams15.github.io/blog/"><strong>Blog</strong></a>
-    <a href="{{ site.github.owner_url }}"><strong>GitHub</strong></a>
-    <a href = "{{ site.data.social-media.email.href }}{{ site.data.social-media.email.id }}" title="Email me"><strong>Email</strong></a>
-    <div class="dropdown">
-        <button class="dropbtn"><strong>About</strong> <i class="fa fa-caret-down"></i></button>
-        <div class="dropdown-content">
-            <a href = "https://milesdwilliams15.github.io/research/"><strong>Research</strong></a>
-            <a href = "https://milesdwilliams15.github.io/software/"><strong>Software</strong></a>
-            <a href = "https://milesdwilliams15.github.io/teaching/"><strong>Teaching</strong></a>
-        </div>
-    </div>
-</div>  
-<br/>
+[**Back to Blog**]("https://milesdwilliams15.github.io/blog/")
 
 Building intuition for what *endogeneity* is and how *instrumental variables* (IV) help us deal with it is hard. I find that running a simulation helps me better grasp what the problem is, what it implies, and how IV helps.
 
@@ -146,3 +131,5 @@ evaluate(iv_est, truth = 1, what = "bias")
 Bias is much improved! (And, notice that coverage is right back where it should be.) Because `Z` is a strong predictor of `X` and is exogenous, we can use it to localize variation in `X` that's explained by `Z` to reliably identify `X`'s effect on `Y`. By doing this, all the variation in `X` that is explained by the confounding influence of `U` is eliminated. This leaves only the exogenous variation in `X` caused by `Z` for us to leverage to reliably estimate its effect on `Y`.
 
 That's IV and how to illustrate it with `seerrr`!
+
+[**Back to Blog**]("https://milesdwilliams15.github.io/blog/")

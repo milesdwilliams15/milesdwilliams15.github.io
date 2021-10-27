@@ -15,6 +15,8 @@ categories:
   - Jekyll
 ---
 
+[**Back to Blog**](%22https://milesdwilliams15.github.io/blog/%22)
+
 I love working with R Markdown. It makes writing articles and putting
 together materials easy, especially when those documents include
 statistical analysis or data visualizations. It turns out, I can use R
@@ -58,17 +60,37 @@ by specifying:
       rmarkdown::render(inputFile, encoding = encoding, output_dir = "../_posts") })
 
 I can keep the raw .Rmd file in one directory so that the only files
-storred in the `_posts` directory are the actual blog posts I want to
+stored in the `_posts` directory are the actual blog posts I want to
 publish on my site.
 
 Then, all I need to do is knit the document and push the changes to
 [GitHub](https://github.com/milesdwilliams15/milesdwilliams15.github.io).
 *Voila*, I have a blog post that also renders output from R code inline
-just as seemlessly as it would be for writting a pdf!
+just as seamlessly as it would be for writing a pdf!
 
-For instance, below is the boilerplate example text and R script you get
-when you open a .Rmd file in RStudio, with everything rendered just as
-it should be:
+***But, there is a caveat!*** I had to do two more things to make
+everything work. First, I needed to set by working directory to the
+`_source` directory where my .Rmd file lives. Next, I had to update my
+`setup` code chunk to specify where to pull rendered figures from:
+
+    base_dir <- "~/milesdwilliams15.github.io/" # i.e. where the jekyll blog is on the hard drive.
+    base_url <- "/" # keep as is
+    fig_path <- "_posts/2021-27-15-rmarkdown-and-blogging_files/" # customize to heart's content, I 'spose.
+
+    knitr::opts_knit$set(base.dir = base_dir, base.url = base_url)
+    knitr::opts_chunk$set(fig.path = fig_path,
+                          cache.path = '../cache/',
+                          message=FALSE, warning=FALSE,
+                          cache = TRUE) 
+
+Otherwise, figures won’t show up because the knitted .md file will set
+the file paths locally—which is no good, no good at all.
+
+However, once all of that has been sorted out, making blogging with
+RMarkdown work is as simple has pressing “Knit.” And everything should
+render just like it would in a knitted pdf or html. For instance, below
+is the boilerplate example text and R script you get when you open a
+.Rmd file in RStudio, with everything rendered just as it should be:
 
 ## R Markdown
 
@@ -100,3 +122,5 @@ You can also embed plots, for example:
 
 Note that the `echo = FALSE` parameter was added to the code chunk to
 prevent printing of the R code that generated the plot.
+
+[**Back to Blog**](%22https://milesdwilliams15.github.io/blog/%22)
