@@ -15,7 +15,7 @@ categories:
   - Jekyll
 ---
 
-[**Back to Blog**](%22https://milesdwilliams15.github.io/blog/%22)
+[**Back to Blog**](https://milesdwilliams15.github.io/blog/)
 
 I love working with R Markdown. It makes writing articles and putting
 together materials easy, especially when those documents include
@@ -123,4 +123,4 @@ You can also embed plots, for example:
 Note that the `echo = FALSE` parameter was added to the code chunk to
 prevent printing of the R code that generated the plot.
 
-[**Back to Blog**](%22https://milesdwilliams15.github.io/blog/%22)
+[**Back to Blog**](https://milesdwilliams15.github.io/blog/)

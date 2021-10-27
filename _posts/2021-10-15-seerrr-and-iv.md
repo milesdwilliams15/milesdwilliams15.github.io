@@ -11,7 +11,7 @@ output:
     df_print: kable
 ---
 
-[**Back to Blog**]("https://milesdwilliams15.github.io/blog/")
+[**Back to Blog**](https://milesdwilliams15.github.io/blog/)
 
 Building intuition for what *endogeneity* is and how *instrumental variables* (IV) help us deal with it is hard. I find that running a simulation helps me better grasp what the problem is, what it implies, and how IV helps.
 
@@ -132,4 +132,4 @@ Bias is much improved! (And, notice that coverage is right back where it should 
 
 That's IV and how to illustrate it with `seerrr`!
 
-[**Back to Blog**]("https://milesdwilliams15.github.io/blog/")
+[**Back to Blog**](https://milesdwilliams15.github.io/blog/)
