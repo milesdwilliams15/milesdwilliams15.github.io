@@ -1,20 +1,3 @@
----
-title: Using R Markdown to Create Posts
-output:
-  md_document:
-    variant: gfm
-    preserve_yaml: TRUE
-knit: (function(inputFile, encoding) {
-  rmarkdown::render(inputFile, encoding = encoding, output_dir = "../_posts") })
-author: "Miles Williams"
-date: "2021-10-27"
-excerpt: "Writing posts with R Markdown"
-layout: post
-categories:
-  - R Markdown
-  - Jekyll
----
-
 [Back to Blog](https://milesdwilliams15.github.io/blog/)
 
 I love working with R Markdown. It makes writing articles and putting
