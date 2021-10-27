@@ -15,7 +15,7 @@ categories:
   - Jekyll
 ---
 
-[**Back to Blog**](https://milesdwilliams15.github.io/blog/)
+[Back to Blog](https://milesdwilliams15.github.io/blog/)
 
 I love working with R Markdown. It makes writing articles and putting
 together materials easy, especially when those documents include
@@ -118,9 +118,9 @@ summary(cars)
 
 You can also embed plots, for example:
 
-![](/_posts/2021-27-15-rmarkdown-and-blogging_files/pressure-1.png)<!-- -->
+![](/_posts/2021-27-15-rmarkdown-and-blogging_files/figure-gfm/pressure-1.png)<!-- -->
 
 Note that the `echo = FALSE` parameter was added to the code chunk to
 prevent printing of the R code that generated the plot.
 
-[**Back to Blog**](https://milesdwilliams15.github.io/blog/)
+[Back to Blog](https://milesdwilliams15.github.io/blog/)
