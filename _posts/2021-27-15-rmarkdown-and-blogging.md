@@ -1,3 +1,20 @@
+---
+title: Using R Markdown to Create Posts
+output:
+  md_document:
+    variant: gfm
+    preserve_yaml: TRUE
+knit: (function(inputFile, encoding) {
+  rmarkdown::render(inputFile, encoding = encoding, output_dir = "../_posts") })
+author: "Miles Williams"
+date: "2021-10-27"
+excerpt: "Writing posts with R Markdown"
+layout: post
+categories:
+  - R Markdown
+  - Jekyll
+---
+
 [Back to Blog](https://milesdwilliams15.github.io/blog/)
 
 I love working with R Markdown. It makes writing articles and putting
@@ -101,7 +118,9 @@ summary(cars)
 
 You can also embed plots, for example:
 
-![](https://github.com/milesdwilliams15/milesdwilliams15.github.io/blob/master/_posts/2021-27-15-rmarkdown-and-blogging_files/figure-gfm/pressure-1.png?raw=true)
+![](/_posts/2021-27-15-rmarkdown-and-blogging_files/figure-gfm/pressure-1.png)<!-- -->
+
+![](../_posts/2021-27-15-rmarkdown-and-blogging_files/figure-gfm/pressure-1.png)
 
 Note that the `echo = FALSE` parameter was added to the code chunk to
 prevent printing of the R code that generated the plot.
