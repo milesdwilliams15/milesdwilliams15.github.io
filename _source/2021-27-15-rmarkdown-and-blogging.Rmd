@@ -32,11 +32,11 @@ knitr::opts_chunk$set(fig.path = fig_path,
 ```
 
 
-I love working with R Markdown. It makes writing articles and putting together materials easy, especially when those documents include statistical analysis or data visualizations. It turns out, I can use R Markdown to write blog posts, too.
+I love working with R Markdown. It makes writing articles and putting together instructional materials easy, especially when they include statistical analysis or data visualizations. It turns out, I can use R Markdown to write blog posts, too.
 
-I stumbled onto this post by [Steven Miller](http://svmiller.com/blog/2019/08/two-helpful-rmarkdown-jekyll-tips/) from 2019 that provides a nice summary of how to do this. I wanted to see how it worked myself, so I tried it out in writing this post.
+I stumbled onto a helpful post by [Steven Miller](http://svmiller.com/blog/2019/08/two-helpful-rmarkdown-jekyll-tips/) from 2019 that provides a nice summary of how to do this. I wanted to see how it worked myself, so I tried it out in writing this post.
 
-To make it work I simply created a `_source` directory in the RStudio project I use for my website. In that directory, I created and saved a .Rmd file for this particular post. Following Steven's instructions, I specified the YAML as follows:
+To make it work I simply created a `_source` directory in the RStudio project I use for my website. In that directory, I created and saved a .Rmd file for this particular post. At the top of that file, I specified the YAML as follows:
 
 
     ---
@@ -57,7 +57,7 @@ To make it work I simply created a `_source` directory in the RStudio project I 
     ---
 
 
-The key to making this work is the settings for `knit`. Usually, when you knit a .Rmd file to an html or pdf the knitted version is storred in the same working directory as the raw .Rmd file. I never put together that you could modify where to store the knitted version. For sites hosted by Jekyll (like mine), blog posts go in a `_posts` directory. So, by specifying:
+The key to making this work is modifying the file path for `knit`. Usually, when knitting a .Rmd file to an html or pdf the knitted version is stored in the same working directory as the raw .Rmd file. I never put together that one could customize where to store the knitted version. For sites hosted by Jekyll (like mine), blog posts go in a `_posts` directory. So, by specifying:
 
 
     knit: (function(inputFile, encoding) {
@@ -66,13 +66,13 @@ The key to making this work is the settings for `knit`. Usually, when you knit a
 
 I can keep the raw .Rmd file in one directory so that the only files stored in the `_posts` directory are the actual blog posts I want to publish on my site.
 
-Then, all I need to do is knit the document and push the changes to [GitHub](https://github.com/milesdwilliams15/milesdwilliams15.github.io). *Voila*, I have a blog post that also renders output from R code inline just as seamlessly as it would be for writing a pdf! 
+Then, all I need to do is knit the document and push the changes to [GitHub](https://github.com/milesdwilliams15/milesdwilliams15.github.io). *Voila*, I have a blog post that also renders output from R code inline just as seamlessly as it would for any other document. 
 
-***But, there is a caveat!*** I had to do two more things to make everything work. First, I needed to set by working directory to the `_source` directory where my .Rmd file lives. Next, I had to update my `setup` code chunk to specify where to pull rendered figures from:
+***But, there is a caveat!*** I had to do two more things to make everything work. First, I needed to set my working directory to the `_source` directory where my .Rmd file lives. Next, I had to update my `setup` code chunk to specify where to pull rendered figures from:
 
-    base_dir <- "~/milesdwilliams15.github.io/" # i.e. where the jekyll blog is on the hard drive.
-    base_url <- "/" # keep as is
-    fig_path <- "_posts/2021-27-15-rmarkdown-and-blogging_files/" # customize to heart's content, I 'spose.
+    base_dir <- "~/My Website/milesdwilliams15.github.io/" # i.e. where the jekyll blog is on the hard drive.
+    base_url <- "/" 
+    fig_path <- "assets/images/" 
     
     knitr::opts_knit$set(base.dir = base_dir, base.url = base_url)
     knitr::opts_chunk$set(fig.path = fig_path,
@@ -80,9 +80,9 @@ Then, all I need to do is knit the document and push the changes to [GitHub](htt
                           message=FALSE, warning=FALSE,
                           cache = TRUE) 
 
-Otherwise, figures won't show up because the knitted .md file will set the file paths locally---which is no good, no good at all. 
+If the above isn't specified, figures produced in R chunks won't appear in the actual blog post because the knitted .md file will contain local file paths to the generated images by default---which is no good, no good at all. 
 
-However, once all of that has been sorted out, making blogging with RMarkdown work is as simple has pressing "Knit." And everything should render just like it would in a knitted pdf or html. For instance, below is the boilerplate example text and R script you get when you open a .Rmd file in RStudio, with everything rendered just as it should be:
+Once all of that has been sorted out, making blogging with R Markdown work is as simple has pressing "Knit." Everything should render just like it would in a knitted pdf or html. For instance, below is the boilerplate example text and R script you get when you open a .Rmd file in RStudio, with everything rendered just as it should be:
 
 
 ## R Markdown
