@@ -20,9 +20,9 @@ categories:
 
 ```{r setup, include=FALSE, cache=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-base_dir <- "~/milesdwilliams15.github.io/" # i.e. where the jekyll blog is on the hard drive.
+base_dir <- "~/My Website/milesdwilliams15.github.io/" # i.e. where the jekyll blog is on the hard drive.
 base_url <- "/" # keep as is
-fig_path <- "_posts/2021-27-15-rmarkdown-and-blogging_files/figure-gfm/" # customize to heart's content, I 'spose.
+fig_path <- "assets/images/" # customize to heart's content, I 'spose.
 
 knitr::opts_knit$set(base.dir = base_dir, base.url = base_url)
 knitr::opts_chunk$set(fig.path = fig_path,
@@ -103,7 +103,7 @@ You can also embed plots, for example:
 plot(pressure)
 ```
 
-![](/assets/images/a-dag.jpg)
+![](/assets/images/pressure-1.png)
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
 
