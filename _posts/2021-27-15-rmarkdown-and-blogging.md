@@ -101,7 +101,7 @@ summary(cars)
 
 You can also embed plots, for example:
 
-![](/assets/images/a-dag.jpg)
+![](https://github.com/milesdwilliams15/milesdwilliams15.github.io/blob/master/_posts/2021-27-15-rmarkdown-and-blogging_files/figure-gfm/pressure-1.png?raw=true)
 
 Note that the `echo = FALSE` parameter was added to the code chunk to
 prevent printing of the R code that generated the plot.
