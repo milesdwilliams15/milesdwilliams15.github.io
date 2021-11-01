@@ -1,1 +1,15 @@
 base
+dplyr
+tibble
+purrr
+ggplot2
+estimatr
+fabricatr
+foreach
+seerrr
+tidyverse
+tidyr
+readr
+stringr
+forcats
+kableExtra
