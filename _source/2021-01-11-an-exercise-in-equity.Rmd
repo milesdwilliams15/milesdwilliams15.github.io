@@ -65,9 +65,7 @@ This is a weighty question, and I make no pretense to know what the morally righ
 
 Rather, I think this exercise is best suited to clarifying the trade-offs between equity and efficiency so that we have a benchmark against which to evaluate different distributional approaches.
 
-In particular, consider four set-ups. First, suppose the organization giving out awards decides to implement a lottery. However, in designing this lottery, it may choose whether to institute a *fair* lottery where each business has an equal likelihood of getting an award, or else the organization may choose to implement one of three *weighted* lotteries where businesses receive differential likelihoods of being awarded depending on some set of criteria. For one lottery, the criterion is based on how much a business benefits from an award:
-$$\dot{\pi_i} = \Delta\pi_i = \pi_i^a - \pi_i^n.$$
-The next assigns weights based on the anticipated likelihood of survival with an ward: $\pi_i^a$. The final weighted lottery is based on the likelihood of business failure without an award: $1 - \pi_i^n$.
+In particular, consider four set-ups. First, suppose the organization giving out awards decides to implement a lottery. However, in designing this lottery, it may choose whether to institute a *fair* lottery where each business has an equal likelihood of getting an award, or else the organization may choose to implement one of three *weighted* lotteries where businesses receive differential likelihoods of being awarded depending on some set of criteria. For one lottery, the criterion is based on how much a business benefits from an award:$\pi_i^a - \pi_i^n.$ The next assigns weights based on the anticipated likelihood of survival with an ward: $\pi_i^a$. The final weighted lottery is based on the likelihood of business failure without an award: $1 - \pi_i^n$.
 
 For the fair lottery, each business's probability of receiving an award is simply:
 $$\alpha_i^\text{fair} = M / N.$$
@@ -75,12 +73,12 @@ This is because there are $M$ available awards and $N$ total businesses. Say $N 
 
 For each of the weighted lotteries, weights are assigned that are proportional to the criteria defined above. Respectively:
 
-  - selection on improvement (SOI): $\omega_i \propto \dot{\pi}_i$;
+  - selection on improvement (SOI): $\omega_i \propto \pi_i^a - \pi_i^n$;
   - selection on survival (SOS): $\omega_i \propto \pi_i^a$;
   - selection on failure (SOF): $\omega_i \propto 1 - \pi_i^n$.
   
 For each set of weights, the probability of an award is then defined as
-$$\alpha_i = \frac{\omega_i}{\sum_{i = 1}^N \omega_i}M.$$
+$$\alpha_i = M \omega_i/\sum_{i = 1}^N \omega_i.$$
 Now, there is a slight technical problem with the above. This formulation is simply the weighted average of awards received per business in successive lotteries. While these are constructed such that no more than $M$ awards will ever be disbursed, it is possible in theory for some businesses to receive more than one award. We could take a number of approaches to putting a ceiling on the weights to avoid this happening, but in the simulation to follow this isn't an issue.\footnote{It's always good to save a little something for another day I suppose.}
 
 Now, with these lotteries defined, in the next section I illustrate the implications of these alternative approaches. I do so with a special eye towards not only efficiency vs. equity, but also disproportional benefits to *underserved* vs. *non-underserved* businesses. The latter are not explicit categories in my model but are nonetheless real-world characteristics of businesses that we might imagine (and that do) affect survival with and without financial support. Minority, women, veteran, and disabled owned businesses have been highlighted as particularly susceptible to negative shocks induced by the Covid-19 pandemic. For this reason, ensuring such businesses have access to pandemic relief has been a concern for both researchers and policymakers. While the highly stylized model presented here does not explicitly factor in such back-ground characteristics, we can easily imagine that businesses with a lower probability of survival without a loan are analogous to underserved businesses. By summarizing how different lotteries systematically benefit or neglect these businesses we can gain intuitions for how underserved status might be associated with disproportionate inclusion or exclusion from financial support in applied settings.

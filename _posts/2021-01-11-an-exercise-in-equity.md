@@ -110,8 +110,8 @@ each business has an equal likelihood of getting an award, or else the
 organization may choose to implement one of three *weighted* lotteries
 where businesses receive differential likelihoods of being awarded
 depending on some set of criteria. For one lottery, the criterion is
-based on how much a business benefits from an award:
-$$\\dot{\\pi\_i} = \\Delta\\pi\_i = \\pi\_i^a - \\pi\_i^n.$$
+based on how much a business benefits from an
+award:*π*<sub>*i*</sub><sup>*a*</sup> − *π*<sub>*i*</sub><sup>*n*</sup>.
 The next assigns weights based on the anticipated likelihood of survival
 with an ward: *π*<sub>*i*</sub><sup>*a*</sup>. The final weighted
 lottery is based on the likelihood of business failure without an award:
@@ -128,14 +128,14 @@ For each of the weighted lotteries, weights are assigned that are
 proportional to the criteria defined above. Respectively:
 
 -   selection on improvement (SOI):
-    *ω*<sub>*i*</sub> ∝ *π̇*<sub>*i*</sub>;
+    *ω*<sub>*i*</sub> ∝ *π*<sub>*i*</sub><sup>*a*</sup> − *π*<sub>*i*</sub><sup>*n*</sup>;
 -   selection on survival (SOS):
     *ω*<sub>*i*</sub> ∝ *π*<sub>*i*</sub><sup>*a*</sup>;
 -   selection on failure (SOF):
     *ω*<sub>*i*</sub> ∝ 1 − *π*<sub>*i*</sub><sup>*n*</sup>.
 
 For each set of weights, the probability of an award is then defined as
-$$\\alpha\_i = \\frac{\\omega\_i}{\\sum\_{i = 1}^N \\omega\_i}M.$$
+$$\\alpha\_i = M \\omega\_i/\\sum\_{i = 1}^N \\omega\_i.$$
 Now, there is a slight technical problem with the above. This
 formulation is simply the weighted average of awards received per
 business in successive lotteries. While these are constructed such that
