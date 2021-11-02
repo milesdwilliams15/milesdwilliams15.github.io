@@ -54,7 +54,7 @@ I begin by introducing the model. Suppose a population of $N$ small businesses i
 
 Each business has a set of counterfactual outcomes, namely, their likelihood of survival with and without an award. If $i$ receives an award, its probability of survival is $\pi_i^a$, while its probability of survival is $\pi_i^n \leqslant \pi_i^a$ without an award. We say $i$'s revealed probability of survival given whether it does or does not receive an award, denoted $A_i \in \{0 ,1 \}$, is
 
-$$\pi_i = A \pi_i^a + (1 - A) \pi_i^n.$$
+$$\pi_i = A_i \pi_i^a + (1 - A_i) \pi_i^n.$$
 
 Now, the organization tasked with distributing awards has a problem. The number of possible awardees exceeds the number of available awards ($M < N$). Because of this scarcity, some businesses will receive an award while others will have to be excluded. Clearly, it would be best if all businesses receive an award since each business does at least as well or better with an award than without. 
 
@@ -84,7 +84,7 @@ For each of the weighted lotteries, weights are assigned that are proportional t
   
 For each set of weights, the probability of an award is then defined as
 
-$$\alpha_i = M \omega_i / \Sigma_i \omega.$$
+$$\alpha_i = M(\omega_i / \Sigma_i \omega).$$
 
 Now, there is a slight technical problem with the above. This formulation is simply the weighted average of awards received per business in successive lotteries. While these are constructed such that no more than $M$ awards will ever be disbursed, it is possible in theory for some businesses to receive more than one award. We could take a number of approaches to putting a ceiling on the weights to avoid this happening, but in the simulation to follow this isn't an issue.[^1]
 

@@ -79,7 +79,7 @@ without an award. We say *i*’s revealed probability of survival given
 whether it does or does not receive an award, denoted
 *A*<sub>*i*</sub> ∈ {0, 1}, is
 
-*π*<sub>*i*</sub> = *A**π*<sub>*i*</sub><sup>*a*</sup> + (1 − *A*)*π*<sub>*i*</sub><sup>*n*</sup>.
+*π*<sub>*i*</sub> = *A*<sub>*i*</sub>*π*<sub>*i*</sub><sup>*a*</sup> + (1 − *A*<sub>*i*</sub>)*π*<sub>*i*</sub><sup>*n*</sup>.
 
 Now, the organization tasked with distributing awards has a problem. The
 number of possible awardees exceeds the number of available awards
@@ -144,7 +144,7 @@ proportional to the criteria defined above. Respectively:
 
 For each set of weights, the probability of an award is then defined as
 
-*α*<sub>*i*</sub> = *M**ω*<sub>*i*</sub>/*Σ*<sub>*i*</sub>*ω*.
+*α*<sub>*i*</sub> = *M*(*ω*<sub>*i*</sub>/*Σ*<sub>*i*</sub>*ω*).
 
 Now, there is a slight technical problem with the above. This
 formulation is simply the weighted average of awards received per
