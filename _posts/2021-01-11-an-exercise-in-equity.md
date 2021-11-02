@@ -7,7 +7,7 @@ output:
 knit: (function(inputFile, encoding) {
   rmarkdown::render(inputFile, encoding = encoding, output_dir = "../_posts") })
 author: "Miles Williams"
-date: "2021-11-01"
+date: "2021-11-02"
 excerpt: "Thinking about the social impact of different lotteries for small businesses"
 layout: post
 categories:
@@ -19,20 +19,21 @@ categories:
 [Back to Blog](https://milesdwilliams15.github.io/blog/)
 
 As an Associate Fellow with the [Office of Evaluation
-Sciences](https://oes.gsa.gov/), I have had the opportunity to
-collaborate on a series of projects linked to the distribution and
-impact of pandemic relief for small businesses. [One such
+Sciences](https://oes.gsa.gov/), I’ve had the opportunity to collaborate
+on a series of projects linked to the distribution and impact of
+pandemic relief for small businesses. [One such
 project](https://oes.gsa.gov/collaborations/sb-counterfactual-equity/)
 that some brilliant researchers on our team spearheaded centered on the
-distributional consequences on different loan disbursement mechanisms.
+distributional consequences on different financial award disbursement
+mechanisms.
 
-Now, in doing this analysis one might anticipate that these researchers
-did a standard regression analysis to assess how business, and business
-owner, characteristics led to disparities in access. However, this
-approach is limited in one key respect: *endogeneity.* It is impossible
-to know whether unobserved factors (factors that just couldn’t be
-measured because of limited availability of data) were the true cause of
-observed disparities.
+To do this, one might anticipate that these researchers did a standard
+regression analysis to assess how business, and business owner,
+characteristics led to disparities in access. However, this approach is
+limited in one key respect: *endogeneity.* It is impossible to know
+whether unobserved factors (factors that just couldn’t be measured
+because of limited availability of data) were the true cause of observed
+disparities.
 
 So, the researchers did something that a number of other scholars have
 done in addressing similar questions related to a government’s or
@@ -43,26 +44,25 @@ emerged.
 
 I won’t summarize all their findings here, but I encourage anyone
 interested to read the [full
-report](https://oes.gsa.gov/assets/publications/2105_SBequity_report_20210723.pdf)
-produced by my colleagues at OES. Instead, I want to use this post as an
-opportunity to flesh out a much more stylized and abstract exercise in
-equity that not only speaks to the question of award disbursement, but
-also to the effect disbursement mechanisms have on awardee outcomes:
-namely, *survival*, which is linked more generally to the issue of
-*efficiency*.
+report](https://oes.gsa.gov/assets/publications/2105_SBequity_report_20210723.pdf).
+Instead, I want to use this post as an opportunity to flesh out a much
+more stylized and abstract exercise in equity that not only speaks to
+the question of award disbursement, but also to the effect disbursement
+mechanisms have on awardee outcomes: namely, *survival*, which is linked
+more generally to the issue of *efficiency*.
 
 This issue is something that is difficult to tease out in practice. We
 might imagine how certain disparities in awards received affect
 outcomes, but measurement poses a severe impediment.
 
 This is a situation where mathematical modeling can help. By developing
-a stylized model we can imagine counterfactuals that in an empirical
-setting are fundamentally unobservable.
+a stylized model we can imagine counterfactuals that can’t be observed
+in an empirical setting.
 
 Below, I introduce such a model, describe alternative lottery
 mechanisms, and illustrate how to do this with some R code.
 
-## A Model of Small Business Survival
+## A Counterfactual Model of Small Business Survival
 
 I begin by introducing the model. Suppose a population of *N* small
 businesses indexed *i* = 1, ..., *N*. And, suppose there is some
@@ -76,8 +76,9 @@ award, its probability of survival is *π*<sub>*i*</sub><sup>*a*</sup>,
 while its probability of survival is
 *π*<sub>*i*</sub><sup>*n*</sup> ≤ *π*<sub>*i*</sub><sup>*a*</sup>
 without an award. We say *i*’s revealed probability of survival given
-whether it does or does not receive an award *A*<sub>*i*</sub> ∈ {0, 1}
-is
+whether it does or does not receive an award, denoted
+*A*<sub>*i*</sub> ∈ {0, 1}, is
+
 *π*<sub>*i*</sub> = *A**π*<sub>*i*</sub><sup>*a*</sup> + (1 − *A*)*π*<sub>*i*</sub><sup>*n*</sup>.
 
 Now, the organization tasked with distributing awards has a problem. The
@@ -100,8 +101,7 @@ morally right decision to make is. I also don’t think this is an
 appropriate end of mathematical modeling.
 
 Rather, I think this exercise is best suited to clarifying the
-trade-offs between equity and efficiency so that we have a benchmark
-against which to evaluate different distributional approaches.
+trade-offs between equity and efficiency.
 
 In particular, consider four set-ups. First, suppose the organization
 giving out awards decides to implement a lottery. However, in designing
@@ -117,12 +117,20 @@ with an ward: *π*<sub>*i*</sub><sup>*a*</sup>. The final weighted
 lottery is based on the likelihood of business failure without an award:
 1 − *π*<sub>*i*</sub><sup>*n*</sup>.
 
+In reality, it’s unlikely that the organization disbursing awards has
+perfect information about these survival probabilities. But, for this
+example we’ll pretend as if it does, if only to make stark the
+distributional and survival impact of the alternative lotteries.
+
 For the fair lottery, each business’s probability of receiving an award
 is simply:
+
 *α*<sub>*i*</sub><sup>fair</sup> = *M*/*N*.
+
 This is because there are *M* available awards and *N* total businesses.
-Say *N* = 100 and *M* = 5. If the lottery were to be repeated until ∞,
-each business would get an award in 0.05 proportion of lotteries.
+Say *N* = 100 and *M* = 5. If the lottery were to be repeated
+indefinitely, each business would get an award in 0.05 proportion of
+lotteries.
 
 For each of the weighted lotteries, weights are assigned that are
 proportional to the criteria defined above. Respectively:
@@ -135,20 +143,22 @@ proportional to the criteria defined above. Respectively:
     *ω*<sub>*i*</sub> ∝ 1 − *π*<sub>*i*</sub><sup>*n*</sup>.
 
 For each set of weights, the probability of an award is then defined as
-$$\\alpha\_i = M \\omega\_i/\\sum\_{i = 1}^N \\omega\_i.$$
+
+*α*<sub>*i*</sub> = *M**ω*<sub>*i*</sub>/*Σ*<sub>*i*</sub>*ω*.
+
 Now, there is a slight technical problem with the above. This
 formulation is simply the weighted average of awards received per
 business in successive lotteries. While these are constructed such that
 no more than *M* awards will ever be disbursed, it is possible in theory
 for some businesses to receive more than one award. We could take a
 number of approaches to putting a ceiling on the weights to avoid this
-happening, but in the simulation to follow this isn’t an issue.
+happening, but in the simulation to follow this isn’t an issue.[1]
 
 Now, with these lotteries defined, in the next section I illustrate the
 implications of these alternative approaches. I do so with a special eye
 towards not only efficiency vs. equity, but also disproportional
 benefits to *underserved* vs. *non-underserved* businesses. The latter
-are not explicit categories in my model but are nonetheless real-world
+are not explicit categories in the model but are nonetheless real-world
 characteristics of businesses that we might imagine (and that do) affect
 survival with and without financial support. Minority, women, veteran,
 and disabled owned businesses have been highlighted as particularly
@@ -193,13 +203,16 @@ p <- function(a, pa, pn) {
 I now define the data-generating process. To keep things simple, suppose
 *N* = 100 and *M* = 15. Further, assume that probability of survival
 without financing follows a uniform distribution
+
 *π*<sub>*i*</sub><sup>*n*</sup> ∼ 𝒰(0, 1),
+
 and that survival with a loan is
+
 *π*<sub>*i*</sub><sup>*a*</sup> ∼ min \[*π*<sub>*i*</sub><sup>*n*</sup>+𝒰(0,1),1\].
 
 We can specify this in R as follows. Using `simulate` from the `seerrr`
-package, iterate the data-generating process 100 times (we could do more
-if we wanted):
+package, we’ll choose iterate the data-generating process 100 times (we
+could do more if we wanted):
 
 ``` r
 sim <- simulate(
@@ -229,7 +242,7 @@ sim <- simulate(
 ```
 
 The above produces 100 different datasets simulated from the data
-generating process.
+generating process and then stacks them on top of each other.
 
 First, let’s explore the results with respect to the distributional
 consequences of alternative lotteries. To do this, I do some data
@@ -248,7 +261,8 @@ sim %>%
 ```
 
 I then plot for each lottery the probability of receiving an award over
-the probability of survival without an award:
+the probability of survival without an award. I’ve also layered on LOESS
+lines grouped by iteration.
 
 ``` r
 ggplot(plot_smry) +
@@ -281,26 +295,28 @@ ggplot(plot_smry) +
 As we would expect, the fair lottery gives each business the same
 probability of receiving financing regardless of its characteristics (in
 this case, survival probability without an award). We do, however, see
-disparities across the other weighted lotteries. The lottery that
-selects on survival with an ward (SOS) disproportionately benefits
-businesses that also happen to be better off without an award.
-Conversely, the lottery that weights more toward businesses that are
-likely to fail without an award (SOF), unsurprisingly,
-disproportionately benefits businesses with a lower probability of
-survival without an award. Meanwhile, the lottery that gives greatest
-weight to businesses that would most benefit from an award (SOI)
-benefits businesses with a lower probability of survival without an
-award, but the results are less stark than with SOF.
+disparities across the other weighted lotteries.
+
+The lottery that selects on survival with an ward (SOS)
+disproportionately benefits businesses that also happen to be better off
+without an award. Conversely, the lottery that weights more toward
+businesses that are likely to fail without an award (SOF),
+unsurprisingly, disproportionately benefits businesses with a lower
+probability of survival without an award. Meanwhile, the lottery that
+gives greatest weight to businesses that would most benefit from an
+award (SOI) also advantages businesses with a lower probability of
+survival without an award, but the results are less stark than with SOF.
 
 The fact that SOS clearly disadvantages businesses that are worse off
 without an award is a point worth returning to. As the OES report
 highlights, in practice many lenders took a similar approach in
 disbursing financing. It was believed that weighting on survival with an
 award was the most efficient approach given the limited resources
-available to organizations. This approach, unsurprisingly, came at the
+available to organizations. This approach, unfortunately, came at the
 expense of underserved businesses.
 
-*Was this intuition correct?*
+*Was this intuition correct? Was weighting in favor of businesses deemed
+most likely to survive with an award the most efficient approach?*
 
 To see how the different lotteries affected survival, I first clean the
 data as follows:
@@ -357,8 +373,7 @@ tidy(diff_by_lotto) %>%
   ) %>% 
   select(-conf.low, -conf.high) %>%
   kable("markdown",
-        col.names = c("Lotto", "Estimate", "95% CI"),
-        caption = "Percentage point difference with 'fair' lotto")
+        col.names = c("Lotto", "Estimate", "95% CI"))
 ```
 
 | Lotto | Estimate | 95% CI           |
@@ -367,27 +382,29 @@ tidy(diff_by_lotto) %>%
 | SOI   |    2.447 | \[2.34, 2.554\]  |
 | SOS   |    0.261 | \[0.238, 0.285\] |
 
-Percentage point difference with ‘fair’ lotto
-
 The point estimates reflect the percentage point increase in the
 likelihood of survival under one of the weighted lotteries relative to
 the fair lottery. As it turns out, each of the weighted lotteries is
-more efficient than the fair lottery. However, the weighted lotteries
-are not equal in their efficiency. In fact, and perhaps most
-surprisingly, the SOS lottery—the one that many organizations have
-applied because it is supposedly highly efficient—yields the least
-improvement relative to the fair lottery as compared with SOF and SOI.
+more efficient than the fair lottery. This partly confirms the intuition
+that weighting in favor of businesses that are most likely to survive
+with an award is more efficient than a fair, unweighted lottery.
 
-The best strategy is SOI followed by SOF. What is interesting about
-these results is not only that each of the lotteries is more efficient
-than favoring businesses that are most likely to survive with financing,
-but also that these lotteries are weighted in favor of underserved
-businesses. Let me repeat, *weighting in favor of businesses that are
-most likely to survive with a loan* **is no** *the most efficient
-solution*. On average, business survival is most improved by lotteries
-that also disproportionately benefit disadvantaged businesses.
+However, among the weighted lotteries SOS yields the least improvement.
+In fact, the best strategy is SOI followed by SOF. What is interesting
+about these results is not only that each of those lotteries is more
+efficient than favoring businesses that are most likely to survive with
+financing, but also that each is weighted in favor of underserved
+businesses.
+
+Let me repeat, *weighting in favor of businesses that are most likely to
+survive with a loan* **is not** *the most efficient solution*. On
+average, business survival is most improved by lotteries that also
+disproportionately benefit disadvantaged businesses.
 
 That’s an interesting finding, and one that probably deserves more study
 than what I can muster in a single blog post.
 
 [Back to Blog](https://milesdwilliams15.github.io/blog/)
+
+[1] It’s always good to save a little something for another day I
+suppose.
