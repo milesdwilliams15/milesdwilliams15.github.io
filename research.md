@@ -64,6 +64,8 @@ Below, you'll find a summary of my interests, and of my research...
 **Policy Evaluation**
 
 "How Local Discretion Addresses Competing Allocation Goals: The Case of Small Business Relief Funding." with Rebecca Johson, Heather Barry Kappes, Crystal C. Hall, Simone Zhang, and Elizabeth Bell.
+
+"Does Performance Feedback Increase Flu-Vaccination Rates? A Cluster Randomized Trial." with Sebastian Jilke, Pompa Debroy, Rebecca Johnson, Michael Wallace, and Vincent Marconi.
     
 
 **Book Chapters**
