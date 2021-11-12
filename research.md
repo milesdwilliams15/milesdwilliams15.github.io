@@ -41,7 +41,7 @@ Below, you'll find a summary of my interests, and of my research...
   
 **Political Economy of Aid**
     
-"Targeting Civil War: Intra-state Conflict and the Opportunity-cost of Foreign Aid." (Revise and Resubmit) [[pdf]](https://github.com/milesdwilliams15/Foreign-Aid-and-Civil-War/raw/master/aid_and_civil_war_writing_sample.pdf).
+"Targeting Civil War: Intra-state Conflict and the Opportunity-cost of Foreign Aid." (Under Review) [Available upon request].
       
 "A Strategic Political Economy of Aid" (Working Paper) [[pdf]](https://github.com/milesdwilliams15/Rivalry-and-Collective-Action-in-International-Development/raw/master/theory_writing_sample.pdf)
     
