@@ -10,10 +10,7 @@ author: "Miles Williams"
 date: "`r Sys.Date()`"
 excerpt: "Part I of a series"
 layout: post
-categories:
-  - Teaching
-  - DAGs
-  - Causation
+categories: ["DAG", "Causation"]
 ---
 
 [Back to Blog](https://milesdwilliams15.github.io/blog/)
@@ -43,7 +40,7 @@ In this post I want to start with a fairly simple source of bias: **post treatme
 Suppose three variables, $x$, $y$, and $z$. Say $z \to x$ and $z \to y$ (where $\to$ represents a causal relationship). I've captured this relationship in the DAG below:
 
 
-```{r}
+```{r dags-part-1-confouding}
 library(tidyverse)
 library(seerrr)
 library(ggdag)
@@ -56,14 +53,14 @@ Suppose we want to recover an estimate of $z$'s effect on $y$. If we want an unb
 
 Why? $x$ and $y$ "d-connected," as illustrated by the below updated DAG:
 
-```{r}
+```{r dags-part-1-d-connected}
 confounder_triangle() %>%
   ggdag_dconnected()
 ```
 
 This means that $x$ and $y$ are related to each other due to their mutual cause, $z$. Such a relationship does not need to be accounted for in estimating the effect of $z$ on $y$. If we were to adjust for $x$ in our analysis, this would introduce a new relationship between $x$ and $y$: that they are "d-separated":
 
-```{r}
+```{r dags-part-1-controlling}
 confounder_triangle() %>%
   ggdag_dconnected(
     controlling_for = "x"
@@ -106,7 +103,7 @@ estimate(
 
 Now, let's compare performance:
 
-```{r}
+```{r dags-part-1-performance}
 evaluate(
   unadj,
   what = "bias",
