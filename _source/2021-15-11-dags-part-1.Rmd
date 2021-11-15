@@ -195,7 +195,7 @@ Consequently, variation in $z$ that causes $x$ is subtracted out in the second r
 
 The lesson is simple. **Do not control for post-treatment variables**. This may seem obvious, but this is an issue that sometimes receives insufficient attention. Naturally, our instinct is to control for as many variables as possible in our analysis---especially in observational studies. But, as the case of post-treatment bias illustrates, this approach does not always serve us well. 
 
-This is where plotting out causal relationships with a DAG can be useful. By first thinking carefully and systematically about the relationships that exist in your data, it is possible to hedge against in appropriate analytical choices. DAGs, in short, can enhance your modeling instincts and ultimately serve to make you better analyst.
+This is where plotting out causal relationships with a DAG can be useful. By first thinking carefully and systematically about the relationships that exist in your data, it is possible to hedge against inappropriate analytical choices. DAGs, in short, can enhance your modeling instincts and ultimately serve to make you a better analyst.
 
 There are other pitfalls beside post-treatment effects to be leery of, however. Next time we'll take a look at another source of bias: *colliders*.
 
