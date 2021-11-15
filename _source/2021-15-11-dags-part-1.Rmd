@@ -1,5 +1,5 @@
 ---
-title: DAGs and Confoudning, Part I
+title: DAGs and Confounding Part I
 output:
   md_document:
     variant: gfm
