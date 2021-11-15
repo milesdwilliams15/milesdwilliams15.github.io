@@ -7,7 +7,7 @@ output:
 knit: (function(inputFile, encoding) {
   rmarkdown::render(inputFile, encoding = encoding, output_dir = "../_posts") })
 author: "Miles Williams"
-date: "`r Sys.Date()`"
+date: '`r Sys.Date()`'
 excerpt: "Part I of a series"
 layout: post
 categories: ["DAG", "Causation"]
