@@ -51,14 +51,14 @@ confounder_triangle() %>%
 
 Suppose we want to recover an estimate of $z$'s effect on $y$. If we want an unbiased and efficient estimate (why wouldn't we?) it would be inappropriate to control for $x$ in our analysis.
 
-Why? $x$ and $y$ "d-connected," as illustrated by the below updated DAG:
+Why? $x$ and $y$ are "d-connected," (*directional* connected) as highlighted the below updated DAG:
 
 ```{r dags-part-1-d-connected}
 confounder_triangle() %>%
   ggdag_dconnected()
 ```
 
-This means that $x$ and $y$ are related to each other due to their mutual cause, $z$. Such a relationship does not need to be accounted for in estimating the effect of $z$ on $y$. If we were to adjust for $x$ in our analysis, this would introduce a new relationship between $x$ and $y$: that they are "d-separated":
+This means that $x$ and $y$ are related to each other due to their mutual cause, $z$. Such a relationship does not need to be accounted for in estimating the effect of $z$ on $y$. In fact, if we were to adjust for $x$ in our analysis, this would introduce a new type of relationship between $x$ and $y$: that they are "d-separated".
 
 ```{r dags-part-1-controlling}
 confounder_triangle() %>%
@@ -67,9 +67,9 @@ confounder_triangle() %>%
   )
 ```
 
-By introducing this change we run the risk of soaking up some of $z$'s effect on $y$. I'll illustrate first with a simulation then try to provide some intuition for why this happens.
+This is no good because we risk soaking up some of $z$'s effect on $y$ by d-separating (yes, I'm using this as a verb) $x$ and $y$. I'll illustrate first with a simulation then try to provide some intuition for why this happens.
 
-First, let's simulate some data that with some simple linear relationships between $z$ and each of the effected variables, $x$ and $y$:
+First, let's simulate some data where there is a simple linear relationship between $z$ and each of the effected variables, $x$ and $y$:
 
 ```{r}
 set.seed(555)
