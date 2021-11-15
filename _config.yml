@@ -4,6 +4,7 @@ logo: "https://avatars.githubusercontent.com/u/23504082?s=400&u=aa5bd54e36a65e31
 google_analytics: true
 show_downloads: false
 theme: jekyll-theme-minimal
+baseurl: ""
 url: "https://milesdwilliams15.github.io/"
 gems:
   - jekyll-mentions
