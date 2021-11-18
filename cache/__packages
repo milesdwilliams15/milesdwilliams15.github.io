@@ -13,3 +13,4 @@ readr
 stringr
 forcats
 kableExtra
+ggdag
