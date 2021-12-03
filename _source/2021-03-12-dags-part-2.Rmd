@@ -283,13 +283,13 @@ Clearly the reduced form specification is more consistent. However, in practice 
 
 One option is an instrumental variables (IV) approach. This is usually done via two-stage least squares (TSLS). This entails using the reduced form equations in a first-stage regression for each of the outcomes, then using the fitted outcomes from the reduced form equations as predictors in the structural equations in the second stage. E.g.:
 
-  1. Stage 1---estimate the reduced form equations:
+  - Stage 1---estimate the reduced form equations:
   
 $y_1 = \pi_1 x_2 + \pi_2 x_1 + v_1,$
 
 $y_2 = \gamma_1 x_1 + \gamma_2 x_2 + v_2.$
 
-  2. Stage 2---use predictions from stage 1 as regressors in stage 2:
+  - Stage 2---use predictions from stage 1 as regressors in stage 2:
   
 $y_1 = \alpha_1 \hat{y}_2 + \alpha_2 x_1 + u_1,$
 
