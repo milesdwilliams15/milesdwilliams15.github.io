@@ -1,0 +1,400 @@
+---
+title: DAGs and Confounding Part II -- Simultaneity Bias
+output:
+  md_document:
+    variant: gfm
+    preserve_yaml: TRUE
+knit: (function(inputFile, encoding) {
+  rmarkdown::render(inputFile, encoding = encoding, output_dir = "../_posts") })
+author: "Miles Williams"
+date: "`r Sys.Date()`"
+excerpt: "Part I of a series"
+layout: post
+categories: ["DAG", "Causation"]
+---
+
+[Back to Blog](https://milesdwilliams15.github.io/blog/)
+
+
+```{r setup, include=FALSE, cache=FALSE}
+base_dir <- "~/My Website/milesdwilliams15.github.io/" # i.e. where the jekyll blog is on the hard drive.
+base_url <- "/" # keep as is
+fig_path <- "assets/images/2021-03-12/" # customize to heart's content, I 'spose.
+
+knitr::opts_knit$set(base.dir = base_dir, base.url = base_url)
+knitr::opts_chunk$set(fig.path = fig_path,
+                      cache.path = '../cache/',
+                      message=FALSE, warning=FALSE,
+                      cache = F,
+                      dpi = 700) 
+library(tidyverse)
+library(seerrr)
+library(ggdag)
+```
+
+
+In this second installment on DAGs and confounding, I'm cheating, *slightly*. The name *D*irected *A*cyclic *G*raph implies no *cycles* and unidirectional causal paths in a set of causal relationships. However, in many settings, we may encounter forms of confounding that are indeed cyclical and multidirectional. I'm referring specifically to simultaneity bias---a form of endogeneity introduced through mutual causation of two or more variables. 
+
+In this post I want to briefly walk through a connonical example (at least a Google search would suggest it is as much), how to illustrate it via a DAG-like framework (remember these won't be true DAGs since the causal relations violate the *D* and *A* parts of the acronym), and a simulation to illustrate the bias it introduces and how we can get around it.
+
+
+## What is simultaneity bias?
+
+There are many forms of endogeneity that may exist in data. One such form is simultaneity---a scenario where two outcomes are mutually causal. Such a scenario is depicted in the figure below. 
+
+```{r, echo=FALSE, fig.height=3.75, fig.width=3.75}
+dagify(
+  y1 ~ x1 + u1,
+  y2 ~ x2 + u2,
+  y1 ~~ y2
+) %>%
+  ggdag() +
+  theme_dag()
+```
+
+We have two endogenous outcomes of interest, $y_1$ and $y_2$. These are a function of a set of observed exogenous outcomes, $x_1$ and $x_2$ respectively, and some unobserved exogenous variables, $u_1$ and $u_2$.
+
+Within a regression framework, such an instance can be represented as a structural equation. For example:
+
+$y_1 = \alpha_1 y_2 + \alpha_2 x_1 + u_1,$
+
+$y_2 = \beta_1 y_1 + \beta_2 x_2 + u_2,$
+
+where $y_1$ and $y_2$ are the endogenous outcomes, $x_1$ and $x_2$ are exogenous predictors, and $u_1$ and $u_2$ are unobserved predictors---and thus random noise.
+
+Under only very restrictive assumptions can we reliably estimate such a system of equations using OLS. If $\alpha_1$ and $\beta_1$ are non-zero---as they would be if $y_1$ and $y_2$ are endogenous---OLS estimates will be biased and inefficient. The reason for this can be seen by expressing these equations in reduced form. For example, for $y_1$:
+
+$y_1 = \alpha_1 y_2 + \alpha_2 x_1 + u_1,$
+
+$y_1 = \alpha_1 (\beta_1y_1 + \beta_2 x_2 + u_2) + \alpha_2 x_1 + u_1,$
+
+$y_1 (1 - \alpha_1\beta_1) = \alpha_1 \beta_2 x_2 + \alpha_2 x_1 + \alpha_1 u_2 + u_1,$
+
+$y_1 = \pi_1 x_2 + \pi_2 x_1 + v_1,$
+
+
+where the reduced form parameters are nonlinear functions of the structural parameters:
+
+$\pi_1 = \alpha_1 \beta_2 / (1 - \alpha_1 \beta_1);$
+
+$\pi_2 = \alpha_2 / (1 - \alpha_1 \beta_1);$
+
+$v_1 = (\alpha_1 u_2 + u_1) / (1 - \alpha_1 \beta_1).$
+
+There is a similar reduced form equation for $y_2$. We'll denote it as:
+
+$y_2 = \gamma_1 x_1 + \gamma_2 x_2 + v_2.$
+
+From this formulation we can see in the construction of the new error terms $v_1$ and $v_2$ that $y_1$ will be correlated with the error term through $y_1$'s correlation with $u_2$---and $y_2$ will be correlated with the error term through its correlation with $u_1$. This is problematic for the estimation of the structural equations via OLS because it means that in estimating the regression for $y_1$, the unobserved variation captured by $u_1$ confounds the relationship between $y_1$ and $y_2$---the same is true for $u_2$ in the second regression equation. 
+
+The below figure illustrates for clarity. Though it was not immediately apparent in the first figure, the causal relationships it represents imply the confounding captured in this one. 
+
+```{r, echo=FALSE, fig.height=3.75, fig.width=3.75}
+dagify(
+  y1 ~ u1 + u2,
+  y2 ~ u1 + u2,
+  y1 ~~ y2
+) %>%
+  ggdag(layout = "circle") +
+  theme_dag()
+```
+
+Because $u_1$ and $u_2$ are unobserved, we cannot control for them in order to reliably estimate the effect of $y_1$ on $y_2$, and vice versa. However, it is possible to reliably estimate the reduced form equations since the error terms are not correlated with the exogenous predictors $x_1$ and $x_2$. This is illustrated by the next figure below and can be leveraged to recover unbiased estimates of the causal relationships between the endogenous outcomes.
+
+```{r, echo=FALSE, fig.height=3.75, fig.width=3.75}
+dagify(
+  y1 ~ x1 + x2 + u1 + u2,
+  y2 ~ x2 + x1 + u2 + u1,
+  y1 ~~ y2
+) %>%
+  ggdag(layout = "circle") +
+  theme_dag()
+```
+
+To demonstrate, I've simulated a data generating process as follows using tools from the `seerrr` package, with the structural parameters defined each as 1/2:
+
+```{r}
+# Structural parameters:
+a1 <- 0.5
+a2 <- 0.5
+b1 <- 0.5
+b2 <- 0.5
+
+# Reduced form:
+p1 <- (a1 * b1) / (1 - a1 * b1)
+p2 <- a2 / (1 - a1 * b1)
+q1 <- (b1 * a1) / (1 - b1 * a1)
+q2 <- a1 / (1 - b1 * a1)
+
+# Simulate the d.g.p.
+simulate(
+  u1 = rnorm(N),
+  u2 = rnorm(N),
+  x1 = rnorm(N),
+  x2 = rnorm(N),
+  y1 = p1 * x2 + p2 * x1 + (a1 * u2 + u1) / (1 - a1 * b1),
+  y2 = q1 * x1 + q2 * x2 + (a2 * u1 + u2) / (1 - b1 * a1)
+) -> sim_dat
+```
+
+By default, this generates a list of 200 datasets drawn from the data generating process where $N = 500$. Using multiple draws from the d.g.p. in this way allows us to get a sense for how generally reliable estimates of the parameters are. Because we're dealing with random variables, some variation in performance from sample to sample is expected.
+
+With these draws, I estimate a distribution of OLS estimates for the reduced form equations:
+
+```{r}
+estimate(
+  sim_dat,
+  y1 ~ x2 + x1,
+  c("x1", "x2"),
+  se_type = "stata"
+) -> red1
+estimate(
+  sim_dat,
+  y2 ~ x1 + x2,
+  c("x1", "x2"),
+  se_type = "stata"
+) -> red2
+```
+
+And for the structural equations:
+
+```{r}
+estimate(
+  sim_dat,
+  y1 ~ y2 + x1,
+  c("y2", "x1"),
+  se_type = "stata"
+) -> str1
+estimate(
+  sim_dat,
+  y2 ~ y1 + x2,
+  c("y1", "x2"),
+  se_type = "stata"
+) -> str2
+```
+
+Next, I evaluate the bias in the reduced form estimates:
+
+```{r}
+bind_rows(
+  evaluate(
+    red1 %>% filter(term == "x2"), 
+    what = "bias", 
+    truth = p1
+  ) %>% mutate(param = "pi[1]"),
+  evaluate(
+    red1 %>% filter(term == "x1"),
+    what = "bias",
+    truth = p2
+  ) %>% mutate(param = "pi[2]")
+) -> red_bias1
+bind_rows(
+  evaluate(
+    red2 %>% filter(term == "x1"), 
+    what = "bias", 
+    truth = q1
+  ) %>% mutate(param = "gamma[1]"),
+  evaluate(
+    red2 %>% filter(term == "x2"),
+    what = "bias",
+    truth = q2
+  ) %>% mutate(param = "gamma[2]")
+) -> red_bias2
+```
+
+And for the structural equation estimates:
+
+```{r}
+bind_rows(
+  evaluate(
+    str1 %>% filter(term == "y2"),
+    what = "bias",
+    truth = a1
+  ) %>% mutate(param = "alpha[1]"),
+  evaluate(
+    str1 %>% filter(term == "x1"),
+    what = "bias",
+    truth = a2
+  ) %>% mutate(param = "alpha[2]")
+) -> str_bias1
+bind_rows(
+  evaluate(
+    str2 %>% filter(term == "y1"),
+    what = "bias",
+    truth = b1
+  ) %>% mutate(param = "beta[1]"),
+  evaluate(
+    str2 %>% filter(term == "x2"),
+    what = "bias",
+    truth = b2
+  ) %>% mutate(param = "beta[2]")
+) -> str_bias2
+```
+
+The below figure shows the results for each of the parameters. The absolute average bias is given along the x-axis and the relevant parameter is indicated along the y-axis. If the point estimate is closer to zero the closer the average estimate is to its true value. By this metric, the systematic bias in the structural parameter estimates is quite evident.
+
+```{r, echo=FALSE, fig.height=3, fig.width=6}
+bind_rows(
+  red_bias1,
+  red_bias2,
+  str_bias1,
+  str_bias2
+) %>%
+  ggplot() +
+  aes(
+    abs(bias),
+    param
+  ) +
+  geom_point(
+    size = 2,
+    shape = 21
+  ) +
+  geom_vline(
+    xintercept = 0
+  ) +
+  labs(
+    x = "Absolute Bias",
+    y = NULL,
+    color = NULL
+  ) +
+  scale_y_discrete(
+    labels = c(
+      expression(alpha[1]),
+      expression(alpha[2]),
+      expression(beta[1]),
+      expression(beta[2]),
+      expression(gamma[1]),
+      expression(gamma[2]),
+      expression(pi[1]),
+      expression(pi[2])
+    )
+  ) +
+  theme_test() +
+  theme(
+    panel.grid.major.y = element_line(color = "grey", 
+                                      linetype = 2)
+  )
+```
+
+
+## What can be done?
+
+Clearly the reduced form specification is more consistent. However, in practice the reduced form estimates, while reliable, are not as informative as we would like. More often the structural parameters are of greatest theoretical interest. So how can we reliably recover these?
+
+One option is an instrumental variables (IV) approach. This is usually done via two-stage least squares (TSLS). This entails using the reduced form equations in a first-stage regression for each of the outcomes, then using the fitted outcomes from the reduced form equations as predictors in the structural equations in the second stage. E.g.:
+
+  1. Stage 1---estimate the reduced form equations:
+  
+$y_1 = \pi_1 x_2 + \pi_2 x_1 + v_1,$
+
+$y_2 = \gamma_1 x_1 + \gamma_2 x_2 + v_2.$
+
+  2. Stage 2---use predictions from stage 1 as regressors in stage 2:
+  
+$y_1 = \alpha_1 \hat{y}_2 + \alpha_2 x_1 + u_1,$
+
+$y_2 = \beta_1 \hat{y}_1 + \beta_2 x_2 + u_2.$
+
+This approach works for generating reliable estimates of the structural parameters in the second stage because the fitted values of $y_1$ and $y_2$ on the right-hand side of the equations are no longer correlated with the error terms. This removes the unobserved confounding captured by $u_1$ and $u_2$.
+
+I first apply the IV approach on our simulated data:
+
+```{r}
+estimate(
+  sim_dat,
+  y1 ~ y2 + x1 | x2 + x1,
+  c("y2", "x1"),
+  se_type = "stata",
+  estimator = iv_robust
+) -> tsls1
+estimate(
+  sim_dat,
+  y2 ~ y1 + x2 | x2 + x1,
+  c("y1", "x2"),
+  se_type = "stata",
+  estimator = iv_robust
+) -> tsls2
+```
+
+I then calculate average bias:
+
+```{r}
+bind_rows(
+  evaluate(
+    tsls1 %>% filter(term == "y2"),
+    what = "bias",
+    truth = a1
+  ) %>% mutate(param = "alpha[1]"),
+  evaluate(
+    tsls1 %>% filter(term == "x1"),
+    what = "bias",
+    truth = a2
+  ) %>% mutate(param = "alpha[2]")
+) -> tsls_bias1
+bind_rows(
+  evaluate(
+    tsls2 %>% filter(term == "y1"),
+    what = "bias",
+    truth = b1
+  ) %>% mutate(param = "beta[1]"),
+  evaluate(
+    tsls2 %>% filter(term == "x2"),
+    what = "bias",
+    truth = b2
+  ) %>% mutate(param = "beta[2]")
+) -> tsls_bias2
+```
+
+
+The results are shown below. Again these are depicted relative to the average bias of the reduced form parameters. Note the difference relative to before. The estimates of the structural parameters have substantially reduced bias---practically performing just as well as the reduced form parameter estimates.
+
+```{r, echo=FALSE, fig.height=3, fig.width=6, fig.cap="Average bias in TSLS versus reduced form parameters."}
+bind_rows(
+  red_bias1,
+  red_bias2,
+  tsls_bias1,
+  tsls_bias2
+) %>%
+  ggplot() +
+  aes(
+    abs(bias),
+    param
+  ) +
+  geom_point(
+    size = 2,
+    shape = 21
+  ) +
+  geom_vline(
+    xintercept = 0
+  ) +
+  labs(
+    x = "Absolute Bias",
+    y = NULL,
+    color = NULL
+  ) +
+  scale_y_discrete(
+    labels = c(
+      expression(alpha[1]),
+      expression(alpha[2]),
+      expression(beta[1]),
+      expression(beta[2]),
+      expression(gamma[1]),
+      expression(gamma[2]),
+      expression(pi[1]),
+      expression(pi[2])
+    )
+  ) +
+  theme_test() +
+  theme(
+    panel.grid.major.y = element_line(color = "grey", 
+                                      linetype = 2)
+  )
+```
+
+
+## Conclusion
+
+So that concludes Part II of this series. Check out the [last post](https://milesdwilliams15.github.io/dag/causation/2021/11/18/dags-part-1.html) for a discussion of another type of bias (post treatment bias), and [see here](https://milesdwilliams15.github.io/r/methods/2021/10/15/seerrr-and-iv.html) for a discussion of endogeneity.
+
+
+[Back to Blog](https://milesdwilliams15.github.io/blog/)
