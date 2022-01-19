@@ -75,7 +75,7 @@ where the $\sigma$ parameter is dropped because it is assumed constant ($\sigma_
 
 This assumption is only appropriate if $\sigma_i \neq \sigma$. When this isn't the case, the MLE estimates of the $\beta$'s will be biased.[^2]
 
-[^2] The standard errors will also be inefficient since the standard errors are calculated directly from the Jacobian of the likelihood function.
+[^2]: The standard errors will also be inefficient since the standard errors are calculated directly from the Jacobian of the likelihood function.
 
 
 ## The Common but Not-quite-right Solution
@@ -147,9 +147,6 @@ The above randomly generates a list of datasets of size $N = 1,000$ drawn from a
 With multiple samples drawn from the d.g.p., we can now apply our choice of estimators to model $Y$ as a function $X$. Below, I specify a classic logit model and a heteroskedastic logit model. (See [documentation](https://www.quantargo.com/help/r/latest/packages/glmx/0.1-1/hetglm) for `hetglm` in the `glmx` package for more on syntax and usage.)
 
 ```{r}
-# Three estimation approaches #
-# =========================== #
-
 # classic logit
 logit <- function(...) glm(..., family = binomial)
 estimate(

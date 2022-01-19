@@ -97,12 +97,7 @@ where the *σ* parameter is dropped because it is assumed constant
 (*σ*<sub>*i*</sub> = *σ* = 1 ∀ *i*).
 
 This assumption is only appropriate if *σ*<sub>*i*</sub> ≠ *σ*. When
-this isn’t the case, the MLE estimates of the *β*’s will be
-biased.\[^2\]
-
-\[^2\] The standard errors will also be inefficient since the standard
-errors are calculated directly from the Jacobian of the likelihood
-function.
+this isn’t the case, the MLE estimates of the *β*’s will be biased.[2]
 
 ## The Common but Not-quite-right Solution
 
@@ -206,9 +201,6 @@ logit model and a heteroskedastic logit model. (See
 for `hetglm` in the `glmx` package for more on syntax and usage.)
 
 ``` r
-# Three estimation approaches #
-# =========================== #
-
 # classic logit
 logit <- function(...) glm(..., family = binomial)
 estimate(
@@ -325,3 +317,7 @@ choice.
 
 [1] For a nice summary, see [Hayes and Cai
 (2007)](https://link.springer.com/content/pdf/10.3758/BF03192961.pdf).
+
+[2] The standard errors will also be inefficient since the standard
+errors are calculated directly from the Jacobian of the likelihood
+function.
