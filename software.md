@@ -12,7 +12,7 @@ permalink: /software/
   <a href="https://milesdwilliams15.github.io/teaching/"><i class="fa fa-fw fa-mortar-board"></i> Teaching</a>
   <div class="dropdown">
         <button class="dropbtn">
-        <i class="fa fa-angle-double-down"></i> More</button>
+        <i class="fa fa-navicon"></i></button>
         <div class="dropdown-content">
             <a href="{{ site.data.social-media.email.href }}{{ site.data.social-media.email.id }}"><i class="fa fa-fw fa-envelope"></i> Email</a>
             <a href="{{ site.github.owner_url }}"><i class="fa fa-fw fa-code-fork"></i> My GitHub</a>
