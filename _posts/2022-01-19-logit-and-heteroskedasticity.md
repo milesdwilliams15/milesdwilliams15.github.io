@@ -7,10 +7,10 @@ output:
 knit: (function(inputFile, encoding) {
   rmarkdown::render(inputFile, encoding = encoding, output_dir = "../_posts") })
 author: "Miles Williams"
-date: "2022-01-19"
+date: "2022-01-20"
 excerpt: "Part I of a series"
 layout: post
-categories: ["GLM", "Bias"]
+categories: ["MLE", "Bias"]
 ---
 
 [Back to Blog](https://milesdwilliams15.github.io/blog/)
@@ -22,15 +22,15 @@ estimating linear regression models via OLS.
 Why?
 
 Because only under the most ideal and stringent of circumstances will
-classic OLS standard errors be efficient.[1] In particular, efficiency
-requires that the variance of the regression error is constant and that
-individual observations are independent of each other. In practice this
-usually never is the case. Instead, the errors may be heteroskedastic
-(have non-constant variance) or may not all be independent (they may be
-clustered).
+classic OLS standard errors be efficient.[1]
 
-Let’s zero in on the problem of non-constant variance
-(heteroskedasticity).
+Efficiency requires that the variance of the regression error is
+constant and that individual observations are independent of each other.
+In practice this usually never is the case. Instead, the errors may be
+heteroskedastic (having non-constant variance) or may not all be
+independent (they may be clustered).
+
+Let’s zero in on the problem of non-constant variance.
 
 When it comes to linear models, the solution to this problem is simple:
 just use a robust estimator for the standard errors (there are many to
@@ -63,19 +63,18 @@ A logit model can be equivalently expressed as
 log \[odds(*B*<sub>*i*</sub> = 1)\] = (*β*<sub>0</sub> + *β*<sub>1</sub>*X*<sub>*i*</sub>)/*σ*<sub>*i*</sub>
 
 These models differ in several ways. The first and most obvious
-difference is that equation 1 specifies a continuous response
-*Y*<sub>*i*</sub> ∈ ℝ as a linear function of *X*<sub>*i*</sub>.
-Meanwhile, equation 1 specifies the probability of a binary response
-*B*<sub>*i*</sub> ∈ {0, 1} taking the value 1 as a logistic function of
-*X*<sub>*i*</sub>.
+difference is that equation 1 specifies a continuous response *Y* as a
+linear function of *X*. Meanwhile, equation 2 specifies the probability
+of a binary response *B* taking the value 1 as a logistic function of
+*X*.
 
 But the differences go beyond these models’ functional forms. The
 difference that’s most material for our concern with heteroskedasticity
 is how the variance parameter *σ*<sub>*i*</sub><sup>2</sup> enters each
 equation. In the linear model, the variance enters the model through an
-additive error term *ϵ*<sub>*i*</sub>. But, in the logit model, the
-variance enters the model directly as the denominator of the linear
-additive input to the logistic function.
+additive error term *ϵ*. But, in the logit model, the variance enters
+the model directly as the denominator of the linear additive input to
+the logistic function.
 
 The reason for this difference lies in where the stochastic component of
 each model originates. In a linear model, the stochastic element enters
@@ -85,19 +84,18 @@ input to a stochastic Bernoulli function.
 The practical implication of this difference is that the variance
 component of the model *isn’t* part of the identity of the *β*
 parameters in the linear model but *is* part of the identity of the *β*s
-in the logit model. This is a problem for logit estimation if
-*σ*<sub>*i*</sub> is different for each individual observation *i*.
+in the logit model.
 
-Classic logit relies on a maximum likelihood estimator (MLE) to identify
-the *β* parameters. Its likelihood function is:
+This is a problem for classic logit estimation if the
+observation-specific variance is non-constant.
 
-ℒ = *Π*<sub>*i* = 1</sub><sup>*N*</sup>*L*(*β*<sub>0</sub> + *β*<sub>1</sub>*X*<sub>*i*</sub>)<sup>*B*<sub>*i*</sub></sup>\[(1−*L*(*β*<sub>0</sub>+*β*<sub>1</sub>*X*<sub>*i*</sub>))<sup>1 − *B*<sub>*i*</sub></sup>\],
+The reason for this is that classic logit relies on a maximum likelihood
+estimator (MLE) to identify the *β* parameters where the *σ* is assumed
+constant at *σ*<sub>*i*</sub> = *σ* = 1 ∀ *i*.
 
-where the *σ* parameter is dropped because it is assumed constant
-(*σ*<sub>*i*</sub> = *σ* = 1 ∀ *i*).
-
-This assumption is only appropriate if *σ*<sub>*i*</sub> ≠ *σ*. When
-this isn’t the case, the MLE estimates of the *β*’s will be biased.[2]
+This assumption is only appropriate if each *σ*<sub>*i*</sub> = *σ*.
+When this isn’t the case, the MLE estimates of the *β*’s won’t be
+correctly identified.[2]
 
 ## The Common but Not-quite-right Solution
 
@@ -108,51 +106,61 @@ nothing to correct the parameter estimates themselves.
 
 This choice is understandable. Most statistical software packages will
 allow users to get something like the robust variance-covariance matrix
-for OLS for their MLE estimates. Most software packages will also report
-test statistics and p-values based on these “robust” standard errors.
+for OLS for their MLE estimates. And, most software packages will also
+compute and report the related test statistics and p-values.
 
 However, just because our statistical software lets us do something,
-that doesn’t mean we should. The supposedly robust standard errors that
-statistical packages will produce are problematic for a number of
-reasons, the first being that they reflect the variance of a parameter
-that has not itself be estimated well. Even more, these robust standard
-errors are computed using the gradients of the very likelihood function
-that fails to capture the non-constant variance in the data. How is it
-possible to generate correct standard errors from the gradients of a
-mis-specified likelihood function? Answer: it isn’t.
+that doesn’t mean we should.
+
+The supposedly robust standard errors that statistical packages produce
+are problematic for a number of reasons, the first being that they
+reflect the variance of a parameter that has not itself be estimated
+well. Even more, these robust standard errors are computed using the
+gradients of the very likelihood function that fails to capture the
+non-constant variance in the data.
+
+How is it possible to generate correct standard errors from the
+gradients of a mis-specified likelihood function?
+
+The answer: *it isn’t*.
 
 ## The Better Solution (but not a silver bullet)
 
 To deal with heteroskedasticity in nonlinear models like logit there
-exist a class of heteroskedastic maximum likelihood estimators that
-allow for explicitly modeling the variance component of the model.
+exist a class of heteroskedastic estimators that allow for explicitly
+modeling the variance component of the model.
 
 Such estimators are not a perfect hedge against bias to be sure.
 However, in certain instances it is possible to recover both less biased
 and more efficient parameter estimates by taking non-constant variance
-into account. Consider a scenario where the probability of a binary
+into account.
+
+Consider, for instance, a scenario where the probability of a binary
 outcome is given as
 
 Pr (*B*<sub>*i*</sub> = 1) = *L*\[(*X*<sub>*i*</sub>)/exp(*X*<sub>*i*</sub>)\].
 
-In the above exp (*X*<sub>*i*</sub>) replaces *σ*<sub>*i*</sub>. It
-specifies that the probability that the binary response
+It specifies that the probability that the binary response
 *B*<sub>*i*</sub> = 1 is not only a function of *X*<sub>*i*</sub>, but
-also that the variance changes as a function of *X*<sub>*i*</sub>.
+also that the variance changes as a function of
+*X*<sub>*i*</sub>—exp (*X*<sub>*i*</sub>) essentially replaces
+*σ*<sub>*i*</sub> in the specification.
 
 To recover estimates of the relationship between *X*<sub>*i*</sub> and
 the response, we would specify a heteroskedastic logit model as follows:
 
 log \[odds(*B*<sub>*i*</sub> = 1)\] = (*β*<sub>0</sub> + *β*<sub>1</sub>*X*<sub>*i*</sub>)/exp (*γ*<sub>0</sub> + *γ*<sub>1</sub>*X*<sub>*i*</sub>).
 
-If we were to compare the estimates from the above to those obtained
-from the classic logit model, specified as
+Compare this to the classic logit specification, which just assumes
+*σ*<sub>*i*</sub> = 1 ∀ *i*:
 
-log \[odds(*B*<sub>*i*</sub> = 1)\] = *β*<sub>0</sub> + *β*<sub>1</sub>*X*<sub>*i*</sub>,
+log \[odds(*B*<sub>*i*</sub> = 1)\] = *β*<sub>0</sub> + *β*<sub>1</sub>*X*<sub>*i*</sub>.
 
-the heteroskedastic logit estimates should be less biased, and the
-standard errors should provide the appropriate coverage for confidence
-intervals supporting more informative statistical inferences.
+If we were to evaluate the performance of the MLE estimates for these
+logit models, we would find that the heteroskedastic logit is less
+biased and that its standard errors provide the appropriate coverage for
+confidence intervals, supporting more informative statistical
+inferences.
 
 ## A Simulation
 
@@ -179,12 +187,13 @@ Next, we’ll start by iteratively simulating a data-generating process.
 ``` r
 # Simulate a d.g.p. 1,000 times:
 set.seed(101010101) # setting seed for replicability
+L <- function(x) 1 / (1 + exp(-x)) # logistic fun.
 simulate(
   N = 1000,
   id_var = 1:N,
   X = rnorm(N),
   s = exp(X),
-  Y = rbinom(N, 1, 1 / (1 + exp(-(X / s))))
+  Y = rbinom(N, 1, L(X / s))
 ) -> sim_data
 ```
 
@@ -192,7 +201,7 @@ The above randomly generates a list of datasets of size *N* = 1, 000
 drawn from a d.g.p. that includes (1) a predictor variable *X* that is a
 normal random variable with mean 0 and standard deviation of 1 and (2) a
 binary response variable *Y* that takes the value 1 with probability
-*L*(*X*<sub>*i*</sub>/exp (*X*<sub>*i*</sub>).
+*L*(*X*/exp (*X*).
 
 With multiple samples drawn from the d.g.p., we can now apply our choice
 of estimators to model *Y* as a function *X*. Below, I specify a classic
@@ -298,10 +307,6 @@ percent of the time).
 
 ## Conclusion
 
-The above example was quite simple, which is so by design to make
-illustrating the consequences of heteroskedasticity for nonlinear models
-as clear as possible.
-
 This discussion has hardly exhausted the many threats to unbiased and
 efficient MLE estimation of nonlinear models. Other forms of unmeasured
 heterogeneity and even omitted variables (whether or not they are
@@ -312,6 +317,12 @@ For this reason, care should be taken when using MLE for nonlinear
 regression estimation. Don’t just use logit for a binary response
 without interrogating the assumptions that underlie such a modeling
 choice.
+
+## Further Reading
+
+I highly recommend reading Dave Giles’ [blog
+post](https://davegiles.blogspot.com/2013/05/robust-standard-errors-for-nonlinear.html)
+about this issue.
 
 [Back to Blog](https://milesdwilliams15.github.io/blog/)
 
