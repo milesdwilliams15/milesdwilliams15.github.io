@@ -20,7 +20,7 @@ pre {
 }
 
 .dropdown {
-  float: left;
+  float: center;
   overflow: hidden;
 }
 
@@ -42,7 +42,7 @@ pre {
 
 /* Style the links inside the navigation bar */
 .topnav a {
-  float: left;
+  float: center;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
@@ -73,7 +73,7 @@ pre {
 
 .dropdown-content a {
   float: none;
-  color: white;
+  color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -81,7 +81,8 @@ pre {
 }
 
 .dropdown-content a:hover {
-  background-color: #2f80ba;
+  background-color: #333;
+  color: white;
 }
 
 .dropdown:hover .dropdown-content {
