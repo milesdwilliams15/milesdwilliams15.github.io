@@ -6,29 +6,23 @@ permalink: /research/
 <div class="topnav">
     <a class="active" href="https://milesdwilliams15.github.io/"><strong>Home</strong></a>
     <a href="https://github.com/milesdwilliams15/job-market-materials/raw/main/cv.pdf"><strong>CV</strong></a>
-    <a href="https://milesdwilliams15.github.io/blog/"><strong>Blog</strong></a>
-    <a href="{{ site.github.owner_url }}"><strong>GitHub</strong></a>
-    <a href = "{{ site.data.social-media.email.href }}{{ site.data.social-media.email.id }}" title="Email me"><strong>Email</strong></a>
+    <a href = "https://milesdwilliams15.github.io/research/"><strong>Research</strong></a>
+    <a href = "https://milesdwilliams15.github.io/teaching/"><strong>Teaching</strong></a>
     <div class="dropdown">
-        <button class="dropbtn"><strong>About</strong> <i class="fa fa-caret-down"></i></button>
+        <button class="dropbtn"><strong>More</strong> <i class="fa fa-caret-down"></i></button>
         <div class="dropdown-content">
-            <a href = "https://milesdwilliams15.github.io/research/"><strong>Research</strong></a>
-            <a href = "https://milesdwilliams15.github.io/software/"><strong>Software</strong></a>
-            <a href = "https://milesdwilliams15.github.io/teaching/"><strong>Teaching</strong></a>
+            <a href = "{{ site.data.social-media.email.href }}{{ site.data.social-media.email.id }}" title="Email me"><strong>Contact</strong></a>
+            <a href="{{ site.github.owner_url }}"><strong>My GitHub</strong></a>
+            <a href = "https://milesdwilliams15.github.io/software/"><strong>My Software</strong></a>
+            <a href="https://milesdwilliams15.github.io/blog/"><strong>My Blog</strong></a>
         </div>
     </div>
 </div>  
-<br/> 
 <br/>
 
 ## My Research
 
-In addition to my dissertation, I maintain a number of substantive and methodologically oriented research agendas. For the former, my research lies at the 
-intersection of foreign policy, foreign aid, and multilateral development institutions. I also have applied text-as-data methods to study political communications 
-by religious elites in collaboration with Ryan Burge (Eastern Illinois University). With respect to methods, my research emphasizes innovative applications of machine 
-learning for covariate adjustment in observational data and extensions of model-based approaches to testing the empirical implications of theoretical models. 
-
-Below, you'll find a summary of my interests, and of my research...
+My research reflects a mix of projects and interests. My primary research agenda centers on the political and strategic goals that motivate foreign aid giving by donor governments. I'm interested in when, where, and why industrialized powers give aid to developing countries, and I bring to bear a mix of game theoretic, econometric, and machine learning techniques in my research. I also maintain a research agenda centered on applying or developing interesting methods to address a wide range of interesting questions. Some of this research deals with foreign aid, but it extends to other issues such as political communication, religion, and policy analysis. 
 
 ### Interests
   <ul><li>International Relations</li>
@@ -84,4 +78,4 @@ Below, you'll find a summary of my interests, and of my research...
     
 I occasionally have contributed to [Religion in Public](https://religioninpublic.blog/). [In my latest contribution](https://religioninpublic.blog/2021/01/21/white-conservative-religious-and-aid-skeptical/), I discuss links between anti-immigrant attitudes among religious conservatives in the U.S. and support for foreign aid spending.
     
-  
+I also [host my own blog](https://milesdwilliams15.github.io/blog/) here on my site where I semi-regularly post about statistics and programming in R.
