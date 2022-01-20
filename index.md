@@ -1,15 +1,15 @@
 
 <div class="topnav">
-    <a class="active" href="https://github.com/milesdwilliams15/job-market-materials/raw/main/cv.pdf"><strong>CV</strong></a>
-    <a href = "https://milesdwilliams15.github.io/research/"><strong>Research</strong></a>
-    <a href = "https://milesdwilliams15.github.io/teaching/"><strong>Teaching</strong></a>
+    <a class="active" href="https://github.com/milesdwilliams15/job-market-materials/raw/main/cv.pdf">CV</a>
+    <a href = "https://milesdwilliams15.github.io/research/">Research</a>
+    <a href = "https://milesdwilliams15.github.io/teaching/">Teaching</a>
     <div class="dropdown">
-        <button class="dropbtn"><strong>More</strong> <i class="fa fa-caret-down"></i></button>
+        <button class="dropbtn">More <i class="fa fa-caret-down"></i></button>
         <div class="dropdown-content">
-            <a href = "{{ site.data.social-media.email.href }}{{ site.data.social-media.email.id }}" title="Email me"><strong>Contact</strong></a>
-            <a href="{{ site.github.owner_url }}"><strong>My GitHub</strong></a>
-            <a href = "https://milesdwilliams15.github.io/software/"><strong>My Software</strong></a>
-            <a href="https://milesdwilliams15.github.io/blog/"><strong>My Blog</strong></a>
+            <a href = "{{ site.data.social-media.email.href }}{{ site.data.social-media.email.id }}" title="Email me">Contact</a>
+            <a href="{{ site.github.owner_url }}">My GitHub</a>
+            <a href = "https://milesdwilliams15.github.io/software/">My Software</a>
+            <a href="https://milesdwilliams15.github.io/blog/">My Blog</a>
         </div>
     </div>
 </div>  
