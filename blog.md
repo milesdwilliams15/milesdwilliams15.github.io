@@ -48,7 +48,7 @@ You can see my posts ordered from most to least recent below.
   {% endfor %}
 
 {% endif %} <!-- {{ post.categories | first }} -->
-<strong style="font-size:100%; font-family: 'Titillium Web', sans-serif; float:right; padding-right: .5em">{{ post.date | date: '%d %b %Y' }}</strong> 
+<strong style="font-size:100%; font-family: 'Titillium Web', sans-serif; float:right; padding-right: .5em">{{ post.date | date: '%d %b %Y' }}</strong> <p> </p>
 </span> 
 
 </li>
