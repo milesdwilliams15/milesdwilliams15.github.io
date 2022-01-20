@@ -36,7 +36,7 @@ pre {
 }
 /* Add a black background color to the top navigation */
 .topnav {
-  position: absolute;
+  position: relative;
   background-color: #333;
   overflow: hidden;
 }
@@ -65,7 +65,7 @@ pre {
 
 .dropdown-content {
   display: none;
-  position: absolute;
+  position: relative;
   background-color: #ddd;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
