@@ -7,9 +7,6 @@ permalink: /teaching/
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <div class="topnav">
-  <a href="https://github.com/milesdwilliams15/job-market-materials/raw/main/cv.pdf"><i class="fa fa-fw fa-file"></i> CV</a>
-  <a href="https://milesdwilliams15.github.io/research/"><i class="fa fa-fw fa-area-chart"></i> Research</a>
-  <a href="https://milesdwilliams15.github.io/teaching/"><i class="fa fa-fw fa-mortar-board"></i> Teaching</a>
   <div class="dropdown">
         <button class="dropbtn">
         <i class="fa fa-navicon"></i></button>
@@ -20,6 +17,9 @@ permalink: /teaching/
             <a href="https://milesdwilliams15.github.io/blog/"><i class="fa fa-fw fa-pencil"></i> My Blog</a>
         </div>
     </div>
+    <a href="https://github.com/milesdwilliams15/job-market-materials/raw/main/cv.pdf"><i class="fa fa-fw fa-file"></i> CV</a>
+  <a href="https://milesdwilliams15.github.io/research/"><i class="fa fa-fw fa-area-chart"></i> Research</a>
+  <a href="https://milesdwilliams15.github.io/teaching/"><i class="fa fa-fw fa-mortar-board"></i> Teaching</a>
 </div>
 
 <p> </p>
