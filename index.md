@@ -1,6 +1,6 @@
 
 <div class="topnav">
-    <div class="active">
+    <div class="dropdown, active">
         <button class="dropbtn"><strong>More</strong> <i class="fa fa-caret-down"></i></button>
         <div class="dropdown-content">
             <a href = "{{ site.data.social-media.email.href }}{{ site.data.social-media.email.id }}" title="Email me"><strong>Contact</strong></a>
