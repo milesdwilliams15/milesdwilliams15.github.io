@@ -1,10 +1,6 @@
 
 <div class="topnav">
-    <a class="active" href="https://milesdwilliams15.github.io/"><strong>Home</strong></a>
-    <a href="https://github.com/milesdwilliams15/job-market-materials/raw/main/cv.pdf"><strong>CV</strong></a>
-    <a href = "https://milesdwilliams15.github.io/research/"><strong>Research</strong></a>
-    <a href = "https://milesdwilliams15.github.io/teaching/"><strong>Teaching</strong></a>
-    <div class="dropdown">
+    <div class="active">
         <button class="dropbtn"><strong>More</strong> <i class="fa fa-caret-down"></i></button>
         <div class="dropdown-content">
             <a href = "{{ site.data.social-media.email.href }}{{ site.data.social-media.email.id }}" title="Email me"><strong>Contact</strong></a>
@@ -13,6 +9,10 @@
             <a href="https://milesdwilliams15.github.io/blog/"><strong>My Blog</strong></a>
         </div>
     </div>
+    <a href="https://github.com/milesdwilliams15/job-market-materials/raw/main/cv.pdf"><strong>CV</strong></a>
+    <a href = "https://milesdwilliams15.github.io/research/"><strong>Research</strong></a>
+    <a href = "https://milesdwilliams15.github.io/teaching/"><strong>Teaching</strong></a>
+    
 </div>  
 <br/>
 
