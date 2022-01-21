@@ -48,21 +48,18 @@ In addition to studying foreign aid, I have supported numerous experimental, qua
 <div class="col-md-7">
   <h3>Education</h3>
     <ul class="ul-edu fa-ul">
-      <li><i class="fa fa-fw fa-graduation-cap"></i>
+      <li><i class="fa fa-fw fa-graduation-cap"></i><strong>PhD in Political Science, 2022 (expected)</strong>
         <div class="description">
-          <p class="course"><strong>PhD in Political Science, 2022 (expected)</strong></p>
           <p class="institution">University of Illinois at Urbana-Champaign</p>
         </div>
       </li>
-      <li><i class="fa fa-fw fa-graduation-cap"></i>
+      <li><i class="fa fa-fw fa-graduation-cap"></i><strong>MA in Political Science, 2016</strong>
         <div class="description">
-          <p class="course"><strong>MA in Political Science, 2016</strong></p>
           <p class="institution">Eastern Illinois University</p>
         </div>
       </li>
-      <li><i class="fa fa-fw fa-graduation-cap"></i>
+      <li><i class="fa fa-fw fa-graduation-cap"></i><strong>BA in History and Political Science; Philosophy, 2015</strong>
         <div class="description">
-          <p class="course"><strong>BA in History and Political Science; Philosophy, 2015</strong></p>
           <p class="institution">Greenville University</p>
         </div>
       </li>
