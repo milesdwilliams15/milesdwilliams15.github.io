@@ -3,7 +3,7 @@ description: Ph.D. Candidate in Political Science at the University of Illinois 
 logo: "https://avatars.githubusercontent.com/u/23504082?s=400&u=aa5bd54e36a65e310dad984963379bac5a49108f&v=4"
 google_analytics: true
 show_downloads: false
-theme: jekyll-theme-dinky
+theme: jekyll-theme-minima
 baseurl: ""
 url: "https://milesdwilliams15.github.io/"
 gems:
