@@ -38,7 +38,6 @@ In addition to studying foreign aid, I have supported numerous experimental, qua
     <ul class="ul-interests">
       <li>International Relations</li>
       <li>Political Economy</li>
-      <li>Foreign Aid</li>
       <li>Game Theory</li>
       <li>Statistical Methods</li>
       <li>Machine Learning</li>
@@ -51,19 +50,19 @@ In addition to studying foreign aid, I have supported numerous experimental, qua
     <ul class="ul-edu fa-ul">
       <li><i class="fa fa-fw fa-graduation-cap"></i>
         <div class="description">
-          <p class="course">PhD in Political Science, 2022 (expected)</p>
+          <p class="course"><strong>PhD in Political Science, 2022 (expected)</strong></p>
           <p class="institution">University of Illinois at Urbana-Champaign</p>
         </div>
       </li>
       <li><i class="fa fa-fw fa-graduation-cap"></i>
         <div class="description">
-          <p class="course">MA in Political Science, 2016</p>
+          <p class="course"><strong>MA in Political Science, 2016</strong></p>
           <p class="institution">Eastern Illinois University</p>
         </div>
       </li>
       <li><i class="fa fa-fw fa-graduation-cap"></i>
         <div class="description">
-          <p class="course">BA in History and Political Science; Philosophy, 2015</p>
+          <p class="course"><strong>BA in History and Political Science; Philosophy, 2015</strong></p>
           <p class="institution">Greenville University</p>
         </div>
       </li>
