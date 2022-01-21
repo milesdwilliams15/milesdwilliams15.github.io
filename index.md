@@ -6,7 +6,7 @@
 <div class="topnav">
   <div class="dropdown">
         <button class="dropbtn">
-        <i class="fa fa-navicon"></i></button>
+        <i class="fa fa-navicon"></i>More</button>
         <div class="dropdown-content">
             <a href="https://github.com/milesdwilliams15/job-market-materials/raw/main/cv.pdf"><i class="fa fa-fw fa-file"></i> My CV</a>
             <a href="{{ site.data.social-media.email.href }}{{ site.data.social-media.email.id }}"><i class="fa fa-fw fa-envelope"></i> Email Me</a>
