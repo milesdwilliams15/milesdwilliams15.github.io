@@ -27,9 +27,48 @@
 
 
 ## About Me <img src="logo.png" align="right" height="130" style = "border-radius:0px"/>
-My name is Miles Williams and I am a Ph.D. candidate in the Department of Political Science at the [University of Illinois at Urbana-Champaign](https://pol.illinois.edu/). I also serve as an Associate Fellow specializing in methods with the federal [Office of Evaluation Sciences](https://oes.gsa.gov/). I am interested in international relations, political economy, statistical methods, and causal inference. My primary research centers on identifying the foreign policy goals that motivate countries to give foreign aid, and I have a number of ongoing projects related to this theme. In my dissertation, I use game theory, classic econometrics, and machine learning to shed light on how foreign aid allocation serves as an arena of both strategic competition and buck-passing among donor governments.
+My name is Miles Williams and I am a Ph.D. candidate in the Department of Political Science at the [University of Illinois at Urbana-Champaign](https://pol.illinois.edu/). I also serve as an Associate Fellow specializing in methods with the federal [Office of Evaluation Sciences](https://oes.gsa.gov/). My research has appeared in a range of outlets, including peer-reviewed journals, book chapters, and online articles. 
 
-My research has appeared in a range of outlets, including peer-reviewed journals, book chapters, and online articles. In addition to studying foreign aid, I have supported numerous experimental, quasi-experimental, and descriptive evaluations for the federal government related to public finance and vaccination uptake. I also have collaborated on projects that apply text-as-data methods to religious political communication, and I actively maintain a research agenda centered on developing methods that rely on novel applications of machine learning for causal inference or that build on model-based approaches to testing theoretical models. Click on the above links to download the latest copy of my CV, to read summaries of my research and my teaching, and more.
+My primary research agenda centers on identifying the foreign policy goals that motivate countries to give foreign aid. In my dissertation, I use game theory, classic econometrics, and machine learning to shed light on how foreign aid allocation serves as an arena of both strategic competition and buck-passing among donor governments.
+
+In addition to studying foreign aid, I have supported numerous experimental, quasi-experimental, and descriptive evaluations for the federal government; collaborated on projects that apply text-as-data methods to religious political communication; and actively maintain projects centered on innovative applications of machine learning for causal inference and statistical approaches for testing theoretical models.
+
+<div class="col-md-5">
+  <h3>Interests</h3>
+    <ul class="ul-interests">
+      <li>International Relations</li>
+      <li>Political Economy</li>
+      <li>Foreign Aid</li>
+      <li>Game Theory</li>
+      <li>Statistical Methods</li>
+      <li>Machine Learning</li>
+      <li>Causal Inference</li>
+    </ul>
+  </div>
+  
+<div class="col-md-7">
+  <h3>Education</h3>
+    <ul class="ul-edu fa-ul">
+      <li><i class="fa-li fas fa-graduation-cap"></i>
+        <div class="description">
+          <p class="course">PhD in Political Science, 2022 (expected)</p>
+          <p class="institution">University of Illinois at Urbana-Champaign</p>
+        </div>
+      </li>
+      <li><i class="fa-li fas fa-graduation-cap"></i>
+        <div class="description">
+          <p class="course">MA in Political Science, 2016</p>
+          <p class="institution">Eastern Illinois University</p>
+        </div>
+      </li>
+      <li><i class="fa-li fas fa-graduation-cap"></i>
+        <div class="description">
+          <p class="course">BA in History and Political Science; Philosophy, 2015</p>
+          <p class="institution">Greenville University</p>
+        </div>
+      </li>
+    </ul>
+  </div>
 
 ---
 
