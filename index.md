@@ -27,7 +27,7 @@
 
 
 ## About Me <img src="logo.png" align="right" height="130" style = "border-radius:0px"/>
-My name is Miles Williams and I am a Ph.D. candidate in the Department of Political Science at the [University of Illinois at Urbana-Champaign](https://pol.illinois.edu/). I also serve as an Associate Fellow specializing in methods with the federal [Office of Evaluation Sciences](https://oes.gsa.gov/). My research has appeared in a range of outlets, including peer-reviewed journals, book chapters, and online articles. 
+My name is Miles Williams and I am a Ph.D. candidate in the Department of Political Science at the [University of Illinois at Urbana-Champaign](https://pol.illinois.edu/). I also serve as an Associate Fellow specializing in methods with the federal [Office of Evaluation Sciences](https://oes.gsa.gov/). 
 
 My primary research agenda centers on identifying the foreign policy goals that motivate countries to give foreign aid. In my dissertation, I use game theory, classic econometrics, and machine learning to shed light on how foreign aid allocation serves as an arena of both strategic competition and buck-passing among donor governments.
 

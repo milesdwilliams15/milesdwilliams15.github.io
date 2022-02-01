@@ -30,7 +30,7 @@ permalink: /research/
 
 ## My Research
 
-My research reflects a mix of projects and interests and has appeared in peer-reviewed journals, book chapters, and various online outlets. My primary research agenda centers on the political and strategic goals that motivate foreign aid giving by donor governments. But, as you'll see below, my interests and contributions include not just the political economy of aid, but also methods, political communication, religion in politics, and policy. 
+My research reflects a mix of projects and interests and has appeared in peer-reviewed journals, book chapters, and various online outlets. My primary research agenda centers on the political and strategic goals that motivate foreign aid giving by donor governments. But, as you'll see below, my interests and contributions extend to statistical methods, political communication, religion in politics, and policy evaluation. 
 
   
 **Political Economy of Aid**
