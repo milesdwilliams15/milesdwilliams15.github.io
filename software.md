@@ -38,3 +38,7 @@ As a part of my methodologically oriented research agenda, I have developed a nu
   <li><a href = "https://github.com/milesdwilliams15/SARM">SARM</a> - For estimating a modified version of the Strategic Autoregressive Model developed by <a href = "https://www.cambridge.org/core/journals/political-analysis/article/estimating-freeriding-behavior-the-stratam-model/0CBD6176E53848732CEC2C151A491212">Steinwand (2011)</a>.</li>
   <li>oesr (available soon, with Ryan T. Moore) - For visualizing the results from randomized controlled trials using the Office of Evaluation Sciences' <a href = "https://oes.gsa.gov/assets/files/reporting-statistical-results.pdf">recommended style guide</a>.</li>
 </ul>
+
+Once upon a time, I also published on RPubs some code I wrote to make producing interaction plots a little more flexible. Existing options like `interplot` usually work well for me, but on occasion I've used models that `interplot` and other packages don't support. Apparently, others out there have found my code useful, too, because I receive emails from time to time from folks who have made good use of it in their own research and who have questions about ways to modify it for their own purposes. I therefore figured the code was worth highlighting here if only to potentially improve its visibility. 
+
+> ("Plotting Martinal Effects")[https://rpubs.com/milesdwilliams15/381372]
