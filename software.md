@@ -41,4 +41,4 @@ As a part of my methodologically oriented research agenda, I have developed a nu
 
 Once upon a time, I also published on RPubs some code I wrote to make producing interaction plots a little more flexible. Existing options like `interplot` usually work well for me, but on occasion I've used models that `interplot` and other packages don't support. Apparently, others out there have found my code useful, too, because I receive emails from time to time from folks who have made good use of it in their own research and who have questions about ways to modify it for their own purposes. I therefore figured the code was worth highlighting here if only to potentially improve its visibility. 
 
-> ("Plotting Martinal Effects")[https://rpubs.com/milesdwilliams15/381372]
+  - ("Plotting Martinal Effects")[https://rpubs.com/milesdwilliams15/381372]
