@@ -17,7 +17,7 @@ categories: ["Methods", "Multipe Comparisons"]
 ```{r setup, include=FALSE, cache=FALSE}
 base_dir <- "~/My Website/milesdwilliams15.github.io/" # i.e. where the jekyll blog is on the hard drive.
 base_url <- "/" # keep as is
-fig_path <- "assets/images/2021-03-12/" # customize to heart's content, I 'spose.
+fig_path <- "assets/images/2022-03-04/" # customize to heart's content, I 'spose.
 
 knitr::opts_knit$set(base.dir = base_dir, base.url = base_url)
 knitr::opts_chunk$set(fig.path = fig_path,

@@ -43,7 +43,7 @@ below figure summarizes, women and those with a four-year degree are
 over-represented among voters (group *A*) and are under-represented
 among non-voters (group *B*).
 
-![](/assets/images/2021-03-12/voterFreq-1.png)<!-- -->
+![](/assets/images/2022-03-04/voterFreq-1.png)<!-- -->
 
 The groups clearly look different, but is this difference statistically
 detectable? We can answer this question using a multinomial test, such
@@ -73,7 +73,7 @@ test[c("observedChi", "pChi")] %>% bind_cols()
     ## # A tibble: 1 x 2
     ##   observedChi  pChi
     ##         <dbl> <dbl>
-    ## 1        540.     0
+    ## 1        644.     0
 
 The output shows the computed chi-squared statistic with its Monte Carlo
 simulated p-value (this is a more robust alternative to a test based on
@@ -218,7 +218,7 @@ tibble(
 p1 + p2  
 ```
 
-![](/assets/images/2021-03-12/unnamed-chunk-3-1.png)<!-- -->
+![](/assets/images/2022-03-04/unnamed-chunk-3-1.png)<!-- -->
 
 The left panel in the above figure shows the distribution of chi-squared
 p-values, and the right panel shows what the distribution of p-values
@@ -276,7 +276,7 @@ bind_cols(mins) %>%
   )
 ```
 
-![](/assets/images/2021-03-12/unnamed-chunk-4-1.png)<!-- -->
+![](/assets/images/2022-03-04/unnamed-chunk-4-1.png)<!-- -->
 
 Clearly, as the number of tests being considered increases, the
 likelihood that we incorrectly reject the null for at least one test
@@ -298,7 +298,7 @@ distribution.
 Consider the distribution of chi-squared p-values under the null
 generated earlier:
 
-![](/assets/images/2021-03-12/unnamed-chunk-5-1.png)<!-- -->
+![](/assets/images/2022-03-04/unnamed-chunk-5-1.png)<!-- -->
 
 To identify *α*′ all we need to do is calculate the 5th percentile of
 this distribution. We can do this by writing:
@@ -311,12 +311,12 @@ alpha_prime <- as.vector(
 alpha_prime # new alpha level
 ```
 
-    ## [1] 0.000437
+    ## [1] 0.0003785
 
 Using this new level, we can recover a test with a 5 percent false
 positive rate:
 
-![](/assets/images/2021-03-12/unnamed-chunk-7-1.png)<!-- -->
+![](/assets/images/2022-03-04/unnamed-chunk-7-1.png)<!-- -->
 
 ## Putting it all together
 
@@ -413,7 +413,7 @@ new_alpha # print the new alpha-level
 ```
 
     ## reject the null if p <= to: 
-    ##                    0.008415
+    ##                    0.007809
 
 The above gives us our new threshold for rejecting the null. If a
 different original test level is desired, simply override the default
