@@ -43,36 +43,7 @@ below figure summarizes, women and those with a four-year degree are
 over-represented among voters (group *A*) and are under-represented
 among non-voters (group *B*).
 
-``` r
-library(tidyverse)
-library(patchwork)
-library(seerrr)
-library(XNomial)
-theme_set(theme_bw())
-
-a_freq <- as.vector(rmultinom(1, 470, 4:1 / sum(4:1)))
-b_freq <- as.vector(rmultinom(1, 1000, 1:4 / sum(1:4)))
-strata <- c("F = 1; D = 1", "F = 0; D = 1", "F = 1; D = 0", "F = 0; D = 0")
-dt <- tibble(
-  strata = rep(strata, len = 8),
-  group = rep(c("A", "B"), each = 4),
-  freq = c(a_freq, b_freq)
-)
-ggplot(dt) +
-  aes(
-    strata,
-    freq
-  ) +
-  geom_col() +
-  facet_wrap(~ group) + 
-  labs(
-    x = NULL,
-    y = "Frequency",
-    title = "Voters vs. non-voters"
-  )
-```
-
-![](/assets/images/2021-03-12/unnamed-chunk-1-1.png)<!-- -->
+![](/assets/images/2021-03-12/voterFreq-1.png)<!-- -->
 
 The groups clearly look different, but is this difference statistically
 detectable? We can answer this question using a multinomial test, such
@@ -102,7 +73,7 @@ test[c("observedChi", "pChi")] %>% bind_cols()
     ## # A tibble: 1 x 2
     ##   observedChi  pChi
     ##         <dbl> <dbl>
-    ## 1        624.     0
+    ## 1        529.     0
 
 The output shows the computed chi-squared statistic with its Monte Carlo
 simulated p-value (this is a more robust alternative to a test based on
@@ -247,7 +218,7 @@ tibble(
 p1 + p2  
 ```
 
-![](/assets/images/2021-03-12/unnamed-chunk-4-1.png)<!-- -->
+![](/assets/images/2021-03-12/unnamed-chunk-3-1.png)<!-- -->
 
 The left panel in the above figure shows the distribution of chi-squared
 p-values, and the right panel shows what the distribution of p-values
@@ -305,7 +276,7 @@ bind_cols(mins) %>%
   )
 ```
 
-![](/assets/images/2021-03-12/unnamed-chunk-5-1.png)<!-- -->
+![](/assets/images/2021-03-12/unnamed-chunk-4-1.png)<!-- -->
 
 Clearly, as the number of tests being considered increases, the
 likelihood that we incorrectly reject the null for at least one test
@@ -327,14 +298,7 @@ distribution.
 Consider the distribution of chi-squared p-values under the null
 generated earlier:
 
-``` r
-p1 +
-  labs(
-    subtitle = NULL
-  )
-```
-
-![](/assets/images/2021-03-12/unnamed-chunk-6-1.png)<!-- -->
+![](/assets/images/2021-03-12/unnamed-chunk-5-1.png)<!-- -->
 
 To identify *α*′ all we need to do is calculate the 5th percentile of
 this distribution. We can do this by writing:
@@ -347,41 +311,12 @@ alpha_prime <- as.vector(
 alpha_prime # new alpha level
 ```
 
-    ## [1] 0.0009675
+    ## [1] 0.000593
 
 Using this new level, we can recover a test with a 5 percent false
 positive rate:
 
-``` r
-sim_out %>%
-  summarize(
-    "false-positives at old alpha" = mean(p.value <= alpha),
-    "false-positives at new alpha" = mean(p.value <= alpha_prime)
-  ) %>%
-  pivot_longer(
-    1:2
-  ) %>%
-  ggplot() +
-  aes(
-    x = value,
-    y = name
-  ) +
-  geom_col(width = 0.5, color = "black") +
-  labs(
-    x = "False-Positives",
-    y = NULL
-  ) +
-  scale_x_continuous(
-    n.breaks = 8,
-    labels = scales::percent
-  ) +
-  geom_vline(
-    xintercept = 0.05,
-    lty = 2
-  )
-```
-
-![](/assets/images/2021-03-12/unnamed-chunk-8-1.png)<!-- -->
+![](/assets/images/2021-03-12/unnamed-chunk-7-1.png)<!-- -->
 
 ## Putting it all together
 
@@ -478,7 +413,7 @@ new_alpha # print the new alpha-level
 ```
 
     ## reject the null if p <= to: 
-    ##                    0.010629
+    ##                   0.0104945
 
 The above gives us our new threshold for rejecting the null. If a
 different original test level is desired, simply override the default

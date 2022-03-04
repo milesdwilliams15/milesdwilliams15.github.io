@@ -44,7 +44,7 @@ For each of the groups, there are four unique strata into which individuals can 
   
 The frequency distributions of each strata differ between groups. As the below figure summarizes, women and those with a four-year degree are over-represented among voters (group $A$) and are under-represented among non-voters (group $B$).
 
-```{r, fig.height=4, fig.width=8}
+```{r voterFreq, fig.height=4, fig.width=8, echo=FALSE}
 library(tidyverse)
 library(patchwork)
 library(seerrr)
@@ -75,7 +75,7 @@ ggplot(dt) +
 
 The groups clearly look different, but is this difference statistically detectable? We can answer this question using a multinomial test, such as [chi-squared](https://en.wikipedia.org/wiki/Pearson%27s_chi-squared_test):
 
-```{r, echo=TRUE}
+```{r}
 library(tidyverse) # for grammar
 library(seerrr)    # for simulations
 library(XNomial)   # for multinomial tests
@@ -104,7 +104,7 @@ That multinomial tests are subject to this problem isn't obvious at first blush 
 
 When the null hypothesis is true, we expect to get a false positive 5 percent of the time. In the below code a possible distribution of p-values under the null is simulated using `runif` and is saved as the object `p.null`. The code then iteratively simulates two multinomial distributions that have the same underlying data-generating process and applies the chi-squared test. The calulated p-values for each run of the simulation are contained in the object `sim_out`.
 
-```{r, echo=TRUE}
+```{r}
 # what the null distribution should look like
 p.null <- runif(200)
 
@@ -128,7 +128,7 @@ simulate(
 
 We would expect that, since the null is true (that the two groups being compared are drawn from the same multinomial distribution), the chi-squared test should reject the null about 5 percent of the time. But when we plot the distribution of `p.null` next to the distribution of chi-squared p-values we clearly see that we reject the null far more frequently than expected.
 
-```{r, fig.height=4, fig.width=8, echo=TRUE}
+```{r, fig.height=4, fig.width=8}
 sim_out %>%
   mutate(
     p.bins = round(p.value, 2),
@@ -255,7 +255,7 @@ To recover $\alpha'$ for a given desired $\alpha$ we can take a simulation appro
 
 Consider the distribution of chi-squared p-values under the null generated earlier:
 
-```{r, fig.height=4, fig.width=4}
+```{r, fig.height=4, fig.width=4, echo=FALSE}
 p1 +
   labs(
     subtitle = NULL
@@ -264,7 +264,7 @@ p1 +
 
 To identify $\alpha'$ all we need to do is calculate the 5th percentile of this distribution. We can do this by writing:
 
-```{r, echo=TRUE}
+```{r}
 alpha <- 0.05
 alpha_prime <- as.vector(
   quantile(sim_out$p.value, alpha)
@@ -274,7 +274,7 @@ alpha_prime # new alpha level
 
 Using this new level, we can recover a test with a 5 percent false positive rate:
 
-```{r, fig.height=2, fig.width=6}
+```{r, fig.height=2, fig.width=6, echo=FALSE}
 sim_out %>%
   summarize(
     "false-positives at old alpha" = mean(p.value <= alpha),
@@ -309,7 +309,7 @@ In summary, multinomial tests have a multiple comparisons problem. This fact is 
 
 This problem has a simple solution. By simulating a distribution of p-values under the null via a Monte Carlo analysis, it is possible identify a more appropriate test level for rejecting the null. The above discussion described what this entails. For convenience, I've included some code below that can be easily addapted to a variety of scenarios for running such a Monte Carlo analysis. It only requires using the `XNomial` package to run.
 
-```{r, echo=TRUE}
+```{r}
 # helper to keep xmonte from producing message
 # (this is really anoying when running multple
 # iterations)
@@ -368,7 +368,7 @@ find_new_alpha <- function(
 
 To see how it works, we can use it on the simulated voting turnout data described at the beginning of this post (note that it will take some time to run):
 
-```{r, echo=TRUE}
+```{r}
 new_alpha <- find_new_alpha(
   group1_freq = dt$freq[dt$group=="A"],
   group2_freq = dt$freq[dt$group=="B"]
