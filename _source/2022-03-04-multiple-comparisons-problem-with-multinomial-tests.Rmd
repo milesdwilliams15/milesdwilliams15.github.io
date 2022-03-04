@@ -44,16 +44,16 @@ For each of the groups, there are four unique strata into which individuals can 
   
 The frequency distributions of each strata differ between groups. As the below figure summarizes, women and those with a four-year degree are over-represented among voters (group $A$) and are under-represented among non-voters (group $B$).
 
-```{r voterFreq, fig.height=4, fig.width=8, echo=FALSE}
+```{r voterFreq, fig.height=4, fig.width=4, echo=FALSE}
 library(tidyverse)
 library(patchwork)
 library(seerrr)
 library(XNomial)
-theme_set(theme_bw())
+theme_set(theme_bw() + theme(axis.text = element_text(color = "black")))
 
 a_freq <- as.vector(rmultinom(1, 470, 4:1 / sum(4:1)))
 b_freq <- as.vector(rmultinom(1, 1000, 1:4 / sum(1:4)))
-strata <- c("F = 1; D = 1", "F = 0; D = 1", "F = 1; D = 0", "F = 0; D = 0")
+strata <- c("(F = 1; D = 1)", "(F = 0; D = 1)", "(F = 1; D = 0)", "(F = 0; D = 0)")
 dt <- tibble(
   strata = rep(strata, len = 8),
   group = rep(c("A", "B"), each = 4),
@@ -62,14 +62,21 @@ dt <- tibble(
 ggplot(dt) +
   aes(
     strata,
-    freq
+    freq,
+    fill = group
   ) +
-  geom_col() +
-  facet_wrap(~ group) + 
+  geom_col(
+    position = "dodge",
+    color = "black"
+  ) +
   labs(
     x = NULL,
     y = "Frequency",
     title = "Voters vs. non-voters"
+  ) +
+  theme(
+    legend.position = c(0.85, 0.85),
+    legend.background = element_rect(color = "black")
   )
 ```
 

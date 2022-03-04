@@ -73,7 +73,7 @@ test[c("observedChi", "pChi")] %>% bind_cols()
     ## # A tibble: 1 x 2
     ##   observedChi  pChi
     ##         <dbl> <dbl>
-    ## 1        529.     0
+    ## 1        540.     0
 
 The output shows the computed chi-squared statistic with its Monte Carlo
 simulated p-value (this is a more robust alternative to a test based on
@@ -311,7 +311,7 @@ alpha_prime <- as.vector(
 alpha_prime # new alpha level
 ```
 
-    ## [1] 0.000593
+    ## [1] 0.000437
 
 Using this new level, we can recover a test with a 5 percent false
 positive rate:
@@ -413,7 +413,7 @@ new_alpha # print the new alpha-level
 ```
 
     ## reject the null if p <= to: 
-    ##                   0.0104945
+    ##                    0.008415
 
 The above gives us our new threshold for rejecting the null. If a
 different original test level is desired, simply override the default
