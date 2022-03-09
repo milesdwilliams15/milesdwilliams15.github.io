@@ -36,14 +36,16 @@ My research reflects a mix of projects and interests and has appeared in peer-re
 **Political Economy of Aid**
     
 "Targeting Civil War: Intra-state Conflict and the Opportunity-cost of Foreign Aid." (Under Review) [Available upon request].
+
+"Who Leads? The Strategic Determinants of Lead Donorship" (Working Paper) [[pdf]](https://github.com/milesdwilliams15/who-leads/raw/main/manuscript.pdf) [[GitHub]](https://github.com/milesdwilliams15/who-leads)
       
 "A Strategic Political Economy of Aid" (Working Paper) [[pdf]](https://github.com/milesdwilliams15/Rivalry-and-Collective-Action-in-International-Development/raw/master/theory_writing_sample.pdf)
     
 "Competition and Buck-Passing in the Political Economy of Aid" (Working Paper) [[pdf]](https://github.com/milesdwilliams15/Rivalry-and-Collective-Action-in-International-Development/raw/master/empirical_writing_sample.pdf)
     
-"Xinhua Coverage of Chinese Foreign Aid Allocations." With Lucie Lu (Work-in-Progress) [[See live updates on GitHub]](https://github.com/milesdwilliams15/chinese_media_and_foreign_aid)
+"Xinhua Coverage of Chinese Foreign Aid Allocations." With Lucie Lu (Work-in-Progress) [[GitHub]](https://github.com/milesdwilliams15/chinese_media_and_foreign_aid)
 
-"Strategic Multilateralism: International Development Cooperation and the World Bank." (Work-in-Progress) [[See live updates on GitHub]](https://github.com/milesdwilliams15/Strategic-Multilateralism)
+"Strategic Multilateralism: International Development Cooperation and the World Bank." (Work-in-Progress) [[GitHub]](https://github.com/milesdwilliams15/Strategic-Multilateralism)
     
 
 **Machine Learning and Text-as-Data**
