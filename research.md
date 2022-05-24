@@ -35,7 +35,7 @@ My research reflects a mix of projects and interests and has appeared in peer-re
   
 **Political Economy of Aid**
     
-"Targeting Civil War: Intra-state Conflict and the Opportunity-cost of Foreign Aid." (Under Review) [Available upon request].
+"Foreign Aid, Migrantion, and Civil War." (Under Review) [Available upon request].
 
 "Who Leads? The Strategic Determinants of Lead Donorship" (Working Paper) [[pdf]](https://github.com/milesdwilliams15/who-leads/raw/main/manuscript.pdf) [[GitHub]](https://github.com/milesdwilliams15/who-leads)
       
