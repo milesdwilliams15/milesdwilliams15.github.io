@@ -30,18 +30,28 @@ permalink: /teaching/
 
 ## My Teaching
 
-I am equipped to teach courses in international relations, international and comparative 
-political economy, statistical methods, research design, and formal theory. A summary of my teaching experience is shown below.
+This page includes details about my teaching philosophy and a directory of courses I have taught. I try to keep this page as up-to-date as possible by adding course syllabi and relevant course materials as they evolve.
 
- <ul><li>Intro to International Relations (2021), Independent Instructor.</li>
- <li>Intro to Political Science (2017), Teaching Assistant for Konstantinos Kourtikakis.</li>
- <li>Math Camp Instructor:</li>
-   <ul>
-   <li>Probability in R (2018-2020)</li>
-   <li>Integrals (2020)</li>
-   <li>Linear Regression (2021)</li>
-</ul></ul>
+### Documents
 
-To learn more about my teaching philosophy, [see here](/assets/files/teaching_statement.pdf).
+- [Teaching Statement](/assets/files/teaching_statement.pdf).
+- [If I tought a graduate level IR proseminar...](/assets/files/example_syllabus.pdf).
 
-[See here](/assets/files/example_syllabus.pdf) for an example syllabus.
+
+### Courses
+
+**Denison University**
+
+- POSC 199 (War, Wealth, and World Politics)
+- DPR 101 (Introduction to Data Visualization)
+
+**University of Illinois at Urbana-Champaign**
+
+- Intro to International Relations (Independent Instructor)
+- Intro to Political Science (Teaching Assistant)
+- UIUC Math Camp
+  + [Probability in R](https://github.com/milesdwilliams15/Math-Camp-2020)
+  + [Integrals](https://github.com/milesdwilliams15/Math-Camp-2020)
+  + [Linear Regression](https://github.com/milesdwilliams15/math-camp-2021-ols)
+  + [Loops](https://github.com/milesdwilliams15/Math-Camp-2019)
+  + [Version Control](https://github.com/milesdwilliams15/git-and-rstuidio-math-camp-2021)
