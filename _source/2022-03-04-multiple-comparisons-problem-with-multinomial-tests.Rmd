@@ -45,7 +45,7 @@ For each of the groups, there are four unique strata into which individuals can 
   1. Female and a four-year degree ($F = 1$ and $D = 1$);
   2. Female and no degree ($F = 1$ and $D = 0$);
   3. Male and a four-year degree ($F = 0$ and $D = 1$);
-  4. Male and no degree ($F = 1$ and $D = 0$).
+  4. Male and no degree ($F = 0$ and $D = 0$).
   
 The frequency distributions of each strata differ between groups. As the below figure summarizes, women and those with a four-year degree are over-represented among voters (group $A$) and are under-represented among non-voters (group $B$).
 
@@ -88,20 +88,16 @@ ggplot(dt) +
 The groups clearly look different, but is this difference statistically detectable? We can answer this question using a multinomial test, such as [chi-squared](https://en.wikipedia.org/wiki/Pearson%27s_chi-squared_test):
 
 ```{r}
-library(tidyverse) # for grammar
-library(seerrr)    # for simulations
-library(XNomial)   # for multinomial tests
-
 # perform chi-squared test
-test <- xmonte(
-  obs = dt$freq[dt$group == "A"],
-  exp = dt$freq[dt$group == "B"],
-  statName = "Chisq"
+chisq.test(
+  x = cbind(
+    dt$freq[1:4],
+    dt$freq[5:8]
+  )
 )
-test[c("observedChi", "pChi")] %>% bind_cols()
 ```
 
-The output shows the computed chi-squared statistic with its Monte Carlo simulated p-value (this is a more robust alternative to a test based on the asymptotic chi-squared distribution). The p-value is well below the usual 0.05 threshold, meaning we can reject the null that the sub-pulations are drawn from the same multinomial distribution. In other words, ***voters and non-voters are different.***
+The output shows the computed chi-squared statistic with its p-value, which is well below the usual 0.05 threshold, meaning we can reject the null that the sub-populations are drawn from the same multinomial distribution. In other words, ***voters and non-voters are different.***
 
 
 ## The Problem
@@ -265,7 +261,7 @@ tibble(
 
 As we would expect, there's some variation between the dice, but that's normal when dealing with observed data. 
 
-If we want to be sure, we can implement a IND test in R to check:
+If we want to be sure, we can implement an IND test in R to check:
 
 ```{r}
 # We need to put the data in a 2-dimensional array:
@@ -290,7 +286,7 @@ While this advice is straightforward enough, it is surprisingly easy to misapply
 
 When we misapply the GOF test like this, we run into the problem that I had identified in simulations with this test: a ***really high*** false-positive rate.
 
-To illustrate, suppose we took the same two dice compared above and rather than perform a IND test to determine if the two dice are equivalent we performed the GOF test and treated one of the dice as a referent group that captures the expected frequencies of the other die.
+To illustrate, suppose we took the same two dice compared above and rather than perform an IND test to determine if the two dice are equivalent we performed the GOF test and treated one of the dice as a referent group that captures the expected frequencies of the other die.
 
 ```{r running the wrong test, echo=TRUE}
 # Roll the dice

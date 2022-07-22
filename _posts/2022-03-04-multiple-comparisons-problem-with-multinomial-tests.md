@@ -60,7 +60,7 @@ individuals can fall:
 1.  Female and a four-year degree (*F* = 1 and *D* = 1);
 2.  Female and no degree (*F* = 1 and *D* = 0);
 3.  Male and a four-year degree (*F* = 0 and *D* = 1);
-4.  Male and no degree (*F* = 1 and *D* = 0).
+4.  Male and no degree (*F* = 0 and *D* = 0).
 
 The frequency distributions of each strata differ between groups. As the
 below figure summarizes, women and those with a four-year degree are
@@ -75,36 +75,25 @@ as
 [chi-squared](https://en.wikipedia.org/wiki/Pearson%27s_chi-squared_test):
 
 ``` r
-library(tidyverse) # for grammar
-library(seerrr)    # for simulations
-library(XNomial)   # for multinomial tests
-
 # perform chi-squared test
-test <- xmonte(
-  obs = dt$freq[dt$group == "A"],
-  exp = dt$freq[dt$group == "B"],
-  statName = "Chisq"
+chisq.test(
+  x = cbind(
+    dt$freq[1:4],
+    dt$freq[5:8]
+  )
 )
 ```
 
     ## 
-    ## P value (Chisq) = 0 ± 0
+    ##  Pearson's Chi-squared test
+    ## 
+    ## data:  cbind(dt$freq[1:4], dt$freq[5:8])
+    ## X-squared = 276.24, df = 3, p-value < 2.2e-16
 
-``` r
-test[c("observedChi", "pChi")] %>% bind_cols()
-```
-
-    ## # A tibble: 1 x 2
-    ##   observedChi  pChi
-    ##         <dbl> <dbl>
-    ## 1        591.     0
-
-The output shows the computed chi-squared statistic with its Monte Carlo
-simulated p-value (this is a more robust alternative to a test based on
-the asymptotic chi-squared distribution). The p-value is well below the
-usual 0.05 threshold, meaning we can reject the null that the
-sub-pulations are drawn from the same multinomial distribution. In other
-words, ***voters and non-voters are different.***
+The output shows the computed chi-squared statistic with its p-value,
+which is well below the usual 0.05 threshold, meaning we can reject the
+null that the sub-populations are drawn from the same multinomial
+distribution. In other words, ***voters and non-voters are different.***
 
 ## The Problem
 
@@ -264,9 +253,9 @@ chisq_out # the chi-squared results
     ##  Chi-squared test for given probabilities
     ## 
     ## data:  x
-    ## X-squared = 4.04, df = 5, p-value = 0.5437
+    ## X-squared = 4.16, df = 5, p-value = 0.5266
 
-We have a p-value of 0.54, which is well above the conventional
+We have a p-value of 0.53, which is well above the conventional
 *p* \< 0.05 significance threshold. In short, we can’t reject the null
 hypothesis that the die is fair.
 
@@ -335,7 +324,7 @@ tibble(
 As we would expect, there’s some variation between the dice, but that’s
 normal when dealing with observed data.
 
-If we want to be sure, we can implement a IND test in R to check:
+If we want to be sure, we can implement an IND test in R to check:
 
 ``` r
 # We need to put the data in a 2-dimensional array:
@@ -353,10 +342,10 @@ chisq_out # look at the output
     ##  Pearson's Chi-squared test
     ## 
     ## data:  X
-    ## X-squared = 0.93942, df = 5, p-value = 0.9673
+    ## X-squared = 1.5106, df = 5, p-value = 0.9118
 
 Even though we observed some differences in frequencies, these
-differences are not statistically significant. The p-value is 0.97,
+differences are not statistically significant. The p-value is 0.91,
 which is well above the usual *p* \< 0.05 significance threshold.
 
 ## Getting our wires crossed
@@ -376,7 +365,7 @@ had identified in simulations with this test: a ***really high***
 false-positive rate.
 
 To illustrate, suppose we took the same two dice compared above and
-rather than perform a IND test to determine if the two dice are
+rather than perform an IND test to determine if the two dice are
 equivalent we performed the GOF test and treated one of the dice as a
 referent group that captures the expected frequencies of the other die.
 
@@ -397,7 +386,7 @@ chisq_out
     ##  Chi-squared test for given probabilities
     ## 
     ## data:  x
-    ## X-squared = 6.015, df = 5, p-value = 0.3048
+    ## X-squared = 12.601, df = 5, p-value = 0.02742
 
 If we run the GOF test, we get a chi-squared statistic and a
 p-value—with no objection from R, by the way!
@@ -429,7 +418,8 @@ p.values <- replicate(its, run_the_test(), 'c')
 head(p.values) # we have a collection of p-values
 ```
 
-    ## [1] 0.25182781 0.04395254 0.67461200 0.22043008 0.73326219 0.94226484
+    ## [1] 0.0047789999 0.0012484284 0.0003859263 0.0581451295 0.6902624535
+    ## [6] 0.2705798451
 
 If the test is performing as it should, we should get p-values less than
 0.05 about 5% of the time. But this isn’t the case:
@@ -439,7 +429,7 @@ fpr <- round(100 * mean(p.values <= 0.05), 2)
 cat('The test rejects the null ', fpr, '% of the time.', sep = '')
 ```
 
-    ## The test rejects the null 38.3% of the time.
+    ## The test rejects the null 38% of the time.
 
 This is way too liberal! If we look at the distribution of p-values, we
 can see what the problem is:
@@ -491,7 +481,7 @@ p.values <- replicate(its, run_the_test(), 'c')
 head(p.values) # we have a collection of p-values
 ```
 
-    ## [1] 0.9999648 0.9977483 0.9976890 0.9997205 0.9983401 0.9985044
+    ## [1] 0.9880163 0.9997558 0.9948830 0.9960407 0.9997743 0.9904693
 
 The false-positive rate is basically zero now:
 
