@@ -1,5 +1,5 @@
 ---
-title: The Multiple Comparisons Problem with Multinomial Tests
+title: Doing the Right Multinomial Test
 output:
   md_document:
     variant: gfm
@@ -7,28 +7,52 @@ output:
 knit: (function(inputFile, encoding) {
   rmarkdown::render(inputFile, encoding = encoding, output_dir = "../_posts") })
 author: "Miles Williams"
-date: "2022-03-04"
+date: "2022-07-22"
 layout: post
-categories: ["Methods", "Multipe Comparisons"]
+categories: ["Methods", "Statistics"]
 ---
 
 [Back to Blog](https://milesdwilliams15.github.io/blog/)
 
-There’s a multiple comparisons problem with multinomial tests, and it
-has a simple solution. In this post, I demonstrate what the problem is
-and how to overcome it.
+\[Note: There was an earlier version of this post that got a few things
+wrong (I’m only human). I’ve since corrected this.\]
 
-## Multinomial Tests
+As a political scientist, I have to confess that something as basic as
+knowing how to properly apply a chi-squared test, and implement it
+correctly using statistical software, has been a blind spot for me.
+Linear regression, logit, and Tobit…no big deal. How difficult could a
+basic statistic like chi-squared be?
 
-Multinomial tests help in comparing discrete distributions. For example,
-one might use a multinomial test to determine whether two subpopulations
-look the same with respect to demographic characteristics. Supose we
-have a dataset with individuals divided into two groups. In group *A* we
-have individuals who voted in a US mid-term election. In group *B* we
-have those who did not. For simplicity’s sake, assume the only
-demographic variables we have for individuals in each group are gender
-(*F* = 1 if female, 0 if male) and whether an individual has at least a
-four-year degree (*D* = 1 if yes, 0 otherwise).
+It turns out it can be pretty darn tricky. I learned this in the process
+of writing methods guidance for the US [Office of Evaluation Sciences
+(OES)](https://oes.gsa.gov/). OES’s bread-and-butter research centers on
+embedding randomized controlled trials (RCTs) within existing or new US
+Federal Government policies. But lately, many projects have become more
+observational than experimental, with a significant subset of these
+projects being centered on identifying existing inequity in the
+disbursement of government benefits.
+
+The analysts for one such project wanted to apply a chi-squared test to
+draw inferences about whether significant disparities exist between
+individuals who are ***eligible*** to receive certain financial benefits
+and individuals who actually ***receive*** these benefits. Their design
+involved tabulating the demographic profiles of these different groups
+and then applying a chi-squared test to determine if the differences
+observed between the recipient group and the eligible population are
+significantly different.
+
+This idea seemed straightforward enough. Chi-squared tests are in a
+class of tests that are used to draw statistical inferences with respect
+to data that follow a [multinomial
+distribution](https://en.wikipedia.org/wiki/Multinomial_distribution).
+
+The goal is simple. Suppose we have a dataset with individuals divided
+into two groups. In group *A* we have individuals who voted in a US
+mid-term election. In group *B* we have those who did not. For
+simplicity’s sake, assume the only demographic variables we have for
+individuals in each group are gender (*F* = 1 if female, 0 if male) and
+whether an individual has at least a four-year degree (*D* = 1 if yes, 0
+otherwise).
 
 For each of the groups, there are four unique strata into which
 individuals can fall:
@@ -73,350 +97,445 @@ test[c("observedChi", "pChi")] %>% bind_cols()
     ## # A tibble: 1 x 2
     ##   observedChi  pChi
     ##         <dbl> <dbl>
-    ## 1        644.     0
+    ## 1        591.     0
 
 The output shows the computed chi-squared statistic with its Monte Carlo
 simulated p-value (this is a more robust alternative to a test based on
-the asymtotic chi-squared distribution). The p-value is well below the
-usual 0.05 threshhold, meaning we can reject the null that the
-subpulations are drawn from the same multinomial distribution.
+the asymptotic chi-squared distribution). The p-value is well below the
+usual 0.05 threshold, meaning we can reject the null that the
+sub-pulations are drawn from the same multinomial distribution. In other
+words, ***voters and non-voters are different.***
 
 ## The Problem
 
-The convenience of a multinomial test in this context is its relatively
-few assumptions. It simply considers whether the frequencies in each
-strata between groups *A* and *B* are too different from one another to
-be the result of chance. Beyond this, it makes no assumptions about the
-form or direction of this difference. This is a good justification for
-using this kind of test for addressing questions like that posed above.
+So, all seems good. Right? The convenience of a multinomial test in this
+context is its relatively few assumptions. It simply lets us consider
+whether the frequencies in each strata between groups *A* and *B* are
+too different from one another to be the result of chance. Beyond this,
+it makes no assumptions about the form or direction of this difference.
+This is a good justification for using this kind of test for addressing
+questions like that posed above, or in particular questions related to
+equity like the OES project I mentioned above.
 
-However, an often overlooked limitation of this approach is that
-multinomial tests, though not explicitly specified as such, are based on
-multiple comparisons. Unlike a t-test, for example, which considers the
-likelihood that the difference in means of two groups is greater than
-we’d expect by chance, a multinomial test like chi-squared considers
-differences across *multiple* strata between groups. In the case of the
-above example, four comparisons are being made on the basis of voting
-status—not just one.
+However, as it turns out, the way the team of OES analysts wanted to use
+the chi-squared test started to look problematic to me.
 
-This is problematic from a testing perspective because multiple
-comparisons are subject to what’s known as the [multiple testing
+I love to tinker with things, and I started to run simulations to get
+some power and false-positive rate calculations for chi-squared tests
+(because that’s what normal people do, right?). I didn’t expect anything
+weird to come out of this exercise—maybe some anti-conservative bias in
+asymptotic versions of the test relative to Monte Carlo versions, but
+nothing major.
+
+Much to my surprise, I noticed something really unusual. In in several
+simulations I was finding 30% false-positive rates! For reference, a
+properly performing test should have a false-positive rate of 5%. This
+was bad.
+
+At first, I thought there might be a pathology associated with
+multinomial tests related to the [multiple comparisons
 problem](https://en.wikipedia.org/wiki/Multiple_comparisons_problem#:~:text=In%20statistics%2C%20the%20multiple%20comparisons,more%20likely%20erroneous%20inferences%20become.).
-In short, as the number of statistical tests being considered grows, the
-likelihood of falsely rejecting the null hypothesis increases. This is
-what’s called the type I error or false positive rate.
+Unlike a t-test, I thought, which considers the likelihood that the
+difference in means of two groups is greater than we’d expect by chance,
+a multinomial test like chi-squared considers differences across
+*multiple* strata between groups. In the case of the voting example
+above, four comparisons are being made on the basis of voting status—not
+just one.
 
-That multinomial tests are subject to this problem isn’t obvious at
-first blush because they involve the estimation of a single statistic to
-summarize the differences between groups, and this statistic has one
-unique p-value. But the problem exists nonetheless. The below simulation
-illustrates this point.
+This would be problematic from a testing perspective because as the
+number of statistical tests being considered grows, the likelihood of
+falsely rejecting the null hypothesis increases (this is the multiple
+comparisons problem in a nutshell).
 
-When the null hypothesis is true, we expect to get a false positive 5
-percent of the time. In the below code a possible distribution of
-p-values under the null is simulated using `runif` and is saved as the
-object `p.null`. The code then iteratively simulates two multinomial
-distributions that have the same underlying data-generating process and
-applies the chi-squared test. The calulated p-values for each run of the
-simulation are contained in the object `sim_out`.
+After going down the rabbit-hole on this line of thinking, and pouring
+time into writing OES guidance (and a previous version of this post), a
+colleague of mine at OES (who also had not spent much time in the weeds
+with chi-squared tests) came across some statistical materials detailing
+***different kinds of chi-squared*** tests.
+
+It turns out you can implement what’s called a goodness of fit (GOF)
+chi-squared test or a chi-squared test of independence. The folks at OES
+(and me!) had been operating as if the first kind of test was the only
+test to use. In fact, we should have been using the other kind of test.
+
+## Chi-squared Tests
+
+GOF tests and independence (IND) tests are suited to one of two
+scenarios respectively:
+
+1.  If we want to draw inferences about whether a **sample** was drawn
+    from a **population** or well-defined multinomial data-generating
+    process, we should use a GOF test.
+2.  If we want to draw inferences about whether **two samples** were
+    drawn from the same multinomial data-generating process, we should
+    use an IND test.
+
+I’ll use an example with dice to illustrate.
+
+### Is a die fair?
+
+First, suppose we want to determine if a six-sided die is fair or
+biased. With a fair die, the probability of rolling any individual
+number should be *p* = 1/6. There are six sides, and if the die isn’t
+biased, then the probability that we roll 1, 2, 3, etc. should be 1 out
+of 6.
+
+We can “make” a six-sided die in R by writing a simple function called
+(most originally) `die(...)`:
 
 ``` r
-# what the null distribution should look like
-p.null <- runif(200)
-
-# what the actual null distribution looks like
-quiet <- function(x) { 
-  sink(tempfile()) 
-  on.exit(sink()) 
-  invisible(force(x)) 
-} 
-simulate(
-  N = 4,
-  a_freq = as.vector(rmultinom(1, 100, rep(0.25, len = N))),
-  b_freq = as.vector(rmultinom(1, 100, rep(0.25, len = N)))
-) %>%
-  map_dfr(
-    ~ quiet(xmonte(.$a_freq, .$b_freq, 
-                   statName = "Chisq"))[["pChi"]] %>%
-      tibble(p.value = .)
-  ) -> sim_out
+die <- function() sample(1:6, size = 1)
+die() # test run ("roll")!
 ```
 
-We would expect that, since the null is true (that the two groups being
-compared are drawn from the same multinomial distribution), the
-chi-squared test should reject the null about 5 percent of the time. But
-when we plot the distribution of `p.null` next to the distribution of
-chi-squared p-values we clearly see that we reject the null far more
-frequently than expected.
+    ## [1] 1
+
+By design, since this function is a wrapper for the `sample()` function
+the die function should be unbiased (or fair). If we roll it 100 times,
+for example, it should be the case that the proportion of times a 1, 2,
+3, all the way up to 6 is rolled is roughly 1/6.
+
+We can check this in R by writing:
 
 ``` r
-sim_out %>%
-  mutate(
-    p.bins = round(p.value, 2),
-    sig = ifelse(
-      p.bins <= 0.05,
-      "p < 0.05",
-      "p >= 0.05"
-    )
-  ) %>%
-  group_by(sig, p.bins) %>%
-  count() %>%
-  ungroup %>%
-  mutate(n = n / sum(n)) -> p.data.sim
-ggplot(p.data.sim) +
-  aes(
-    x = p.bins,
-    y = n,
-    fill = sig
-  ) +
-  geom_col(color = "black", position = "identity") +
-  geom_vline(
-    xintercept = 0.05,
-    lty = 2,
-    color = "darkred"
-  ) +
-  labs(
-    x = "p-values",
-    y = "Proportion",
-    subtitle = "chi-squared null distribution of p-values"
-  ) +
-  theme(
-    legend.position = "none"
-  ) -> p1
+# Roll the die 100 times
+rolls <- 100
+observed_rolls <- replicate(
+  rolls, die(), 'c'
+)
+
+# Visualize the output and compare to the expected
+# distribution
+library(tidyverse)
 tibble(
-  p.null = p.null,
-  p.bins = round(p.null, 2),
-  sig = ifelse(p.bins <= 0.05, "yes", "no")
+  side = as.factor(rep(1:6, len = 12)),
+  proportions = c(
+    table(observed_rolls) / 100,
+    rep(1/6, len = 6)
+  ),
+  label = rep(
+    c('Observed', 'Expected'),
+    each = 6
+  )
 ) %>%
-  group_by(p.bins, sig) %>%
-  count %>%
-  ungroup %>%
-  mutate(
-    n = n / sum(n)
-  ) %>%
   ggplot() +
   aes(
-    x = p.bins,
-    y = n,
-    fill = sig
+    x = side,
+    y = proportions,
+    fill = label
   ) +
-  geom_col(color = "black", position = "identity") +
-  geom_vline(
-    xintercept = 0.05,
-    lty = 2,
-    color = "darkred"
-  ) +
-  labs(
-    x = "p-values",
-    y = "Proportion",
-    subtitle = "What the null distribution should look like"
-  ) +
-  ylim(c(0, max(p.data.sim$n))) +
-  theme(
-    legend.position = "none"
-  ) -> p2
-p1 + p2  
-```
-
-![](/assets/images/2022-03-04/unnamed-chunk-3-1.png)<!-- -->
-
-The left panel in the above figure shows the distribution of chi-squared
-p-values, and the right panel shows what the distribution of p-values
-should be under the null. The difference is stark; yet, this is the very
-distribution of p-values we would expect when making multiple
-comparisons.
-
-The below script helps to illustrate the point. It generates p-value
-distributions under the null for an increasing number of tests being
-considered simultaneously (1 to 5). It then shows the proportion of
-times the null is rejected at the *p* ≤ 0.05 level for at least one of
-the tests:
-
-``` r
-# simulate 1 to 5 tests
-tests <- 1:5
-map_dfc(
-  tests, 
-  ~ tibble(p.value = runif(2000)) 
-) -> out
-
-# get the minimum p value for 1 to 5 tests
-mins <- list()
-for(i in tests) mins[[i]] <- lapply(1:nrow(out), function(x) {
-  out[x, 1:i] %>% t() %>% min()
-}) %>% do.call(c, .)
-
-# summarize the rejection rate per no. of tests
-bind_cols(mins) %>%
-  summarize(
-    across(everything(), ~ mean(.x <= 0.05))
-  ) %>%
-  pivot_longer(
-    1:5
-  ) %>%
-  mutate(
-    tests = paste0(1:5, ifelse(1:5 == 1, " test", " tests"))
-  ) %>%
-  ggplot() +
-  aes(
-    x = tests,
-    y = value
-  ) +
-  geom_col(width = 0.5, color = "black") +
-  labs(
-    x = NULL,
-    y = "False-Positive Rate",
-    title = "Worsening false-positive rate"
-  ) +
-  scale_y_continuous(
-    labels = scales::percent
+  geom_col(
+    color = 'black',
+    position = position_dodge()
   ) +
   geom_hline(
-    yintercept = 0.05
-  )
+    yintercept = 1/6,
+    lty = 2
+  ) +
+  scale_fill_manual(
+    values = c('firebrick','darkblue')
+  ) +
+  labs(
+    x = 'Sides of the Die',
+    y = 'Proportion of Times Rolled',
+    fill = NULL,
+    title = 'Is the die fair?',
+    subtitle = 'Expected vs. observed proportions after 100 rolls'
+  ) +
+  theme_light()
 ```
 
-![](/assets/images/2022-03-04/unnamed-chunk-4-1.png)<!-- -->
+![](/assets/images/2022-03-04/check%20the%20die-1.png)<!-- -->
 
-Clearly, as the number of tests being considered increases, the
-likelihood that we incorrectly reject the null for at least one test
-increases as well.
+It looks mostly fair. There’s some variation, which is to be expected,
+but nothing so drastic to alert us to anything wrong with the die.
 
-## A Solution
-
-This problem has a simple solution: adjust the significance level of the
-multinomial test so that its false positive rate returns to 5 percent.
-We usually denote the level of a test as *α* and set this to *α* = 0.05.
-Denote *α*′ as the adjusted alpha level that preserves a 5 percent false
-positive rate.
-
-To recover *α*′ for a given desired *α* we can take a simulation
-approach. This entails generating a Monte Carlo distribution of p-values
-under the null and then setting *α*′ as the 5th percentile this
-distribution.
-
-Consider the distribution of chi-squared p-values under the null
-generated earlier:
-
-![](/assets/images/2022-03-04/unnamed-chunk-5-1.png)<!-- -->
-
-To identify *α*′ all we need to do is calculate the 5th percentile of
-this distribution. We can do this by writing:
+But just to be sure, we can get some help from our friend the
+chi-squared GOF test. We can implement this in R as follows:
 
 ``` r
-alpha <- 0.05
-alpha_prime <- as.vector(
-  quantile(sim_out$p.value, alpha)
+x <- table(observed_rolls)
+p <- rep(1/6, len = 6)
+chisq_out <- chisq.test(x = x, p = p)
+chisq_out # the chi-squared results
+```
+
+    ## 
+    ##  Chi-squared test for given probabilities
+    ## 
+    ## data:  x
+    ## X-squared = 4.04, df = 5, p-value = 0.5437
+
+We have a p-value of 0.54, which is well above the conventional
+*p* \< 0.05 significance threshold. In short, we can’t reject the null
+hypothesis that the die is fair.
+
+### Are two dice equivalent?
+
+Testing whether a die is fair is simple enough. What about testing if
+two dice are equivalent?
+
+To answer this question we need a modified version of the chi-squared
+test. Unlike in the previous example where we were comparing tabulated
+frequencies from a sample to expected frequencies, now we will be
+comparing tabulated frequencies from two different samples.
+
+This means there are now two sources of uncertainty we need to account
+for in our test. In the previous example, we only needed to account for
+one source of uncertainty.
+
+To illustrate, let’s make a new die function and compare it to the old
+one:
+
+``` r
+# Make a new die function
+new_die <- function() sample(1:6, size = 1)
+
+# Roll this die and the old die 100 times
+rolls <- 100
+old_die_rolls <- replicate(rolls, die(), 'c')
+new_die_rolls <- replicate(rolls, new_die(), 'c')
+
+# Visualize to compare
+tibble(
+  sides = as.character(rep(1:6, len = 12)),
+  rolls = c(
+    table(old_die_rolls),
+    table(new_die_rolls)
+  ),
+  label = rep(
+    c('Old', 'New'), each = 6
+  )
+) %>%
+  ggplot() +
+  aes(
+    x = sides,
+    y = rolls,
+    fill = label
+  ) +
+  geom_col(
+    color = 'black',
+    position = position_dodge()
+  ) +
+  scale_fill_manual(
+    values = c('firebrick','darkblue')
+  ) +
+  labs(
+    x = 'Sides of the Dice',
+    y = 'Frequencies',
+    fill = 'Die',
+    title = 'Are two dice equivalent?',
+    subtitle = 'Observed frequencies for two dice after 100 rolls each'
+  ) +
+  theme_light()
+```
+
+![](/assets/images/2022-03-04/unnamed-chunk-2-1.png)<!-- -->
+
+As we would expect, there’s some variation between the dice, but that’s
+normal when dealing with observed data.
+
+If we want to be sure, we can implement a IND test in R to check:
+
+``` r
+# We need to put the data in a 2-dimensional array:
+X <- cbind(
+  old_die = table(old_die_rolls),
+  new_die = table(new_die_rolls)
 )
-alpha_prime # new alpha level
+
+# Then we do the chi-squared test like so:
+chisq_out <- chisq.test(x = X)
+chisq_out # look at the output
 ```
 
-    ## [1] 0.0003785
+    ## 
+    ##  Pearson's Chi-squared test
+    ## 
+    ## data:  X
+    ## X-squared = 0.93942, df = 5, p-value = 0.9673
 
-Using this new level, we can recover a test with a 5 percent false
-positive rate:
+Even though we observed some differences in frequencies, these
+differences are not statistically significant. The p-value is 0.97,
+which is well above the usual *p* \< 0.05 significance threshold.
 
-![](/assets/images/2022-03-04/unnamed-chunk-7-1.png)<!-- -->
+## Getting our wires crossed
 
-## Putting it all together
+It’s pretty simple. Use GOF tests when comparing a sample to a
+population, and use an IND test when comparing two (or more) samples
+with each other.
 
-In summary, multinomial tests have a multiple comparisons problem. This
-fact is easy to miss because multinomial tests, like chi-squared,
-involve the estimation of a single test statitic and related p-value.
-However, this single statistic reflects a summary of multiple
-comparisons within several strata in the data. As more strata are being
-compared, the likelihood of incorrectly rejecting the null increases.
+While this advice is straightforward enough, it is surprisingly easy to
+misapply these tests—as in the case of the OES project I mentioned above
+that deals with equity. The analysts for that project wanted to use a
+GOF test, but this choice ignored the fact that the eligible group of
+beneficiaries was a sample—not the full population.
 
-This problem has a simple solution. By simulating a distribution of
-p-values under the null via a Monte Carlo analysis, it is possible
-identify a more appropriate test level for rejecting the null. The above
-discussion described what this entails. For convenience, I’ve included
-some code below that can be easily addapted to a variety of scenarios
-for running such a Monte Carlo analysis. It only requires using the
-`XNomial` package to run.
+When we misapply the GOF test like this, we run into the problem that I
+had identified in simulations with this test: a ***really high***
+false-positive rate.
+
+To illustrate, suppose we took the same two dice compared above and
+rather than perform a IND test to determine if the two dice are
+equivalent we performed the GOF test and treated one of the dice as a
+referent group that captures the expected frequencies of the other die.
 
 ``` r
-# helper to keep xmonte from producing message
-# (this is really anoying when running multple
-# iterations)
-quiet <- function(x) { 
-  sink(tempfile()) 
-  on.exit(sink()) 
-  invisible(force(x)) 
-} 
+# Roll the dice
+rolls <- 100
+old_die_rolls <- replicate(rolls, die(), 'c')
+new_die_rolls <- replicate(rolls, new_die(), 'c')
 
-# function to identify new test level
-find_new_alpha <- function(
-  desired_alpha = 0.05, # the desired/original test level
-  group1_freq,          # the frequency distribution for group 1
-  group2_freq,          # the frequency distribution for group 2
-  sims = 1000,          # no. of iterations to run
-  statName = "Chisq"    # test to have xmonte estimate
-) {
+# Apply the GOF test rather than IND test
+x <- table(new_die_rolls)
+p <- table(old_die_rolls) / 100
+chisq_out <- chisq.test(x = x, p = p)
+chisq_out
+```
+
+    ## 
+    ##  Chi-squared test for given probabilities
+    ## 
+    ## data:  x
+    ## X-squared = 6.015, df = 5, p-value = 0.3048
+
+If we run the GOF test, we get a chi-squared statistic and a
+p-value—with no objection from R, by the way!
+
+It may be hard to tell just from looking at the results from one run of
+the test that there’s a problem here. But, if we run the test a bunch of
+times and collect the p-values from each run of the test, we can see the
+problem quite clearly.
+
+The below code repeats what the above script does 1,000 times and
+collects the p-values.
+
+``` r
+its <- 1000
+
+run_the_test <- function() {
+  rolls <- 100
+  old_die_rolls <- replicate(rolls, die(), 'c')
+  new_die_rolls <- replicate(rolls, new_die(), 'c')
   
-  # expected probabilities
-  p <- group2_freq / sum(group2_freq)
-  
-  # simulate null 
-  sim.data <- lapply(
-    1:sims,
-    function(x) data.frame(
-      group1 = as.vector(
-        rmultinom(1, sum(group1_freq), p)
-      ),
-      group2 = as.vector(
-        rmultinom(1, sum(group2_freq), p)
-      )
-    )
-  )
-  
-  # run test
-  cat("\nSimulating p-values (be patient).......\n")
-  sim.p <- lapply(
-    sim.data,
-    function(data) quiet(XNomial::xmonte(
-      data$group1, data$group2, statName = statName
-    ))[[5]]
-  )
-  cat("\nFinished!\n")
-  sim.p <- do.call(c, sim.p)
-  
-  # compute new level
-  new_alpha <- as.vector(
-    quantile(sim.p, desired_alpha)
-  )
-  names(new_alpha) <- "reject the null if p <= to:"
-  
-  # return
-  return(new_alpha)
+  # Apply the GOF test rather than IND test
+  x <- table(new_die_rolls)
+  p <- table(old_die_rolls) / 100
+  chisq_out <- chisq.test(x = x, p = p)
+  chisq_out$p.value # return the p.value
 }
+
+p.values <- replicate(its, run_the_test(), 'c')
+head(p.values) # we have a collection of p-values
 ```
 
-To see how it works, we can use it on the simulated voting turnout data
-described at the beginning of this post (note that it will take some
-time to run):
+    ## [1] 0.25182781 0.04395254 0.67461200 0.22043008 0.73326219 0.94226484
+
+If the test is performing as it should, we should get p-values less than
+0.05 about 5% of the time. But this isn’t the case:
 
 ``` r
-new_alpha <- find_new_alpha(
-  group1_freq = dt$freq[dt$group=="A"],
-  group2_freq = dt$freq[dt$group=="B"]
-)
+fpr <- round(100 * mean(p.values <= 0.05), 2)
+cat('The test rejects the null ', fpr, '% of the time.', sep = '')
 ```
 
-    ## 
-    ## Simulating p-values (be patient).......
-    ## 
-    ## Finished!
+    ## The test rejects the null 38.3% of the time.
+
+This is way too liberal! If we look at the distribution of p-values, we
+can see what the problem is:
 
 ``` r
-new_alpha # print the new alpha-level
+ggplot() + 
+  geom_histogram(
+    aes(x = p.values),
+    color = 'black',
+    fill = 'firebrick'
+  ) +
+  labs(
+    x = 'p-values',
+    y = 'Frequencies',
+    title = 'The null-distribution of p-values',
+    subtitle = 'When the GOF test is inappropriate we get a\nskewed p-value distribution'
+  )
 ```
 
-    ## reject the null if p <= to: 
-    ##                    0.007809
+![](/assets/images/2022-03-04/left%20skew-1.png)<!-- -->
 
-The above gives us our new threshold for rejecting the null. If a
-different original test level is desired, simply override the default
-for `desired_alpha`.
+When the null hypothesis is true (and it is in this case, because the
+new and old die functions do exactly the same thing), this distribution
+should be uniform.
+
+We get the reverse problem if we mistakenly use the IND test when the
+GOF would be appropriate. If we repeat the simulation again, but this
+time use the IND test to determine if a single die is fair, we’ll get a
+very small false-positive rate.
+
+``` r
+its <- 1000
+
+run_the_test <- function() {
+  rolls <- 100
+  die_rolls <- replicate(rolls, die(), 'c')
+  expected_rolls <- rep(1/6) * rolls
+  
+  # Apply the IND test rather than GOF test
+  X <- cbind(
+    table(die_rolls),
+    table(expected_rolls)
+  )
+  chisq_out <- chisq.test(x = X)
+  chisq_out$p.value # return the p.value
+}
+
+p.values <- replicate(its, run_the_test(), 'c')
+head(p.values) # we have a collection of p-values
+```
+
+    ## [1] 0.9999648 0.9977483 0.9976890 0.9997205 0.9983401 0.9985044
+
+The false-positive rate is basically zero now:
+
+``` r
+fpr <- round(100 * mean(p.values <= 0.05), 2)
+cat('The test rejects the null ', fpr, '% of the time.', sep = '')
+```
+
+    ## The test rejects the null 0% of the time.
+
+And the distribution of p-values is now skewed in the opposite
+direction:
+
+``` r
+ggplot() + 
+  geom_histogram(
+    aes(x = p.values),
+    color = 'black',
+    fill = 'darkblue'
+  ) +
+  labs(
+    x = 'p-values',
+    y = 'Frequencies',
+    title = 'The null-distribution of p-values',
+    subtitle = 'When the IND test is inappropriate we get a\nskewed p-value distribution'
+  )
+```
+
+![](/assets/images/2022-03-04/right%20skew-1.png)<!-- -->
+
+## Conclusion
+
+The moral of the story is: use the right test for the question you want
+to ask! This is incredibly important, not just for making sure the dice
+for your favorite board game are working properly, but also for making
+sure that a much needed Federal government benefit is being distributed
+equitably.
+
+If you’re comparing a sample to a population, ***Do a goodness of fit
+test***.
+
+If you’re comparing a sample with another sample, ***Do a test of
+independence***.
+
+Q.E.D.
 
 [Back to Blog](https://milesdwilliams15.github.io/blog/)

@@ -37,11 +37,13 @@ My research reflects a mix of projects and interests and has appeared in peer-re
     
 "Foreign Aid, Migrantion, and Civil War." (Under Review) [Available upon request].
 
-"Who Leads? The Strategic Determinants of Lead Donorship" (Working Paper) [[pdf]](https://github.com/milesdwilliams15/who-leads/raw/main/manuscript.pdf) [[GitHub]](https://github.com/milesdwilliams15/who-leads)
+"Aid for Alliances? Buying and Selling Alliance Commitments in the Political Economy of Aid" (Work-in-Progress) [[GitHub]](https://github.com/milesdwilliams15/aid-for-alliances/tree/master)
       
-"A Strategic Political Economy of Aid" (Working Paper) [[pdf]](https://github.com/milesdwilliams15/Rivalry-and-Collective-Action-in-International-Development/raw/master/theory_writing_sample.pdf)
+"A Strategic Political Economy of Aid" (Working Paper) [[pdf]](https://github.com/milesdwilliams15/a-strategic-political-economy-of-aid/raw/main/01_paper/draft.pdf)
     
 "Competition and Buck-Passing in the Political Economy of Aid" (Working Paper) [[pdf]](https://github.com/milesdwilliams15/Rivalry-and-Collective-Action-in-International-Development/raw/master/empirical_writing_sample.pdf)
+
+"Who Leads? The Strategic Determinants of Lead Donorship" (Working Paper) [[pdf]](https://github.com/milesdwilliams15/who-leads/raw/main/manuscript.pdf) [[GitHub]](https://github.com/milesdwilliams15/who-leads)
     
 "Xinhua Coverage of Chinese Foreign Aid Allocations." With Lucie Lu (Work-in-Progress) [[GitHub]](https://github.com/milesdwilliams15/chinese_media_and_foreign_aid)
 
