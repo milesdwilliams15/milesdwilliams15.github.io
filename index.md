@@ -29,7 +29,7 @@
 ## About Me <img src="logo.png" align="right" height="130" style = "border-radius:0px"/>
 My name is Miles Williams and I recently received my Ph.D. in Political Science at the [University of Illinois at Urbana-Champaign](https://pol.illinois.edu/). Starting in the fall, I will be a Visiting Assistant Professor in [Data for Political Research](https://denison.edu/academics/data-for-political-research) at Denison University. For the past two years, I have also served as an Associate Fellow specializing in statistical methods with the federal [Office of Evaluation Sciences](https://oes.gsa.gov/). 
 
-My primary research agenda centers on identifying the foreign policy goals that motivate countries to give foreign aid. In my dissertation, I use game theory, classic econometrics, and machine learning to shed light on how foreign aid allocation serves as an arena of both strategic competition and buck-passing among donor governments.
+My primary research agenda centers on identifying the foreign policy goals that motivate countries to give foreign aid. In my dissertation, I study the implications of competition and buck-passing in the aid allocation decisions of Western donor governments.
 
 In addition to studying foreign aid, I have supported numerous experimental, quasi-experimental, and descriptive evaluations for the federal government; collaborated on projects that apply text-as-data methods to religious political communication; and actively maintain projects centered on innovative applications of machine learning for causal inference and statistical approaches for testing theoretical models.
 
