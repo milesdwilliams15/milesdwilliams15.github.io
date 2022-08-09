@@ -1,0 +1,265 @@
+---
+title: Something Is Amiss with the Log of Gravity
+output:
+  md_document:
+    variant: gfm
+    preserve_yaml: TRUE
+knit: (function(inputFile, encoding) {
+  rmarkdown::render(inputFile, encoding = encoding, output_dir = "../_posts") })
+author: "Miles Williams"
+date: "2022-08-09"
+layout: post
+categories: ["Methods", "Statistics"]
+---
+
+[Back to Blog](https://milesdwilliams15.github.io/blog/)
+
+``` r
+library(tidyverse)
+library(seerrr)
+```
+
+In their seminal piece, [Silva and
+Tenreyro](https://watermark.silverchair.com/rest.88.4.641.pdf?token=AQECAHi208BE49Ooan9kkhW_Ercy7Dm3ZL_9Cf3qfKAc485ysgAAAsswggLHBgkqhkiG9w0BBwagggK4MIICtAIBADCCAq0GCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQM4AkyFYMX007IPwovAgEQgIICfmnuft6WdTLZ4_hg_fvVVG6ktRJtcQfFOrHezpYRw0ZvOr2-AmB_7_NKU_taxTRPf3J0qJMYYM3g0NIPyIkFLWpzdOHcbi_8_yrLU7He-SofRjfbAReBHhevZmabzjOdCcRu8ov370TXu6VRagm_wdhpTPxX-C53hI6LuHkDgEdTmSOSc4lNYaVY1kruApSLP43g1aj7XzUK0Wnj3M5tcjTP_gNNV0DWT2gRH6CIdn_QjtxBBs_Zm_2nkcnnfy6hUi5Y5somCIm4rcQRuVZuqgw-533TifDGLRcHWP814EHCo39XldLwZbyLhzQi6pssLfLpL5-ZvN_J0vKke_y-UqnL38ZWr7qFtcLq8gVPe6Nq3-jvmFHZvD4fLxKDRhPOy19obXXkzI2yS5-aobbeWwzczwzSRypopoV2XUCTngDg28JVvm3LlgaxjoqHCc3jG-Cd7tpwFNQagSUbrI_2ValttY8GUmBbWUcUdPVF3MgBIAUD-x3Q0sP3QbF38kcrVKCVj5Yib659jSYbsGbBapeP-YnNr-JsnPo16xiNFg2e6LAmeepx35rph7-6zDFOIUrmCKfLvizw4VB-GDHqNpovRaRzpUQkB2Rbhj8gmpzCYryHC7pEq4vD9p44TBdRXUNS7nDuwGqQD0rK9QLhEe8sK8DtpyWX6KgRYHnJ_6EdQbxWPgNOKzKuiedCX78ZqiZMkDl9_mLuN3JieXCP6IQAXeo5-Kbs2Z2PtJ7eFzubdgyg8ELGJ70-yjYEwg6KyvDJAfskfPWtIDgJTkBHqYWcXI9HDVvEFFVAT9HJT5-ElRnEtCM5blXVC3HRuzh3JZtejTFZ2JuIMEsG0f5n)
+made the case that PPML (Poisson Pseudo Maximum Likelihood) is a
+superior and robust method for estimating “gravity” equations compared
+to using OLS with a log-linear specification. I’ve received this advice
+myself, but before following it I thought it would be good to run a
+simple simulation to verify that the approach is all that it’s lauded to
+be.
+
+To my surprise, and as I’ll detail below, I don’t find strong Monte
+Carlo evidence that PPML is the best way to model the “log of
+gravity.”[^1]
+
+## Why is PPML supposed to be better?
+
+If you want the nitty gritty details about the superiority of PPML, I
+recommend reading the Silva and Tenreyro paper. The cliff notes version
+of it is quite simple. There’s this thing called Jensen’s inequality
+which states *E*(ln*y*) ≠ ln *E*(*y*). In words, the expected value, or
+mean of the natural log, of *y* is not equivalent to the natural log of
+the mean of *y*.
+
+From an econometric perspective, what this implies is that the
+parameters of a log-linear model when estimated via OLS may be
+inconsistent in the presence of heteroskedasticity. But, if the model is
+estimated assuming a pseudo-poisson process this problem can be
+avoided—or so Silva and Tenreyro claim using Monte Carlo simulations.
+
+## Is it actually better?
+
+To test this claim, I used `seerrr` to generate some data based on a
+straightforward data-generating process. The standard gravity equation
+assumes a functional form for an outcome *y* that looks like:
+
+*y*<sub>*i*</sub> = exp (*x*<sub>*i*</sub>*β*)*η*<sub>*i*</sub>,
+which in log-linear form is equivalent to:
+
+ln *y*<sub>*i*</sub> = *x*<sub>*i*</sub>*β* + ln *η*<sub>*i*</sub>.
+
+In the above, *x*<sub>*i*</sub> is a random variable and
+*η*<sub>*i*</sub> is a log-normal stochastic term.
+
+Taking this form as a cue, I simulated data for an outcome
+*y*<sub>*i*</sub> as follows:
+
+``` r
+simulate(
+  R = 500,
+  eta = exp(rnorm(N, sd = runif(N, 0.5, 2))),
+  x = rnorm(N),
+  y = exp(0.5 * x) * eta
+) -> sim_data
+```
+
+The error term in the above is specified as
+*η*<sub>*i*</sub> = exp (𝒩\[*μ*=0,*σ*<sub>*i*</sub><sup>2</sup>\]) where
+the variance parameter is non-constant. The parameter *β* = 1/2 is the
+elasticity, or log-change in *y* given a unit change in *x*.
+
+If PPML really is superior to OLS in the presence of non-constant
+variance, it should on average yield more consistent and efficient
+estimates of *β*. To check whether this is true, I first make a wrapper
+function that applies the `quasipoisson` option for `glm`:
+
+``` r
+ppml <- function(...) glm(..., family = quasipoisson)
+```
+
+I then estimate a log-linear model via OLS and the PPML model on the
+simulated data:
+
+``` r
+estimate( # log-linear OLS
+  sim_data,
+  log(y) ~ x,
+  vars = 'x',
+  se_type = 'classic'
+) -> ols_fit
+estimate( # poisson
+  sim_data,
+  y ~ x,
+  vars = 'x',
+  estimator = ppml
+) -> ppml_fit
+```
+
+After running the above, we now have the following distribution of
+estimated *β*s obtained using each method:
+
+``` r
+bind_rows(
+  ols_fit %>% 
+    mutate(estimator = 'OLS'),
+  ppml_fit %>%
+    mutate(estimator = 'PPML')
+) %>%
+  ggplot() +
+  aes(
+    x = estimator,
+    y = estimate - 0.5
+  ) +
+  geom_violin(
+    draw_quantiles = c(0.025, 0.5, 0.975),
+    fill = 'firebrick'
+  ) +
+  geom_hline(
+    yintercept = 0,
+    lty = 2
+  ) +
+  scale_y_continuous(
+    breaks = 0,
+    labels = 'Truth'
+  ) +
+  labs(
+    x = 'Estimator',
+    y = 'Elasticities',
+    title = 'Is PPML better than OLS?',
+    subtitle = 'Range of estimates from 500 simulations'
+  )
+```
+
+![](/assets/images/2022-08-09/unnamed-chunk-5-1.png)<!-- -->
+
+Much to my surprise, it seems that PPML provides a less consistent
+estimate of *β* than log-linear OLS. The above figure shows for the set
+of OLS estimates and PPML estimates the distribution of *β*s using a
+violin plot. The dashed horizontal line denotes the true parameter
+value, and the solid horizontal lines in the violin densities denote the
+2.5, 50, and 97.5 percentiles of the simulated parameter estimates. It
+takes only a cursory examination of the figure to see that PPML yields a
+much wider dispersion of *β* estimates than OLS.
+
+If we use the `'bias'` option in the `evaluate` function, we can assess
+other characteristics of the OLS and PPML estimates:
+
+``` r
+bind_rows(
+  evaluate(
+    ols_fit, 
+    what = 'bias',
+    truth = 0.5
+  ),
+  evaluate(
+    ppml_fit,
+    what = 'bias',
+    truth = 0.5
+  )
+) %>%
+  mutate(
+    estimator = c('OLS', 'PPML')
+  ) -> eval
+```
+
+First, as we would expect given the range of estimates in the previous
+figure, the mean squared error (MSES) is substantially greater with
+PPML:
+
+``` r
+ggplot(eval) +
+  aes(
+    x = mse,
+    y = estimator,
+    label = round(mse, 3)
+  ) +
+  geom_col(
+    width = 0.5,
+    fill = 'firebrick',
+    color = 'black'
+  ) +
+  geom_text(
+    hjust = 1.2,
+    color = 'white'
+  ) +
+  labs(
+    x = 'Mean Squared Error',
+    y = NULL,
+    title = 'Is PPML better than OLS?',
+    subtitle = 'Summary of 500 simulated estimates'
+  )
+```
+
+![](/assets/images/2022-08-09/unnamed-chunk-7-1.png)<!-- -->
+
+The above figure shows the MSE computed for the 500 simulated *β*s for
+both log-linear OLS and PPML using a bar plot. The MSE for the PPML
+estimator is several times greater than that for log-linear OLS.
+
+Not only is PPML less consistent, if we compare the coverage of the
+estimators’ 95% confidence intervals, despite the fact that PPML shows
+more variability than OLS (meaning it has on average larger standard
+errors), its coverage is deflated. The 95% CIs should contain the true
+parameter estimate on average 95% of the time with repeated samples. But
+PPML’s 95% CIs contain the true parameter value less than this amount
+while OLS 95% CIs have the appropriate coverage. This is shown in the
+next figure:
+
+``` r
+ggplot(eval) +
+  aes(
+    x = coverage,
+    y = estimator,
+    label = round(coverage * 100, 3)
+  ) +
+  geom_col(
+    width = 0.5,
+    fill = 'firebrick',
+    color = 'black'
+  ) +
+  geom_text(
+    hjust = 1.2,
+    color = 'white'
+  ) +
+  scale_x_continuous(
+    labels = scales::percent
+  ) +
+  labs(
+    x = '95% CI Coverage',
+    y = NULL,
+    title = 'Is PPML better than OLS?',
+    subtitle = 'Summary of 500 simulated estimates'
+  )
+```
+
+![](/assets/images/2022-08-09/unnamed-chunk-8-1.png)<!-- -->
+
+## What is to be done?
+
+What to do in light of these unexpected findings is, to be fully
+transparent, unclear to me. The data-generating process I used in the
+above simulations is not the only realistic scenario so it probably is
+wise to avoid over-interpreting these results.
+
+This exercise does, however, demonstrate how critical the design of
+Monte Carlo experiments is to the evaluation and comparison of
+alternative estimators. In this instance, specification of a fairly
+simple data-generating process yields findings contrary to those of
+Silva and Tenreyro. It probably should go without saying, but this is an
+important reminder that one-size-fits-all recommendations of appropriate
+estimators is ill-advised. Sometimes the law of gravity really is to
+take its log.
+
+[Back to Blog](https://milesdwilliams15.github.io/blog/)
+
+[^1]: Like the “law of gravity.” Get it?
