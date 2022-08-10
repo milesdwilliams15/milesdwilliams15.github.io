@@ -26,12 +26,12 @@
 <p> </p>
 
 
-## About Me <img src="logo.png" align="right" height="130" style = "border-radius:0px"/>
-My name is Miles Williams and I recently received my Ph.D. in Political Science at the [University of Illinois at Urbana-Champaign](https://pol.illinois.edu/). Starting in the fall, I will be a Visiting Assistant Professor in [Data for Political Research](https://denison.edu/academics/data-for-political-research) at Denison University. For the past two years, I have also served as an Associate Fellow specializing in statistical methods with the federal [Office of Evaluation Sciences](https://oes.gsa.gov/). 
+## Welcome! <img src="logo.png" align="right" height="130" style = "border-radius:0px"/>
+I am a political scientist and Visiting Assistant Professor in [Data for Political Research](https://denison.edu/academics/data-for-political-research) at Denison University. I also serve as an Associate Fellow in statistical methodology with the US General Service Administration's Office of Evaluation Sciences [(OES)](https://oes.gsa.gov/). I earned my Ph.D. from the [Department of Political Science](https://pol.illinois.edu/) at the University of Illinois at Urbana-Champaign.
 
-My primary research agenda centers on identifying the foreign policy goals that motivate countries to give foreign aid. In my dissertation, I study the implications of competition and buck-passing in the aid allocation decisions of Western donor governments.
+I specialize in International Political Economy and teach courses on International Relations, statistical programming, and data visualization. I have conducted research on a range of topics, but I'm primarily interested in the geoeconomics of foreign aid---how foreign aid is used as a tool of statecraft by world powers to achieve their foreign policy goals and how the pursuit of these goals drive cooperation problems among Western and non-Western aid donor governments. I also have an interest in supporting policy research, text-as-data, and in developing novel applications of machine learning for causal inference.
 
-In addition to studying foreign aid, I have supported numerous experimental, quasi-experimental, and descriptive evaluations for the federal government; collaborated on projects that apply text-as-data methods to religious political communication; and actively maintain projects centered on innovative applications of machine learning for causal inference and statistical approaches for testing theoretical models.
+I have been a contributor to the [Religion in Public blog](https://religioninpublic.blog/), written evaluation resources for the federal government on [reporting statistical results](https://oes.gsa.gov/assets/files/reporting-statistical-results.pdf) and on best-practices for using [multinomial tests](https://oes.gsa.gov/assets/files/Guidance-on-Using-Multinomial-Tests-for-Differences-in-Distribution.pdf), and I occasionally like to write about miscellaneous issues related to statistical programming or methods on my [personal blog](https://milesdwilliams15.github.io/blog/).
 
 <div class="col-md-5">
   <h3>Interests</h3>
