@@ -7,21 +7,16 @@ output:
 knit: (function(inputFile, encoding) {
   rmarkdown::render(inputFile, encoding = encoding, output_dir = "../_posts") })
 author: "Miles Williams"
-date: "2022-08-09"
+date: "2022-08-10"
 layout: post
 categories: ["Methods", "Statistics"]
 ---
 
 [Back to Blog](https://milesdwilliams15.github.io/blog/)
 
-``` r
-library(tidyverse)
-library(seerrr)
-```
-
 In their seminal piece, [Silva and
 Tenreyro](https://watermark.silverchair.com/rest.88.4.641.pdf?token=AQECAHi208BE49Ooan9kkhW_Ercy7Dm3ZL_9Cf3qfKAc485ysgAAAsswggLHBgkqhkiG9w0BBwagggK4MIICtAIBADCCAq0GCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQM4AkyFYMX007IPwovAgEQgIICfmnuft6WdTLZ4_hg_fvVVG6ktRJtcQfFOrHezpYRw0ZvOr2-AmB_7_NKU_taxTRPf3J0qJMYYM3g0NIPyIkFLWpzdOHcbi_8_yrLU7He-SofRjfbAReBHhevZmabzjOdCcRu8ov370TXu6VRagm_wdhpTPxX-C53hI6LuHkDgEdTmSOSc4lNYaVY1kruApSLP43g1aj7XzUK0Wnj3M5tcjTP_gNNV0DWT2gRH6CIdn_QjtxBBs_Zm_2nkcnnfy6hUi5Y5somCIm4rcQRuVZuqgw-533TifDGLRcHWP814EHCo39XldLwZbyLhzQi6pssLfLpL5-ZvN_J0vKke_y-UqnL38ZWr7qFtcLq8gVPe6Nq3-jvmFHZvD4fLxKDRhPOy19obXXkzI2yS5-aobbeWwzczwzSRypopoV2XUCTngDg28JVvm3LlgaxjoqHCc3jG-Cd7tpwFNQagSUbrI_2ValttY8GUmBbWUcUdPVF3MgBIAUD-x3Q0sP3QbF38kcrVKCVj5Yib659jSYbsGbBapeP-YnNr-JsnPo16xiNFg2e6LAmeepx35rph7-6zDFOIUrmCKfLvizw4VB-GDHqNpovRaRzpUQkB2Rbhj8gmpzCYryHC7pEq4vD9p44TBdRXUNS7nDuwGqQD0rK9QLhEe8sK8DtpyWX6KgRYHnJ_6EdQbxWPgNOKzKuiedCX78ZqiZMkDl9_mLuN3JieXCP6IQAXeo5-Kbs2Z2PtJ7eFzubdgyg8ELGJ70-yjYEwg6KyvDJAfskfPWtIDgJTkBHqYWcXI9HDVvEFFVAT9HJT5-ElRnEtCM5blXVC3HRuzh3JZtejTFZ2JuIMEsG0f5n)
-made the case that PPML (Poisson Pseudo Maximum Likelihood) is a
+(2006) made the case that PPML (Poisson Pseudo Maximum Likelihood) is a
 superior and robust method for estimating “gravity” equations compared
 to using OLS with a log-linear specification. I’ve received this advice
 myself, but before following it I thought it would be good to run a
@@ -36,16 +31,16 @@ gravity.”[^1]
 
 If you want the nitty gritty details about the superiority of PPML, I
 recommend reading the Silva and Tenreyro paper. The cliff notes version
-of it is quite simple. There’s this thing called Jensen’s inequality
-which states *E*(ln*y*) ≠ ln *E*(*y*). In words, the expected value, or
-mean of the natural log, of *y* is not equivalent to the natural log of
-the mean of *y*.
+of it is this. There’s this thing called Jensen’s inequality which
+states *E*(ln*y*) ≠ ln *E*(*y*). In words, the expected value, or mean
+of the natural log, of *y* is not equivalent to the natural log of the
+mean of *y*.
 
 From an econometric perspective, what this implies is that the
 parameters of a log-linear model when estimated via OLS may be
 inconsistent in the presence of heteroskedasticity. But, if the model is
 estimated assuming a pseudo-poisson process this problem can be
-avoided—or so Silva and Tenreyro claim using Monte Carlo simulations.
+avoided—or so Silva and Tenreyro claim.
 
 ## Is it actually better?
 
@@ -54,6 +49,7 @@ straightforward data-generating process. The standard gravity equation
 assumes a functional form for an outcome *y* that looks like:
 
 *y*<sub>*i*</sub> = exp (*x*<sub>*i*</sub>*β*)*η*<sub>*i*</sub>,
+
 which in log-linear form is equivalent to:
 
 ln *y*<sub>*i*</sub> = *x*<sub>*i*</sub>*β* + ln *η*<sub>*i*</sub>.
@@ -65,6 +61,10 @@ Taking this form as a cue, I simulated data for an outcome
 *y*<sub>*i*</sub> as follows:
 
 ``` r
+library(tidyverse) # for grammar
+library(seerrr)    # for Monte Carlo experiments
+
+# 500 random data simulates:
 simulate(
   R = 500,
   eta = exp(rnorm(N, sd = runif(N, 0.5, 2))),
@@ -76,12 +76,15 @@ simulate(
 The error term in the above is specified as
 *η*<sub>*i*</sub> = exp (𝒩\[*μ*=0,*σ*<sub>*i*</sub><sup>2</sup>\]) where
 the variance parameter is non-constant. The parameter *β* = 1/2 is the
-elasticity, or log-change in *y* given a unit change in *x*.
+elasticity, or change in ln *y* given a unit change in *x*.
 
 If PPML really is superior to OLS in the presence of non-constant
 variance, it should on average yield more consistent and efficient
 estimates of *β*. To check whether this is true, I first make a wrapper
-function that applies the `quasipoisson` option for `glm`:
+function that applies the `quasipoisson` option for `glm`. This is the
+method that packages such as
+[`gravity`](https://www.rdocumentation.org/packages/gravity/versions/1.0/topics/ppml)
+use under the hood to implement PPML.
 
 ``` r
 ppml <- function(...) glm(..., family = quasipoisson)
@@ -140,7 +143,7 @@ bind_rows(
   )
 ```
 
-![](/assets/images/2022-08-09/unnamed-chunk-5-1.png)<!-- -->
+![](/assets/images/2022-08-09/unnamed-chunk-4-1.png)<!-- -->
 
 Much to my surprise, it seems that PPML provides a less consistent
 estimate of *β* than log-linear OLS. The above figure shows for the set
@@ -200,7 +203,7 @@ ggplot(eval) +
   )
 ```
 
-![](/assets/images/2022-08-09/unnamed-chunk-7-1.png)<!-- -->
+![](/assets/images/2022-08-09/unnamed-chunk-6-1.png)<!-- -->
 
 The above figure shows the MSE computed for the 500 simulated *β*s for
 both log-linear OLS and PPML using a bar plot. The MSE for the PPML
@@ -242,7 +245,7 @@ ggplot(eval) +
   )
 ```
 
-![](/assets/images/2022-08-09/unnamed-chunk-8-1.png)<!-- -->
+![](/assets/images/2022-08-09/unnamed-chunk-7-1.png)<!-- -->
 
 ## What is to be done?
 
