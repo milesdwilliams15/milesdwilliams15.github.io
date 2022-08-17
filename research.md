@@ -32,6 +32,10 @@ permalink: /research/
 
 My research reflects a mix of projects and interests and has appeared in peer-reviewed journals, book chapters, and various online outlets. My primary research agenda centers on the political and strategic goals that motivate foreign aid giving by donor governments. But, as you'll see below, my interests and contributions extend to statistical methods, political communication, religion in politics, and policy evaluation. 
 
+**Future Book Project**
+
+In [my dissertation](https://github.com/milesdwilliams15/Dissertation/raw/main/dissertation_final.pdf), I explore how the pursuit of mixed foreign policy goals drive cooperation problems among Western aid donor governments. This work will become the basis for my first book project, which will center on the uniqueness of the collective action problem at the heart of global development finance. Western (and increasingly non-Western) donor governments have struggled to cooperate in distribution of aid since the current foreign aid regime emerged after World War II. Why? The reason, I argue, is that international aid is used by donors to accomplish a mix of foreign policy goals, some of which are rival and others of which are mutually beneficial. I build a case for a phenomenon called "elusive collusion" which disproportionately manifests in collective action problems that involve multiple dimensions of activity with countervailing strategic valences between dimensions. As I will show through a mix of statistical and case study evidence, such strategic complexity characterizes international aid and will continue to stifle cooperation until its existence and scope have been fully addressed.
+
   
 **Political Economy of Aid**
     
