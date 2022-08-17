@@ -37,7 +37,7 @@ My research reflects a mix of projects and interests and has appeared in peer-re
     
 "Foreign Aid, Migrantion, and Civil War." (Under Review) [Available upon request].
 
-"Aid for Alliances? Buying and Selling Alliance Commitments in the Political Economy of Aid" (Work-in-Progress) [[GitHub]](https://github.com/milesdwilliams15/aid-for-alliances/tree/master)
+"Aid for Alliances? Buying and Selling Alliance Commitments in the Political Economy of Aid" (Working Paper) [[pdf]](https://github.com/milesdwilliams15/aid-for-alliances/raw/master/01_draft.pdf)
       
 "A Strategic Political Economy of Aid" (Working Paper) [[pdf]](https://github.com/milesdwilliams15/a-strategic-political-economy-of-aid/raw/main/01_paper/draft.pdf)
     
