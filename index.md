@@ -6,7 +6,7 @@
 <div class="topnav">
   <div class="dropdown">
         <button class="dropbtn">
-        <i class="fa fa-navicon"></i> Menu</button>
+        <i class="fa fa-navicon"></i> More</button>
         <div class="dropdown-content">
             <a href="https://milesdwilliams15.github.io/"><i class="fa fa-fw fa-home"></i> Home</a>
             <a href="https://milesdwilliams15.github.io/research/"><i class="fa fa-fw fa-area-chart"></i> Research</a>
@@ -29,9 +29,9 @@
 ## Welcome! <img src="logo.png" align="right" height="130" style = "border-radius:0px"/>
 I am a political scientist and Visiting Assistant Professor in [Data for Political Research](https://denison.edu/academics/data-for-political-research) at Denison University. I also serve as an Associate Fellow in statistical methodology with the US General Service Administration's Office of Evaluation Sciences [(OES)](https://oes.gsa.gov/). I earned my Ph.D. from the [Department of Political Science](https://pol.illinois.edu/) at the University of Illinois at Urbana-Champaign.
 
-I specialize in International Political Economy and teach courses on International Relations, statistical programming, and data visualization. I have conducted research on a range of topics, but I'm primarily interested in the geoeconomics of foreign aid---how foreign aid is used as a tool of statecraft by world powers to achieve their foreign policy goals and how the pursuit of these goals drive cooperation problems among Western and non-Western aid donor governments. I also have an interest in supporting policy research, text-as-data, and in developing novel applications of machine learning for causal inference.
+I specialize in International Relations and Political Economy and teach courses on International Relations, statistical programming, and data visualization. I have conducted research on a range of topics, but I'm primarily interested in the geoeconomics of foreign aid---how foreign aid is used as a tool of statecraft by world powers to achieve their foreign policy goals and how the pursuit of these goals drive cooperation problems among Western and non-Western aid donor governments. I also have an interest in methodology, policy research, text-as-data, and novel applications of machine learning for causal inference.
 
-I have been a contributor to the [Religion in Public blog](https://religioninpublic.blog/), written evaluation resources for the federal government on [reporting statistical results](https://oes.gsa.gov/assets/files/reporting-statistical-results.pdf) and on best-practices for using [multinomial tests](https://oes.gsa.gov/assets/files/Guidance-on-Using-Multinomial-Tests-for-Differences-in-Distribution.pdf), and I occasionally like to write about miscellaneous issues related to statistical programming or methods on my [personal blog](https://milesdwilliams15.github.io/blog/).
+I have been a contributor to the [Religion in Public blog](https://religioninpublic.blog/), written evaluation resources for the federal government on [reporting statistical results](https://oes.gsa.gov/assets/files/reporting-statistical-results.pdf) and on best-practices for using [multinomial tests](https://oes.gsa.gov/assets/files/Guidance-on-Using-Multinomial-Tests-for-Differences-in-Distribution.pdf), and I occasionally like to write about miscellaneous issues on statistical programming and methods on my [personal blog](https://milesdwilliams15.github.io/blog/).
 
 <div class="col-md-5">
   <h3>Interests</h3>

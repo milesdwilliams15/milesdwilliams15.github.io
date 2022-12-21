@@ -9,7 +9,7 @@ permalink: /blog/
 <div class="topnav">
   <div class="dropdown">
         <button class="dropbtn">
-        <i class="fa fa-navicon"></i> Menu</button>
+        <i class="fa fa-navicon"></i> More</button>
         <div class="dropdown-content">
             <a href="https://milesdwilliams15.github.io/"><i class="fa fa-fw fa-home"></i> Home</a>
             <a href="https://milesdwilliams15.github.io/research/"><i class="fa fa-fw fa-area-chart"></i> Research</a>

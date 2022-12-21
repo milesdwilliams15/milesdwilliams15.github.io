@@ -9,7 +9,7 @@ permalink: /teaching/
 <div class="topnav">
   <div class="dropdown">
         <button class="dropbtn">
-        <i class="fa fa-navicon"></i> Menu</button>
+        <i class="fa fa-navicon"></i> More</button>
         <div class="dropdown-content">
             <a href="https://milesdwilliams15.github.io/"><i class="fa fa-fw fa-home"></i> Home</a>
             <a href="https://milesdwilliams15.github.io/research/"><i class="fa fa-fw fa-area-chart"></i> Research</a>
@@ -32,18 +32,22 @@ permalink: /teaching/
 
 This page includes details about my teaching philosophy and a directory of courses I have taught. I try to keep this page as up-to-date as possible by adding course syllabi and relevant course materials as they evolve.
 
-### Documents
+### Making Data Accessible
 
-- [Teaching Statement](/assets/files/teaching_statement.pdf).
-- [If I tought a graduate level IR proseminar...](/assets/files/example_syllabus.pdf).
+I believe data analysis should be a hands-on process, but not everyone taking my classes has a background in statistical programming and data analysis. To make the process of data exploration as accessible as possible, I developed a couple of Shiny dashboards for students taking my DPR 190 (War, Wealth, & World Politics) class. I use these to let students explore variables we talk about in class related to different collective action problems in international politics, international order, and conflict. My students seem to enjoy exploring the data, and I enjoy seeing what they find. Links to each of the Dashboards I use in the course are below:
+
+- [War, Wealth, & World Politics](https://milesdwilliams15.shinyapps.io/WorldData/)
+- [Correlates of Order](https://milesdwilliams15.shinyapps.io/correlates-of-order/)
 
 
 ### Courses
 
 **Denison University**
 
-- POSC 199 (War, Wealth, and World Politics)
-- DPR 101 (Introduction to Data Visualization)
+- DA 101: Introduction to Data Analytics
+- DPR 101: Data Visualization for Political Research
+- DPR 190: War, Wealth, and World Politics
+- DPR 201: Data and Research Design for Social Impact
 
 **University of Illinois at Urbana-Champaign**
 

@@ -9,7 +9,7 @@ permalink: /research/
 <div class="topnav">
   <div class="dropdown">
         <button class="dropbtn">
-        <i class="fa fa-navicon"></i> Menu</button>
+        <i class="fa fa-navicon"></i> More</button>
         <div class="dropdown-content">
             <a href="https://milesdwilliams15.github.io/"><i class="fa fa-fw fa-home"></i> Home</a>
             <a href="https://milesdwilliams15.github.io/research/"><i class="fa fa-fw fa-area-chart"></i> Research</a>
@@ -39,9 +39,9 @@ In [my dissertation](https://github.com/milesdwilliams15/Dissertation/raw/main/d
   
 **Political Economy of Aid**
     
-"Foreign Aid, Migrantion, and Civil War." (Under Review) [Available upon request].
+"Foreign Aid, Migration, and Civil War." (Under Review) [Available upon request].
 
-"Aid for Alliances? Buying and Selling Alliance Commitments in the Political Economy of Aid" (Working Paper) [[pdf]](https://github.com/milesdwilliams15/aid-for-alliances/raw/master/01_draft.pdf)
+"Aid for Alliances? Buying and Selling Alliance Commitments in the Political Economy of Aid" (Working Paper) (Under Review) [Available upon request].
       
 "A Strategic Political Economy of Aid" (Working Paper) [[pdf]](https://github.com/milesdwilliams15/a-strategic-political-economy-of-aid/raw/main/01_paper/draft.pdf)
     
@@ -54,9 +54,11 @@ In [my dissertation](https://github.com/milesdwilliams15/Dissertation/raw/main/d
 "Strategic Multilateralism: International Development Cooperation and the World Bank." (Work-in-Progress) [[GitHub]](https://github.com/milesdwilliams15/Strategic-Multilateralism)
     
 
-**Machine Learning and Text-as-Data**
+**Methodology**
+
+"Beyond the Power-law of War? Why a Logistic Model of War's Deadliness is Better" (Under Review) [Available upon request].
     
-"Leveraging the Black Box: Regression Adjustment via Random Forests." (Working Paper) [[pdf]](https://github.com/milesdwilliams15/rfa-paper/raw/main/draft2.pdf)
+"Leveraging the Black Box: Regression Adjustment via Random Forests." (Under Review) [Available upon request].
 
 "Gender in the Pulpit: The Differences in Speaking Style for Men and Women." (2019). With Ryan Burge (Journal Article) [[pdf]](http://ryanburge.net/wp-content/uploads/2019/06/JCR_Burge_Williams.pdf)
     
