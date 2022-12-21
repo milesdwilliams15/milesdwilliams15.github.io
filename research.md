@@ -49,7 +49,7 @@ In [my dissertation](https://github.com/milesdwilliams15/Dissertation/raw/main/d
 
 "Who Leads? The Strategic Determinants of Lead Donorship" (Working Paper) [[pdf]](https://github.com/milesdwilliams15/who-leads/raw/main/manuscript.pdf) [[GitHub]](https://github.com/milesdwilliams15/who-leads)
     
-"Xinhua Coverage of Chinese Foreign Aid Allocations." With Lucie Lu (Work-in-Progress) [[GitHub]](https://github.com/milesdwilliams15/chinese_media_and_foreign_aid)
+"Xinhua Coverage of Chinese Foreign Aid Allocations." With Lucie Lu (Under Reivew) [Available upon request].
 
 "Strategic Multilateralism: International Development Cooperation and the World Bank." (Work-in-Progress) [[GitHub]](https://github.com/milesdwilliams15/Strategic-Multilateralism)
     
