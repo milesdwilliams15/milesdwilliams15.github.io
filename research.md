@@ -41,28 +41,28 @@ In [my dissertation](https://github.com/milesdwilliams15/Dissertation/raw/main/d
     
 "Foreign Aid, Migration, and Civil War." (Under Review) [Available upon request].
 
-"Aid for Alliances? Buying and Selling Alliance Commitments in the Political Economy of Aid" (Working Paper) (Under Review) [Available upon request].
+"Aid for Alliances? Buying and Selling Alliance Commitments in the Political Economy of Aid" (Under Review) [Available upon request].
       
-"A Strategic Political Economy of Aid" (Working Paper) [[pdf]](https://github.com/milesdwilliams15/a-strategic-political-economy-of-aid/raw/main/01_paper/draft.pdf)
+"A Strategic Political Economy of Aid." (Working Paper) [[pdf]](https://github.com/milesdwilliams15/a-strategic-political-economy-of-aid/raw/main/01_paper/draft.pdf)
     
-"Competition and Buck-Passing in the Political Economy of Aid" (Working Paper) [[pdf]](https://github.com/milesdwilliams15/Rivalry-and-Collective-Action-in-International-Development/raw/master/empirical_writing_sample.pdf)
+"Competition and Buck-Passing in the Political Economy of Aid." (Working Paper) [[pdf]](https://github.com/milesdwilliams15/Rivalry-and-Collective-Action-in-International-Development/raw/master/empirical_writing_sample.pdf)
 
-"Who Leads? The Strategic Determinants of Lead Donorship" (Working Paper) [[pdf]](https://github.com/milesdwilliams15/who-leads/raw/main/manuscript.pdf) [[GitHub]](https://github.com/milesdwilliams15/who-leads)
+"Who Leads? The Strategic Determinants of Lead Donorship." (Working Paper) [[pdf]](https://github.com/milesdwilliams15/who-leads/raw/main/manuscript.pdf) 
     
-"Xinhua Coverage of Chinese Foreign Aid Allocations." With Lucie Lu (Under Reivew) [Available upon request].
+"Xinhua Coverage of Chinese Foreign Aid Allocations." With Lucie Lu (Under Review) [Available upon request].
 
 "Strategic Multilateralism: International Development Cooperation and the World Bank." (Work-in-Progress) [[GitHub]](https://github.com/milesdwilliams15/Strategic-Multilateralism)
     
 
 **Methodology**
 
-"Beyond the Power-law of War? Why a Logistic Model of War's Deadliness is Better" (Under Review) [Available upon request].
+"Beyond the Power-law of War? Why a Logistic Model of War's Deadliness is Better." (Under Review) [Available upon request].
     
 "Leveraging the Black Box: Regression Adjustment via Random Forests." (Under Review) [Available upon request].
 
-"Gender in the Pulpit: The Differences in Speaking Style for Men and Women." (2019). With Ryan Burge (Journal Article) [[pdf]](http://ryanburge.net/wp-content/uploads/2019/06/JCR_Burge_Williams.pdf)
+"Gender in the Pulpit: The Differences in Speaking Style for Men and Women." (2019) With Ryan Burge (Journal Article) [[pdf]](http://ryanburge.net/wp-content/uploads/2019/06/JCR_Burge_Williams.pdf)
     
-"Is Social Media a Digital Pulpit? How Evangelical Leaders Use Twitter to Encourage the Faithful and Publicize Their Work" (2019). With Ryan Burge (Journal Article) [[journal site]](https://brill.com/view/journals/rmdc/8/3/article-p309_309.xml)
+"Is Social Media a Digital Pulpit? How Evangelical Leaders Use Twitter to Encourage the Faithful and Publicize Their Work." (2019) With Ryan Burge (Journal Article) [[journal site]](https://brill.com/view/journals/rmdc/8/3/article-p309_309.xml)
 
 
 **Policy Evaluation**
