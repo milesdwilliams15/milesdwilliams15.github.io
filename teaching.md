@@ -32,9 +32,13 @@ permalink: /teaching/
 
 This page includes details about my teaching philosophy and a directory of courses I have taught. I try to keep this page as up-to-date as possible by adding course syllabi and relevant course materials as they evolve.
 
+### Materials
+
+I'm trying my best to corral my course materials within a single GitHub repository. [Check it out](https://github.com/milesdwilliams15/Teaching) for the latest (and greatest) updates to my course syllabi.
+
 ### Making Data Accessible
 
-I believe data analysis should be a hands-on process, but not everyone taking my classes has a background in statistical programming and data analysis. To make the process of data exploration as accessible as possible, I developed a couple of Shiny dashboards for students taking my DPR 190 (War, Wealth, & World Politics) class. I use these to let students explore variables we talk about in class related to different collective action problems in international politics, international order, and conflict. My students seem to enjoy exploring the data, and I enjoy seeing what they find. Links to each of the Dashboards I use in the course are below:
+I believe data analysis should be a hands-on process, but not everyone taking my classes has a background in statistical programming and data analysis. To make the process of data exploration as accessible as possible, I developed a couple of Shiny dashboards for students taking my DPR 190 (War, Wealth, & World Politics) class. I used these to let students explore variables we talked about in class related to different collective action problems in international politics, international order, and conflict. My students enjoyed exploring the data, and I enjoyed seeing what they found. Links to each of the Dashboards I developed and used in the course are below:
 
 - [War, Wealth, & World Politics](https://milesdwilliams15.shinyapps.io/WorldData/)
 - [Correlates of Order](https://milesdwilliams15.shinyapps.io/correlates-of-order/)
