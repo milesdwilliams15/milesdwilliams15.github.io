@@ -44,10 +44,8 @@ In [my dissertation](https://docs.google.com/viewer?url=https://github.com/miles
 "Aid for Alliances? Buying and Selling Alliance Commitments in the Political Economy of Aid" (Under Review) [Available upon request].
       
 "A Strategic Political Economy of Aid." (Working Paper) [[pdf]](https://github.com/milesdwilliams15/a-strategic-political-economy-of-aid/raw/main/01_paper/draft.pdf)
-    
-"Competition and Buck-Passing in the Political Economy of Aid." (Working Paper) [[pdf]](https://github.com/milesdwilliams15/Rivalry-and-Collective-Action-in-International-Development/raw/master/empirical_writing_sample.pdf)
 
-"Who Leads? The Strategic Determinants of Lead Donorship." (Working Paper) [[pdf]](https://github.com/milesdwilliams15/who-leads/raw/main/manuscript.pdf) 
+"Cooperation or Competitive Equilibrium? The determinants of Lead Donorship in International Development." (Working Paper) [[pdf]](https://github.com/milesdwilliams15/lead-donorship/blob/main/03_report/01_draft.pdf) 
     
 "Xinhua Coverage of Chinese Foreign Aid Allocations." With Lucie Lu (Under Review) [Available upon request].
 
