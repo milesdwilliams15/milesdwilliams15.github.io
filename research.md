@@ -39,7 +39,7 @@ In [my dissertation](https://docs.google.com/viewer?url=https://github.com/miles
   
 **Political Economy of Aid**
     
-"Foreign Aid, Migration, and Civil War." (Under Review) [Available upon request].
+"When Do Civil Conflicts Attract More Foreign Aid? A Consideration of Dyadic Factors." (Working Paper) [[pdf]](https://github.com/milesdwilliams15/aid-and-civil-war/blob/main/03_report/00_draft.pdf).
 
 "Aid for Alliances? Buying and Selling Alliance Commitments in the Political Economy of Aid" (Under Review) [Available upon request].
       
@@ -48,8 +48,6 @@ In [my dissertation](https://docs.google.com/viewer?url=https://github.com/miles
 "Cooperation or Competitive Equilibrium? The determinants of Lead Donorship in International Development." (Working Paper) [[pdf]](https://github.com/milesdwilliams15/lead-donorship/blob/main/03_report/01_draft.pdf) 
     
 "Xinhua Coverage of Chinese Foreign Aid Allocations." With Lucie Lu (Under Review) [Available upon request].
-
-"Strategic Multilateralism: International Development Cooperation and the World Bank." (Work-in-Progress) [[GitHub]](https://github.com/milesdwilliams15/Strategic-Multilateralism)
     
 
 **Methodology**
@@ -86,6 +84,8 @@ In [my dissertation](https://docs.google.com/viewer?url=https://github.com/miles
 
 **Blogging**
     
-I occasionally have contributed to [Religion in Public](https://religioninpublic.blog/). [In my latest contribution](https://religioninpublic.blog/2021/01/21/white-conservative-religious-and-aid-skeptical/), I discuss links between anti-immigrant attitudes among religious conservatives in the U.S. and support for foreign aid spending.
+I occasionally have contributed to [Religion in Public](https://religioninpublic.blog/). [In my latest contribution](https://religioninpublic.blog/2021/01/21/white-conservative-religious-and-aid-skeptical/), I discuss links between anti-immigrant attitudes among religious conservatives in the U.S. and support for foreign aid spending. 
+
+I also have contributed to Democracy Paradox, writing about [whether China and the United States can cooperate in foreign aid policy](https://democracyparadox.com/2023/02/13/can-washington-and-china-cooperate-in-foreign-aid/).
     
-I also [host my own blog](https://milesdwilliams15.github.io/blog/) here on my site where I semi-regularly post about statistics and programming in R.
+I [host my own blog](https://milesdwilliams15.github.io/blog/), too, here on my site where I semi-regularly post about statistics and programming in R.
