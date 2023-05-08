@@ -1,5 +1,5 @@
 ---
-title: Is an insignificant interaction unimportant?
+title: Is an Insignificant Interaction Unimportant?
 output:
   md_document:
     variant: gfm
@@ -66,12 +66,12 @@ variable.
 
 ## A Simulation
 
-A simulation will help. Let’s compare two data-generating processes
-(DGP).
+A simulation will help. Let’s compare two data-generating processes or
+DGPs.
 
 To start, we’ll work with an N of 1,000, a normally distributed
-explanatory variable of interest called “X” and a binary conditioning
-variable called “Z”.
+explanatory variable of interest called X, and a binary conditioning
+variable called Z.
 
 ``` r
 N <- 1000
@@ -79,34 +79,33 @@ X <- rnorm(N)
 Z <- rbinom(N, 1, 0.5)
 ```
 
-When we immagine interaction effects, I’d wager that we have something
+When we imagine interaction effects, I’d wager that we have something
 like the following in mind. The below code simulates a DGP for an
-outcome “Y1” as
+outcome as
 *Y* = *β*<sub>0</sub> + *β*<sub>1</sub>*X* + *β*<sub>2</sub>*Z* + *β*<sub>3</sub>*X* ⋅ *Z*.
 For convenience betas 0, 1, and 2 are set to zero. Notice that in the
 construction of the remaining, non-zero beta, that the magnitude is 1,
-but there’s some random effect heterogeneity thrown in the mix to create
-noise.
+but there’s some random heterogeneity thrown in the mix to create noise.
 
 ``` r
 b1 <- 1 + rnorm(N)
 Y1 <- b1 * X * Z + rnorm(N)
 ```
 
-The above scecario implies that the effect of X when Z = 0 is 0, but 1
-when Z = 1. The next case is different. Below we have a DGP where the
-average effect of X is constant given Z, but the variance in the effect
-is not.
+The above scenario implies that the effect of X when Z = 0 is 0 but 1
+when Z = 1. The next scenario below is different. It defines a DGP where
+the average effect of X is constant given Z but where the variance in
+the effect is not.
 
 ``` r
 b2 <- 1 + rnorm(N, sd = 1 + 5 * Z)
 Y2 <- b2 * X + rnorm(N)
 ```
 
-Now, if we compare the results and look at them side-by-side, we should
-see that for the first model, the interaction term for X and Z is
-positive and statistically significant. Meanwhile, the interaction term
-for the second should not be significant.
+Now, if we estimate a pair of regression models for each of these
+outcomes and compare the results, we should see that for the first the
+interaction term for X and Z is positive and statistically significant.
+Meanwhile, the interaction term for the second is not.
 
 ``` r
 library(estimatr)
@@ -122,23 +121,23 @@ screenreg(list(fit1, fit2), include.ci = F)
     ## =====================================
     ##              Model 1      Model 2    
     ## -------------------------------------
-    ## (Intercept)    -0.08         0.04    
-    ##                (0.04)       (0.06)   
-    ## X              -0.09 *       0.85 ***
-    ##                (0.04)       (0.08)   
-    ## Z               0.06         0.04    
-    ##                (0.08)       (0.26)   
-    ## X:Z             1.14 ***     0.41    
-    ##                (0.10)       (0.42)   
+    ## (Intercept)     0.03         0.08    
+    ##                (0.05)       (0.06)   
+    ## X              -0.07         0.90 ***
+    ##                (0.04)       (0.09)   
+    ## Z              -0.00        -0.32    
+    ##                (0.08)       (0.30)   
+    ## X:Z             1.09 ***     0.08    
+    ##                (0.09)       (0.46)   
     ## -------------------------------------
-    ## R^2             0.27         0.06    
-    ## Adj. R^2        0.27         0.06    
+    ## R^2             0.25         0.04    
+    ## Adj. R^2        0.25         0.04    
     ## Num. obs.    1000         1000       
-    ## RMSE            1.21         4.14    
+    ## RMSE            1.25         4.55    
     ## =====================================
     ## *** p < 0.001; ** p < 0.01; * p < 0.05
 
-Now be honest. If you saw the results as presented for Model 2, what
+Now be honest. If you saw the results as presented for model 2, what
 would you conclude? I admit that I’d jump to the conclusion that Z does
 not condition the effect of X on Y.
 
@@ -152,9 +151,8 @@ conditioning variable.
 Simple interaction plots will suffice. The first below shows how the
 marginal effect of X changes given Z. The x-axis shows values of X, the
 y-axis shows predicted values of Y. Blue shows the effect of X when Z =
-1 and red when Z = 0. The results look just like the classic interaction
-term example. When Z = 0, X has no effect, but when Z = 1, X has a
-positive and statistically significant effect.
+1 and red when Z = 0. Clearly, when Z = 0, X has no effect, but when Z =
+1, X has a positive and statistically significant effect.
 
 ``` r
 library(sjPlot)
@@ -176,11 +174,11 @@ plot_model(
 
 ![](/assets/images/2023-05-08/unnamed-chunk-5-1.png)<!-- -->
 
-This is not what we observe with the second sceario. The next figure
-shows how the effect of X on Y changes given Z in model 2. In this case,
-the slope of the effect of X is not statistically different given Z.
-*But*, whether the effect of X is statistically different from zero does
-change given Z.
+This is not what we observe with the second model. The next figure shows
+how the effect of X on Y changes given Z in model 2. In this case, the
+slope of the effect of X is not statistically different given Z. *But*,
+whether the effect of X is statistically different from zero does change
+given Z.
 
 ``` r
 plot_model(
@@ -203,22 +201,14 @@ plot_model(
 
 ## Why care?
 
-There are both mechanical and theoretical reasons why a null interaction
-term might still be relevant for the variance in effects and thus
-condition whether an effect of interest is different from zero.
-Mechanical explanations are less interesting, but still important. I
-should probably write another post about these cases; however, for now I
-want to think about theory.
-
-With respect to theory-driven questions, it’s incumbent on us
-researchers to think carefully about what our theories imply. In both of
-the scenarios above, we observe the same conditional implications for
-the effect of X given Z. When Z = 0, the effect of X on Y is not
-statistically different from zero. But, when Z = 1, the effect of X is
-different from zero. Do we care whether it also is the case that the
-marginal effect of X is statistically different given Z? Or is it
-immaterial to our theory? Sometimes the answer to the second question is
-“yes,” but we proceed as if the answer is “no” if we use the
+It’s incumbent on us researchers to think carefully about what our
+theories imply. In both of the scenarios above, we observe the same
+conditional implications for the effect of X given Z. When Z = 0, the
+effect of X on Y is not statistically different from zero. But, when Z =
+1, the effect of X is different from zero. Do we care whether it also is
+the case that the marginal effect of X is statistically different given
+Z? Or is it immaterial to our theory? Sometimes the answer to the second
+question is “yes,” but we proceed as if the answer is “no” if we use the
 significance of the interaction term as a test of our conditional
 hypothesis.
 
