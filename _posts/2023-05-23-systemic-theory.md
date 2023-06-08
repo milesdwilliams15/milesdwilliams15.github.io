@@ -7,7 +7,7 @@ output:
 knit: (function(inputFile, encoding) {
   rmarkdown::render(inputFile, encoding = encoding, output_dir = "../_posts") })
 author: "Miles Williams"
-date: "2023-05-24"
+date: "2023-06-08"
 layout: post
 categories: ["Methods", "Statistics"]
 ---
@@ -42,11 +42,11 @@ It’s hard meeting your heroes, and Bear was one of mine. His first book,
 [*The Great Powers and the International
 System*](https://assets.cambridge.org/97811070/05419/frontmatter/9781107005419_frontmatter.pdf),
 is just as timeless a read as his second book. When I first read it as a
-masters student back in 2016, it solidified my interest in studying
+master student back in 2016, it solidified my interest in studying
 International Relations. I knew then that I wanted to make a career out
 of studying big questions in international politics. Bear would never
-know it, but he’s the reason I knew I wanted to get a Ph.D. in political
-science and pursue an academic career.
+know it, but he’s one of the reasons I knew I wanted to get a Ph.D. in
+political science and pursue an academic career.
 
 Years later, I’m (thankfully!) an employed academic at Denison
 University. And even more, given its location just outside Columbus, OH,
@@ -63,8 +63,8 @@ note](https://github.com/milesdwilliams15/The-power-law-of-war/blob/main/04_repo
 his book inspired me to write dealing with the some of the technical
 details of statistically measuring trends in the intensity of war.
 
-Bear’s response was generous, and he expressed excitement about the app
-I created and provided me with helpful feedback on my research note,
+Bear’s response was generous. He expressed excitement about the app I
+created and provided me with helpful feedback on my research note,
 offering to take a second look if I chose to continue with project.
 Since he was in Oslo working on research of his own, I didn’t have a
 chance to meet with him in person in Columbus, but hoped I might be able
@@ -93,9 +93,9 @@ enough to push us in that direction,” Ekrim further noted.
 Bear Braumoeller was one of these people, and I dared to be in my
 [dissertation](https://docs.google.com/viewer?url=https://github.com/milesdwilliams15/Dissertation/raw/main/dissertation_final.pdf)
 in the context of theorizing about the absence of widespread collusion
-in international development. I know from experience that you have to be
-a little crazy to engage in “general equilibrium thinking,” but the
-payoffs for it are exponential. I also know that one of the main
+in the allocation international aid. I know from experience that you
+have to be a little crazy to engage in “general equilibrium thinking,”
+but the payoffs for it are exponential. I also know that one of the main
 barriers to this approach is tractability.
 
 As inaccessible Bear’s systemic theory was to me upon my first reading,
@@ -154,21 +154,20 @@ of the world along an arbitrary number of dimensions in the
 international system. For a country *c* ∈ 1, ..., *c*, ..., *N*, its
 level of activity *a*<sub>*c*</sub> ≥ 0 at time *t* + 1 is given as:
 
-*a*<sub>*c*(*t*+1)</sub> = *Σ*<sub>*d* = 1</sub><sup>*M*</sup>*ω*<sub>*c**d*</sub>\[*v*<sub>*c*</sub>(*c*<sub>*c**d*</sub>)−*s*<sub>*d*(*t*)</sub>\]<sup>2</sup>
+*a*<sub>*c*(*t*+1)</sub> = *Σ*<sub>*d*</sub>*ω*<sub>*d*</sub>\[*v*<sub>*c*</sub>(*c*<sub>*d*</sub>)−*s*<sub>*d*(*t*)</sub>\]<sup>2</sup>
 
 In the above, state *c*’s activity level at a point in time is a
 function of its level of dissatisfaction between the state of the system
 (*s*<sub>*d*</sub>) along each dimension *d* ∈ 1, ..., *d*, ..., *M*
 (these might be the distribution of power, ideology, etc.) at time *t*
 and its ideal point for a given dimension
-(*v*<sub>*c*</sub>(*c*<sub>*c**d*</sub>)). The value
-*c*<sub>*c**d*</sub> is a frequency distribution of the attitudes of
-individuals within a country with respect to a given dimension of the
-international structure, and *v*<sub>*c*</sub>(⋅) is a preference
-aggregation function that maps the attitudes of individuals to a
-country-level preference about the the state of the system in dimension
-*d*. The weight placed on a given dimension is determined by the state’s
-worldview *ω*<sub>*c**d*</sub> ≥ 0.
+(*v*<sub>*c*</sub>(*c*<sub>*d*</sub>)). The value *c*<sub>*d*</sub> is a
+frequency distribution of the attitudes of individuals within a country
+with respect to a given dimension of the international structure, and
+*v*<sub>*c*</sub>(⋅) is a preference aggregation function that maps the
+attitudes of individuals to a country-level preference about the the
+state of the system in dimension *d*. The weight placed on a given
+dimension is determined by the state’s worldview *ω*<sub>*d*</sub> ≥ 0.
 
 We can see from the above that the extent to which a country is
 internationalist versus isolationist is proportional to (1) the
@@ -179,20 +178,21 @@ of the state of th world.
 The change produced by the collective activities of *N* countries in
 dimension *d* is then defined as:
 
-*Δ**s*<sub>*d*(*t*)</sub> = *Σ*<sub>*c* = 1</sub><sup>*N*</sup>*π*<sub>*c*</sub>*ω*<sub>*c**d*</sub>*a*<sub>*c*(*t*)</sub>\[*v*<sub>*c*</sub>(*c*<sub>*c**d*</sub>)−*s*<sub>*d*(*t*)</sub>\]
+*Δ**s*<sub>*d*(*t*)</sub> = *Σ*<sub>*c*</sub>*π*<sub>*c*</sub>*ω*<sub>*d*</sub>*a*<sub>*c*(*t*)</sub>\[*v*<sub>*c*</sub>(*c*<sub>*d*</sub>)−*s*<sub>*d*(*t*)</sub>\]
 
 Or, if you like:
 
-*s*<sub>*d*(*t*+1)</sub> = *Σ*<sub>*c* = 1</sub><sup>*N*</sup>*π*<sub>*c*</sub>*ω*<sub>*c**d*</sub>*a*<sub>*c*(*t*)</sub>\[*v*<sub>*c*</sub>(*c*<sub>*c**d*</sub>)−*s*<sub>*d*(*t*)</sub>\] + *s*<sub>*d*(*t*)</sub>
+*s*<sub>*d*(*t*+1)</sub> = *Σ*<sub>*c*</sub>*π*<sub>*c*</sub>*ω*<sub>*d*</sub>*a*<sub>*c*(*t*)</sub>\[*v*<sub>*c*</sub>(*c*<sub>*d*</sub>)−*s*<sub>*d*(*t*)</sub>\] + *s*<sub>*d*(*t*)</sub>
 
 In the above, the difference between a country’s ideal point and the
 state of the system determines the direction that a country’s activity
 pushes the state of the system along a given dimension. The relative
-force behind this push is determined by the state’s dimension-specific
-dissatisfaction, overall level of activity (the more internationalist,
-the stronger the impact), the strength of the state’s worldview, and a
-new factor (*π*<sub>*c*</sub>) which denotes the state’s realized
-capabilities scaled to 0 ≤ *π*<sub>*c*</sub> ≤ 1.
+force behind this push is determined by the state’s absolute
+dimension-specific dissatisfaction and its direction, overall level of
+activity (the more internationalist, the stronger the impact), the
+strength of the state’s worldview, and a new factor (*π*<sub>*c*</sub>)
+which denotes the state’s relative realized capabilities scaled to
+0 ≤ *π*<sub>*c*</sub> ≤ 1.
 
 These equations, depending on the starting values of the model’s
 exogenous parameters, allow for a dynamic feedback loop between the

@@ -36,11 +36,11 @@ On only one occasion did I have a chance to meet Bear in person. When I was a gr
 
 I quickly devoured the book before Bear arrived at UIUC and hoped to talk with him about it. Unfortunately, as a star-struck third-year Ph.D. student at the time, I choked during the car ride and could muster little more than small talk.
 
-It's hard meeting your heroes, and Bear was one of mine. His first book, [*The Great Powers and the International System*](https://assets.cambridge.org/97811070/05419/frontmatter/9781107005419_frontmatter.pdf), is just as timeless a read as his second book. When I first read it as a masters student back in 2016, it solidified my interest in studying International Relations. I knew then that I wanted to make a career out of studying big questions in international politics. Bear would never know it, but he's the reason I knew I wanted to get a Ph.D. in political science and pursue an academic career.
+It's hard meeting your heroes, and Bear was one of mine. His first book, [*The Great Powers and the International System*](https://assets.cambridge.org/97811070/05419/frontmatter/9781107005419_frontmatter.pdf), is just as timeless a read as his second book. When I first read it as a master student back in 2016, it solidified my interest in studying International Relations. I knew then that I wanted to make a career out of studying big questions in international politics. Bear would never know it, but he's one of the reasons I knew I wanted to get a Ph.D. in political science and pursue an academic career.
 
 Years later, I'm (thankfully!) an employed academic at Denison University. And even more, given its location just outside Columbus, OH, I now live within only a few square miles of Bear's stomping grounds. After using his second book for one of the classes I taught in the Fall of 2022, I decided to reach out to him via email. I told him not only that I had a fun time using the book in class, but that I also created a [web application](https://milesdwilliams15.shinyapps.io/correlates-of-order/) based on the data he used in the book so my students could explore the data. I also took the opportunity to solicit some of his feedback on a [research note](https://github.com/milesdwilliams15/The-power-law-of-war/blob/main/04_report/01_combined_manuscript.pdf) his book inspired me to write dealing with the some of the technical details of statistically measuring trends in the intensity of war.
 
-Bear's response was generous, and he expressed excitement about the app I created and provided me with helpful feedback on my research note, offering to take a second look if I chose to continue with project. Since he was in Oslo working on research of his own, I didn't have a chance to meet with him in person in Columbus, but hoped I might be able to touch base with him when he returned.
+Bear's response was generous. He expressed excitement about the app I created and provided me with helpful feedback on my research note, offering to take a second look if I chose to continue with project. Since he was in Oslo working on research of his own, I didn't have a chance to meet with him in person in Columbus, but hoped I might be able to touch base with him when he returned.
 
 Sadly, this was not to be as Bear passed away in May of 2023. If my short correspondence with Bear was enough to make his passing a shock, the effect on the broader community of scholars in his network was exponentially greater---not to mention his family.
 
@@ -48,7 +48,7 @@ I'm in no position to offer a eulogy. I'm far too new and peripheral a member of
 
 As my friend Ekrim Baser [tweeted](https://twitter.com/ekrembaser/status/1654859887191502848) after Bear's passing, Bear's systemic approach wasn't given the attention it deserved. "IR *desperately* needs more general equilibrium thinking. We should be rewarding the precious few people who are crazy enough to push us in that direction," Ekrim further noted. 
 
-Bear Braumoeller was one of these people, and I dared to be in my [dissertation](https://docs.google.com/viewer?url=https://github.com/milesdwilliams15/Dissertation/raw/main/dissertation_final.pdf) in the context of theorizing about the absence of widespread collusion in international development. I know from experience that you have to be a little crazy to engage in "general equilibrium thinking," but the payoffs for it are exponential. I also know that one of the main barriers to this approach is tractability. 
+Bear Braumoeller was one of these people, and I dared to be in my [dissertation](https://docs.google.com/viewer?url=https://github.com/milesdwilliams15/Dissertation/raw/main/dissertation_final.pdf) in the context of theorizing about the absence of widespread collusion in the allocation international aid. I know from experience that you have to be a little crazy to engage in "general equilibrium thinking," but the payoffs for it are exponential. I also know that one of the main barriers to this approach is tractability. 
 
 As inaccessible Bear's systemic theory was to me upon my first reading, it became far clearer when I started to get my hands dirty with it. By "getting my hands dirty," I mean programming. As with most advanced concepts, I personally find that I don't truly understand them until I can program them. That's just what I did with Bear's model of systemic politics, and detailing how I did this is what I'd like to do with the remainder of this post.
 
@@ -68,21 +68,21 @@ The brilliance of Braumoeller was his ability to capture the interplay of agents
 
 The model itself is comprised of a system of differential equations relating the activities of an arbitrary number of countries to the state of the world along an arbitrary number of dimensions in the international system. For a country $c \in {1, ..., c, ..., N}$, its level of activity $a_{c} \geqslant 0$ at time $t+1$ is given as:
 
-$a_{c(t+1)} = \Sigma_{d=1}^M\omega_{cd}[ v_c(c_{cd}) - s_{d(t)} ]^2$
+$a_{c(t+1)} = \Sigma_{d}\omega_{d}[ v_c(c_{d}) - s_{d(t)} ]^2$
 
-In the above, state $c$'s activity level at a point in time is a function of its level of dissatisfaction between the state of the system ($s_{d}$) along each dimension $d \in {1, ..., d, ..., M}$ (these might be the distribution of power, ideology, etc.) at time $t$ and its ideal point for a given dimension ($v_c(c_{cd})$). The value $c_{cd}$ is a frequency distribution of the attitudes of individuals within a country with respect to a given dimension of the international structure, and $v_c(\cdot)$ is a preference aggregation function that maps the attitudes of individuals to a country-level preference about the the state of the system in dimension $d$. The weight placed on a given dimension is determined by the state's worldview $\omega_{cd} \geqslant 0$.
+In the above, state $c$'s activity level at a point in time is a function of its level of dissatisfaction between the state of the system ($s_{d}$) along each dimension $d \in {1, ..., d, ..., M}$ (these might be the distribution of power, ideology, etc.) at time $t$ and its ideal point for a given dimension ($v_c(c_{d})$). The value $c_{d}$ is a frequency distribution of the attitudes of individuals within a country with respect to a given dimension of the international structure, and $v_c(\cdot)$ is a preference aggregation function that maps the attitudes of individuals to a country-level preference about the the state of the system in dimension $d$. The weight placed on a given dimension is determined by the state's worldview $\omega_{d} \geqslant 0$.
 
 We can see from the above that the extent to which a country is internationalist versus isolationist is proportional to (1) the difference between the state of the world and a country's ideal state of the world and (2) the weight the state attaches to different dimensions of the state of th world.
 
 The change produced by the collective activities of $N$ countries in dimension $d$ is then defined as:
 
-$\Delta s_{d(t)} = \Sigma_{c = 1}^N \pi_c\omega_{cd}a_{c(t)} [ v_c(c_{cd}) - s_{d(t)}]$
+$\Delta s_{d(t)} = \Sigma_{c} \pi_c\omega_{d}a_{c(t)} [ v_c(c_{d}) - s_{d(t)}]$
 
 Or, if you like:
 
-$s_{d(t+1)} = \Sigma_{c = 1}^N \pi_c\omega_{cd}a_{c(t)} [ v_c(c_{cd}) - s_{d(t)}] + s_{d(t)}$
+$s_{d(t+1)} = \Sigma_{c} \pi_c\omega_{d}a_{c(t)} [ v_c(c_{d}) - s_{d(t)}] + s_{d(t)}$
 
-In the above, the difference between a country's ideal point and the state of the system determines the direction that a country's activity pushes the state of the system along a given dimension. The relative force behind this push is determined by the state's dimension-specific dissatisfaction, overall level of activity (the more internationalist, the stronger the impact), the strength of the state's worldview, and a new factor ($\pi_c$) which denotes the state's realized capabilities scaled to $0 \leqslant \pi_c \leqslant 1$.
+In the above, the difference between a country's ideal point and the state of the system determines the direction that a country's activity pushes the state of the system along a given dimension. The relative force behind this push is determined by the state's absolute dimension-specific dissatisfaction and its direction, overall level of activity (the more internationalist, the stronger the impact), the strength of the state's worldview, and a new factor ($\pi_c$) which denotes the state's relative realized capabilities scaled to $0 \leqslant \pi_c \leqslant 1$.
 
 These equations, depending on the starting values of the model's exogenous parameters, allow for a dynamic feedback loop between the state of the system and the level of activity of countries until the system eventually settles into an equilibrium where activity levels and the state of the world remain constant.
 
