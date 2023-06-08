@@ -77,9 +77,9 @@ exponentially greater—not to mention his family.
 
 I’m in no position to offer a eulogy. I’m far too new and peripheral a
 member of Bear’s network. Instead, in my own weird way, I want to honor
-his memory by writing post on how to program Bear’s famous (but I feel
-under-appreciated) model of systemic politics. This model forms the
-foundation of his first book as well as [an
+his memory by writing a post on how to program Bear’s model of systemic
+politics. This model forms the foundation of his first book as well as
+[an
 article](https://www.cambridge.org/core/journals/american-political-science-review/article/abs/systemic-politics-and-the-origins-of-great-power-conflict/22394D8AB869CDF8F73735EBCF3A37E5)
 he published a few years prior in *APSR*.
 
@@ -90,21 +90,19 @@ attention it deserved. “IR *desperately* needs more general equilibrium
 thinking. We should be rewarding the precious few people who are crazy
 enough to push us in that direction,” Ekrim further noted.
 
-Bear Braumoeller was one of these people, and I dared to be in my
-[dissertation](https://docs.google.com/viewer?url=https://github.com/milesdwilliams15/Dissertation/raw/main/dissertation_final.pdf)
-in the context of theorizing about the absence of widespread collusion
-in the allocation international aid. I know from experience that you
-have to be a little crazy to engage in “general equilibrium thinking,”
-but the payoffs for it are exponential. I also know that one of the main
-barriers to this approach is tractability.
+Now, let’s get real for a second. You have to be a little crazy to
+engage in general equilibrium thinking. It can be mind-bendingly hard.
+However, the payoffs are exponential once you get past the initial
+trepidation and upstart costs.
 
-As inaccessible Bear’s systemic theory was to me upon my first reading,
-it became far clearer when I started to get my hands dirty with it. By
-“getting my hands dirty,” I mean programming. As with most advanced
-concepts, I personally find that I don’t truly understand them until I
-can program them. That’s just what I did with Bear’s model of systemic
-politics, and detailing how I did this is what I’d like to do with the
-remainder of this post.
+In this post, I want to do my best to pay some of these upstart costs up
+front. As inaccessible Bear’s systemic theory was to me upon my first
+reading, it became far clearer when I started to get my hands dirty with
+it. By “getting my hands dirty,” I mean programming. As with most
+advanced concepts, I personally find that I don’t truly understand them
+until I can program them. That’s just what I did with Bear’s model of
+systemic politics, and detailing how I did this is what I’d like to do
+with the remainder of this post.
 
 So, without further ado…
 
@@ -112,9 +110,9 @@ So, without further ado…
 
 Braumoeller’s model of systemic politics was his answer to the
 [“agent-structure problem”](https://www.jstor.org/stable/2706749?seq=1)
-in international politics. Do agents act upon their environment, or does
-their environment determine their behavior? The answer of course is that
-agents both shape, and are shaped by, the structures around them.
+in international relations. Do agents act upon their environment, or
+does their environment determine their behavior? The answer of course is
+that agents both shape, and are shaped by, the structures around them.
 Recognition of this fundamental truth is what makes Braumoeller’s theory
 truly *systemic*, namely, that it characterizes the dynamic feedback
 loop between structure and agents.
@@ -128,9 +126,9 @@ and how their activities will shape the distribution of different things
 states care about, like power or the spread of ideology.
 
 This is not to say that systemic politics offers nothing of value to
-questions about the specific foreign policy choices of states. It can be
-easily combined with lower-level theories to explain the specific forms
-that a state’s activity might take, as Braumoeller does in [other
+questions about the specific foreign policy choices of countries. It can
+be combined with lower-level theories to explain the specific forms that
+a country’s activity might take, as Braumoeller does in [other
 work](https://www.cambridge.org/core/journals/american-political-science-review/article/abs/systemic-politics-and-the-origins-of-great-power-conflict/22394D8AB869CDF8F73735EBCF3A37E5)
 examining militarized interstate disputes. Nonetheless, the generic
 framework is not tooled specifically to deal with the day-to-day choices
@@ -141,12 +139,11 @@ of states and the structures they inhabit.
 
 # The Mathematical Model
 
-The brilliance of Braumoeller was his ability to capture the interplay
-of agents and structure in the form of a mathematical model. While this
-model describes the activities of agents and the structures around them,
-it is not game theoretic. It is entirely devoid of any specification of
-actor utility functions. In this way, it is primarily *descriptive*,
-which is not the same as saying it is devoid of theory or mechanisms.
+Braumoeller captured the interplay of agents and structure in the form
+of a mathematical model that describes the activities of agents and the
+structures around them. Rather than game theoretic, the model is
+*descriptive*, which is not the same as saying it is devoid of theory or
+mechanisms.
 
 The model itself is comprised of a system of differential equations
 relating the activities of an arbitrary number of countries to the state
@@ -167,18 +164,20 @@ with respect to a given dimension of the international structure, and
 *v*<sub>*c*</sub>(⋅) is a preference aggregation function that maps the
 attitudes of individuals to a country-level preference about the the
 state of the system in dimension *d*. The weight placed on a given
-dimension is determined by the state’s worldview *ω*<sub>*d*</sub> ≥ 0.
+dimension is determined by the state’s worldview *ω*<sub>*d*</sub> ≥ 0
+(i.e., how much the country cares about power or the spread of its
+preferred ideology).
 
 We can see from the above that the extent to which a country is
 internationalist versus isolationist is proportional to (1) the
 difference between the state of the world and a country’s ideal state of
-the world and (2) the weight the state attaches to different dimensions
-of the state of th world.
+the world and (2) the weight a country attaches to different dimensions
+of the state of the world.
 
 The change produced by the collective activities of *N* countries in
 dimension *d* is then defined as:
 
-*Δ**s*<sub>*d*(*t*)</sub> = *Σ*<sub>*c*</sub>*π*<sub>*c*</sub>*ω*<sub>*d*</sub>*a*<sub>*c*(*t*)</sub>\[*v*<sub>*c*</sub>(*c*<sub>*d*</sub>)−*s*<sub>*d*(*t*)</sub>\]
+$\\Delta \\space s\_{d(t)} = \\Sigma\_{c} \\pi_c\\omega\_{d}a\_{c(t)} \[ v_c(c\_{d}) - s\_{d(t)}\]$
 
 Or, if you like:
 
@@ -187,12 +186,11 @@ Or, if you like:
 In the above, the difference between a country’s ideal point and the
 state of the system determines the direction that a country’s activity
 pushes the state of the system along a given dimension. The relative
-force behind this push is determined by the state’s absolute
-dimension-specific dissatisfaction and its direction, overall level of
-activity (the more internationalist, the stronger the impact), the
-strength of the state’s worldview, and a new factor (*π*<sub>*c*</sub>)
-which denotes the state’s relative realized capabilities scaled to
-0 ≤ *π*<sub>*c*</sub> ≤ 1.
+force behind this push is determined by the country’s overall
+dissatisfaction with the state of the world, how internationalist it is
+(its level of activity), the strength of the country’s worldview, and a
+new factor (*π*<sub>*c*</sub>) which denotes the state’s relative
+realized capabilities scaled to 0 ≤ *π*<sub>*c*</sub> ≤ 1.
 
 These equations, depending on the starting values of the model’s
 exogenous parameters, allow for a dynamic feedback loop between the
@@ -204,9 +202,11 @@ the state of the world remain constant.
 
 This mathematical model lends itself well to simulation. It can create
 some headaches when it comes to programming it, however. So I’ll walk
-through my approach slowly, explaining the code along the way. I’ve done
-the programming in R, restricting myself to `{baseR}` as much as
-possible, saving the `{tidyverse}` for visualization.
+through my approach slowly, explaining the code along the way (though
+you at minimum will need to be familiar with R for any of this to make
+much sense). I’ve done the programming in R, restricting myself to
+`{baseR}` as much as possible, saving the `{tidyverse}` for
+visualization.
 
 First, we need to create a function for activity given country world
 views, ideal points, and the current state of the system. The below
@@ -248,8 +248,8 @@ activity(w, v, s)
 Next, we need a function that tells us how the structure of the system
 changes given the activity of countries. The below function takes the
 same inputs as before (`w`, `v`, and `s`) and adds a vector `a` for
-country activity levels and a vector `p` for county’s relative realized
-capabilities.
+country activity levels and a vector `p` for a county’s relative
+realized capabilities.
 
 ``` r
 ## Create function for structure:
@@ -458,5 +458,39 @@ sys_plot(sys_out)
 ![](/assets/images/2023-05-23/unnamed-chunk-9-1.png)<!-- -->
 
 It’s that simple!
+
+We can also update the labels. Say we wanted to just focus on the Cold
+War and have our countries be the US and the Soviet Union who are
+concerned about both the distribution of power and the distribution of
+ideology (democracy vs commumunism). We’ll assume both want all the
+power and only their preferred ideology to be adopted across the world.
+We’ll give the US more power and give it a 50/50 world view (it cares
+equally about power and ideology). The USSR will have less power and a
+world view that is slightly biased toward power (I don’t have a good
+historical justification for this choice, it just makes things
+interesting). We’ll start time with the US having an advantage in both
+dimensions of interest.
+
+``` r
+## Define the starting parameters
+w <- cbind(w1 = c(.5,.5), w2 = c(.7,.3))
+v <- cbind(i1 = c(1,1), i2 = c(0,0))
+s <- c(.7,.7)
+p <- c(.7,.3)
+
+## Let the system run
+sys_out <- system(p=p,w=w,v=v,s=s)
+
+## Plot the system over time
+sys_plot(sys_out, 
+         ylab = c(expression("More internationalist "%->%""), 
+                  expression("Structure in favor of USA "%->%"")),
+         str.names = c("Power", "Democracy"),
+         act.names = c("USA", "USSR"))
+```
+
+![](/assets/images/2023-05-23/unnamed-chunk-10-1.png)<!-- -->
+
+If this code is useful to you, please use it!
 
 [Back to Blog](https://milesdwilliams15.github.io/blog/)
