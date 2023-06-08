@@ -76,7 +76,7 @@ We can see from the above that the extent to which a country is internationalist
 
 The change produced by the collective activities of $N$ countries in dimension $d$ is then defined as:
 
-$\Delta \space s_{d(t)} = \Sigma_{c} \pi_c\omega_{d}a_{c(t)} [ v_c(c_{d}) - s_{d(t)}]$
+$\Delta$ $s_{d(t)} = \Sigma_{c} \pi_c\omega_{d}a_{c(t)} [ v_c(c_{d}) - s_{d(t)}]$
 
 Or, if you like:
 

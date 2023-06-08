@@ -177,7 +177,8 @@ of the state of the world.
 The change produced by the collective activities of *N* countries in
 dimension *d* is then defined as:
 
-$\\Delta \\space s\_{d(t)} = \\Sigma\_{c} \\pi_c\\omega\_{d}a\_{c(t)} \[ v_c(c\_{d}) - s\_{d(t)}\]$
+*Δ*
+*s*<sub>*d*(*t*)</sub> = *Σ*<sub>*c*</sub>*π*<sub>*c*</sub>*ω*<sub>*d*</sub>*a*<sub>*c*(*t*)</sub>\[*v*<sub>*c*</sub>(*c*<sub>*d*</sub>)−*s*<sub>*d*(*t*)</sub>\]
 
 Or, if you like:
 
