@@ -14,7 +14,7 @@ permalink: /blog/
             <a href="https://milesdwilliams15.github.io/"><i class="fa fa-fw fa-home"></i> Home</a>
             <a href="https://milesdwilliams15.github.io/research/"><i class="fa fa-fw fa-area-chart"></i> Research</a>
             <a href="https://milesdwilliams15.github.io/teaching/"><i class="fa fa-fw fa-mortar-board"></i> Teaching</a>
-            <a href="https://docs.google.com/viewer?url=https://github.com/milesdwilliams15/job-market-materials/raw/main/cv.pdf"><i class="fa fa-fw fa-file"></i> My CV</a>
+            <a href="milesdwilliams15.github.io/assets/files/cv.pdf" target="_blank"><i class="fa fa-fw fa-file"></i> My CV</a>
             <a href="{{ site.data.social-media.email.href }}{{ site.data.social-media.email.id }}"><i class="fa fa-fw fa-envelope"></i> Email Me</a>
             <a href="{{ site.github.owner_url }}"><i class="fa fa-fw fa-code-fork"></i> My GitHub</a>
             <a href = "https://milesdwilliams15.github.io/software/"><i class="fa fa-fw fa-gears"></i>My Software</a>
