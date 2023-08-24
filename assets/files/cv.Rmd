@@ -1,0 +1,199 @@
+---
+output: 
+  pdf_document:
+    template: my_cv_temp.tex
+geometry: margin=1in
+
+title: "Curriculum Vitae"
+author: Miles D. Williams
+
+jobtitle: Denison University, Data for Political Research
+address: "Higley 401C · 11 Burt Ridge Rd SW · Granville, OH 43023"
+email: "williamsmd@denison.edu"
+github: "milesdwilliams15"
+# phone: "618-663-9499"
+web: "milesdwilliams15.github.io"
+fontawesome: yes
+updated: false
+
+fontfamily: cochineal
+fontsize: 11pt
+linkcolor: blue
+urlcolor: blue
+---
+
+# EMPLOYMENT
+
+## Denison University
+
+Visiting Assistant Professor \hfill 2022-present
+
+
+# EDUCATION
+
+*University of Illinois at Urbana-Champaign*, Ph.D. Political Science \hfill 2022 
+
+  - Dissertation: "International Aid and Strategic Interdependence: How Common and Conflicting Foreign Policy Goals Shape the Supply of Foreign Aid"
+  - Exams: International Relations, International Political Economy
+  - Committee: Matthew S. Winters (chair), Xinyuan Dai, Robert Pahre, Robert Carroll
+
+*Eastern Illinois University*, M.A. Political Science \hfill 2016
+
+*Greenville University*, B.A. History \& Political Science, Philosophy (*Summa Cum Laude*, with honors) \hfill 2015
+
+
+# RESEARCH
+
+**Peer Reviewed Publications (Ordered by Publication Date)**
+
+- [3] "How Reducing Documentation Burdens Impacts Equity in Program Access: The Case of Small Business Covid-19 Relief Funding." (Forthcoming) With Elizabeth Bell and Heather Kappes in *Public Administration Review*.
+
+- [2] ["Gender in the Pulpit: The Differences in Speaking Style for Men and Women."](http://ryanburge.net/wp-content/uploads/2019/06/JCR_Burge_Williams.pdf) (2019) With Ryan Burge in *The Journal of Communication and Religion* 42(1): 63-82.
+
+- [1] ["Is Social Media a Digital Pulpit? How Evangelical Leaders Use Twitter to Encourage the Faithful and Publicize Their Work."](https://brill.com/view/journals/rmdc/8/3/article-p309_309.xml) (2019) With Ryan Burge in the *Journal of Religion, Media, and Digital Culture* 8(1): 309-339.
+
+
+**Book Chapters (Ordered by Publication Date)**
+
+- [2] ["World Bank."](https://www.academia.edu/44436453/World_Bank) (2023) With Matthew Winters in *Handbook of International Organizations: Theories, Concepts, and Empirical Insights*. Eds. Katja Freistein, Julia Leininger, and Silke Weinlich. De Gruyter Oldenbourg.
+    
+- [1] ["Illinois 10th Congressional District: Re-rematch in Chicago Suburbs."](https://link.springer.com/chapter/10.1007/978-3-319-58094-4_9) (2018) With Jeffrey Ashley in *The Roads to Congress 2016*. Eds. Sean D. Foreman and Marcia L. Godwin. Palgrave Macmillan] 
+
+**Works in Progress (Alphabetical Order)**
+
+- "Aid for Nonaggression." [Work in Progress]
+
+- "Chinese Aid on ICT." With Xinle Jia, Lucie Lu, and Yujeong Yang. [Working paper for a Special Issue on *Promoting and Protecting Democracy in Times of De-Democratization*]
+
+- "Cooperation or Competitive Equilibrium? The Determinants of Lead Donorship in International Development." [Under Review]
+
+- "Does Performance Feedback Increase Flu-Vaccination Rates? A Cluster Randomized Trial." With Sebastian Jilke, Pompa Debroy, Rebecca Johnson, Michael Wallace, and Vincent Marconi. [Working Paper]
+
+- "Foreign Aid and Investment Protection." With Seung-Uk Huh. [Working Paper]
+
+- "How Local Discretion Addresses Competing Allocation Goals: The Case of Small Business Relief Funding." With Rebecca Johson, Heather Barry Kappes, Crystal C. Hall, Simone Zhang, and Elizabeth Bell. [Under Review]
+
+- "In Favor of Normalizing War." [Working Paper]
+
+- "Leveraging the Black Box: Regression Adjustment with Super Learners." With Robert J. Carroll and Gustavo Diaz. [Work in Progress]
+
+- "Aid, Migration, and Civil War." [Working Paper]
+    
+- "Xinhua Coverage of Chinese Foreign Aid Allocations." With Lucie Lu. [Working Paper]
+
+**Conferences (Ordered by Attendance Date)**
+
+- "Foreign Aid and Investment Protection," APSA \hfill Aug. 2023
+
+- "Foreign Aid and Investment Protection," MPSA \hfill April 2023
+
+- "A Strategic Political Economy of Aid," PEIO \hfill July 2022
+
+- "Friends Get more Money, Attention, and Handshakes: Xinhua, Diplomacy, and Chinese Foreign Aid," AidData Roundtable \hfill June 2022
+
+- "Competition and Buck-passing in the Political Economy of Aid," MPSA \hfill April 2022
+
+**Blogging**
+
+I have contributed to [*Democracy Paradox*](https://democracyparadox.com/).
+
+- ["Can Washington and China Cooperate in Foreign Aid?"](https://democracyparadox.com/2023/02/13/can-washington-and-china-cooperate-in-foreign-aid/)
+
+I also have contributed to [*Religion in Public*](https://religioninpublic.blog/).
+
+  - ["White, Conservative, Religious...and Aid Skeptical"](https://religioninpublic.blog/2021/01/21/white-conservative-religious-and-aid-skeptical/) (January 21, 2021)
+  - ["Do Women Preach Differently than Men?"](https://religioninpublic.blog/2019/06/26/do-women-preach-differently-than-men/) (June 26, 2019)
+  - ["Welcome the Stranger? Evangelicals' Views on Immigration Prior to Donald Trump"](https://religioninpublic.blog/2017/02/20/welcome-the-stranger-evangelicals-views-on-immigration-prior-to-donald-trump/) (February 20, 2017)
+  - ["Evangelical Leaders Are as Negative on Immigration and Islam as Donald Trump"](https://religioninpublic.blog/2017/02/13/evangelical-leaders-are-as-negative-on-immigration-and-islam-as-donald-trump/) (February 13, 2017)
+  
+I also write about various statistical and R-related things on [my personal blog](https://milesdwilliams15.github.io/blog/) hosted on my professional website.
+
+
+# SOFTWARE
+
+### Tools
+
+- **Expert:** R, RStudio, & Latex
+- **Basic:** Stata & Python
+
+
+### R Packages
+
+[`coolor`](https://github.com/milesdwilliams15/coolorrr) - Tools to make setting and applying custom color palettes with `ggplot` more streamlined.
+
+[`RFA`](https://github.com/milesdwilliams15/RFA) - Implements [random forest adjustment](https://rpubs.com/milesdwilliams15/rfa-vignette) (RFA). RFA is a method for partialing out the influence of confounding covariates via random forests.
+
+[`seerrr`](https://github.com/milesdwilliams15/seerrr) - Tools that simplify the process of doing Monte Carlo and computational power analyses.
+
+[`SARM`](https://github.com/milesdwilliams15/SARM) - For estimating a modified version of the Strategic Autoregressive Model developed by [Steinwand (2011)](https://www.cambridge.org/core/journals/political-analysis/article/estimating-freeriding-behavior-the-stratam-model/0CBD6176E53848732CEC2C151A491212).
+
+[`oesr`](https://cran.r-project.org/web/packages/oesr/oesr.pdf) (with Ryan T. Moore) - For visualizing the results from randomized controlled trials using the Office of Evaluation Sciences' [recommended style guide](https://oes.gsa.gov/assets/files/reporting-statistical-results.pdf).
+
+
+# TEACHING
+
+**Denison University**
+
+- DA 101: Introduction to Data Analytics
+- DPR 101: Data Visualization for Political Research
+- DPR 190: War, Wealth, and World Politics
+- DPR 201: Data and Research Design for Social Impact
+
+**University of Illinois at Urbana-Champaign**
+
+- Intro to International Relations (Independent Instructor)
+- Intro to Political Science (Teaching Assistant)
+- UIUC Math Camp
+  + [Probability in R](https://github.com/milesdwilliams15/Math-Camp-2020)
+  + [Integrals](https://github.com/milesdwilliams15/Math-Camp-2020)
+  + [Linear Regression](https://github.com/milesdwilliams15/math-camp-2021-ols)
+  + [Loops](https://github.com/milesdwilliams15/Math-Camp-2019)
+  + [Version Control](https://github.com/milesdwilliams15/git-and-rstuidio-math-camp-2021)
+
+# OTHER EMPLOYMENT
+
+## US Office of Evaluation Sciences
+
+Associate Fellow (methods specialist) \hfill 2020-2023
+
+## University of Illinois at Urbana-Champaign
+
+Research Assistant
+
+  - Cara Wong \hfill 2020-present
+  - Matthew S. Winters \hfill 2018-2020
+
+## Eastern Illinois University
+
+  - Research Assistant for Jeffrey Ashley \hfill 2016
+  - Presidential Graduate Assistant \hfill 2015-2016
+
+# AWARDS AND GRANTS
+
+*University of Illinois at Urbana-Champaign*
+
+  - Kathleen L. Burkholder Prize for Best Dissertation \hfill 2023
+  - William Bernhard Award for Best Dissertation Prospectus \hfill 2021
+  - Rita and Leonard Ogren Award for Academic Excellence \hfill 2018
+
+*Eastern Illinois University*
+
+  - Robert and Kathryn Augustine Distinguished Master's Thesis Award \hfill 2018
+  - Williams Travel Grant \hfill 2016
+
+# SERVICE
+
+*Reviewer*
+
+- British Journal of Politics and International Relations
+- Development Studies Research
+- Journal of Politics
+
+*International Relations Graduate Workshop*, Coordinator \hfill 2020-2021
+
+*Graduate Methods Committee*
+
+  - Member \hfill 2019-2021
+  - Chair \hfill 2020
+
+*UIUC Political Science Graduate Student Association*, Board Member \hfill 2019-2020
