@@ -71,15 +71,15 @@ In short, checking the residuals is unnecessary and potentially misleading. So, 
 
 ## A simulation
 
-To quickly show that violations of 3-5 don't matter for model fit (e.g., bias), let's run a simple simulation. The below code simulates multiple draws from four data-generating processes for an outcome $y_i$:
+To quickly show that violations of 3-5 don't matter for model fit (e.g., bias), let's run a simple simulation. The below code simulates multiple draws from four data-generating processes for an outcome $$y_i$$:
 
 1. $$y_i = x_i + \epsilon_i$$; $$\epsilon_i \sim \mathcal{N}(0, 1)$$
 
 2. $$y_i = x_i + \mu_i + \epsilon_i$$; $$\epsilon_i \sim \mathcal{N}(0, 1)$$ and $$\mu_i \sim [\mathcal{N}(0, 1)]^2$$
 
-3. $$y_i = x_i + \gamma_k + \epsilon_i$$; $$\epsilon_i \sim \mathcal{N}(0, 1)$$ and $$\gamma_k \sim [\mathcal{N}(0, 1)]^2$$ for $$K = 10$$ clusters.
+3. $$y_i = x_i + \gamma_k + \epsilon_i$$; $$\epsilon_i \sim \mathcal{N}(0, 1)$$ and $$\gamma_k \sim [\mathcal{N}(0, 1)]$$ for $$K = 10$$ clusters.
 
-4. $$y_i = x_i + \gamma_k + \mu_i + \epsilon_i$$; $$\epsilon_i \sim \mathcal{N}(0, 1)$$, $$\mu_i \sim [\mathcal{N}(0, 1)]^2$$, and $$\gamma_k \sim [\mathcal{N}(0, 1)]^2$$ for $$K = 10$$ clusters.
+4. $$y_i = x_i + \gamma_k + \mu_i + \epsilon_i$$; $$\epsilon_i \sim \mathcal{N}(0, 1)$$, $$\mu_i \sim [\mathcal{N}(0, 1)]^2$$, and $$\gamma_k \sim [\mathcal{N}(0, 1)]$$ for $$K = 10$$ clusters.
 
 In (1), the error term is independently distributed, has equal variance, and is normally distributed. In (2) non-normality (and thus also unequal variance) is introduced in the form of a squared stochastic term. In (3) non-independence is introduced in the form of a cluster-specific stochastic term. In (4), a combination of (2) and (3) is introduced.
 
