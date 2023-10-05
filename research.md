@@ -43,7 +43,7 @@ In [my dissertation](https://docs.google.com/viewer?url=https://github.com/miles
 
 "Chinese Aid on ICT." With Xinle Jia, Lucie Lu, and Yujeong Yang. [Working paper for a Special Issue on *Promoting and Protecting Democracy in Times of De-Democratization*]
 
-"Cooperation or Competitive Equilibrium? The Determinants of Lead Donorship in International Development." [Under Review]
+"Elusive Collaboration? The Determinants of Lead Donorship in International Development." [Under Review]
 
 "Does Performance Feedback Increase Flu-Vaccination Rates? A Cluster Randomized Trial." With Sebastian Jilke, Pompa Debroy, Rebecca Johnson, Michael Wallace, and Vincent Marconi. [Working Paper]
 
@@ -63,7 +63,7 @@ In [my dissertation](https://docs.google.com/viewer?url=https://github.com/miles
 
 **Peer Reviewed Publications (Ordered by Publication Date)**
 
-[3] "How Reducing Documentation Burdens Impacts Equity in Program Access: The Case of Small Business Covid-19 Relief Funding." (Forthcoming) With Elizabeth Bell and Heather Kappes in *Public Administration Review*.
+[3] ["How Reducing Documentation Burdens Impacts Equity in Program Access: The Case of Small Business Covid-19 Relief Funding."](https://onlinelibrary.wiley.com/doi/epdf/10.1111/puar.13722) (2023) With Elizabeth Bell and Heather Kappes in *Public Administration Review*: 1-22.
 
 [2] ["Gender in the Pulpit: The Differences in Speaking Style for Men and Women."](http://ryanburge.net/wp-content/uploads/2019/06/JCR_Burge_Williams.pdf) (2019) With Ryan Burge in *The Journal of Communication and Religion* 42(1): 63-82.
     
