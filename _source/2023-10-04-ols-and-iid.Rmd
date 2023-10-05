@@ -59,7 +59,7 @@ The important thing to remember with the above three is that they are of lower-o
 
 $$y_i = \beta_0 + \beta_1x_i + \epsilon_i$$
 
-assumptions 3-5 are not necessary for obtaining an unbiased estimate of the slope ($\beta_1$) and intercept ($\beta_0$). As long as we have good data and a linear additive functional form is the best model for the outcome, using OLS to estimate the model will give us a good fit for the expected value or conditional mean of $$y_i$$. Of course, if we cared about getting observation-specific predictions, this would be a different story, but this rarely is a concern in most quantitative scientific research.
+assumptions 3-5 are not necessary for obtaining an unbiased estimate of the slope ($$\beta_1$$) and intercept ($$\beta_0$$). As long as we have good data and a linear additive functional form is the best model for the outcome, using OLS to estimate the model will give us a good fit for the expected value or conditional mean of $$y_i$$. Of course, if we cared about getting observation-specific predictions, this would be a different story, but this rarely is a concern in most quantitative scientific research.
 
 Assumptions 3-5 *are* important if we care about making good statistical inferences. That is, if we want to have unbiased estimates of $$\text{var}(\beta_1)$$ and $$\text{var}(\beta_0)$$, then we should care about assumptions 3-5.
 

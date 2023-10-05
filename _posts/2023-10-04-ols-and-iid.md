@@ -84,11 +84,11 @@ linear regression model of the form:
 $$y_i = \beta_0 + \beta_1x_i + \epsilon_i$$
 
 assumptions 3-5 are not necessary for obtaining an unbiased estimate of
-the slope ($\beta_1$) and intercept ($\beta_0$). As long as we have good
-data and a linear additive functional form is the best model for the
-outcome, using OLS to estimate the model will give us a good fit for the
-expected value or conditional mean of $$y_i$$. Of course, if we cared
-about getting observation-specific predictions, this would be a
+the slope ($$\beta_1$$) and intercept ($$\beta_0$$). As long as we have
+good data and a linear additive functional form is the best model for
+the outcome, using OLS to estimate the model will give us a good fit for
+the expected value or conditional mean of $$y_i$$. Of course, if we
+cared about getting observation-specific predictions, this would be a
 different story, but this rarely is a concern in most quantitative
 scientific research.
 
