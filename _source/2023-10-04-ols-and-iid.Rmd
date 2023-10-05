@@ -59,9 +59,9 @@ The important thing to remember with the above three is that they are of lower-o
 
 $$y_i = \beta_0 + \beta_1x_i + \epsilon_i$$
 
-assumptions 3-5 are not necessary for obtaining an unbiased estimate of the slope ($\beta_1$) and intercept ($\beta_0$). As long as we have good data and a linear additive functional form is the best model for the outcome, using OLS to estimate the model will give us a good fit for the expected value or conditional mean of $y_i$. Of course, if we cared about getting observation-specific predictions, this would be a different story, but this rarely is a concern in most quantitative scientific research.
+assumptions 3-5 are not necessary for obtaining an unbiased estimate of the slope ($\beta_1$) and intercept ($\beta_0$). As long as we have good data and a linear additive functional form is the best model for the outcome, using OLS to estimate the model will give us a good fit for the expected value or conditional mean of $$y_i$$. Of course, if we cared about getting observation-specific predictions, this would be a different story, but this rarely is a concern in most quantitative scientific research.
 
-Assumptions 3-5 *are* important if we care about making good statistical inferences. That is, if we want to have unbiased estimates of $\text{var}(\beta_1)$ and $\text{var}(\beta_0)$, then we should care about assumptions 3-5.
+Assumptions 3-5 *are* important if we care about making good statistical inferences. That is, if we want to have unbiased estimates of $$\text{var}(\beta_1)$$ and $$\text{var}(\beta_0)$$, then we should care about assumptions 3-5.
 
 Thankfully, we don't have to change anything about the way we estimate the regression model to correct for violations of assumptions 3-5. We can just use robust standard errors to deal with violations of 4-5 and include clustering to deal with a violation of 3.
 
@@ -73,13 +73,13 @@ In short, checking the residuals is unnecessary and potentially misleading. So, 
 
 To quickly show that violations of 3-5 don't matter for model fit (e.g., bias), let's run a simple simulation. The below code simulates multiple draws from four data-generating processes for an outcome $y_i$:
 
-1. $y_i = x_i + \epsilon_i$; $\epsilon_i \sim \mathcal{N}(0, 1)$
+1. $$y_i = x_i + \epsilon_i$$; $$\epsilon_i \sim \mathcal{N}(0, 1)$$
 
-2. $y_i = x_i + \mu_i + \epsilon_i$; $\epsilon_i \sim \mathcal{N}(0, 1)$ and $\mu_i \sim [\mathcal{N}(0, 1)]^2$
+2. $$y_i = x_i + \mu_i + \epsilon_i$$; $$\epsilon_i \sim \mathcal{N}(0, 1)$$ and $$\mu_i \sim [\mathcal{N}(0, 1)]^2$$
 
-3. $y_i = x_i + \gamma_k + \epsilon_i$; $\epsilon_i \sim \mathcal{N}(0, 1)$ and $\gamma_k \sim [\mathcal{N}(0, 1)]^2$ for $K = 10$ clusters.
+3. $$y_i = x_i + \gamma_k + \epsilon_i$$; $$\epsilon_i \sim \mathcal{N}(0, 1)$$ and $$\gamma_k \sim [\mathcal{N}(0, 1)]^2$$ for $$K = 10$$ clusters.
 
-4. $y_i = x_i + \gamma_k + \mu_i + \epsilon_i$; $\epsilon_i \sim \mathcal{N}(0, 1)$, $\mu_i \sim [\mathcal{N}(0, 1)]^2$, and $\gamma_k \sim [\mathcal{N}(0, 1)]^2$ for $K = 10$ clusters.
+4. $$y_i = x_i + \gamma_k + \mu_i + \epsilon_i$$; $$\epsilon_i \sim \mathcal{N}(0, 1)$$, $$\mu_i \sim [\mathcal{N}(0, 1)]^2$$, and $$\gamma_k \sim [\mathcal{N}(0, 1)]^2$$ for $$K = 10$$ clusters.
 
 In (1), the error term is independently distributed, has equal variance, and is normally distributed. In (2) non-normality (and thus also unequal variance) is introduced in the form of a squared stochastic term. In (3) non-independence is introduced in the form of a cluster-specific stochastic term. In (4), a combination of (2) and (3) is introduced.
 
@@ -94,7 +94,7 @@ set_palette()
 ## draw multiple datasets from the possible dgps:
 simulate(
   ## no. of iterations and sample size
-  R = 500,
+  R = 1000,
   N = 500,
   
   ## the explanatory variable and unobserved errors
@@ -188,7 +188,7 @@ sim_est |>
   ) -> sim_evl
 ```
 
-Now, we just need a simple visualization to report the output. The below figure shows the average of the model estimates along with the 95% confidence interval for the distribution of estimates. The coverage provided by the robust standard errors is indicated as well. For a test to reject the null at the standard $p < 0.05$ level, we should expect the coverage to be 95%. The results below show (1) negligible bias in model estimates, (2) that non-normal and non-independent errors increase the estimated variance of model estimates, and (3) despite the increase in variance the standard errors still have the appropriate coverage for a test to reliably reject the null with the correct false positive rate at the standard threshold of $p < 0.05$.
+Now, we just need a simple visualization to report the output. The below figure shows the average of the model estimates along with the 95% confidence interval for the distribution of estimates. The coverage provided by the robust standard errors is indicated as well. For a test to reject the null at the standard $$p < 0.05$$ level, we should expect the coverage to be 95%. The results below show (1) negligible bias in model estimates, (2) that non-normal and non-independent errors increase the estimated variance of model estimates, and (3) despite the increase in variance the standard errors still have the appropriate coverage for a test to reliably reject the null with the correct false positive rate at the standard threshold of $$p < 0.05$$.
 
 ```{r}
 ggplot(sim_evl) +
