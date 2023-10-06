@@ -30,14 +30,25 @@ permalink: /research/
 
 ## My Research
 
-My research reflects a mix of projects and interests and has appeared in peer-reviewed journals, book chapters, and various online outlets. My primary research agenda centers on the influence of politics on the distribution of economic assistance. But, as you'll see below, my interests and contributions extend to other domains as well, like statistical methods, political communication, and religion in politics. 
-
 **Future Book Project**
 
-In [my dissertation](https://docs.google.com/viewer?url=https://github.com/milesdwilliams15/Dissertation/raw/main/dissertation_final.pdf), which received the Kathleen L. Burkholder Prize for Best Dissertation, I explore how the pursuit of mixed foreign policy goals drive cooperation problems among Western aid donor governments. This work will become the basis for my first book project, which will center on the uniqueness of the collective action problem at the heart of global development finance. Western (and increasingly non-Western) donor governments have struggled to cooperate in the distribution of aid since the current foreign aid regime emerged after World War II. Why? The reason, I argue, is that international aid is used by donors to accomplish a mix of foreign policy goals, some of which are rival and others of which are mutually beneficial. I build a case for a phenomenon called "elusive collusion" which disproportionately manifests in collective action problems that involve multiple dimensions of activity with countervailing strategic valences between dimensions. As I will show through a mix of statistical and case study evidence, such strategic complexity characterizes international aid and will continue to stifle cooperation until its existence and scope have been fully addressed.
+In [my dissertation](https://docs.google.com/viewer?url=https://github.com/milesdwilliams15/Dissertation/raw/main/dissertation_final.pdf), which received the Kathleen L. Burkholder Prize for Best Dissertation, I explore how the pursuit of mixed foreign policy goals drive cooperation problems among Western aid donor governments. This work will become the basis for my first book project, which will center on the uniqueness of the collective action problem at the heart of global development finance. Western (and increasingly non-Western) donor governments have struggled to cooperate in the distribution of aid since the current foreign aid regime emerged after World War II. Why? The reason, I argue, is that international aid is used by donors to accomplish a mix of foreign policy goals, some of which are rival and others of which are mutually beneficial. I build a case for a phenomenon called "elusive collaboration" which disproportionately manifests in collective action problems that involve multiple dimensions of activity with countervailing competitive or free-riding incentives between dimensions. As I will show through a mix of formal modeling and statistical and case study evidence, such strategic complexity characterizes international aid and will continue to stifle cooperation until its existence and scope have been fully addressed.
 
-  
-**Works in Progress (Alphabetical Order)**
+**Peer Reviewed Publications (Ordered by Publication Date)**
+
+[3] ["How Reducing Documentation Burdens Impacts Equity in Program Access: The Case of Small Business Covid-19 Relief Funding."](https://onlinelibrary.wiley.com/doi/epdf/10.1111/puar.13722) (2023) With Elizabeth Bell and Heather Kappes in *Public Administration Review*: 1-22.
+
+[2] ["Gender in the Pulpit: The Differences in Speaking Style for Men and Women."](http://ryanburge.net/wp-content/uploads/2019/06/JCR_Burge_Williams.pdf) (2019) With Ryan Burge in *The Journal of Communication and Religion* 42(1): 63-82.
+    
+[1] ["Is Social Media a Digital Pulpit? How Evangelical Leaders Use Twitter to Encourage the Faithful and Publicize Their Work."](https://brill.com/view/journals/rmdc/8/3/article-p309_309.xml) (2019) With Ryan Burge in *Journal of Religion, Media, and Digital Culture* 8(1): 309-339.
+
+**Book Chapters (Ordered by Publication Date)**
+    
+[2] ["World Bank."](https://www.academia.edu/44436453/World_Bank) (2023) With Matthew Winters in *Handbook of International Orgnaizations: Theories, Concepts, and Empirical Insights*. Eds. Katja Freistein, Julia Leininger, and Silke Weinlich. De Gruyter Oldenbourg.
+    
+[1] ["Illinois 10th Congressional District: Re-rematch in Chicago Suburbs."](https://link.springer.com/chapter/10.1007/978-3-319-58094-4_9) (2018) With Jeffrey Ashley in *The Roads to Congress 2016*. Eds. Sean D. Foreman and Marcia L. Godwin. Palgrave Macmillan.
+    
+**Works in Progress**
 
 "Aid for Nonaggression." [Work in Progress]
 
@@ -60,21 +71,6 @@ In [my dissertation](https://docs.google.com/viewer?url=https://github.com/miles
 "Xinhua Coverage of Chinese Foreign Aid Allocations." With Lucie Lu. [Working Paper]
 
 [*Note*: All working papers are available upon request.]
-
-**Peer Reviewed Publications (Ordered by Publication Date)**
-
-[3] ["How Reducing Documentation Burdens Impacts Equity in Program Access: The Case of Small Business Covid-19 Relief Funding."](https://onlinelibrary.wiley.com/doi/epdf/10.1111/puar.13722) (2023) With Elizabeth Bell and Heather Kappes in *Public Administration Review*: 1-22.
-
-[2] ["Gender in the Pulpit: The Differences in Speaking Style for Men and Women."](http://ryanburge.net/wp-content/uploads/2019/06/JCR_Burge_Williams.pdf) (2019) With Ryan Burge in *The Journal of Communication and Religion* 42(1): 63-82.
-    
-[1] ["Is Social Media a Digital Pulpit? How Evangelical Leaders Use Twitter to Encourage the Faithful and Publicize Their Work."](https://brill.com/view/journals/rmdc/8/3/article-p309_309.xml) (2019) With Ryan Burge in *Journal of Religion, Media, and Digital Culture* 8(1): 309-339.
-
-**Book Chapters (Ordered by Publication Date)**
-    
-[2] ["World Bank."](https://www.academia.edu/44436453/World_Bank) (2023) With Matthew Winters in *Handbook of International Orgnaizations: Theories, Concepts, and Empirical Insights*. Eds. Katja Freistein, Julia Leininger, and Silke Weinlich. De Gruyter Oldenbourg.
-    
-[1] ["Illinois 10th Congressional District: Re-rematch in Chicago Suburbs."](https://link.springer.com/chapter/10.1007/978-3-319-58094-4_9) (2018) With Jeffrey Ashley in *The Roads to Congress 2016*. Eds. Sean D. Foreman and Marcia L. Godwin. Palgrave Macmillan.
-    
 
 **Software**
   
