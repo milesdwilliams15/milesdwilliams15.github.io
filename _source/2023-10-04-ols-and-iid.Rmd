@@ -37,9 +37,8 @@ So, why is it bad? So many online sources talk about the importance of equal var
 
 Andrew Gelman summarized the key assumptions of the linear regression model [in a blog post](https://statmodeling.stat.columbia.edu/2013/08/04/19470/) that amazingly is more than 10 years old now. The two most important assumptions are as follows:
 
->1. Validity. Most importantly, the data you are analyzing should map to the research question you are trying to answer. This sounds obvious but is often overlooked or ignored because it can be inconvenient. . . .
-
->2. Additivity and linearity. The most important mathematical assumption of the regression model is that its deterministic component is a linear function of the separate predictors . . .
+>(1) Validity. Most importantly, the data you are analyzing should map to the research question you are trying to answer. This sounds obvious but is often overlooked or ignored because it can be inconvenient...
+>(2) Additivity and linearity. The most important mathematical assumption of the regression model is that its deterministic component is a linear function of the separate predictors...
 
 In short, you should have **good data** and the best model of the outcome you wish to study should be **additive and linear**. That's it. If you want to make causal claims, you need to assume a few more things, but in no instance does checking the above assumptions or those additional assumptions for causal inference require looking at model residuals.
 
@@ -47,11 +46,9 @@ In short, you should have **good data** and the best model of the outcome you wi
 
 The three additional assumptions of linear regression are:
 
->3. Independence of errors. . . .
-
->4. Equal variance of errors. . . .
-
->5. Normality of errors. . . .
+>(3) Independence of errors. . . .
+>(4) Equal variance of errors. . . .
+>(5) Normality of errors. . . .
 
 Some people add the assumption that the error term is mean-zero as well, though in reality this is more a property of using OLS to estimate the regression model than an assumption that can be verified.
 

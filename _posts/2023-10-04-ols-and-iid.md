@@ -7,7 +7,7 @@ output:
 knit: (function(inputFile, encoding) {
   rmarkdown::render(inputFile, encoding = encoding, output_dir = "../_posts") })
 author: "Miles Williams"
-date: "2023-10-05"
+date: "2023-10-06"
 layout: post
 categories: ["Methods", "Statistics"]
 ---
@@ -45,14 +45,13 @@ post](https://statmodeling.stat.columbia.edu/2013/08/04/19470/) that
 amazingly is more than 10 years old now. The two most important
 assumptions are as follows:
 
-> 1.  Validity. Most importantly, the data you are analyzing should map
+> 1)  Validity. Most importantly, the data you are analyzing should map
 >     to the research question you are trying to answer. This sounds
 >     obvious but is often overlooked or ignored because it can be
->     inconvenient. . . .
-
-> 2.  Additivity and linearity. The most important mathematical
+>     inconvenient…
+> 2)  Additivity and linearity. The most important mathematical
 >     assumption of the regression model is that its deterministic
->     component is a linear function of the separate predictors . . .
+>     component is a linear function of the separate predictors…
 
 In short, you should have **good data** and the best model of the
 outcome you wish to study should be **additive and linear**. That’s it.
@@ -65,11 +64,9 @@ residuals.
 
 The three additional assumptions of linear regression are:
 
-> 3.  Independence of errors. . . .
-
-> 4.  Equal variance of errors. . . .
-
-> 5.  Normality of errors. . . .
+> 3)  Independence of errors. . . .
+> 4)  Equal variance of errors. . . .
+> 5)  Normality of errors. . . .
 
 Some people add the assumption that the error term is mean-zero as well,
 though in reality this is more a property of using OLS to estimate the
