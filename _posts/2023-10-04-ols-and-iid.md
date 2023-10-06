@@ -80,36 +80,37 @@ linear regression model of the form:
 
 $$y_i = \beta_0 + \beta_1x_i + \epsilon_i$$
 
-assumptions 3-5 are not necessary for obtaining an unbiased estimate of
-the slope ($$\beta_1$$) and intercept ($$\beta_0$$). As long as we have
-good data and a linear additive functional form is the best model for
-the outcome, using OLS to estimate the model will give us a good fit for
-the expected value or conditional mean of $$y_i$$. Of course, if we
-cared about getting observation-specific predictions, this would be a
-different story, but this rarely is a concern in most quantitative
-scientific research.
+the above assumptions are not necessary for obtaining an unbiased
+estimate of the slope ($$\beta_1$$) and intercept ($$\beta_0$$). As long
+as we have good data and a linear additive functional form is the best
+model for the outcome, using OLS to estimate the model will give us a
+good fit for the expected value or conditional mean of $$y_i$$. Of
+course, if we cared about getting observation-specific predictions, this
+would be a different story, but this rarely is a concern in most
+quantitative scientific research.
 
-Assumptions 3-5 *are* important if we care about making good statistical
-inferences. That is, if we want to have unbiased estimates of
-$$\text{var}(\beta_1)$$ and $$\text{var}(\beta_0)$$, then we should care
-about assumptions 3-5.
+Independence, equal variance, and normality of the error term *are*
+important if we care about making good statistical inferences. That is,
+if we want to have unbiased estimates of $$\text{var}(\beta_1)$$ and
+$$\text{var}(\beta_0)$$, then we should care about these assumptions.
 
 Thankfully, we don’t have to change anything about the way we estimate
-the regression model to correct for violations of assumptions 3-5. We
-can just use robust standard errors to deal with violations of 4-5 and
-include clustering to deal with a violation of 3.
+the regression model to correct for violations of these assumptions. We
+can just use robust standard errors to deal with violations of equal
+variance and normality and include clustering to deal with a violation
+of independence.
 
 Now, I know what you’re thinking. Wouldn’t we want to check the
 residuals to see if we need to use robust standard errors or clustering?
-The answer, again, is NO. Looking at the residuals to determine if
-robust standard errors are needed is poor statistical practice. The
-reason is that (1) robust standard errors provide the appropriate
-coverage whether or not equal variance and normality are violated, so
-you can just use them; and (2) there can be violations of these
-assumptions of unknown form that will not be obvious to the naked eye.
+The answer, again, is NO. The reason is that (1) robust standard errors
+provide the appropriate coverage whether or not equal variance and
+normality are violated, so you can just use them; and (2) there can be
+violations of these assumptions of unknown form that will not be obvious
+to the naked eye.
 
 In short, checking the residuals is unnecessary and potentially
-misleading. So, don’t do it.
+misleading because violations of assumptions will not always be obvious.
+So, don’t do it.
 
 ## A simulation
 
