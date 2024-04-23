@@ -51,7 +51,15 @@ permalink: /teaching/
   
 ### Materials
 
-I store my course materials within a single GitHub repository, which I update regularly. [Check it out](https://github.com/milesdwilliams15/Teaching).
+[GitHub Teaching Repository](https://github.com/milesdwilliams15/Teaching).
+
+Free lecture notes:
+
+- [DPR 101: Data Visualization for Political Research](https://milesdwilliams15.quarto.pub/dpr-101-data-visualization-for-political-research/)
+- [An R Companion to *Thinking Clearly with Data*](https://milesdwilliams15.quarto.pub/an-r-companion-to-thinking-clearly-with-data/)
+- [Studying Why We Fight with R](https://milesdwilliams15.quarto.pub/studying-why-we-fight-with-r/)
+
+
 
 ### Shiny Apps for Teaching
 
