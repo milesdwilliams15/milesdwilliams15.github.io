@@ -28,9 +28,7 @@ permalink: /software/
 
 <p> </p>
 
-## My Software
-
-As a part of my methodologically oriented research agenda, I have developed a number of R statistical packages. Click on the links below to learn more.
+Through the course of teaching and doing research, I have developed a number of R statistical packages. Click on the links below to learn more.
 
 <ul>
   <li><a href = "https://github.com/milesdwilliams15/coolorrr">coolorrr</a> - Supports easier porting and application of custom color palettes, produced at <a href = "coolors.co">coolors.co</a>, for use with `ggplot()`.</li>
@@ -40,6 +38,3 @@ As a part of my methodologically oriented research agenda, I have developed a nu
   <li><a href = "https://cran.r-project.org/web/packages/oesr/oesr.pdf">oesr</a> (Now available! With Ryan T. Moore) - For visualizing the results from randomized controlled trials using the Office of Evaluation Sciences' <a href = "https://oes.gsa.gov/assets/files/reporting-statistical-results.pdf">recommended style guide</a>.</li>
 </ul>
 
-Once upon a time, I also published on RPubs some code I wrote to make producing interaction plots a little more flexible. Existing options like `interplot` usually work well for me, but on occasion I've used models that `interplot` and other packages don't support. Apparently, others out there have found my code useful, too, because I receive emails from time to time from folks who have made good use of it in their own research and who have questions about ways to modify it for their own purposes. I therefore figured the code was worth highlighting here if only to potentially improve its visibility. 
-
-  - ["Plotting Martinal Effects"](https://rpubs.com/milesdwilliams15/381372)

@@ -32,7 +32,7 @@ permalink: /research/
 
 **Future Book Project**
 
-In [my dissertation](https://docs.google.com/viewer?url=https://github.com/milesdwilliams15/Dissertation/raw/main/dissertation_final.pdf), which received the Kathleen L. Burkholder Prize for Best Dissertation, I explore how the pursuit of mixed foreign policy goals drive cooperation problems among Western aid donor governments. This work will become the basis for my first book project, which will center on the uniqueness of the collective action problem at the heart of global development finance. Western (and increasingly non-Western) donor governments have struggled to cooperate in the distribution of aid since the current foreign aid regime emerged after World War II. Why? The reason, I argue, is that international aid is used by donors to accomplish a mix of foreign policy goals, some of which are rival and others of which are mutually beneficial. I build a case for a phenomenon called "elusive collaboration" which disproportionately manifests in collective action problems that involve multiple dimensions of activity with countervailing competitive or free-riding incentives between dimensions. As I will show through a mix of formal modeling and statistical and case study evidence, such strategic complexity characterizes international aid and will continue to stifle cooperation until its existence and scope have been fully addressed.
+In [my dissertation](https://docs.google.com/viewer?url=https://github.com/milesdwilliams15/Dissertation/raw/main/dissertation_final.pdf), I explore how the pursuit of mixed foreign policy goals drive cooperation problems among Western aid donor governments. This work will become the basis for my first book project, which will center on the uniqueness of the collective action problem at the heart of global development finance. By studying aid allocation through a general equilibrium lens, I am able to explain why certain donor countries come to have outsized responsibility for giving aid to particular countries in the developing world, meanwhile in other developing countries multiple donors are present. I also am able to show why cooperation among donor countries in the allocation of aid remains elusive. I do all this using a mix of game theory, a novel measurement strategy, and machine learning.
 
 **Peer Reviewed Publications (Ordered by Publication Date)**
 
@@ -48,27 +48,23 @@ In [my dissertation](https://docs.google.com/viewer?url=https://github.com/miles
     
 [1] ["Illinois 10th Congressional District: Re-rematch in Chicago Suburbs."](https://link.springer.com/chapter/10.1007/978-3-319-58094-4_9) (2018) With Jeffrey Ashley in *The Roads to Congress 2016*. Eds. Sean D. Foreman and Marcia L. Godwin. Palgrave Macmillan.
     
-**Works in Progress**
+**Works in Progress (Alphabetical Order)**
 
-"Aid for Nonaggression." [Work in Progress]
+- "Aid for Nonaggression." [Work in Progress]
 
-"Chinese Aid on ICT." With Xinle Jia, Lucie Lu, and Yujeong Yang. [Working paper for a Special Issue on *Promoting and Protecting Democracy in Times of De-Democratization*]
+- "Aid, Migration, and Civil War." [Work in Progress]
 
-"Elusive Collaboration? The Determinants of Lead Donorship in International Development." [Under Review]
+- "Connect First, then Suppress: Do Communication Aid Projects Erode Internet Freedom?" With Xinle Jia, Lucie Lu, and Yujeong Yang. [Working paper]
 
-"Does Performance Feedback Increase Flu-Vaccination Rates? A Cluster Randomized Trial." With Sebastian Jilke, Pompa Debroy, Rebecca Johnson, Michael Wallace, and Vincent Marconi. [Working Paper]
+- "Do We Have to Use the Power-law to Study War Size? And Does it Matter?" [Working Paper]
 
-"Foreign Aid and Investment Protection." With Seung-Uk Huh. [Working Paper]
+- "Elusive Collaboration? The Determinants of Lead Donorship in International Development." [Under Review]
 
-"How Local Discretion Addresses Competing Allocation Goals: The Case of Small Business Relief Funding." With Rebecca Johson, Heather Barry Kappes, Crystal C. Hall, Simone Zhang, and Elizabeth Bell. [Under Review]
+- "Foreign Aid and Investment Protection." With Seung-Uk Huh. [Working Paper]
 
-"In Favor of Normalizing War." [Working Paper]
-
-"Leveraging the Black Box: Regression Adjustment with Super Learners." With Robert J. Carroll and Gustavo Diaz. [Work in Progress]
-
-"Aid, Migration, and Civil War." [Working Paper]
+- "Leveraging the Black Box: Regression Adjustment with Super Learners." With Gustavo Diaz. [Work in Progress]
     
-"Xinhua Coverage of Chinese Foreign Aid Allocations." With Lucie Lu. [Working Paper]
+- "Xinhua Coverage of Chinese Foreign Aid Allocations." With Lucie Lu. [Under Review]
 
 [*Note*: All working papers are available upon request.]
 

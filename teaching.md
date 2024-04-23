@@ -28,22 +28,6 @@ permalink: /teaching/
 
 <p> </p>
 
-## My Teaching
-
-This page includes details about my teaching philosophy and a directory of courses I have taught. I try to keep this page as up-to-date as possible by adding course syllabi and relevant course materials as they evolve.
-
-### Materials
-
-I'm trying my best to corral my course materials within a single GitHub repository. [Check it out](https://github.com/milesdwilliams15/Teaching) for the latest (and greatest) updates to my course syllabi.
-
-### Making Data Accessible
-
-I believe data analysis should be a hands-on process, but not everyone taking my classes has a background in statistical programming and data analysis. To make the process of data exploration as accessible as possible, I developed a couple of Shiny dashboards for students taking my DPR 190 (War, Wealth, & World Politics) class. I used these to let students explore variables we talked about in class related to different collective action problems in international politics, international order, and conflict. My students enjoyed exploring the data, and I enjoyed seeing what they found. Links to each of the Dashboards I developed and used in the course are below:
-
-- [War, Wealth, & World Politics](https://milesdwilliams15.shinyapps.io/WorldData/)
-- [Correlates of Order](https://milesdwilliams15.shinyapps.io/correlates-of-order/)
-
-
 ### Courses
 
 **Denison University**
@@ -52,6 +36,7 @@ I believe data analysis should be a hands-on process, but not everyone taking my
 - DPR 101: Data Visualization for Political Research
 - DPR 190: War, Wealth, and World Politics
 - DPR 201: Data and Research Design for Social Impact
+- DPR 390: Death, Destruction, and Data
 
 **University of Illinois at Urbana-Champaign**
 
@@ -63,3 +48,14 @@ I believe data analysis should be a hands-on process, but not everyone taking my
   + [Linear Regression](https://github.com/milesdwilliams15/math-camp-2021-ols)
   + [Loops](https://github.com/milesdwilliams15/Math-Camp-2019)
   + [Version Control](https://github.com/milesdwilliams15/git-and-rstuidio-math-camp-2021)
+  
+### Materials
+
+I store my course materials within a single GitHub repository, which I update regularly. [Check it out](https://github.com/milesdwilliams15/Teaching).
+
+### Shiny Apps for Teaching
+
+I have created a number of Shiny apps for use in the classroom. Here are two of my most commonly used:
+
+- [War, Wealth, & World Politics](https://milesdwilliams15.shinyapps.io/WorldData/)
+- [Correlates of Order](https://milesdwilliams15.shinyapps.io/correlates-of-order/)

@@ -24,9 +24,7 @@ urlcolor: blue
 
 # EMPLOYMENT
 
-## Denison University
-
-Visiting Assistant Professor \hfill 2022-present
+*Denison University*, Visiting Assistant Professor \hfill 2022-present
 
 
 # EDUCATION
@@ -63,25 +61,25 @@ Visiting Assistant Professor \hfill 2022-present
 
 - "Aid for Nonaggression." [Work in Progress]
 
-- "Chinese Aid on ICT." With Xinle Jia, Lucie Lu, and Yujeong Yang. [Working paper for a Special Issue on *Promoting and Protecting Democracy in Times of De-Democratization*]
+- "Aid, Migration, and Civil War." [Work in Progress]
+
+- "Connect First, then Suppress: Do Communication Aid Projects Erode Internet Freedom?" With Xinle Jia, Lucie Lu, and Yujeong Yang. [Working paper]
+
+- "Do We Have to Use the Power-law to Study War Size? And Does it Matter?" [Working Paper]
 
 - "Elusive Collaboration? The Determinants of Lead Donorship in International Development." [Under Review]
 
-- "Does Performance Feedback Increase Flu-Vaccination Rates? A Cluster Randomized Trial." With Sebastian Jilke, Pompa Debroy, Rebecca Johnson, Michael Wallace, and Vincent Marconi. [Working Paper]
-
 - "Foreign Aid and Investment Protection." With Seung-Uk Huh. [Working Paper]
 
-- "How Local Discretion Addresses Competing Allocation Goals: The Case of Small Business Relief Funding." With Rebecca Johson, Heather Barry Kappes, Crystal C. Hall, Simone Zhang, and Elizabeth Bell. [Under Review]
-
-- "In Favor of Normalizing War." [Working Paper]
-
-- "Leveraging the Black Box: Regression Adjustment with Super Learners." With Robert J. Carroll and Gustavo Diaz. [Work in Progress]
-
-- "Aid, Migration, and Civil War." [Work in Progress]
+- "Leveraging the Black Box: Regression Adjustment with Super Learners." With Gustavo Diaz. [Work in Progress]
     
-- "Xinhua Coverage of Chinese Foreign Aid Allocations." With Lucie Lu. [Working Paper]
+- "Xinhua Coverage of Chinese Foreign Aid Allocations." With Lucie Lu. [Under Review]
 
 **Conferences (Ordered by Attendance Date)**
+
+- "Connect First, then Suppress: Do Communication Aid Projects Erode Internet Freedom?" MPSA \hfill April 2024
+
+- "Foreign Aid and Investment Protection," ISAM \hfill Nov. 2023
 
 - "Foreign Aid and Investment Protection," APSA \hfill Aug. 2023
 
@@ -113,7 +111,8 @@ I also write about various statistical and R-related things on [my personal blog
 
 ### Tools
 
-- **Expert:** R, RStudio, & Latex
+- **Expert:** R & RStudio
+- **Proficient:** GitHub & Latex
 - **Basic:** Stata & Python
 
 
@@ -121,13 +120,9 @@ I also write about various statistical and R-related things on [my personal blog
 
 [`coolor`](https://github.com/milesdwilliams15/coolorrr) - Tools to make setting and applying custom color palettes with `ggplot` more streamlined.
 
-[`RFA`](https://github.com/milesdwilliams15/RFA) - Implements [random forest adjustment](https://rpubs.com/milesdwilliams15/rfa-vignette) (RFA). RFA is a method for partialing out the influence of confounding covariates via random forests.
+[`oesr`](https://cran.r-project.org/web/packages/oesr/oesr.pdf) (with Ryan T. Moore) - For visualizing the results from randomized controlled trials using the Office of Evaluation Sciences' [recommended style guide](https://oes.gsa.gov/assets/files/reporting-statistical-results.pdf).
 
 [`seerrr`](https://github.com/milesdwilliams15/seerrr) - Tools that simplify the process of doing Monte Carlo and computational power analyses.
-
-[`SARM`](https://github.com/milesdwilliams15/SARM) - For estimating a modified version of the Strategic Autoregressive Model developed by [Steinwand (2011)](https://www.cambridge.org/core/journals/political-analysis/article/estimating-freeriding-behavior-the-stratam-model/0CBD6176E53848732CEC2C151A491212).
-
-[`oesr`](https://cran.r-project.org/web/packages/oesr/oesr.pdf) (with Ryan T. Moore) - For visualizing the results from randomized controlled trials using the Office of Evaluation Sciences' [recommended style guide](https://oes.gsa.gov/assets/files/reporting-statistical-results.pdf).
 
 
 # TEACHING
@@ -138,6 +133,7 @@ I also write about various statistical and R-related things on [my personal blog
 - DPR 101: Data Visualization for Political Research
 - DPR 190: War, Wealth, and World Politics
 - DPR 201: Data and Research Design for Social Impact
+- DPR 390: Death, Destruction, and Data
 
 **University of Illinois at Urbana-Champaign**
 
@@ -188,6 +184,7 @@ Research Assistant
 - British Journal of Politics and International Relations
 - Development Studies Research
 - Journal of Politics
+- Review of International Organizations
 
 *International Relations Graduate Workshop*, Coordinator \hfill 2020-2021
 

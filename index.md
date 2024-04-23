@@ -27,11 +27,10 @@
 
 
 ## Welcome! <img src="logo.png" align="right" height="130" style = "border-radius:0px"/>
-I am a political scientist and Visiting Assistant Professor of [Data for Political Research](https://denison.edu/academics/data-for-political-research) at Denison University. I also am an alum of the US General Service Administration's Office of Evaluation Sciences [(OES)](https://oes.gsa.gov/) where I served as a specialist in statistical methods. I earned my Ph.D. from the [Department of Political Science](https://pol.illinois.edu/) at the University of Illinois at Urbana-Champaign.
+I am a Visiting Assistant Professor of [Data for Political Research](https://denison.edu/academics/data-for-political-research) at Denison University. My research and teaching interests cover a range of issues, including research design, statistical programming, data visualization, text analysis, and international aid and conflict.
 
-I specialize in International Relations and Political Economy and teach courses on International Relations, statistical programming, and data visualization. I have conducted research on a range of topics, but I'm primarily interested in the impact of politics on the distribution of global economic assistance. I also have an interest in statistical methodology, causal inference, and political communication.
+I earned my PhD from the [Department of Political Science](https://pol.illinois.edu/) at the University of Illinois at Urbana-Champaign and am an alum Associate Fellow in statistical methods at the [U.S. Office of Evaluation Sciences](https://oes.gsa.gov/).
 
-I have been a contributor to the [Religion in Public blog](https://religioninpublic.blog/), written evaluation resources for the federal government on [reporting statistical results](https://oes.gsa.gov/assets/files/reporting-statistical-results.pdf) and on best-practices for using [multinomial tests](https://oes.gsa.gov/assets/files/Guidance-on-Using-Multinomial-Tests-for-Differences-in-Distribution.pdf), and I occasionally like to write about miscellaneous issues on statistical programming and methods on my [personal blog](https://milesdwilliams15.github.io/blog/).
 
 <div class="col-md-5">
   <h3>Interests</h3>
