@@ -112,18 +112,18 @@ impressed me, too.
 There’s a lot going for ξ, but after giving it more thought, I realized
 that we already have some useful methods for detecting nonlinear
 relationships in data and quantifying their strength. One simple idea I
-had is to simply use the $R^2$ from a generalized additive model or GAM
-like the one fit to the nonlinear data in the last section. The below
-figure shows the estimate we get using this approach with both the
+had is to simply use the R-squared from a generalized additive model or
+GAM like the one fit to the nonlinear data in the last section. The
+below figure shows the estimate we get using this approach with both the
 linear and nonlinear data alongside ρ and ξ. Because we’re already using
 Greek letters, let’s call the GAM estimate of the correlation γ
 (“gamma”—see what I did there?). This approach works by fitting two GAMs
 to the data where the two variables of interest are used alternately as
 the right-hand-side and left-hand-side variables in a GAM regression.
-The $R^2$ is then calculated for each fit and the greater of these two
-values is reported. As you can see in the figure below, this approach is
-just as powerful as ρ in detecting a linear relationship and even more
-powerful than ξ in detecting a strong nonlinear relationship.
+The R-squared is then calculated for each fit and the greater of these
+two values is reported. As you can see in the figure below, this
+approach is just as powerful as ρ in detecting a linear relationship and
+even more powerful than ξ in detecting a strong nonlinear relationship.
 
 ![](/assets/images/2024-05-01/unnamed-chunk-4-1.png)<!-- -->
 
