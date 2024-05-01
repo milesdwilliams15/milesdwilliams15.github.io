@@ -14,12 +14,11 @@ categories: ["Methods", "Statistics"]
 
 [Back to Blog](https://milesdwilliams15.github.io/blog/)
 
-Every now and again I stumble across an interesting new method that
-seems to solve a long-standing problem in applied statistical research.
-Usually these methods solve a highly technical or niche problem, but
-every now and again a new method is proposed that solves a very general
-and long-standing problem. The brand new coefficient of correlation
-created by Sourav Chatterjee falls into the latter category.
+Every now and again I stumble across an interesting new method. Usually
+these methods solve a highly technical or niche problem, but every now
+and again a new method is proposed that solves a very general and
+long-standing problem. The brand new coefficient of correlation created
+by Sourav Chatterjee falls into the latter category.
 
 In a working paper simply titled [“A New Correlation
 Coefficient”](https://arxiv.org/pdf/1909.10140), Chatterjee describes an
@@ -91,9 +90,9 @@ for ρ using both the linear and the nonlinear data. A red line is
 included in the nonlinear plot to summarize the nonlinear fit for the
 data provided by a more flexible generalized additive model (GAM) versus
 a linear model. We can see a few features of ξ immediately. First, it
-appears to be more conservative than ρ when the data are truly linear
-($\xi < \rho$). In the paper by Chatterjee, he says this is the one
-major limitation of this correlation coefficient. By contrast, ξ redeems
+appears to be more conservative than ρ when the data are truly linear (ξ
+\< ρ). In the paper by Chatterjee, he says this is the one major
+limitation of this correlation coefficient. By contrast, ξ redeems
 itself by its power to detect that the nonlinear data has a correlation
 that is equally as strong as that observed in the linear data. If
 anything, the estimate of ξ for the data on the right shows that the
