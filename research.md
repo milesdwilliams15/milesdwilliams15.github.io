@@ -36,6 +36,8 @@ In [my dissertation](https://docs.google.com/viewer?url=https://github.com/miles
 
 **Peer Reviewed Publications (Ordered by Publication Date)**
 
+[4] "Elusive Collaboration? The Determinants of Lead Donorship in International Development." (Forthcoming) in *The Review of International Organizations*.
+
 [3] ["How Reducing Documentation Burdens Impacts Equity in Program Access: The Case of Small Business Covid-19 Relief Funding."](https://onlinelibrary.wiley.com/doi/epdf/10.1111/puar.13722) (2023) With Elizabeth Bell and Heather Kappes in *Public Administration Review*: 1-22.
 
 [2] ["Gender in the Pulpit: The Differences in Speaking Style for Men and Women."](http://ryanburge.net/wp-content/uploads/2019/06/JCR_Burge_Williams.pdf) (2019) With Ryan Burge in *The Journal of Communication and Religion* 42(1): 63-82.
@@ -57,8 +59,6 @@ In [my dissertation](https://docs.google.com/viewer?url=https://github.com/miles
 - "Connect First, then Suppress: Do Communication Aid Projects Erode Internet Freedom?" With Xinle Jia, Lucie Lu, and Yujeong Yang. [Working paper]
 
 - "Do We Have to Use the Power-law to Study War Size? And Does it Matter?" [Working Paper]
-
-- "Elusive Collaboration? The Determinants of Lead Donorship in International Development." [Under Review]
 
 - "Foreign Aid and Investment Protection." With Seung-Uk Huh. [Working Paper]
 
