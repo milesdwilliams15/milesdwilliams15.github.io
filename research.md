@@ -36,7 +36,7 @@ In [my dissertation](https://docs.google.com/viewer?url=https://github.com/miles
 
 **Peer Reviewed Publications (Ordered by Publication Date)**
 
-[4] "Elusive Collaboration? The Determinants of Lead Donorship in International Development." (Forthcoming) in *The Review of International Organizations*.
+[4] ["Elusive Collaboration? The Determinants of Lead Donorship in International Development."](https://link.springer.com/article/10.1007/s11558-024-09555-2) (2024) in *The Review of International Organizations*: Online First View.
 
 [3] ["How Reducing Documentation Burdens Impacts Equity in Program Access: The Case of Small Business Covid-19 Relief Funding."](https://onlinelibrary.wiley.com/doi/epdf/10.1111/puar.13722) (2023) With Elizabeth Bell and Heather Kappes in *Public Administration Review*: 1-22.
 
