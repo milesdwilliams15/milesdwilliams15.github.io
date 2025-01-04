@@ -36,6 +36,8 @@ In [my dissertation](https://docs.google.com/viewer?url=https://github.com/miles
 
 **Peer Reviewed Publications (Ordered by Publication Date)**
 
+[5] ["Attention Versus Handshakes: Pathways of Influence in China's Foreign Aid and Loans"](https://onlinelibrary.wiley.com/doi/full/10.1002/jid.3980) (2024) in *Journal of International Development*: Online First View.
+
 [4] ["Elusive Collaboration? The Determinants of Lead Donorship in International Development."](https://link.springer.com/article/10.1007/s11558-024-09555-2) (2024) in *The Review of International Organizations*: Online First View.
 
 [3] ["How Reducing Documentation Burdens Impacts Equity in Program Access: The Case of Small Business Covid-19 Relief Funding."](https://onlinelibrary.wiley.com/doi/epdf/10.1111/puar.13722) (2023) With Elizabeth Bell and Heather Kappes in *Public Administration Review*: 1-22.
@@ -64,19 +66,14 @@ In [my dissertation](https://docs.google.com/viewer?url=https://github.com/miles
 
 - "Leveraging the Black Box: Regression Adjustment with Super Learners." With Gustavo Diaz. [Work in Progress]
     
-- "Xinhua Coverage of Chinese Foreign Aid Allocations." With Lucie Lu. [Under Review]
-
 [*Note*: All working papers are available upon request.]
 
 **Software**
   
 I have developed a number of software packages for R. You can learn more about them [here](https://milesdwilliams15.github.io/software/).
-    
 
 **Blogging**
     
-I occasionally have contributed to [Religion in Public](https://religioninpublic.blog/). [In my latest contribution](https://religioninpublic.blog/2021/01/21/white-conservative-religious-and-aid-skeptical/), I discuss links between anti-immigrant attitudes among religious conservatives in the U.S. and support for foreign aid spending. 
-
-I also have contributed to *Democracy Paradox*, writing about [whether China and the United States can cooperate in foreign aid policy](https://democracyparadox.com/2023/02/13/can-washington-and-china-cooperate-in-foreign-aid/).
+In a bid for public scholarship, I host a Substack called [Foreign Figures]() in which I offer data-driven takes on foreign affairs every Monday and Thursday. I also occasionally have contributed to [Religion in Public](https://religioninpublic.blog/), and to [*Democracy Paradox*](https://democracyparadox.com/2023/02/13/can-washington-and-china-cooperate-in-foreign-aid/).
     
-I [host my own blog](https://milesdwilliams15.github.io/blog/) here on my site where I semi-regularly post about statistics and programming in R.
+I [host my own blog](https://milesdwilliams15.github.io/blog/) here on my professional site, too, where I semi-regularly post about statistics and programming in R.

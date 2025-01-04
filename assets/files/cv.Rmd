@@ -44,6 +44,8 @@ urlcolor: blue
 
 **Peer Reviewed Publications (Ordered by Publication Date)**
 
+- [5] ["Attention Versus Handshakes: Pathways of Influence in China's Foreign Aid and Loans"](https://onlinelibrary.wiley.com/doi/full/10.1002/jid.3980) (2024) in *Journal of International Development*: Online First View.
+
 - [4] ["Elusive Collaboration? The Determinants of Lead Donorship in International Development."](https://link.springer.com/article/10.1007/s11558-024-09555-2) (2024) in *The Review of International Organizations*: Online First View.
 
 - [3] ["How Reducing Documentation Burdens Impacts Equity in Program Access: The Case of Small Business Covid-19 Relief Funding."](https://onlinelibrary.wiley.com/doi/epdf/10.1111/puar.13722) (2023) With Elizabeth Bell and Heather Kappes in *Public Administration Review*: 1-22.
@@ -72,8 +74,6 @@ urlcolor: blue
 - "Foreign Aid and Investment Protection." With Seung-Uk Huh. [Working Paper]
 
 - "Leveraging the Black Box: Regression Adjustment with Super Learners." With Gustavo Diaz. [Work in Progress]
-    
-- "Xinhua Coverage of Chinese Foreign Aid Allocations." With Lucie Lu. [Under Review]
 
 **Conferences (Ordered by Attendance Date)**
 
