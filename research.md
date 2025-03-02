@@ -30,10 +30,6 @@ permalink: /research/
 
 ## My Research
 
-**Future Book Project**
-
-In [my dissertation](https://docs.google.com/viewer?url=https://github.com/milesdwilliams15/Dissertation/raw/main/dissertation_final.pdf), I explore how the pursuit of mixed foreign policy goals drive cooperation problems among Western aid donor governments. This work will become the basis for my first book project, which will center on the uniqueness of the collective action problem at the heart of global development finance. By studying aid allocation through a general equilibrium lens, I am able to explain why certain donor countries come to have outsized responsibility for giving aid to particular countries in the developing world, meanwhile in other developing countries multiple donors are present. I also am able to show why cooperation among donor countries in the allocation of aid remains elusive. I do all this using a mix of game theory, a novel measurement strategy, and machine learning.
-
 **Peer Reviewed Publications (Ordered by Publication Date)**
 
 [5] ["Attention Versus Handshakes: Pathways of Influence in China's Foreign Aid and Loans"](https://onlinelibrary.wiley.com/doi/full/10.1002/jid.3980) (2024) in *Journal of International Development*: Online First View.
@@ -52,21 +48,23 @@ In [my dissertation](https://docs.google.com/viewer?url=https://github.com/miles
     
 [1] ["Illinois 10th Congressional District: Re-rematch in Chicago Suburbs."](https://link.springer.com/chapter/10.1007/978-3-319-58094-4_9) (2018) With Jeffrey Ashley in *The Roads to Congress 2016*. Eds. Sean D. Foreman and Marcia L. Godwin. Palgrave Macmillan.
     
-**Works in Progress (Alphabetical Order)**
+**Selected Works in Progress (Alphabetical Order)**
 
-- "Aid for Nonaggression." [Work in Progress]
+- "Aid, Aggression, and Alignment: A Test of the Two-Good Theory in Equilibrium" [Working Paper]
 
-- "Aid, Migration, and Civil War." [Work in Progress]
+- "Aid for Nonaggression: Donor Security Strategy after the Cold War" [Working Paper]
 
-- "Connect First, then Suppress: Do Communication Aid Projects Erode Internet Freedom?" With Xinle Jia, Lucie Lu, and Yujeong Yang. [Working paper]
+- "An Actuary Walks into the War Room: How a Model from Actuarial Science Can Help Forecast the Deadliness of War" [Working Paper]
 
-- "Do We Have to Use the Power-law to Study War Size? And Does it Matter?" [Working Paper]
+- "Connect First, then Suppress: Do Chinese Communication Aid Projects Erode Internet Freedom and Can World Bank and US Aid Promote it?" With Xinle Jia, Lucie Lu, and Yujeong Yang. [*R&R - Under Review*]
 
 - "Foreign Aid and Investment Protection." With Seung-Uk Huh. [Working Paper]
 
-- "Leveraging the Black Box: Regression Adjustment with Super Learners." With Gustavo Diaz. [Work in Progress]
-    
 [*Note*: All working papers are available upon request.]
+
+**Future Book Project**
+
+In [my dissertation](https://docs.google.com/viewer?url=https://github.com/milesdwilliams15/Dissertation/raw/main/dissertation_final.pdf), I explore how the pursuit of mixed foreign policy goals drive cooperation problems among Western aid donor governments. This work will become the basis for my first book project, which will center on the uniqueness of the collective action problem at the heart of global development finance. By studying aid allocation through a general equilibrium lens, I am able to explain why certain donor countries come to have outsized responsibility for giving aid to particular countries in the developing world, meanwhile in other developing countries multiple donors are present. I also am able to show why cooperation among donor countries in the allocation of aid remains elusive. I do all this using a mix of game theory, a novel measurement strategy, and machine learning.
 
 **Software**
   

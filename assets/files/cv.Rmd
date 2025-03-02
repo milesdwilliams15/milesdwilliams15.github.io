@@ -8,7 +8,7 @@ title: "Curriculum Vitae"
 author: Miles D. Williams
 
 jobtitle: Denison University, Data for Political Research
-address: "Higley 401C · 11 Burt Ridge Rd SW · Granville, OH 43023"
+address: "Ebaugh 109 · 500 West Loop · Granville, OH 43023"
 email: "williamsmd@denison.edu"
 github: "milesdwilliams15"
 # phone: "618-663-9499"
@@ -32,7 +32,6 @@ urlcolor: blue
 *University of Illinois at Urbana-Champaign*, Ph.D. Political Science \hfill 2022 
 
   - Dissertation: "International Aid and Strategic Interdependence: How Common and Conflicting Foreign Policy Goals Shape the Supply of Foreign Aid"
-  - Exams: International Relations, International Political Economy
   - Committee: Matthew S. Winters (chair), Xinyuan Dai, Robert Pahre, Robert Carroll
 
 *Eastern Illinois University*, M.A. Political Science \hfill 2016
@@ -61,19 +60,17 @@ urlcolor: blue
     
 - [1] ["Illinois 10th Congressional District: Re-rematch in Chicago Suburbs."](https://link.springer.com/chapter/10.1007/978-3-319-58094-4_9) (2018) With Jeffrey Ashley in *The Roads to Congress 2016*. Eds. Sean D. Foreman and Marcia L. Godwin. Palgrave Macmillan] 
 
-**Works in Progress (Alphabetical Order)**
+**Selected Works in Progress (Alphabetical Order)**
 
-- "Aid for Nonaggression." [Work in Progress]
+- "Aid, Aggression, and Alignment: A Test of the Two-Good Theory in Equilibrium" [Working Paper]
 
-- "Aid, Migration, and Civil War." [Work in Progress]
+- "Aid for Nonaggression: Donor Security Strategy after the Cold War" [Working Paper]
 
-- "Connect First, then Suppress: Do Communication Aid Projects Erode Internet Freedom?" With Xinle Jia, Lucie Lu, and Yujeong Yang. [Working paper]
+- "An Actuary Walks into the War Room: How a Model from Actuarial Science Can Help Forecast the Deadliness of War" [Working Paper]
 
-- "Do We Have to Use the Power-law to Study War Size? And Does it Matter?" [Working Paper]
+- "Connect First, then Suppress: Do Chinese Communication Aid Projects Erode Internet Freedom and Can World Bank and US Aid Promote it?" With Xinle Jia, Lucie Lu, and Yujeong Yang. [*R&R - Under Review*]
 
 - "Foreign Aid and Investment Protection." With Seung-Uk Huh. [Working Paper]
-
-- "Leveraging the Black Box: Regression Adjustment with Super Learners." With Gustavo Diaz. [Work in Progress]
 
 **Conferences (Ordered by Attendance Date)**
 
