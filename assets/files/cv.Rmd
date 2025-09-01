@@ -43,6 +43,8 @@ urlcolor: blue
 
 **Peer Reviewed Publications (Ordered by Publication Date)**
 
+- [6] ["Connect First, then Suppress: Chinese vs. Western Communication Development Projects and Internet Freedom"](https://link.springer.com/article/10.1007/s12116-025-09471-5) (2025) in *Studies in Comparative International Development*: Online First View.
+
 - [5] ["Attention Versus Handshakes: Pathways of Influence in China's Foreign Aid and Loans"](https://onlinelibrary.wiley.com/doi/full/10.1002/jid.3980) (2024) in *Journal of International Development*: Online First View.
 
 - [4] ["Elusive Collaboration? The Determinants of Lead Donorship in International Development."](https://link.springer.com/article/10.1007/s11558-024-09555-2) (2024) in *The Review of International Organizations*: Online First View.
@@ -68,8 +70,6 @@ urlcolor: blue
 
 - "An Actuary Walks into the War Room: How a Model from Actuarial Science Can Help Forecast the Deadliness of War" [Working Paper]
 
-- "Connect First, then Suppress: Do Chinese Communication Aid Projects Erode Internet Freedom and Can World Bank and US Aid Promote it?" With Xinle Jia, Lucie Lu, and Yujeong Yang. [*R&R - Under Review*]
-
 - "Foreign Aid and Investment Protection." With Seung-Uk Huh. [Working Paper]
 
 **Conferences (Ordered by Attendance Date)**
@@ -88,7 +88,9 @@ urlcolor: blue
 
 - "Competition and Buck-passing in the Political Economy of Aid," MPSA \hfill April 2022
 
-**Blogging**
+**Public Scholarship**
+
+I am the author of [*Foreign Figures*](https://mileswilliams.substack.com/), a twice-weekly newsletter offering data-driven takes on foreign affairs.
 
 I have contributed to [*Democracy Paradox*](https://democracyparadox.com/).
 
@@ -120,6 +122,8 @@ I also write about various statistical and R-related things on [my personal blog
 [`oesr`](https://cran.r-project.org/web/packages/oesr/oesr.pdf) (with Ryan T. Moore) - For visualizing the results from randomized controlled trials using the Office of Evaluation Sciences' [recommended style guide](https://oes.gsa.gov/assets/files/reporting-statistical-results.pdf).
 
 [`seerrr`](https://github.com/milesdwilliams15/seerrr) - Tools that simplify the process of doing Monte Carlo and computational power analyses.
+
+[`ggregtab`](https://github.com/milesdwilliams15/ggregtab) - Uses `ggplot()` under the hood to generate regression tables.
 
 
 # TEACHING
@@ -178,10 +182,14 @@ Research Assistant
 
 *Reviewer*
 
+- American Political Science Review
 - British Journal of Politics and International Relations
-- Development Studies Research
 - Journal of Politics
 - Review of International Organizations
+- International Interactions
+- Political Studies Review
+- Development Studies Research
+- Frontiers
 
 *International Relations Graduate Workshop*, Coordinator \hfill 2020-2021
 

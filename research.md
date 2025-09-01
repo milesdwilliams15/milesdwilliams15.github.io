@@ -32,6 +32,8 @@ permalink: /research/
 
 **Peer Reviewed Publications (Ordered by Publication Date)**
 
+[6] ["Connect First, then Suppress: Chinese vs. Western Communication Development Projects and Internet Freedom"](https://link.springer.com/article/10.1007/s12116-025-09471-5) (2025) in *Studies in Comparative International Development*: Online First View.
+
 [5] ["Attention Versus Handshakes: Pathways of Influence in China's Foreign Aid and Loans"](https://onlinelibrary.wiley.com/doi/full/10.1002/jid.3980) (2024) in *Journal of International Development*: Online First View.
 
 [4] ["Elusive Collaboration? The Determinants of Lead Donorship in International Development."](https://link.springer.com/article/10.1007/s11558-024-09555-2) (2024) in *The Review of International Organizations*: Online First View.
@@ -55,8 +57,6 @@ permalink: /research/
 - "Aid for Nonaggression: Donor Security Strategy after the Cold War" [Working Paper]
 
 - "An Actuary Walks into the War Room: How a Model from Actuarial Science Can Help Forecast the Deadliness of War" [Working Paper]
-
-- "Connect First, then Suppress: Do Chinese Communication Aid Projects Erode Internet Freedom and Can World Bank and US Aid Promote it?" With Xinle Jia, Lucie Lu, and Yujeong Yang. [*R&R - Under Review*]
 
 - "Foreign Aid and Investment Protection." With Seung-Uk Huh. [Working Paper]
 
