@@ -43,17 +43,17 @@ urlcolor: blue
 
 **Peer Reviewed Publications (Ordered by Publication Date)**
 
-- [6] ["Connect First, then Suppress: Chinese vs. Western Communication Development Projects and Internet Freedom"](https://link.springer.com/article/10.1007/s12116-025-09471-5) (2025) in *Studies in Comparative International Development*: Online First View.
+- [6] ["Connect First, then Suppress: Chinese vs. Western Communication Development Projects and Internet Freedom"](https://link.springer.com/article/10.1007/s12116-025-09471-5) (2025) With Yujeong Yang, Lucie Lu, and Xinle Jia in *Studies in Comparative International Development*.
 
-- [5] ["Attention Versus Handshakes: Pathways of Influence in China's Foreign Aid and Loans"](https://onlinelibrary.wiley.com/doi/full/10.1002/jid.3980) (2024) in *Journal of International Development*: Online First View.
+- [5] ["Attention Versus Handshakes: Pathways of Influence in China's Foreign Aid and Loans"](https://onlinelibrary.wiley.com/doi/full/10.1002/jid.3980) (2024) in *Journal of International Development*.
 
-- [4] ["Elusive Collaboration? The Determinants of Lead Donorship in International Development."](https://link.springer.com/article/10.1007/s11558-024-09555-2) (2024) in *The Review of International Organizations*: Online First View.
+- [4] ["Elusive Collaboration? The Determinants of Lead Donorship in International Development."](https://link.springer.com/article/10.1007/s11558-024-09555-2) (2024) in *The Review of International Organizations*.
 
-- [3] ["How Reducing Documentation Burdens Impacts Equity in Program Access: The Case of Small Business Covid-19 Relief Funding."](https://onlinelibrary.wiley.com/doi/epdf/10.1111/puar.13722) (2023) With Elizabeth Bell and Heather Kappes in *Public Administration Review*: 1-22.
+- [3] ["How Reducing Documentation Burdens Impacts Equity in Program Access: The Case of Small Business Covid-19 Relief Funding."](https://onlinelibrary.wiley.com/doi/epdf/10.1111/puar.13722) (2023) With Elizabeth Bell and Heather Kappes in *Public Administration Review*.
 
-- [2] ["Gender in the Pulpit: The Differences in Speaking Style for Men and Women."](http://ryanburge.net/wp-content/uploads/2019/06/JCR_Burge_Williams.pdf) (2019) With Ryan Burge in *The Journal of Communication and Religion* 42(1): 63-82.
+- [2] ["Gender in the Pulpit: The Differences in Speaking Style for Men and Women."](http://ryanburge.net/wp-content/uploads/2019/06/JCR_Burge_Williams.pdf) (2019) With Ryan Burge in *The Journal of Communication and Religion*.
 
-- [1] ["Is Social Media a Digital Pulpit? How Evangelical Leaders Use Twitter to Encourage the Faithful and Publicize Their Work."](https://brill.com/view/journals/rmdc/8/3/article-p309_309.xml) (2019) With Ryan Burge in the *Journal of Religion, Media, and Digital Culture* 8(1): 309-339.
+- [1] ["Is Social Media a Digital Pulpit? How Evangelical Leaders Use Twitter to Encourage the Faithful and Publicize Their Work."](https://brill.com/view/journals/rmdc/8/3/article-p309_309.xml) (2019) With Ryan Burge in the *Journal of Religion, Media, and Digital Culture*.
 
 
 **Book Chapters (Ordered by Publication Date)**
@@ -74,6 +74,16 @@ urlcolor: blue
 
 **Conferences (Ordered by Attendance Date)**
 
+- 
+
+- "Aid, Aggression, and Alignment: A Test of the Two-Good Theory in Equilibrium" MPSA \hfill April 2025
+
+- "An Actuary Walks into the War Room: How a Model from Actuarial Science Can Help Forecast the Deadliness of War" MPSA \hfill April 2025
+
+- "Aid for Nonaggression: Donor Security Strategy After the Cold War" MPSA \hfill April 2025
+
+- "Aid for Nonaggression: Donor Security Strategy After the Cold War" APSA \hfill September 2024
+
 - "Connect First, then Suppress: Do Communication Aid Projects Erode Internet Freedom?" MPSA \hfill April 2024
 
 - "Foreign Aid and Investment Protection," ISAM \hfill Nov. 2023
@@ -90,18 +100,11 @@ urlcolor: blue
 
 **Public Scholarship**
 
-I am the author of [*Foreign Figures*](https://mileswilliams.substack.com/), a twice-weekly newsletter offering data-driven takes on foreign affairs.
+I am the author of [*Foreign Figures*](https://mileswilliams.substack.com/), a weekly newsletter offering data-driven takes on foreign affairs.
 
-I have contributed to [*Democracy Paradox*](https://democracyparadox.com/).
-
-- ["Can Washington and China Cooperate in Foreign Aid?"](https://democracyparadox.com/2023/02/13/can-washington-and-china-cooperate-in-foreign-aid/)
+I have contributed to [*Democracy Paradox*](https://democracyparadox.com/2023/02/13/can-washington-and-china-cooperate-in-foreign-aid/).
 
 I also have contributed to [*Religion in Public*](https://religioninpublic.blog/).
-
-  - ["White, Conservative, Religious...and Aid Skeptical"](https://religioninpublic.blog/2021/01/21/white-conservative-religious-and-aid-skeptical/) (January 21, 2021)
-  - ["Do Women Preach Differently than Men?"](https://religioninpublic.blog/2019/06/26/do-women-preach-differently-than-men/) (June 26, 2019)
-  - ["Welcome the Stranger? Evangelicals' Views on Immigration Prior to Donald Trump"](https://religioninpublic.blog/2017/02/20/welcome-the-stranger-evangelicals-views-on-immigration-prior-to-donald-trump/) (February 20, 2017)
-  - ["Evangelical Leaders Are as Negative on Immigration and Islam as Donald Trump"](https://religioninpublic.blog/2017/02/13/evangelical-leaders-are-as-negative-on-immigration-and-islam-as-donald-trump/) (February 13, 2017)
   
 I also write about various statistical and R-related things on [my personal blog](https://milesdwilliams15.github.io/blog/) hosted on my professional website.
 
@@ -115,7 +118,7 @@ I also write about various statistical and R-related things on [my personal blog
 - **Basic:** Stata & Python
 
 
-### R Packages
+### R Packages Developed
 
 [`coolor`](https://github.com/milesdwilliams15/coolorrr) - Tools to make setting and applying custom color palettes with `ggplot` more streamlined.
 
