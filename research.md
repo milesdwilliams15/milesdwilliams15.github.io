@@ -4,33 +4,29 @@ permalink: /research/
 ---
 
 <!-- Load an icon library -->
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-:::: topnav
-::: dropdown
-```         
-    <button class="dropbtn">
-    <i class="fa fa-navicon"></i> More</button>
-    <div class="dropdown-content">
-        <a href="https://milesdwilliams15.github.io/"><i class="fa fa-fw fa-home"></i> Home</a>
-        <a href="https://milesdwilliams15.github.io/research/"><i class="fa fa-fw fa-area-chart"></i> Research</a>
-        <a href="https://milesdwilliams15.github.io/teaching/"><i class="fa fa-fw fa-mortar-board"></i> Teaching</a>
-        <a href="/assets/files/cv.pdf" target="_blank"><i class="fa fa-fw fa-file"></i> My CV</a>
-        <a href="{{ site.data.social-media.email.href }}{{ site.data.social-media.email.id }}"><i class="fa fa-fw fa-envelope"></i> Email Me</a>
-        <a href="{{ site.github.owner_url }}"><i class="fa fa-fw fa-code-fork"></i> My GitHub</a>
-        <a href = "https://milesdwilliams15.github.io/software/"><i class="fa fa-fw fa-gears"></i>My Software</a>
-        <a href="https://milesdwilliams15.github.io/blog/"><i class="fa fa-fw fa-pencil"></i> My Blog</a>
+<div class="topnav">
+  <div class="dropdown">
+        <button class="dropbtn">
+        <i class="fa fa-navicon"></i> More</button>
+        <div class="dropdown-content">
+            <a href="https://milesdwilliams15.github.io/"><i class="fa fa-fw fa-home"></i> Home</a>
+            <a href="https://milesdwilliams15.github.io/research/"><i class="fa fa-fw fa-area-chart"></i> Research</a>
+            <a href="https://milesdwilliams15.github.io/teaching/"><i class="fa fa-fw fa-mortar-board"></i> Teaching</a>
+            <a href="/assets/files/cv.pdf" target="_blank"><i class="fa fa-fw fa-file"></i> My CV</a>
+            <a href="{{ site.data.social-media.email.href }}{{ site.data.social-media.email.id }}"><i class="fa fa-fw fa-envelope"></i> Email Me</a>
+            <a href="{{ site.github.owner_url }}"><i class="fa fa-fw fa-code-fork"></i> My GitHub</a>
+            <a href = "https://milesdwilliams15.github.io/software/"><i class="fa fa-fw fa-gears"></i>My Software</a>
+            <a href="https://milesdwilliams15.github.io/blog/"><i class="fa fa-fw fa-pencil"></i> My Blog</a>
+        </div>
     </div>
+  <a href="https://milesdwilliams15.github.io/"><i class="fa fa-fw fa-home"></i> Home</a>
+  <a href="https://milesdwilliams15.github.io/research/"><i class="fa fa-fw fa-area-chart"></i> Research</a>
+  <a href="https://milesdwilliams15.github.io/teaching/"><i class="fa fa-fw fa-mortar-board"></i> Teaching</a>
 </div>
-```
 
-<a href="https://milesdwilliams15.github.io/"><i class="fa fa-fw fa-home"></i> Home</a> <a href="https://milesdwilliams15.github.io/research/"><i class="fa fa-fw fa-area-chart"></i> Research</a> <a href="https://milesdwilliams15.github.io/teaching/"><i class="fa fa-fw fa-mortar-board"></i> Teaching</a>
-:::
-
-<p>
-
-</p>
+<p> </p>
 
 ## My Research
 
@@ -77,4 +73,4 @@ I have developed a number of software packages for R. You can learn more about t
 **Blogging**
 
 In a bid for public scholarship, I host a Substack called [*Foreign Figures*](https://mileswilliams.substack.com/) in which I offer data-driven takes on foreign affairs on a weekly basis. I also occasionally have contributed to [*Religion in Public*](https://religioninpublic.blog/), and to [*Democracy Paradox*](https://democracyparadox.com/2023/02/13/can-washington-and-china-cooperate-in-foreign-aid/). I [host a blog](https://milesdwilliams15.github.io/blog/) here on my professional site, too, where I occasionally post about statistics and programming in R.
-::::
+
