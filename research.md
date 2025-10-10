@@ -32,9 +32,13 @@ permalink: /research/
 
 **Peer Reviewed Publications (Ordered by Publication Date)**
 
-[6] ["Connect First, then Suppress: Chinese vs. Western Communication Development Projects and Internet Freedom"](https://link.springer.com/article/10.1007/s12116-025-09471-5) (2025) With Yujeong Yang, Lucie Lu, and Xinle Jia in *Studies in Comparative International Development*.
+[8] "Aid for Nonaggression." (2025) Forthcoming in *Conflict Management and Peace Science*.
 
-[5] ["Attention Versus Handshakes: Pathways of Influence in China's Foreign Aid and Loans"](https://onlinelibrary.wiley.com/doi/full/10.1002/jid.3980) (2024) With Lucie Lu in *Journal of International Development*.
+[7] ["An Undergraduate Degree in 'Data for Political Research': High in Demand and Student Value but Low in Supply."](https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/an-undergraduate-degree-in-data-for-political-research-high-in-demand-and-student-value-but-low-in-supply/357A4BC60EBF2641C5F4610C81E470FB) (2025) With Paul Djupe in *PS: Political Science and Politics*.
+
+[6] ["Connect First, then Suppress: Chinese vs. Western Communication Development Projects and Internet Freedom."](https://link.springer.com/article/10.1007/s12116-025-09471-5) (2025) With Yujeong Yang, Lucie Lu, and Xinle Jia in *Studies in Comparative International Development*.
+
+[5] ["Attention Versus Handshakes: Pathways of Influence in China's Foreign Aid and Loans."](https://onlinelibrary.wiley.com/doi/full/10.1002/jid.3980) (2024) With Lucie Lu in *Journal of International Development*.
 
 [4] ["Elusive Collaboration? The Determinants of Lead Donorship in International Development."](https://link.springer.com/article/10.1007/s11558-024-09555-2) (2024) in *The Review of International Organizations*.
 
@@ -53,8 +57,6 @@ permalink: /research/
 **Selected Works in Progress (Alphabetical Order)**
 
 -   "Aid, Aggression, and Alignment: A Test of the Two-Good Theory in Equilibrium" [Working Paper]
-
--   "Aid for Nonaggression: Donor Security Strategy after the Cold War" [Working Paper]
 
 -   "An Actuary Walks into the War Room: How a Model from Actuarial Science Can Help Forecast the Deadliness of War" [Working Paper]
 
