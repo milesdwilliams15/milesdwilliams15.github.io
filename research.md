@@ -32,7 +32,7 @@ permalink: /research/
 
 **Peer Reviewed Publications (Ordered by Publication Date)**
 
-[8] "Aid for Nonaggression." (2025) Forthcoming in *Conflict Management and Peace Science*.
+[8] ["Aid for Nonaggression."](https://journals.sagepub.com/doi/abs/10.1177/07388942251388824) (2025) in *Conflict Management and Peace Science*. ([pdf version here](https://milesdwilliams15.github.io/aid-for-non-aggression/williams_cmps_final.pdf))
 
 [7] ["An Undergraduate Degree in 'Data for Political Research': High in Demand and Student Value but Low in Supply."](https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/an-undergraduate-degree-in-data-for-political-research-high-in-demand-and-student-value-but-low-in-supply/357A4BC60EBF2641C5F4610C81E470FB) (2025) With Paul Djupe in *PS: Political Science and Politics*.
 
@@ -56,11 +56,11 @@ permalink: /research/
 
 **Selected Works in Progress (Alphabetical Order)**
 
--   "Aid, Aggression, and Alignment: A Test of the Two-Good Theory in Equilibrium" [Working Paper]
+- "Alignment, Aid, and Aggression: Bringing Strategic Interdependence into the Two-Good Theory of Foreign Policy" [Working Paper]
 
--   "An Actuary Walks into the War Room: How a Model from Actuarial Science Can Help Forecast the Deadliness of War" [Working Paper]
+- "An Actuary Walks into the War Room: How a Model from Actuarial Science Can Help Forecast the Deadliness of War" [Working Paper]
 
--   "Foreign Aid and Investment Protection." With Seung-Uk Huh. [Working Paper]
+- "Leaders Unleashed: The Importance of Constraints on Hawkish Leaders" [Working Paper]
 
 [*Note*: All working papers are available upon request.]
 
