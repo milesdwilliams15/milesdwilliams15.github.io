@@ -60,6 +60,8 @@ permalink: /research/
 
 - "An Actuary Walks into the War Room: How a Model from Actuarial Science Can Help Forecast the Deadliness of War" [Working Paper]
 
+- "An Order of Magnitude: Insights on International Order Collapse from a Dynamic Network Model of Order Formation" [Working Paper] [[PDF](https://milesdwilliams15.github.io/intl-order/04_report/order_manuscript_williams.pdf)]
+
 - "Leaders Unleashed: The Importance of Constraints on Hawkish Leaders" [Working Paper]
 
 [*Note*: All working papers are available upon request.]
