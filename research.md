@@ -56,14 +56,15 @@ permalink: /research/
 
 **Selected Works in Progress (Alphabetical Order)**
 
-- "Alignment, Aid, and Aggression: Bringing Strategic Interdependence into the Two-Good Theory of Foreign Policy" [Working Paper]
+"Alignment, Aid, and Aggression: Bringing Strategic Interdependence into the Two-Good Theory of Foreign Policy" [Working Paper]
 
-- "An Actuary Walks into the War Room: How a Model from Actuarial Science Can Help Forecast the Deadliness of War" [Working Paper]
+"An Actuary Walks into the War Room: How a Model from Actuarial Science Can Help Forecast the Deadliness of War" [Working Paper]
 
-- "An Order of Magnitude: Insights on International Order Collapse from a Dynamic Network Model of Order Formation" [Working Paper] [[PDF](https://milesdwilliams15.github.io/intl-order/04_report/order_manuscript_williams.pdf)]
+"An Order of Magnitude: Insights on International Order Collapse from a Dynamic Network Model of Order Formation" [Working Paper] [[PDF](https://milesdwilliams15.github.io/intl-order/04_report/order_manuscript_williams.pdf)]
 
-- "Leaders Unleashed: The Importance of Constraints on Hawkish Leaders" [Working Paper]
+"Leaders Unleashed: The Importance of Constraints on Hawkish Leaders" [Working Paper]
 
+"The Measurement of Christian Nationalism in Broader Perspective: A Systematic Reevaluation" (Conditionally Accepted at *Politics and Religion*) with Paul A. Djupe, Brooklyn E. Walker, Anand E. Sokhey, Jacob R. Neiheisel, and Andrew R. Lewis
 [*Note*: All working papers are available upon request.]
 
 **Software**
