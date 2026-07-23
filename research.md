@@ -72,7 +72,7 @@ permalink: /research/
 
 I have developed a number of software packages for R. You can learn more about them [here](https://milesdwilliams15.github.io/software/).
 
-**Blogging**
+**Public Scholarship**
 
-In a bid for public scholarship, I host a Substack called [*Foreign Figures*](https://mileswilliams.substack.com/) in which I offer data-driven takes on foreign affairs on a weekly basis. I also occasionally have contributed to [*Religion in Public*](https://religioninpublic.blog/), and to [*Democracy Paradox*](https://democracyparadox.com/2023/02/13/can-washington-and-china-cooperate-in-foreign-aid/). I [host a blog](https://milesdwilliams15.github.io/blog/) here on my professional site, too, where I occasionally post about statistics and programming in R.
+I publish a weekly newsletter called [*Foreign Figures*](https://mileswilliams.substack.com/) in which I offer data-driven takes on international relations and world affairs, AI in education and research, and updates on my published research. I also have contributed to [*Religion in Public*](https://religioninpublic.blog/) and [*Democracy Paradox*](https://democracyparadox.com/2023/02/13/can-washington-and-china-cooperate-in-foreign-aid/). I [host a blog](https://milesdwilliams15.github.io/blog/) here on my professional site, too, where I occasionally post about statistics and programming in R.
 
