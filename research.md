@@ -65,6 +65,7 @@ permalink: /research/
 "Leaders Unleashed: The Importance of Constraints on Hawkish Leaders" [Working Paper]
 
 "The Measurement of Christian Nationalism in Broader Perspective: A Systematic Reevaluation" (Conditionally Accepted at *Politics and Religion*) with Paul A. Djupe, Brooklyn E. Walker, Anand E. Sokhey, Jacob R. Neiheisel, and Andrew R. Lewis
+
 [*Note*: All working papers are available upon request.]
 
 **Software**
