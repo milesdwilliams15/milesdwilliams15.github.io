@@ -66,10 +66,6 @@ permalink: /research/
 
 [*Note*: All working papers are available upon request.]
 
-**Future Book Project**
-
-In [my dissertation](https://docs.google.com/viewer?url=https://github.com/milesdwilliams15/Dissertation/raw/main/dissertation_final.pdf), I explore how the pursuit of mixed foreign policy goals drive cooperation problems among Western aid donor governments. This work will become the basis for my first book project, which will center on the uniqueness of the collective action problem at the heart of global development finance. By studying aid allocation through a general equilibrium lens, I am able to explain why certain donor countries come to have outsized responsibility for giving aid to particular countries in the developing world, meanwhile in other developing countries multiple donors are present. I also am able to show why cooperation among donor countries in the allocation of aid remains elusive. I do all this using a mix of game theory, a novel measurement strategy, and machine learning.
-
 **Software**
 
 I have developed a number of software packages for R. You can learn more about them [here](https://milesdwilliams15.github.io/software/).

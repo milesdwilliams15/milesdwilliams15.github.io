@@ -53,11 +53,11 @@ permalink: /teaching/
 
 [GitHub Teaching Repository](https://github.com/milesdwilliams15/Teaching).
 
-Free lecture notes:
+Bespoke Open-source Textbooks:
 
-- [DPR 101: Data Visualization for Political Research](https://milesdwilliams15.quarto.pub/dpr-101-data-visualization-for-political-research/)
-- [An R Companion to *Thinking Clearly with Data*](https://milesdwilliams15.quarto.pub/an-r-companion-to-thinking-clearly-with-data/)
-- [Studying Why We Fight with R](https://milesdwilliams15.quarto.pub/studying-why-we-fight-with-r/)
+- [Data Visualization for Political Research](https://milesdwilliams15.quarto.pub/dpr-101-data-visualization-for-political-research/)
+- [Data and Research Design for Political Research](https://milesdwilliams15.quarto.pub/data-and-research-design/)
+- [Death, Destruction, and Data: An Intro to Using Data to Study International Conflict](https://milesdwilliams15.quarto.pub/death-destruction-and-data/)
 
 
 
@@ -65,5 +65,5 @@ Free lecture notes:
 
 I have created a number of Shiny apps for use in the classroom. Here are two of my most commonly used:
 
-- [War, Wealth, & World Politics](https://milesdwilliams15.shinyapps.io/WorldData/)
-- [Correlates of Order](https://milesdwilliams15.shinyapps.io/correlates-of-order/)
+- [Trends in Global Issues](https://milesdwilliams15.shinyapps.io/trends-in-global-politics/)
+- [Trends in War](https://milesdwilliams15.shinyapps.io/trends-in-war/)
