@@ -27,7 +27,7 @@
 
 
 ## Welcome! <img src="logo.png" align="right" height="130" style = "border-radius:0px"/>
-I am a Visiting Assistant Professor of [Data for Political Research](https://denison.edu/academics/data-for-political-research) at Denison University. My research covers issues in international cooperation, conflict, political, and research methods. My teaching includes topics like data visualization, data modeling and research design, and international relations. I write a weekly newsletter, [*Foreign Figures*](https://mileswilliams.substack.com/), where I offer data-driven takes on international relations, thoughts on AI in research and the classroom, and updates on my research.
+I am a Visiting Assistant Professor of [Data for Political Research](https://denison.edu/academics/data-for-political-research) at Denison University. My research covers issues in international cooperation, conflict, political economy, and research methods. My teaching includes topics like data visualization, data modeling and research design, and international relations. I write a weekly newsletter, [*Foreign Figures*](https://mileswilliams.substack.com/), where I offer data-driven takes on international relations, thoughts on AI in research and the classroom, and updates on my research.
 
 I earned my PhD from the [Department of Political Science](https://pol.illinois.edu/) at the University of Illinois at Urbana-Champaign and am an alum Associate Fellow in statistical methods at the [U.S. Office of Evaluation Sciences](https://oes.gsa.gov/).
 
