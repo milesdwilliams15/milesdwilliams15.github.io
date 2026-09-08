@@ -32,6 +32,8 @@ permalink: /research/
 
 **Peer Reviewed Publications (Ordered by Publication Date)**
 
+[9] "The Measurement of Christian Nationalism in Broader Perspective: A Systematic Reevaluation" (Forthcoming) in *Politics and Religion* with Paul A. Djupe, Brooklyn E. Walker, Anand E. Sokhey, Jacob R. Neiheisel, and Andrew R. Lewis
+
 [8] ["Aid for Nonaggression."](https://journals.sagepub.com/doi/abs/10.1177/07388942251388824) (2025) in *Conflict Management and Peace Science*. ([pdf version here](https://milesdwilliams15.github.io/aid-for-non-aggression/williams_cmps_final.pdf))
 
 [7] ["An Undergraduate Degree in 'Data for Political Research': High in Demand and Student Value but Low in Supply."](https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/an-undergraduate-degree-in-data-for-political-research-high-in-demand-and-student-value-but-low-in-supply/357A4BC60EBF2641C5F4610C81E470FB) (2025) With Paul Djupe in *PS: Political Science and Politics*.
@@ -63,8 +65,6 @@ permalink: /research/
 "An Order of Magnitude: Insights on International Order Collapse from a Dynamic Network Model of Order Formation" [Working Paper] [[PDF](https://milesdwilliams15.github.io/intl-order/04_report/order_manuscript_williams.pdf)]
 
 "Leaders Unleashed: The Importance of Constraints on Hawkish Leaders" [Working Paper]
-
-"The Measurement of Christian Nationalism in Broader Perspective: A Systematic Reevaluation" (Conditionally Accepted at *Politics and Religion*) with Paul A. Djupe, Brooklyn E. Walker, Anand E. Sokhey, Jacob R. Neiheisel, and Andrew R. Lewis
 
 [*Note*: All working papers are available upon request.]
 
