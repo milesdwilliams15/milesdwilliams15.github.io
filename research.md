@@ -32,7 +32,7 @@ permalink: /research/
 
 **Peer Reviewed Publications (Ordered by Publication Date)**
 
-[9] "The Measurement of Christian Nationalism in Broader Perspective: A Systematic Reevaluation" (Forthcoming) in *Politics and Religion* with Paul A. Djupe, Brooklyn E. Walker, Anand E. Sokhey, Jacob R. Neiheisel, and Andrew R. Lewis
+[9] ["The Measurement of Christian Nationalism in Broader Perspective: A Systematic Reevaluation"](https://www.cambridge.org/core/journals/politics-and-religion/article/measurement-of-christian-nationalism-in-broader-perspective-a-systematic-reevaluation/7BD2C3DFE92DB581D15C4EFE87C621EF) (2026) in *Politics and Religion* with Paul A. Djupe, Brooklyn E. Walker, Anand E. Sokhey, Jacob R. Neiheisel, and Andrew R. Lewis
 
 [8] ["Aid for Nonaggression."](https://journals.sagepub.com/doi/abs/10.1177/07388942251388824) (2025) in *Conflict Management and Peace Science*. ([pdf version here](https://milesdwilliams15.github.io/aid-for-non-aggression/williams_cmps_final.pdf))
 
