@@ -123,19 +123,21 @@ I also write about various statistical and R-related things on [my personal blog
 ### Tools
 
 - **Expert:** R & RStudio
-- **Proficient:** GitHub & Latex
+- **Proficient:** Posit Assistant, GitHub, & Latex
 - **Basic:** Stata & Python
 
 
 ### R Packages Developed
 
-[`coolor`](https://github.com/milesdwilliams15/coolorrr) - Tools to make setting and applying custom color palettes with `ggplot` more streamlined.
+[`{actuwar}`](https://github.com/milesdwilliams15/actuwar) - Offers a user-friendly API for estimating inverse Burr models of extreme events, with applied examples for war fatalities.
 
-[`oesr`](https://cran.r-project.org/web/packages/oesr/oesr.pdf) (with Ryan T. Moore) - For visualizing the results from randomized controlled trials using the Office of Evaluation Sciences' [recommended style guide](https://oes.gsa.gov/assets/files/reporting-statistical-results.pdf).
+[`{coolor}`](https://github.com/milesdwilliams15/coolorrr) - Tools to make setting and applying custom color palettes with `ggplot` more streamlined.
 
-[`seerrr`](https://github.com/milesdwilliams15/seerrr) - Tools that simplify the process of doing Monte Carlo and computational power analyses.
+[`{oesr}`](https://cran.r-project.org/web/packages/oesr/oesr.pdf) (with Ryan T. Moore) - For visualizing the results from randomized controlled trials using the Office of Evaluation Sciences' [recommended style guide](https://oes.gsa.gov/assets/files/reporting-statistical-results.pdf).
 
-[`ggregtab`](https://github.com/milesdwilliams15/ggregtab) - Uses `ggplot()` under the hood to generate regression tables.
+[`{seerrr}`](https://github.com/milesdwilliams15/seerrr) - Tools that simplify the process of doing Monte Carlo and computational power analyses.
+
+[`{ggregtab}`](https://github.com/milesdwilliams15/ggregtab) - Uses `ggplot()` under the hood to generate regression tables.
 
 
 # TEACHING

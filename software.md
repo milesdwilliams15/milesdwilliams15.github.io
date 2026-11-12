@@ -31,6 +31,7 @@ permalink: /software/
 Through the course of teaching and doing research, I have developed a number of R statistical packages. Click on the links below to learn more.
 
 <ul>
+  <li><a href = "https://github.com/milesdwilliams15/actuwar">actuwar</a> - Offers a user-friendly API for estimating inverse Burr models of extreme events, with applied examples for war fatalities.</li>
   <li><a href = "https://github.com/milesdwilliams15/coolorrr">coolorrr</a> - Supports easier porting and application of custom color palettes, produced at <a href = "coolors.co">coolors.co</a>, for use with `ggplot()`.</li>
   <li><a href = "https://github.com/milesdwilliams15/ggregtab">ggregtab</a> - Uses `ggplot2` under the hood to generate regression tables.</li>
   <li><a href = "https://github.com/milesdwilliams15/RFA">RFA</a> - Implements <a href = "https://rpubs.com/milesdwilliams15/rfa-vignette">random forest adjustment</a> (RFA). RFA is a method for partialing out the influence of confoudning covariates via random forests.</li>
